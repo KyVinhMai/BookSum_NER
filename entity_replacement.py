@@ -1,8 +1,6 @@
 from __future__ import annotations
 import argparse
 from pathlib import Path
-import secrets
-import gender_guesser.detector as gender
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from argparse import Namespace
@@ -26,80 +24,54 @@ substitutions or performing modifications.
 ------------------------------------------------------------------------------------
 """
 
+def read_gender_list(gender_file) -> tuple[list,list]:
+    male_names = []
+    female_names = []
+    with open(gender_file, "r")  as f:
+        for line in f:
+            if line.rstrip("\n").split(",")[1] == "M": #Checks if hte name is male
+                male_names.append(line.rstrip("\n").split(",")[0])
+            else:
+                female_names.append(line.rstrip("\n").split(",")[0])
+
+    return male_names, female_names
+
+def read_unisex_names(uni_file) -> list:
+    uni_names = []
+    with open(uni_file, "r")  as f:
+        for line in f:
+            uni_names.append(line.rstrip("\n").split(",")[2])
+
+    return uni_names
+
+male_names, female_names = read_gender_list("name_gender_dataset.csv")
+neutral_names = read_unisex_names("unisex-names~2Funisex_names_table.csv")
+
+
 class Label_entities():
-    def __init__(self, text: str, char_file_path: Path):
+    def __init__(self, text: str, ucl: str, lcl:str):
         self.text = text
         self.doc = nlp(self.text)
-        self.ch_path = char_file_path
-        self.char_list = dict()
-        self.male_names, self.female_names = self.read_gender_list("name_gender_dataset.csv") # https://archive.ics.uci.edu/ml/datasets/Gender+by+Name
-        self.neutral_names = self.read_unisex_names("unisex-names~2Funisex_names_table.csv") #https://fivethirtyeight.datasettes.com/fivethirtyeight/unisex-names~2Funisex_names_table
-        with open(self.ch_path, "r") as f: #todo why couldn't we initialize self.char_list with a function?
-            self.char_list = eval(f.read())
-        self.local_chars = dict() #Randomized character dictionary
+        self.char_list = eval(ucl)
+        self.rand_ch = eval(lcl[26:])
 
-    def read_gender_list(self, gender_file) -> tuple[list,list]:
-        male_names = []
-        female_names = []
-        with open(gender_file, "r")  as f:
-            for line in f:
-                if line.rstrip("\n").split(",")[1] == "M": #Checks if hte name is male
-                    male_names.append(line.rstrip("\n").split(",")[0])
-                else:
-                    female_names.append(line.rstrip("\n").split(",")[0])
-
-        return male_names, female_names
-
-    def read_unisex_names(self, uni_file) -> list:
-        uni_names = []
-        with open(uni_file, "r")  as f:
-            for line in f:
-                uni_names.append(line.rstrip("\n").split(",")[0])
-
-        return uni_names
-
-
-    def randomize_characters(self, name) -> str or int:
-        "Here we randomly assign the values to each character in the file"
-        d = gender.Detector()
-        if d.get_gender(name) == "male":
-            random_label = secrets.choice(self.male_names)
-        elif d.get_gender(name) == "female":
-            random_label = secrets.choice(self.female_names)
-        else:
-            random_label = secrets.choice(self.neutral_names)
-
-        return random_label
-
-
-    def identify_names(self) -> None:
-        "Finds each name in the summary and assigns a random value from the UCL values"
-        for word in self.doc.ents:
-            if word.label_ == "PERSON":
-                self.local_chars[word.text] = self.randomize_characters(word.text)
-
-
-    def replace_names(self) -> None: #todo WILL NOT REPLACE FULL NAMES
-        for person in self.local_chars:
-            self.text = self.text.replace(person, self.local_chars[person])
-
+    def replace_names(self) -> None:
+        for person in self.rand_ch:
+            self.text = self.text.replace(person, self.rand_ch[person])
 
     def universal_character_section(self):
         "Character section at the bottom at each summary"
         local_dict = {}
-        for person in self.local_chars.keys():
+        for person in self.rand_ch.keys():
             local_dict[person] = self.char_list[person]
 
         self.text = self.text + "\n\n" + f"Local characters from Universal Character List: {local_dict}"
 
-
     def randomized_character_section(self):
         "Randomized Character Section at the bottom"
-        self.text = self.text + "\n\n" + f"Randomized Local characters: {self.local_chars}"
-
+        self.text = self.text + "\n\n" + f"Randomized Local characters: {self.rand_ch}"
 
     def create_text_file(self) -> str:
-        self.identify_names()
         self.replace_names()
         self.universal_character_section()
         self.randomized_character_section()
@@ -116,19 +88,19 @@ def create_subdirectory(book : Path) -> Path:
     return sub_folder_path
 
 
-def write_file_sub(filepath: Path, summary: Path, char_file_path: Path) -> None:
+def write_file_sub(filepath: Path, summary: Path, ch_dict: str, lcl) -> None:
     with filepath.open("w", encoding = "utf-8") as f:
         """
        Read the json_object, but create an entirely new file with labeled data
        using create_text_file()
        """
         json_file = open(summary, "r")
-        sub_file = Label_entities(json_file.read(), char_file_path)
+        sub_file = Label_entities(json_file.read(), ch_dict, lcl)
         f.write(sub_file.create_text_file())
         json_file.close()
 
 
-def parse_summaries(book: Path, sub_folder_path: Path, char_file_path: Path):
+def parse_summaries(book: Path, sub_folder_path: Path, ch_list: str, lcl: str):
     "For each summary create the file path for it"
     file_list = list((entry for entry in book.iterdir() if entry.is_file() and entry.match('*.txt')))
 
@@ -137,7 +109,7 @@ def parse_summaries(book: Path, sub_folder_path: Path, char_file_path: Path):
         file_name = str(summary.stem) + "_substituted.txt"
         filepath = sub_folder_path / file_name
 
-        write_file_sub(filepath, summary, char_file_path)
+        write_file_sub(filepath, summary, ch_list, lcl)
 
 def parse_corpus(corpus_path: Path) -> None:
     "Parses through each website, and then each book folder in the BookSum Dataset"
@@ -148,10 +120,14 @@ def parse_corpus(corpus_path: Path) -> None:
 
             sub_folder_path = create_subdirectory(book) # Create the subfolder
 
-            character_file = char_dict.Universal_Character_list(book, sub_folder_path) #Create the character list
+            character_file = char_dict.Universal_Character_list(book, sub_folder_path, male_names, female_names, neutral_names) #Create the character list
             character_file_path = character_file.generate_file()
+            with open(character_file_path, "r") as f: #todo why couldn't we initialize self.char_list with a function?
+                universal_character_list = f.read()
 
-            parse_summaries(book, sub_folder_path, character_file_path)  # Write to file
+            ucl, lcl = universal_character_list[37:].split("\n\n\n") #todo tidy up this olympics shit
+
+            parse_summaries(book, sub_folder_path, ucl, lcl)  # Write to file
 
 
 def modify_book(book_path: Path) -> None:
