@@ -17,7 +17,7 @@ class Universal_Character_list():
         self.neutral_names = uni_name
         self.persons = dict()
         self.rand_chs = copy.deepcopy(self.persons)
-        self.repattern = "St.|\'s|\\|,|-|\"| and"
+        self.repattern = "St.|\'s|\\+|,|-|\"| and"
 
     def split_name(self, name: str, num) -> int:
         "Splits the name into single words"
