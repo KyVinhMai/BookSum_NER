@@ -49,23 +49,18 @@ neutral_names = read_unisex_names("unisex-names~2Funisex_names_table.csv")
 
 
 class Label_entities():
-    def __init__(self, text: str, ucl: str, lcl:str):
+    def __init__(self, text: str, rand_ch_dict:str):
         self.text = text
         self.doc = nlp(self.text)
-        self.char_list = eval(ucl)
-        self.rand_ch = eval(lcl[26:])
+        self.rand_ch = eval(rand_ch_dict)
+        self.first_names = self.rand_ch["First Names"]
+        self.middle_names = self.rand_ch["Middle Names"]
+        self.last_names = self.rand_ch["Last Names"]
 
     def replace_names(self) -> None:
-        for person in self.rand_ch:
-            self.text = self.text.replace(person, self.rand_ch[person])
-
-    def universal_character_section(self):
-        "Character section at the bottom at each summary"
-        local_dict = {}
-        for person in self.rand_ch.keys():
-            local_dict[person] = self.char_list[person]
-
-        self.text = self.text + "\n\n" + f"Local characters from Universal Character List: {local_dict}"
+        for name_list in [self.first_names, self.middle_names, self.last_names]:
+            for person in name_list:
+                self.text = self.text.replace(person, name_list[person])
 
     def randomized_character_section(self):
         "Randomized Character Section at the bottom"
@@ -73,7 +68,6 @@ class Label_entities():
 
     def create_text_file(self) -> str:
         self.replace_names()
-        self.universal_character_section()
         self.randomized_character_section()
 
         return self.text
@@ -88,19 +82,19 @@ def create_subdirectory(book : Path) -> Path:
     return sub_folder_path
 
 
-def write_file_sub(filepath: Path, summary: Path, ch_dict: str, lcl) -> None:
+def write_file_sub(filepath: Path, summary: Path, rand_ch_dict) -> None:
     with filepath.open("w", encoding = "utf-8") as f:
         """
        Read the json_object, but create an entirely new file with labeled data
        using create_text_file()
        """
         json_file = open(summary, "r")
-        sub_file = Label_entities(json_file.read(), ch_dict, lcl)
+        sub_file = Label_entities(json_file.read(), rand_ch_dict)
         f.write(sub_file.create_text_file())
         json_file.close()
 
 
-def parse_summaries(book: Path, sub_folder_path: Path, ch_list: str, lcl: str):
+def parse_summaries(book: Path, sub_folder_path: Path, rand_ch_dict: str):
     "For each summary create the file path for it"
     file_list = list((entry for entry in book.iterdir() if entry.is_file() and entry.match('*.txt')))
 
@@ -109,7 +103,7 @@ def parse_summaries(book: Path, sub_folder_path: Path, ch_list: str, lcl: str):
         file_name = str(summary.stem) + "_substituted.txt"
         filepath = sub_folder_path / file_name
 
-        write_file_sub(filepath, summary, ch_list, lcl)
+        write_file_sub(filepath, summary, rand_ch_dict)
 
 def parse_corpus(corpus_path: Path) -> None:
     "Parses through each website, and then each book folder in the BookSum Dataset"
@@ -122,12 +116,12 @@ def parse_corpus(corpus_path: Path) -> None:
 
             character_file = char_dict.Universal_Character_list(book, sub_folder_path, male_names, female_names, neutral_names) #Create the character list
             character_file_path = character_file.generate_file()
-            with open(character_file_path, "r") as f: #todo why couldn't we initialize self.char_list with a function?
-                universal_character_list = f.read()
+            with open(character_file_path, "r") as f: #todo streamline this lines of code
+                character_list = f.read()
 
-            ucl, lcl = universal_character_list[37:].split("\n\n\n") #todo tidy up this olympics shit
+            _, random = character_list.split("\n\n\n") #todo tidy up this olympics shit
 
-            parse_summaries(book, sub_folder_path, ucl, lcl)  # Write to file
+            parse_summaries(book, sub_folder_path, random)  # Write to file
 
 
 def modify_book(book_path: Path) -> None:

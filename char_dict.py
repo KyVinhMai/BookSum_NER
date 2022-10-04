@@ -3,7 +3,6 @@ import json
 import re
 from pathlib import Path
 import secrets
-import copy
 import gender_guesser.detector as gender
 spacy.require_gpu()
 nlp = spacy.load("en_core_web_trf", exclude = ["tagger", "parser", "lemmatizer"]) #Understand pipelines To make this faster
@@ -15,31 +14,84 @@ class Universal_Character_list():
         self.sf_path = sub_folder_path
         self.male_names, self.female_names = m_names, f_name
         self.neutral_names = uni_name
-        self.persons = dict()
-        self.rand_chs = copy.deepcopy(self.persons)
-        self.repattern = "St.|\'s|\\+|,|-|\"| and"
+        self.repattern = "St.|\'s|\\+|,|-|\""
 
-    def split_name(self, name: str, num) -> int:
+        self.name_exceptions = [] #todo put this into a function
+        with open("name_exceptions.txt", "r") as f:
+            for line in f:
+                self.name_exceptions.append(line.rstrip())
+
+        self.persons = {
+            "Table_Type": "Universal Character Names",
+            "First Names": dict(),
+            "Middle Names": dict(),
+            "Last Names": dict()
+        }
+        self.rand_persons = {
+            "Table_Type": "Randomized Names",
+            "First Names": dict(),
+            "Middle Names": dict(),
+            "Last Names": dict()
+        }
+
+    def split_name(self, name:str, num: int) -> int:
         "Splits the name into single words"
-        if name in self.persons: #todo fix and tidy up
-            return num
+        def check_if_name_in_dict(single_name) -> bool:
+            all_name_dicts = self.persons["First Names"] | self.persons["Middle Names"] | self.persons["Last Names"]
+            if single_name in all_name_dicts:
+                return False
 
-        # Check the first name of a full name, i.e. Martha of Martha Stewart
-        if " " in name:
-            names = name.split(" ")
-            for n in names:
-                if n in self.persons: #todo fix and tidy up
-                    return num
-                n = re.sub(self.repattern, "", n)
-                self.persons[n] = num
+            return True
+
+        name = re.sub(self.repattern, "", name) # todo WHY IS THIS CAUSING A EMPTY CHARACTER TO APPEAR
+        name_tokens = name.split(" ")
+        if len(name_tokens)  > 1:
+
+            if name_tokens[0] not in self.persons["First Names"]:
+                self.persons["First Names"][name_tokens[0]] = num
                 num += 1
 
+            if name_tokens[-1] not in self.persons["Last Names"]:
+                self.persons["Last Names"][name_tokens[-1]] = num
+                num += 1
+
+        elif len(name_tokens) > 2:
+            middle_names = name_tokens[1:-1]
+
+            for middle in middle_names:
+                if name not in self.persons["Middle Names"][middle]:
+                    num += 1
+                    self.persons["Middle Names"][middle] = num
+
+        # Check the first name of a full name, i.e. Martha of Martha Stewart
         else:
-            name = re.sub(self.repattern, "", name)
-            self.persons[name] = num
-            num += 1
+            if check_if_name_in_dict(name):
+                self.persons["First Names"][name] = num
+                num += 1
 
         return num
+
+    def name_check(self, name: str) -> bool: # todo fix up boy
+        """
+        Passes the name through the exceptions list. Intended to exclude names
+        like The Queen of Scots, or God, or even determiners.
+        """
+        for word in self.name_exceptions:
+            if word in name.lower():
+                return False
+
+        return True
+    #
+    # def remove_empty_character(self):
+    #     for name_dict in ["First Names", "Middle Names", "Last Names"]:
+    #         import copy
+    #         for name in self.persons[name_dict].keys().copy.deepcopy():
+    #             if "" == name:
+    #                 self.persons[name_dict].pop("")
+
+        # if "" in self.persons:
+        #     self.persons.pop("") #todo this is stupid
+        #
 
     def append_universal_character_list(self) -> None:
         num = 0
@@ -48,18 +100,18 @@ class Universal_Character_list():
         print(self.book.name, "\n=======================================")
         for summary in file_list:
             raw_file = open(summary, "r")
-            doc = nlp(raw_file.read()) #todo only use todo
+            doc = nlp(raw_file.read()) #todo only use nlp.pipleline
             print(summary.name)
 
             for word in doc.ents:
-                if word.label_ == "PERSON":
+                if word.label_ == "PERSON" and self.name_check(word.text):
                     increment = self.split_name(word.text, num)
                     num = increment
 
             raw_file.close()
 
-        if "" in self.persons:
-            self.persons.pop("") #todo hardcode fix
+        self.remove_empty_character()
+        # self.remove_duplicates()
 
     def assign_label(self, name) -> str or int:
         "Here we randomly assign the labels to each character for the randomized list"
@@ -75,8 +127,9 @@ class Universal_Character_list():
 
     def randomize_names(self) -> None:
         "Finds each name in the character_list and assigns a random label"
-        for name in self.persons.keys():
-            self.rand_chs[name] = self.assign_label(name)
+        for name_dict in ["First Names", "Middle Names", "Last Names"]: #For each name list, we substitute each name with a random one
+            for name in self.persons[name_dict].keys():
+                self.rand_persons[name_dict][name] = self.assign_label(name)
 
     def generate_file(self) -> Path:
         self.append_universal_character_list()
@@ -85,11 +138,9 @@ class Universal_Character_list():
         ch_file_path = self.sf_path / f"{self.book.name.replace(' ', '')}_character_list.txt"
 
         with ch_file_path.open("w", encoding = "utf-8") as f:
-            f.write("Universal Single Name Character List:")
             f.write(json.dumps(self.persons, indent = 4, sort_keys = False))
             f.write("\n\n\n")
-            f.write("Randomized_Character_Names")
-            f.write(json.dumps(self.rand_chs, indent = 4, sort_keys = False))
+            f.write(json.dumps(self.rand_persons, indent = 4, sort_keys = False))
 
         print("Created Character list!")
         return ch_file_path
