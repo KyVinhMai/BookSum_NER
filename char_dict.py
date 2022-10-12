@@ -52,6 +52,11 @@ class Universal_Character_list():
                 num += 1
 
             if name_tokens[-1] not in self.persons["Last Names"]:
+
+                if name_tokens[-1] in self.persons["First Names"]:
+                    self.persons["First Names"].pop(name_tokens[-1]) # Checks that there are no duplicates in the first name
+                    "Theres an issues where the stories introduces a character with their last name first. Which screws up the script"
+
                 self.persons["Last Names"][name_tokens[-1]] = num
                 num += 1
 
@@ -81,17 +86,13 @@ class Universal_Character_list():
                 return False
 
         return True
-    #
-    # def remove_empty_character(self):
-    #     for name_dict in ["First Names", "Middle Names", "Last Names"]:
-    #         import copy
-    #         for name in self.persons[name_dict].keys().copy.deepcopy():
-    #             if "" == name:
-    #                 self.persons[name_dict].pop("")
 
-        # if "" in self.persons:
-        #     self.persons.pop("") #todo this is stupid
-        #
+    def remove_empty_character(self):
+        for name_dict in ["First Names", "Middle Names", "Last Names"]:
+            for name in self.persons[name_dict].keys():
+                if name == "":
+                    self.persons[name_dict].pop("")
+                    break
 
     def append_universal_character_list(self) -> None:
         num = 0
@@ -111,7 +112,6 @@ class Universal_Character_list():
             raw_file.close()
 
         self.remove_empty_character()
-        # self.remove_duplicates()
 
     def assign_label(self, name) -> str or int:
         "Here we randomly assign the labels to each character for the randomized list"

@@ -94,7 +94,7 @@ def write_file_sub(filepath: Path, summary: Path, rand_ch_dict) -> None:
         json_file.close()
 
 
-def parse_summaries(book: Path, sub_folder_path: Path, rand_ch_dict: str):
+def parse_summaries(book: Path, sub_folder_path: Path, rand_ch_dict: Path):
     "For each summary create the file path for it"
     file_list = list((entry for entry in book.iterdir() if entry.is_file() and entry.match('*.txt')))
 
