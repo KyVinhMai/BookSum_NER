@@ -6,7 +6,7 @@ import secrets
 import gender_guesser.detector as gender
 spacy.require_gpu()
 nlp = spacy.load("en_core_web_trf", exclude = ["tagger", "parser", "lemmatizer"]) #Understand pipelines To make this faster
-
+#Generate different seed
 
 class Universal_Character_list():
     def __init__(self, book: Path, sub_folder_path: Path, m_names: list, f_name: list, uni_name: list):
@@ -15,7 +15,6 @@ class Universal_Character_list():
         self.male_names, self.female_names = m_names, f_name
         self.neutral_names = uni_name
         self.repattern = "St.|\'s|\\+|,|-|\""
-
         self.name_exceptions = [] #todo put this into a function
         with open("name_exceptions.txt", "r") as f:
             for line in f:
@@ -37,6 +36,7 @@ class Universal_Character_list():
     def split_name(self, name:str, num: int) -> int:
         "Splits the name into single words"
         def check_if_name_in_dict(single_name) -> bool:
+            #Combines all the dictionaries
             all_name_dicts = self.persons["First Names"] | self.persons["Middle Names"] | self.persons["Last Names"]
             if single_name in all_name_dicts:
                 return False
@@ -54,8 +54,10 @@ class Universal_Character_list():
             if name_tokens[-1] not in self.persons["Last Names"]:
 
                 if name_tokens[-1] in self.persons["First Names"]:
-                    self.persons["First Names"].pop(name_tokens[-1]) # Checks that there are no duplicates in the first name
-                    "Theres an issues where the stories introduces a character with their last name first. Which screws up the script"
+                    self.persons["First Names"].pop(name_tokens[-1])
+                    # Checks that there are no duplicates in the first name.
+                    # There's an issues where the stories introduces a character with their last name first.
+                    # Which screws up the script
 
                 self.persons["Last Names"][name_tokens[-1]] = num
                 num += 1

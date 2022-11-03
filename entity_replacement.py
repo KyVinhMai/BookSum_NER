@@ -29,7 +29,7 @@ def read_gender_list(gender_file) -> tuple[list,list]:
     female_names = []
     with open(gender_file, "r")  as f:
         for line in f:
-            if line.rstrip("\n").split(",")[1] == "M": #Checks if hte name is male
+            if line.rstrip("\n").split(",")[1] == "M": #Checks if the name is male
                 male_names.append(line.rstrip("\n").split(",")[0])
             else:
                 female_names.append(line.rstrip("\n").split(",")[0])
@@ -174,6 +174,9 @@ if __name__ == '__main__':
         nargs = "+",
         default=None,
         help="Assumes you want a single file that will be modified. CANNOT generate it's own character list")
+
+    #add random seed
+    #Perhaps just create a random character list?
 
     parsed_args = parser.parse_args()
 
