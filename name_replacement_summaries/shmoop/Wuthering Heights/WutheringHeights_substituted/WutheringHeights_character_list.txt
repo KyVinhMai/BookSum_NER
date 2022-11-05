@@ -1,0 +1,40 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lockwood": 0,
+        "Nelly": 1,
+        "Lintons": 2,
+        "Hindley": 3,
+        "Linton": 4,
+        "Joseph": 5,
+        "Kenneth": 6,
+        "Heights": 7,
+        "Wolf": 8,
+        "Ellen": 9,
+        "Green": 10,
+        "Bronte": 11
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lockwood": "Brittan",
+        "Nelly": "Camori",
+        "Lintons": "Jaspreet",
+        "Hindley": "Rossie",
+        "Linton": "My",
+        "Joseph": "Paysen",
+        "Kenneth": "Rambrij",
+        "Heights": "Rei",
+        "Wolf": "Ikramudeen",
+        "Ellen": "Laighton",
+        "Green": "Baylin",
+        "Bronte": "Jahni"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

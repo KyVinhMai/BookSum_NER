@@ -1,0 +1,72 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Henry": 0,
+        "Ely": 2,
+        "Scrope": 3,
+        "Nim": 4,
+        "Pistol": 5,
+        "Hostess": 6,
+        "Grey": 7,
+        "Exeter": 8,
+        "Boy": 10,
+        "Berri": 11,
+        "Bourbon": 12,
+        "Bolingbroke": 13,
+        "Fluellen": 14,
+        "Gower": 15,
+        "Montjoy": 16,
+        "Herod": 17,
+        "Hotspur": 18,
+        "Gloucester": 19,
+        "Court": 21,
+        "York": 22,
+        "Suffolk": 23,
+        "Burgundy": 24,
+        "Hero": 26
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "V": 1,
+        "Quickly": 9,
+        "roi": 20,
+        "VI": 25
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Henry": "Ahmeir",
+        "Ely": "Hartley",
+        "Scrope": "Bless",
+        "Nim": "Joell",
+        "Pistol": "Arleigh",
+        "Hostess": "Aaryn",
+        "Grey": "Harbor",
+        "Exeter": "Onyx",
+        "Boy": "Rahsan",
+        "Berri": "Ellery",
+        "Bourbon": "Kirin",
+        "Bolingbroke": "Rielly",
+        "Fluellen": "Abrar",
+        "Gower": "Kijana",
+        "Montjoy": "Jaylin",
+        "Herod": "Atley",
+        "Hotspur": "Kimari",
+        "Gloucester": "Darly",
+        "Court": "Pat",
+        "York": "Yostin",
+        "Suffolk": "Rieley",
+        "Burgundy": "Linden",
+        "Hero": "Travys"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "V": "Gaylin",
+        "Quickly": "Dezi",
+        "roi": "Kache",
+        "VI": "Phoenix"
+    }
+}

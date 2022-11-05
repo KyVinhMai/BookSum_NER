@@ -1,0 +1,82 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "ker": 0,
+        "Lucy": 1,
+        "Holmwood": 2,
+        "Wolf": 3,
+        "Moses": 4,
+        "Berserker": 5,
+        "Quincey": 7,
+        "\\Renfield": 9,
+        "Demeter": 10,
+        "John": 11,
+        "Ezekiel": 12,
+        "Enoch": 13,
+        "Quincy": 14,
+        "Jesus": 15,
+        "Joseph": 16,
+        "Deil": 17,
+        "Hildesheim": 18,
+        "Petrof": 19,
+        "R.M.": 21,
+        "Geordie": 23,
+        "Dun": 24,
+        "Petrofsky": 25,
+        "Joel": 26,
+        "Tom": 28,
+        "J.R.R.": 30,
+        "Whitby": 32
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Morris": 8,
+        "Skinsky": 20,
+        "Renfield": 22,
+        "Eigen": 27,
+        "Shippey": 29,
+        "Tolkien": 31
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "ker": "Fontaine",
+        "Lucy": "Kaiona",
+        "Holmwood": "Moe",
+        "Wolf": "Pransh",
+        "Moses": "Jaiceion",
+        "Berserker": "Tkai",
+        "Quincey": "Rudell",
+        "\\Renfield": "Chidera",
+        "Demeter": "Aithen",
+        "John": "Jacquarius",
+        "Ezekiel": "Tahsin",
+        "Enoch": "Neris",
+        "Quincy": "Rodre",
+        "Jesus": "Callan",
+        "Joseph": "Derrek",
+        "Deil": "Evann",
+        "Hildesheim": "Maziah",
+        "Petrof": "Braylin",
+        "R.M.": "Airen",
+        "Geordie": "Giovannino",
+        "Dun": "Tanay",
+        "Petrofsky": "Cache",
+        "Joel": "Zakia",
+        "Tom": "Meryle",
+        "J.R.R.": "Tobie",
+        "Whitby": "Callahan"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Morris": "Melbert",
+        "Skinsky": "Sky",
+        "Renfield": "Manjot",
+        "Eigen": "Asheton",
+        "Shippey": "Kemani",
+        "Tolkien": "Donyea"
+    }
+}

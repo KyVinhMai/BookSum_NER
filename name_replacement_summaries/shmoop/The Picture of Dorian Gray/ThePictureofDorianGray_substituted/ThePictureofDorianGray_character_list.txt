@@ -1,0 +1,48 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Henry": 0,
+        "Sybil": 2,
+        "Gwendolen": 3,
+        "Sibyl": 4,
+        "Duchess": 5,
+        "Geoffrey": 6,
+        "Thornton": 7,
+        "Chopin": 8,
+        "Hetty": 9,
+        "George": 10,
+        "Kelso": 11,
+        "Erskine": 12,
+        "Juliet": 13,
+        "thing": 14
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Wotton": 1
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Henry": "Einar",
+        "Sybil": "Emera",
+        "Gwendolen": "Xanda",
+        "Sibyl": "Nooraya",
+        "Duchess": "Linnell",
+        "Geoffrey": "Rhory",
+        "Thornton": "Reign",
+        "Chopin": "Londen",
+        "Hetty": "Altemon",
+        "George": "Kathir",
+        "Kelso": "Tien",
+        "Erskine": "Halston",
+        "Juliet": "Trinitie",
+        "thing": "Harlo"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Wotton": "Aki"
+    }
+}

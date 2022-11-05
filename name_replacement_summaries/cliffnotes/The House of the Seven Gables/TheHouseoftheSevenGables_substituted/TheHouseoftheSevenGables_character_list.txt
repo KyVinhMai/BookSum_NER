@@ -1,0 +1,46 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Pyncheons": 1,
+        "Phoebe": 2,
+        "Clifford": 4,
+        "Colonel": 5,
+        "Uncle": 6,
+        "Eve": 8,
+        "Judge": 9,
+        "Sybil": 10,
+        "Ned": 11,
+        "Jim": 13
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Pyncheon": 3,
+        "Venner": 7,
+        "Higgins": 12,
+        "Crow": 14
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Pyncheons": "Carrol",
+        "Phoebe": "Jacquenette",
+        "Clifford": "Kanhiya",
+        "Colonel": "Tennessee",
+        "Uncle": "Jaedyn",
+        "Eve": "Casana",
+        "Judge": "Rasha",
+        "Sybil": "Neelu",
+        "Ned": "Kiato",
+        "Jim": "Gernie"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Pyncheon": "Blair",
+        "Venner": "Britten",
+        "Higgins": "Rudell",
+        "Crow": "Berkeley"
+    }
+}

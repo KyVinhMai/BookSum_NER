@@ -1,0 +1,34 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Victor": 0,
+        "Justine": 1,
+        "Henry": 2,
+        "Shelley": 3,
+        "Krempe": 4,
+        "Ernest": 5,
+        "Felix": 7
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Moritz": 6
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Victor": "Kenoelyn",
+        "Justine": "Eriella",
+        "Henry": "Caynen",
+        "Shelley": "Nayeliz",
+        "Krempe": "Vandy",
+        "Ernest": "Shaunte",
+        "Felix": "Shashai"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Moritz": "Corban"
+    }
+}

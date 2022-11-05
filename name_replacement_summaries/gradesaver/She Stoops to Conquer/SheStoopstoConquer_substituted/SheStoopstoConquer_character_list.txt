@@ -1,0 +1,34 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Goldsmith": 0,
+        "Tony": 1,
+        "Diggory": 3,
+        "\\Ould": 4,
+        "Puck": 6,
+        "Jeremy": 7
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Lumpkin": 2,
+        "Grouse": 5
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Goldsmith": "Oluwadamilola",
+        "Tony": "Deshae",
+        "Diggory": "Stevie",
+        "\\Ould": "Austine",
+        "Puck": "Feliz",
+        "Jeremy": "Tamarr"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Lumpkin": "Dann",
+        "Grouse": "Ronit"
+    }
+}

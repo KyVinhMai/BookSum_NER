@@ -1,0 +1,48 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Robert": 0,
+        "Gertrude": 2,
+        "Chilterns": 4,
+        "Cheveley": 5,
+        "Boucher": 6,
+        "Louis": 7,
+        "Chelevey": 9,
+        "Wilde": 10,
+        "Henry": 11,
+        "Tommy": 12,
+        "Phipps": 13,
+        "Lord": 14
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Chiltern": 1,
+        "Seize": 8,
+        "Goring": 15
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Robert": "Shuo",
+        "Gertrude": "Genevra",
+        "Chilterns": "Arien",
+        "Cheveley": "Lamari",
+        "Boucher": "Dail",
+        "Louis": "Tilk",
+        "Chelevey": "Yuri",
+        "Wilde": "Arlyn",
+        "Henry": "Osamu",
+        "Tommy": "Lelynd",
+        "Phipps": "Aries",
+        "Lord": "Amaree"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Chiltern": "Nasiah",
+        "Seize": "Ronne",
+        "Goring": "Jourdan"
+    }
+}

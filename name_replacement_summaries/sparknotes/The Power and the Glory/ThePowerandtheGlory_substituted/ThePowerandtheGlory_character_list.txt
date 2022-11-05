@@ -1,0 +1,32 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Tench": 0,
+        "Fellows": 1,
+        "Lehr": 2,
+        "Greene": 3,
+        "Trixy": 4,
+        "Jose": 5,
+        "Jesus": 6,
+        "gringo": 7
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Tench": "Malijah",
+        "Fellows": "Ramey",
+        "Lehr": "Londen",
+        "Greene": "Manjot",
+        "Trixy": "Ardie",
+        "Jose": "Keeyan",
+        "Jesus": "Vertis",
+        "gringo": "Brighten"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

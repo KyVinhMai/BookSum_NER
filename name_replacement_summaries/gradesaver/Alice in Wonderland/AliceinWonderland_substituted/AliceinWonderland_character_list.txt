@@ -1,0 +1,42 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lidell": 0,
+        "Dodo": 1,
+        "Mouse": 2,
+        "Dutchess": 3,
+        "Bill": 4,
+        "Pigeon": 5,
+        "Fish": 6,
+        "Frog": 7,
+        "Dormouse": 8,
+        "Gryphon": 9,
+        "Turtle": 10,
+        "Duchess": 11,
+        "Cook": 12
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lidell": "Skylur",
+        "Dodo": "Reise",
+        "Mouse": "Artie",
+        "Dutchess": "Ryley",
+        "Bill": "Tim",
+        "Pigeon": "Remmy",
+        "Fish": "Yael",
+        "Frog": "Avon",
+        "Dormouse": "Baby",
+        "Gryphon": "Audi",
+        "Turtle": "Aalijah",
+        "Duchess": "Kaidyn",
+        "Cook": "Bobie"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

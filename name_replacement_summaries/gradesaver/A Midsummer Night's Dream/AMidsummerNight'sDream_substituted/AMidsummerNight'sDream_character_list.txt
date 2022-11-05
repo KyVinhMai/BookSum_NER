@@ -1,0 +1,54 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Peter": 0,
+        "Thisbe": 2,
+        "Nick": 3,
+        "Robin": 5,
+        "Puck": 7,
+        "Oberon": 8,
+        "Demetrius": 9,
+        "Snout": 10,
+        "Snug": 11,
+        "Helene": 12,
+        "Helen": 13,
+        "Romeo": 14,
+        "Juliet": 15,
+        "Egeus": 16,
+        "Flute": 17
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Quince": 1,
+        "Bottom": 4,
+        "Goodfellow": 6
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Peter": "Serapion",
+        "Thisbe": "Rudi",
+        "Nick": "Iarfan",
+        "Robin": "Keatyn",
+        "Puck": "Denym",
+        "Oberon": "Donyea",
+        "Demetrius": "Rennard",
+        "Snout": "Austine",
+        "Snug": "Deshannon",
+        "Helene": "Kanyisa",
+        "Helen": "Ryn",
+        "Romeo": "Daryel",
+        "Juliet": "Liliany",
+        "Egeus": "Elya",
+        "Flute": "Evyn"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Quince": "Vernie",
+        "Bottom": "Alexx",
+        "Goodfellow": "Britten"
+    }
+}

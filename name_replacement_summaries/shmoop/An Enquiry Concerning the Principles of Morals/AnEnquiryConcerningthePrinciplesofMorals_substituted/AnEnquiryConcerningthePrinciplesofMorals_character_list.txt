@@ -1,0 +1,32 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Hume": 0,
+        "Henry": 1,
+        "Pericles": 3,
+        "Ebenezer": 4,
+        "Levellers": 6
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "IV": 2,
+        "Scrooge": 5
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Hume": "Altarik",
+        "Henry": "Bradley-Hans",
+        "Pericles": "Edris",
+        "Ebenezer": "Karv",
+        "Levellers": "Berlin"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "IV": "Micha",
+        "Scrooge": "Jasmond"
+    }
+}

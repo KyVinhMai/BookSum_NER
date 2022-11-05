@@ -1,0 +1,56 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Weston": 0,
+        "George": 1,
+        "Woodhouse": 3,
+        "Churchill": 4,
+        "Woodhouses": 5,
+        "Elton": 6,
+        "Westons": 7,
+        "Robert": 8,
+        "John": 9,
+        "Highbury": 10,
+        "Churchills": 11,
+        "Dixon": 12,
+        "Coles": 13,
+        "Cole": 14,
+        "Eltons": 15,
+        "\\Knightley": 16,
+        "Henry": 17,
+        "Suckling": 18
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Knightley": 2
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Weston": "Areeb",
+        "George": "Arto",
+        "Woodhouse": "Altair",
+        "Churchill": "Tkai",
+        "Woodhouses": "Jung",
+        "Elton": "Kenrick",
+        "Westons": "Tennessee",
+        "Robert": "Heri",
+        "John": "Ulesses",
+        "Highbury": "Gean",
+        "Churchills": "Kaidyn",
+        "Dixon": "Willliam",
+        "Coles": "Osie",
+        "Cole": "Sylvesta",
+        "Eltons": "Quanta",
+        "\\Knightley": "Cayle",
+        "Henry": "Yunuen",
+        "Suckling": "Kendle"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Knightley": "Tam"
+    }
+}

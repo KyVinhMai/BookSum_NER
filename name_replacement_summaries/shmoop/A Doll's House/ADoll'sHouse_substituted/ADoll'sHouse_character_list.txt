@@ -1,0 +1,26 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Helmers": 0,
+        "Helmer": 1,
+        "nborgs": 2,
+        "Linde": 3,
+        "Jesus": 4
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Helmers": "Tennessee",
+        "Helmer": "Zariah",
+        "nborgs": "Luvern",
+        "Linde": "Alchemy",
+        "Jesus": "Rhyan"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

@@ -1,0 +1,80 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Meg": 0,
+        "Jo": 1,
+        "Beth": 2,
+        "Hummels": 3,
+        "Hummel": 4,
+        "Beths": 5,
+        "Florence": 6,
+        "Belle": 7,
+        "Dickens": 8,
+        "John": 10,
+        "Fred": 11,
+        "Crocker": 12,
+        "Hopeful": 14,
+        "Pilgrims": 15,
+        "Chesters": 16,
+        "Tennyson": 17,
+        "Grundy": 18,
+        "E.D.E.N.": 19,
+        "Moods": 21,
+        "Demi": 22,
+        "Chester": 23,
+        "Flo": 24,
+        "Emerson": 25,
+        "song": 26,
+        "Kirke": 27,
+        "Norton": 28,
+        "Friedrich": 29,
+        "Rob": 30,
+        "Teddy": 31
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Brooke": 13,
+        "Southworth": 20
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Meg": "Sahyra",
+        "Jo": "Finnley",
+        "Beth": "Pualani",
+        "Hummels": "Vernell",
+        "Hummel": "Zohar",
+        "Beths": "Marlowe",
+        "Florence": "Ahleyah",
+        "Belle": "Kiarrah",
+        "Dickens": "Clary",
+        "John": "Vinoda",
+        "Fred": "Lukes",
+        "Crocker": "Laren",
+        "Hopeful": "Dakotah",
+        "Pilgrims": "Anmol",
+        "Chesters": "Nesta",
+        "Tennyson": "Jae",
+        "Grundy": "Kayton",
+        "E.D.E.N.": "Ronit",
+        "Moods": "Jerris",
+        "Demi": "Chili",
+        "Chester": "Jiorjo",
+        "Flo": "Thanh",
+        "Emerson": "Nevaan",
+        "song": "Leotha",
+        "Kirke": "Indy",
+        "Norton": "Kareme",
+        "Friedrich": "Macgregor",
+        "Rob": "Birju",
+        "Teddy": "Monterrian"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Brooke": "Jisselle",
+        "Southworth": "Lakota"
+    }
+}

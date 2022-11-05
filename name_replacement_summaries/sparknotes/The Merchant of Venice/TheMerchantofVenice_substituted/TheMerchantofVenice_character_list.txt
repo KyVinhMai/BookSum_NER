@@ -1,0 +1,36 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Shylock": 0,
+        "Lorenzo": 1,
+        "Vice": 2,
+        "Gobbos": 3,
+        "Gobbo": 4,
+        "Moor": 5,
+        "Hercules": 6,
+        "Thisbe": 7,
+        "Dido": 8,
+        "Troilus": 9
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Shylock": "Rossie",
+        "Lorenzo": "Rameer",
+        "Vice": "Bjarne",
+        "Gobbos": "Callaway",
+        "Gobbo": "Barrie",
+        "Moor": "Sehaj",
+        "Hercules": "Feliz",
+        "Thisbe": "Shalin",
+        "Dido": "Musa",
+        "Troilus": "Arden"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

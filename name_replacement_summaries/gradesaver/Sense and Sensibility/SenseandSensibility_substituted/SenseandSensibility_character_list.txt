@@ -1,0 +1,46 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "John": 0,
+        "Elinor": 1,
+        "Willoughby": 2,
+        "Jennings": 4,
+        "Smith": 5,
+        "Middletons": 6,
+        "Lucy": 8,
+        "eles": 9,
+        "Grey": 10,
+        "Morton": 11,
+        "Colonel": 12,
+        "Robert": 13
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Middleton": 3,
+        "ele": 14
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "John": "Ruihang",
+        "Elinor": "Shittal",
+        "Willoughby": "Drue",
+        "Jennings": "Jahni",
+        "Smith": "Zohar",
+        "Middletons": "Gaylin",
+        "Lucy": "Vanies",
+        "eles": "Shaquelle",
+        "Grey": "Camauri",
+        "Morton": "Leonides",
+        "Colonel": "Riyan",
+        "Robert": "Roshon"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Middleton": "March",
+        "ele": "Davonne"
+    }
+}

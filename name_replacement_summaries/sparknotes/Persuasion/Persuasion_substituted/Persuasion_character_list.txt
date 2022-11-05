@@ -1,0 +1,58 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Elliot": 0,
+        "Elliots": 1,
+        "Russell": 2,
+        "Croft": 3,
+        "Crofts": 4,
+        "Frederick": 5,
+        "Wentwor": 7,
+        "Musgroves": 9,
+        "Kellynch": 10,
+        "Smith": 11,
+        "Benwick": 12,
+        "Smiths": 13,
+        "Croft\\": 14,
+        "Monkford": 15,
+        "Uppercross": 16,
+        "Dick": 17,
+        "Russel": 19,
+        "Wentwo": 20
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Wentworth": 6,
+        "Musgrove": 18
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Elliot": "Cavonte",
+        "Elliots": "Mandeep",
+        "Russell": "Raffaela",
+        "Croft": "Neziah",
+        "Crofts": "Linell",
+        "Frederick": "Ciro",
+        "Wentwor": "Kailen",
+        "Musgroves": "Hoa",
+        "Kellynch": "Callaway",
+        "Smith": "Brennyn",
+        "Benwick": "Gaynor",
+        "Smiths": "Tahjae",
+        "Croft\\": "Lorin",
+        "Monkford": "Collen",
+        "Uppercross": "Jahdai",
+        "Dick": "Vinston",
+        "Russel": "Braijon",
+        "Wentwo": "Casy"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Wentworth": "Shell",
+        "Musgrove": "Rossie"
+    }
+}

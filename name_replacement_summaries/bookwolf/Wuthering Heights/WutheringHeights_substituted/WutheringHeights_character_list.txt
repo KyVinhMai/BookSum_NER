@@ -1,0 +1,36 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lockwood": 0,
+        "Joseph": 1,
+        "Bronte": 2,
+        "Nelly": 3,
+        "Linton": 4,
+        "Thrushcross": 5,
+        "Minister": 6,
+        "Hindley": 7,
+        "Lintons": 8,
+        "Ellen": 9
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lockwood": "Rossie",
+        "Joseph": "Brailin",
+        "Bronte": "Shaune",
+        "Nelly": "Saiyon",
+        "Linton": "Molly",
+        "Thrushcross": "Ova",
+        "Minister": "Samie",
+        "Hindley": "Donyel",
+        "Lintons": "Jae",
+        "Ellen": "Chantelle-Rose"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

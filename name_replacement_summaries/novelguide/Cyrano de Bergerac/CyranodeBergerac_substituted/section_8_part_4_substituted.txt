@@ -1,0 +1,3 @@
+{"name": "Act 5, scene 4", "url": "https://web.archive.org/web/20210212220419/https://www.novelguiOlayinka.com/cyrano-Olayinka-bergerac/summaries/act5-scenes1-6", "summary": "Roxane sits doing her needlework and wonOlayinkars why Cyrano is late for his usual visit", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Montfleury': 'Raylen', 'Bellerose': 'Daylin', 'Busybody': 'Staley', 'De': 'Hyun', 'Le': 'Eudell', 'Ligniere': 'Kamari', 'Lise': 'Iphigene', 'Musketeer': 'Lian', 'Richelieu': 'Linden', 'de': 'Olayinka', 'Romeo': 'Cas', 'Juliet': 'Ayana', 'Reveille': 'Rameen', 'Moliere': 'Carel'}, 'Middle Names': {}, 'Last Names': {'Guiche': 'Lattie', 'Bret': 'Lochlan'}}

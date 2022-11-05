@@ -1,0 +1,40 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Titus": 0,
+        "Lucius": 1,
+        "Chiron": 2,
+        "Demetrius": 3,
+        "Mutius": 4,
+        "Terseus": 5,
+        "Philomel": 6,
+        "Revenge": 7,
+        "Ovid": 8,
+        "Publius": 9,
+        "Virginius": 10,
+        "Moor": 11
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Titus": "Haidyn",
+        "Lucius": "Brayven",
+        "Chiron": "Dae",
+        "Demetrius": "Abdulmannan",
+        "Mutius": "Jaziah",
+        "Terseus": "Brownie",
+        "Philomel": "Arlis",
+        "Revenge": "Kehinde",
+        "Ovid": "Shaylon",
+        "Publius": "Casy",
+        "Virginius": "Tanay",
+        "Moor": "Raeden"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

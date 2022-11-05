@@ -1,0 +1,52 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Gertrude": 0,
+        "Morels": 2,
+        "Jerry": 3,
+        "Joker": 4,
+        "Shmoop": 5,
+        "Newton": 6,
+        "Kirk": 7,
+        "Peter": 8,
+        "Freud": 9,
+        "Polly": 10,
+        "Lily": 11,
+        "Scott": 12,
+        "Leivers": 13,
+        "Leiver": 14,
+        "Wuss": 15,
+        "Willey": 16
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Morel": 1
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Gertrude": "Salana",
+        "Morels": "Vinnie",
+        "Jerry": "Shazad",
+        "Joker": "Teegan",
+        "Shmoop": "Carey",
+        "Newton": "Daiyon",
+        "Kirk": "Moyosoreoluwa",
+        "Peter": "Mishrilaal",
+        "Freud": "Happy",
+        "Polly": "Pela",
+        "Lily": "Myionna",
+        "Scott": "Suen",
+        "Leivers": "Jacquise",
+        "Leiver": "Daylyn",
+        "Wuss": "Kerry",
+        "Willey": "Tarren"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Morel": "Arlyn"
+    }
+}

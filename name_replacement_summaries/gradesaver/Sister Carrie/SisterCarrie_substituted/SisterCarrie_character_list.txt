@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Dreiser": 0,
+        "Drouet": 1,
+        "Minnie": 2,
+        "Brown": 3,
+        "Hurstwood": 4,
+        "Sven": 5,
+        "Moy": 6,
+        "George": 7,
+        "Drouet\\": 9,
+        "evening": 10,
+        "Wheeler": 11,
+        "Edison": 12
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Jr.": 8
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Dreiser": "Lorrin",
+        "Drouet": "Lexington",
+        "Minnie": "Maitreyi",
+        "Brown": "Hero",
+        "Hurstwood": "Ellison",
+        "Sven": "Krisna",
+        "Moy": "Chidera",
+        "George": "Jarid",
+        "Drouet\\": "Terryl",
+        "evening": "Ellison",
+        "Wheeler": "Embry",
+        "Edison": "Mankirat"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Jr.": "Vernis"
+    }
+}

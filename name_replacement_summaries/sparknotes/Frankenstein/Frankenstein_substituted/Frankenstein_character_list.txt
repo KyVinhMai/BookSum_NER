@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Percy": 0,
+        "Homer": 2,
+        "Victor": 4,
+        "Justine": 5,
+        "M.": 7,
+        "Henry": 9,
+        "John": 10,
+        "Felix": 12,
+        "Kirwin": 13
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Shelley": 1,
+        "Moritz": 6,
+        "Krempe": 8,
+        "Milton": 11
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Percy": "Nath",
+        "Homer": "Pipat",
+        "Victor": "Spyridou",
+        "Justine": "Kahleya",
+        "M.": "Bobie",
+        "Henry": "Marcale",
+        "John": "Makaden",
+        "Felix": "Coleone",
+        "Kirwin": "Jahdai"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Shelley": "Litha",
+        "Moritz": "Kriz",
+        "Krempe": "Jaz",
+        "Milton": "Schin"
+    }
+}

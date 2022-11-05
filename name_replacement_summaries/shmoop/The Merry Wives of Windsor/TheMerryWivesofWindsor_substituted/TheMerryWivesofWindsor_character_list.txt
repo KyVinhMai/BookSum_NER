@@ -1,0 +1,64 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Mistress": 0,
+        "Pistol": 2,
+        "Nim": 3,
+        "Slender": 4,
+        "Fords": 5,
+        "Fenton": 6,
+        "Henry": 7,
+        "\\Brooke\\": 9,
+        "Brooke": 10,
+        "Touchstone": 11,
+        "Willy": 12,
+        "Host": 14,
+        "Peter": 15,
+        "Quickly": 17,
+        "XOXO": 19,
+        "Chess": 20,
+        "John": 21,
+        "Robin": 22,
+        "Poins": 23
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Ford": 1,
+        "Quickly": 8,
+        "Simple": 16,
+        "Rugby": 18
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Mistress": "Shadee",
+        "Pistol": "Mackinley",
+        "Nim": "Brownie",
+        "Slender": "Da",
+        "Fords": "Pasha",
+        "Fenton": "Laramie",
+        "Henry": "Wakar",
+        "\\Brooke\\": "Armoni",
+        "Brooke": "Cahlin",
+        "Touchstone": "Anay",
+        "Willy": "Hanni",
+        "Host": "Dru",
+        "Peter": "Mustafaa",
+        "Quickly": "Yarden",
+        "XOXO": "Murle",
+        "Chess": "Kellis",
+        "John": "Jadesola",
+        "Robin": "Isa",
+        "Poins": "Hyun"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Ford": "True",
+        "Quickly": "Campbell",
+        "Simple": "Raymie",
+        "Rugby": "Davi"
+    }
+}

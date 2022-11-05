@@ -1,0 +1,30 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Duke": 0,
+        "Toby": 2,
+        "Feste": 4,
+        "Curio": 5
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Orsino": 1,
+        "Belch": 3
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Duke": "Fazan",
+        "Toby": "Senai",
+        "Feste": "Earlie",
+        "Curio": "Lorenza"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Orsino": "Hines",
+        "Belch": "Shaquel"
+    }
+}

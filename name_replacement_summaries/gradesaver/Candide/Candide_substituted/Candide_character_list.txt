@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Cunegonde": 0,
+        "Eve": 1,
+        "Dey": 2,
+        "Inquisitor": 3,
+        "Oreillons": 4,
+        "Mynheer": 5,
+        "Perigord": 6,
+        "Giroflee": 7,
+        "Homer": 8,
+        "Virgil": 9,
+        "Milton": 10,
+        "Freud": 11,
+        "Propontis": 12,
+        "Turk": 13
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Cunegonde": "Pheonix",
+        "Eve": "Shelbye",
+        "Dey": "Ji",
+        "Inquisitor": "Charley",
+        "Oreillons": "Yuval",
+        "Mynheer": "Chong",
+        "Perigord": "Caidyn",
+        "Giroflee": "Tagen",
+        "Homer": "Sharleen",
+        "Virgil": "Afin",
+        "Milton": "Kcasey",
+        "Freud": "Kailan",
+        "Propontis": "Dell",
+        "Turk": "Rumi"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

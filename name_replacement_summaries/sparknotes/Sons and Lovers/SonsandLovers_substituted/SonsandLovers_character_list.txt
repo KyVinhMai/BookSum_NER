@@ -1,0 +1,58 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Morel": 0,
+        "Morels": 1,
+        "John": 2,
+        "Gertrude": 4,
+        "Jerry": 5,
+        "Eve": 7,
+        "Newton": 8,
+        "Kirk": 9,
+        "Bower": 10,
+        "Bottoms": 11,
+        "Inger": 12,
+        "Winterbottom": 13,
+        "Gipsy": 14,
+        "Polly": 15,
+        "Leivers": 16,
+        "Nevermore": 17,
+        "Limb": 18,
+        "Moreton": 19
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Field": 3,
+        "Purdy": 6
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Morel": "Earlie",
+        "Morels": "Storm",
+        "John": "Emlaisanaung",
+        "Gertrude": "Sawanda",
+        "Jerry": "Swae",
+        "Eve": "Cayleeann",
+        "Newton": "Sanjey",
+        "Kirk": "Arlene",
+        "Bower": "Da",
+        "Bottoms": "Wai",
+        "Inger": "Aashirya",
+        "Winterbottom": "Bao",
+        "Gipsy": "Taygen",
+        "Polly": "Anastassia",
+        "Leivers": "Chey",
+        "Nevermore": "Oddie",
+        "Limb": "Talyn",
+        "Moreton": "Inioluwa"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Field": "Sully",
+        "Purdy": "Siah"
+    }
+}

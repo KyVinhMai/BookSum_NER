@@ -1,0 +1,30 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lisette": 0,
+        "Overmore": 1,
+        "Wix": 2,
+        "Wix\\": 3,
+        "Eric": 4,
+        "Tischbein": 5,
+        "Cuddon": 6
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lisette": "Jayme-Dee",
+        "Overmore": "Zohar",
+        "Wix": "Amaurie",
+        "Wix\\": "Oreoluwa",
+        "Eric": "Phrasswell",
+        "Tischbein": "Yuval",
+        "Cuddon": "Ocean"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

@@ -1,0 +1,34 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Morten": 0,
+        "Billing": 2,
+        "Eilif": 3,
+        "Horster": 4,
+        "Ibsen": 5,
+        "Billings": 6,
+        "Vik": 7
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Kiil": 1
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Morten": "Kaizon",
+        "Billing": "Jari",
+        "Eilif": "Tyberious",
+        "Horster": "Phoenix",
+        "Ibsen": "Jamani",
+        "Billings": "Haedyn",
+        "Vik": "Kamoni"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Kiil": "Robbie"
+    }
+}

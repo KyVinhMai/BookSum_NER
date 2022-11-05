@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Wilhelm": 0,
+        "V.": 1,
+        "Lotte": 2,
+        "Herr": 3,
+        "Friederike": 5,
+        "C": 6,
+        "Homer": 7,
+        "C.": 8,
+        "Prince": 9,
+        "Philip": 10,
+        "Heinrich": 11,
+        "Lessing": 12
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Schmidt": 4
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Wilhelm": "Crown",
+        "V.": "Happy",
+        "Lotte": "Chassy",
+        "Herr": "Wallis",
+        "Friederike": "Sherline",
+        "C": "Matisse",
+        "Homer": "Melland",
+        "C.": "Kamdyn",
+        "Prince": "Glyne",
+        "Philip": "Masson",
+        "Heinrich": "Rufino",
+        "Lessing": "Kodie"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Schmidt": "Elza"
+    }
+}

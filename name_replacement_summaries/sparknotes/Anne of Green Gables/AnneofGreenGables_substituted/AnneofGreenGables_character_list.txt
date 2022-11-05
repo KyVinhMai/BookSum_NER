@@ -1,0 +1,54 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Cuthberts": 0,
+        "Gilbert": 1,
+        "Cuthbert": 2,
+        "Spencer": 3,
+        "Lyndes": 4,
+        "Montgomery": 5,
+        "Lynde": 6,
+        "Peter": 7,
+        "Bentley": 9,
+        "Bell": 10,
+        "Phillips": 11,
+        "Prissy": 12,
+        "Josephine": 13,
+        "Josie": 14,
+        "Ruby": 16
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Blewett": 8,
+        "Pye": 15,
+        "Gillis": 17
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Cuthberts": "Asheton",
+        "Gilbert": "Densley",
+        "Cuthbert": "Josia",
+        "Spencer": "Kevine",
+        "Lyndes": "Lior",
+        "Montgomery": "Rakkibhul",
+        "Lynde": "Caelin",
+        "Peter": "Sigfred",
+        "Bentley": "Teegan",
+        "Bell": "Abrie-May",
+        "Phillips": "Sloan",
+        "Prissy": "Myan",
+        "Josephine": "Danitra",
+        "Josie": "Meleni",
+        "Ruby": "Fayelyn"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Blewett": "Chi",
+        "Pye": "Britten",
+        "Gillis": "Munajj"
+    }
+}

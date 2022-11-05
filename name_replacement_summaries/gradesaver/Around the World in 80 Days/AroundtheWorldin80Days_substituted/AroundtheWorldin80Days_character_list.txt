@@ -1,0 +1,38 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Fogg": 0,
+        "Verne": 1,
+        "Fix": 2,
+        "John": 3,
+        "thing": 5,
+        "Proctor": 6,
+        "Forster": 7,
+        "Mudge": 8,
+        "Speedy": 9
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bunsby": 4
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Fogg": "Kodi",
+        "Verne": "Germany",
+        "Fix": "Mechel",
+        "John": "Cheldon",
+        "thing": "Shamell",
+        "Proctor": "Rhyan",
+        "Forster": "Geral",
+        "Mudge": "Onyx",
+        "Speedy": "Hien"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bunsby": "Vertis"
+    }
+}

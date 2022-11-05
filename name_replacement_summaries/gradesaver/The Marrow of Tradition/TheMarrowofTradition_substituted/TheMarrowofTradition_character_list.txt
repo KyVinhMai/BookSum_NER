@@ -1,0 +1,84 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Price": 0,
+        "Polly": 1,
+        "ingenious": 3,
+        "Chesnutt": 5,
+        "Millers": 6,
+        "Belmont": 7,
+        "Miller": 8,
+        "Tom": 9,
+        "Lee": 10,
+        "Dodie": 12,
+        "Jerry": 13,
+        "Burns": 14,
+        "Sigmund": 15,
+        "Josh": 17,
+        "Merkell": 19,
+        "Jim": 20,
+        "Everton": 22,
+        "Lucius": 24,
+        "Joseph": 26,
+        "Hyde": 27,
+        "Jekyll": 28,
+        "Igorroto": 29,
+        "Guildenstern": 30,
+        "Butlers": 31,
+        "MIller": 32,
+        "Butler": 33
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Ochiltree": 2,
+        "Hone": 4,
+        "Ellis": 11,
+        "Freud": 16,
+        "Green": 18,
+        "Crow": 21,
+        "Brutus": 25
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Price": "Grzegorz",
+        "Polly": "Mikela",
+        "ingenious": "Matisse",
+        "Chesnutt": "Eliyah",
+        "Millers": "Peniel",
+        "Belmont": "Jalani",
+        "Miller": "Peyton",
+        "Tom": "Imraaj",
+        "Lee": "Torre",
+        "Dodie": "Ayo",
+        "Jerry": "Gaoussou",
+        "Burns": "Corley",
+        "Sigmund": "Zidan",
+        "Josh": "Lauro",
+        "Merkell": "Marice",
+        "Jim": "Torstein",
+        "Everton": "Vail",
+        "Lucius": "Jayveer",
+        "Joseph": "Cay",
+        "Hyde": "Giani",
+        "Jekyll": "Sloan",
+        "Igorroto": "Alva",
+        "Guildenstern": "Dai",
+        "Butlers": "Jourdan",
+        "MIller": "Micha",
+        "Butler": "Kylin"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Ochiltree": "Selby",
+        "Hone": "Ajai",
+        "Ellis": "Maseh",
+        "Freud": "Jerzy",
+        "Green": "Brae",
+        "Crow": "Rebel",
+        "Brutus": "Billy-Jay"
+    }
+}

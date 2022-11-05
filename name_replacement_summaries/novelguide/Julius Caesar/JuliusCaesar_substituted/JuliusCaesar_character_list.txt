@@ -1,0 +1,46 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Brutus": 0,
+        "Murellus": 1,
+        "Lucilius": 2,
+        "Titinius": 3,
+        "Lucius": 4,
+        "Clitus": 5,
+        "Volumnius": 6,
+        "Cicero": 7,
+        "Pompey": 8,
+        "Decius": 9,
+        "Metellus": 10,
+        "Trebonius": 12,
+        "Publius": 13
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Cimber": 11
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Brutus": "Debbora",
+        "Murellus": "Osie",
+        "Lucilius": "Adair",
+        "Titinius": "Amarri",
+        "Lucius": "Tamryn",
+        "Clitus": "Jireh",
+        "Volumnius": "Shann",
+        "Cicero": "Reise",
+        "Pompey": "Maika",
+        "Decius": "Rhylan",
+        "Metellus": "Kymari",
+        "Trebonius": "Merrit",
+        "Publius": "Perris"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Cimber": "Yael"
+    }
+}

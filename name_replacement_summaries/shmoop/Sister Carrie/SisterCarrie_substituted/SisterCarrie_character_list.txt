@@ -1,0 +1,64 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Minnie": 0,
+        "Drouet": 1,
+        "George": 2,
+        "Wheeler": 4,
+        "Mom": 5,
+        "H": 7,
+        "Quincel": 8,
+        "Hustwood": 9,
+        "Millice": 10,
+        "H.": 11,
+        "Hooley": 12,
+        "Kenny": 13,
+        "V": 14,
+        "Bermudez": 15,
+        "B": 16,
+        "Jenks": 17,
+        "Brown": 18,
+        "Pere": 19,
+        "G.W.": 21,
+        "Sven": 22
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Hurstwood": 3,
+        "Jr.": 6,
+        "Goriot": 20
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Minnie": "Dasha",
+        "Drouet": "Adrean",
+        "George": "Chosyn",
+        "Wheeler": "Atley",
+        "Mom": "Audi",
+        "H": "Ja",
+        "Quincel": "Mattia",
+        "Hustwood": "Karem",
+        "Millice": "Jamy",
+        "H.": "Talin",
+        "Hooley": "Oluwanifemi",
+        "Kenny": "Mansell",
+        "V": "Marrion",
+        "Bermudez": "Vail",
+        "B": "Austine",
+        "Jenks": "Avery",
+        "Brown": "Lattie",
+        "Pere": "Tamilvanan",
+        "G.W.": "Min",
+        "Sven": "Moreton"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Hurstwood": "Linn",
+        "Jr.": "Hien",
+        "Goriot": "Braelin"
+    }
+}

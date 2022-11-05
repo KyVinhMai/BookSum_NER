@@ -1,0 +1,34 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Orsino": 0,
+        "Curio": 1,
+        "Toby": 2,
+        "Feste": 3,
+        "Ovid": 4,
+        "Cupid": 5,
+        "Romeo": 6,
+        "Roderigo": 7,
+        "Jove": 8
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Orsino": "Kelmer",
+        "Curio": "Ardell",
+        "Toby": "Ruari",
+        "Feste": "Dwan",
+        "Ovid": "Toy",
+        "Cupid": "Connelly",
+        "Romeo": "Peter-Wayne",
+        "Roderigo": "Happy",
+        "Jove": "Leighton"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

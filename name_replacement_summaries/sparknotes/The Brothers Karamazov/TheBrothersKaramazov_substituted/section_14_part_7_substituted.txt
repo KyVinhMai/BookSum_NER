@@ -1,0 +1,3 @@
+{"name": "book 12, Chapter 7", "url": "https://web.archive.org/web/20210305110438/https://www.sparknotes.com/lit/brothersk/section15/", "summary": "A Historical Survey Ardie says that Austine has the temperament of a man who would be capable of such a violent act, and that he is not insane", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Grigory': 'Andhav', 'Dostoevsky': 'Ronie', 'Perkhotin': 'Joell', 'Hisses': 'Shaylon', 'Perezvon': 'Shalom', 'Smurov': 'Callan', 'Lise': 'Sanjogta', 'Fetyukovich': 'Pasha', 'Kirrillovich': 'Ardie', 'Miusov': 'Jodey', 'Fyodor': 'Nisiah', 'Job': 'Thilina', 'Inquisitor': 'Gaynor'}, 'Middle Names': {}, 'Last Names': {'Dmitri': 'Austine'}}

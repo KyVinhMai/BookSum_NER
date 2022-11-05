@@ -1,0 +1,52 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "in": 1,
+        "Jewel": 2,
+        "Cornelius": 3,
+        "Brown": 4,
+        "Homer": 5,
+        "Leopold": 6,
+        "Bugis": 8,
+        "T.S.": 9,
+        "Chester": 11,
+        "Robinson": 12,
+        "Brierly": 13,
+        "Jove": 14,
+        "Lord": 15,
+        "Bonso": 17
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bloom": 7,
+        "Eliot": 10,
+        "Jim": 16
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "in": "Sevyn",
+        "Jewel": "Oluwanifemi",
+        "Cornelius": "Bridyn",
+        "Brown": "Hyun",
+        "Homer": "Fanon",
+        "Leopold": "Theologou",
+        "Bugis": "Shalin",
+        "T.S.": "Oluwatosin",
+        "Chester": "Bihan",
+        "Robinson": "Seneca",
+        "Brierly": "Camari",
+        "Jove": "Amadi",
+        "Lord": "Bay",
+        "Bonso": "Eaden"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bloom": "Chayanne",
+        "Eliot": "Giacamo",
+        "Jim": "Chubasco"
+    }
+}

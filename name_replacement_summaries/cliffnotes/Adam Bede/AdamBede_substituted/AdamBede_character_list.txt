@@ -1,0 +1,82 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Seth": 0,
+        "Lisbeth": 1,
+        "Irwine": 2,
+        "Poysers": 3,
+        "Hetty": 4,
+        "Bedes": 6,
+        "Broxton": 7,
+        "Poyser": 8,
+        "Snowfield": 10,
+        "George": 11,
+        "Wiry": 13,
+        "John": 16,
+        "Pendennis": 17,
+        "Ryde": 18,
+        "Totty": 19,
+        "Vixen": 20,
+        "Squire": 21,
+        "Dickens": 22,
+        "Windsor": 23,
+        "Leeds": 24,
+        "niton": 25,
+        "Bess": 27,
+        "Methodisses": 29,
+        "Pomfret": 30,
+        "Sinner": 31,
+        "Meredith": 32,
+        "Joyce": 33
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Sorrel": 5,
+        "Eliot": 12,
+        "Ben": 14,
+        "Bede": 26,
+        "Donnithorne": 28
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Seth": "Jude",
+        "Lisbeth": "Kyralynn",
+        "Irwine": "Ocie",
+        "Poysers": "Kymari",
+        "Hetty": "Giulia",
+        "Bedes": "Shia",
+        "Broxton": "Brylin",
+        "Poyser": "Linden",
+        "Snowfield": "Lakota",
+        "George": "Sergei",
+        "Wiry": "Lauris",
+        "John": "Aagam",
+        "Pendennis": "Rian",
+        "Ryde": "Oriel",
+        "Totty": "Tai",
+        "Vixen": "Kaedyn",
+        "Squire": "Atley",
+        "Dickens": "Adi",
+        "Windsor": "Psalm",
+        "Leeds": "Geral",
+        "niton": "Jadis",
+        "Bess": "Shanetha",
+        "Methodisses": "Londen",
+        "Pomfret": "Lyndall",
+        "Sinner": "Kamori",
+        "Meredith": "Lennie",
+        "Joyce": "Lei"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Sorrel": "Rowan",
+        "Eliot": "Michaelallen",
+        "Ben": "Hrihan",
+        "Bede": "Maciah",
+        "Donnithorne": "Bay"
+    }
+}

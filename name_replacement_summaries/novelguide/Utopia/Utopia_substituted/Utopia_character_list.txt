@@ -1,0 +1,36 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "More": 0,
+        "Peter": 1,
+        "John": 3,
+        "Vespucci": 5,
+        "Henry": 6,
+        "Utopus": 8
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Giles": 2,
+        "Morton": 4,
+        "VIII": 7
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "More": "Gurpreet",
+        "Peter": "Cosimino",
+        "John": "Maturan",
+        "Vespucci": "Riyan",
+        "Henry": "Gina",
+        "Utopus": "Maven"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Giles": "Geovan",
+        "Morton": "Atanacio",
+        "VIII": "Tenzin"
+    }
+}

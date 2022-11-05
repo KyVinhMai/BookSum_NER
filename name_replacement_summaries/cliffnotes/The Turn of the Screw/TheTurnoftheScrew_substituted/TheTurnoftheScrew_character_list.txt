@@ -1,0 +1,34 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Miles": 0,
+        "Grose": 1,
+        "Peter": 2,
+        "Jessel": 4,
+        "Bly": 5,
+        "Vessel": 6,
+        "\\Quint": 7
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Quint": 3
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Miles": "Netrapal",
+        "Grose": "Halsey",
+        "Peter": "Takeichi",
+        "Jessel": "Kaydyn",
+        "Bly": "Harvest",
+        "Vessel": "Hyya",
+        "\\Quint": "Kymoni"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Quint": "Domnique"
+    }
+}

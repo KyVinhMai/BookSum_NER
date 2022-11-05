@@ -1,0 +1,28 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Roderigo": 0,
+        "Moor": 1,
+        "Lodovico": 2,
+        "Venice": 3,
+        "Duke": 4,
+        "phen": 5
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Roderigo": "Ryley",
+        "Moor": "Paxtyn",
+        "Lodovico": "Areen",
+        "Venice": "Koree",
+        "Duke": "Kristiaan",
+        "phen": "Amaurie"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

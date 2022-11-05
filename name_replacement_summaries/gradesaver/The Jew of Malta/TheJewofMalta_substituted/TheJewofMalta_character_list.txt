@@ -1,0 +1,42 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Ferneze": 0,
+        "Job": 1,
+        "Lodowick": 2,
+        "Guise": 3,
+        "Del": 4,
+        "del": 6,
+        "Jew": 7,
+        "Lowodick": 8,
+        "Shylock": 9,
+        "T.": 10
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bosco": 5,
+        "Eliot": 11
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Ferneze": "Kamdyn",
+        "Job": "Vasileios",
+        "Lodowick": "Trayce",
+        "Guise": "Nieves",
+        "Del": "Jalese",
+        "del": "True",
+        "Jew": "Markelle",
+        "Lowodick": "Coren",
+        "Shylock": "Quinn",
+        "T.": "Jerzy"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bosco": "Deniz",
+        "Eliot": "Jaqual"
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Slender": 0,
+        "Nym": 1,
+        "Pistol": 2,
+        "Ford": 3,
+        "Simple": 4,
+        "Quickly": 5,
+        "Brook": 6,
+        "Henry": 7,
+        "Host": 9,
+        "Herne": 10,
+        "Fenton": 11,
+        "Robin": 12,
+        "John": 13,
+        "Windsor\\": 15,
+        "Leontes": 16
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "IV": 8,
+        "Rugby": 14
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Slender": "Agam",
+        "Nym": "Kaydyn",
+        "Pistol": "Aquarius",
+        "Ford": "Zaide",
+        "Simple": "Talin",
+        "Quickly": "Hyun",
+        "Brook": "Logyn",
+        "Henry": "Marvin-Willem",
+        "Host": "Jourdin",
+        "Herne": "Reilley",
+        "Fenton": "Shalom",
+        "Robin": "Tyjai",
+        "John": "Hardie",
+        "Windsor\\": "Tagan",
+        "Leontes": "Dann"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "IV": "Rajah",
+        "Rugby": "Jamy"
+    }
+}

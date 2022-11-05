@@ -1,0 +1,38 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Ebenezer": 0,
+        "Fred": 2,
+        "Dickens": 3,
+        "Ghost": 4,
+        "Fezziwig": 5,
+        "Belle": 6,
+        "Bob": 7,
+        "Tiny": 8
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Scrooge": 1,
+        "Tim": 9
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Ebenezer": "Ules",
+        "Fred": "Kaniel",
+        "Dickens": "Shaquel",
+        "Ghost": "Drue",
+        "Fezziwig": "Kendall",
+        "Belle": "Ajang",
+        "Bob": "Damitrius",
+        "Tiny": "Shaterria"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Scrooge": "Kendall",
+        "Tim": "Cheyene"
+    }
+}

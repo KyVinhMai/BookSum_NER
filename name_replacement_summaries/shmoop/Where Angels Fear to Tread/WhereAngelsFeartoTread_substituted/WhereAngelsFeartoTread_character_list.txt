@@ -1,0 +1,38 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Philip": 1,
+        "pford": 2,
+        "Gino": 3,
+        "Benny": 4,
+        "Forster": 6,
+        "Herritons": 7,
+        "Spiridione": 9
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Hill": 5,
+        "Herriton": 8,
+        "Tesi": 10
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Philip": "Torrence",
+        "pford": "Merlyn",
+        "Gino": "Hector",
+        "Benny": "Aysar",
+        "Forster": "Kamari",
+        "Herritons": "Deovion",
+        "Spiridione": "Zahne"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Hill": "Jamisen",
+        "Herriton": "Rashi",
+        "Tesi": "Dwan"
+    }
+}

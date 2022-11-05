@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Crewe": 0,
+        "Minchin": 1,
+        "Emily": 2,
+        "Lottie": 3,
+        "Becky": 4,
+        "J.": 5,
+        "Melchisedec": 7,
+        "Ermie": 8,
+        "Jessie": 9,
+        "Boris": 10,
+        "Montmorencys": 12
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Rowling": 6,
+        "Leigh": 11
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Crewe": "Clair",
+        "Minchin": "Odean",
+        "Emily": "Relicia",
+        "Lottie": "Kimbarly",
+        "Becky": "Glendean",
+        "J.": "Zarin",
+        "Melchisedec": "Shondell",
+        "Ermie": "Aarin",
+        "Jessie": "Iveliz",
+        "Boris": "Ryheem",
+        "Montmorencys": "Valen"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Rowling": "Kamerin",
+        "Leigh": "Lashaun"
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Jim": 0,
+        "in": 1,
+        "Cornelius": 2,
+        "Jewel": 3,
+        "Brown": 4,
+        "Chester": 5,
+        "Robinson": 6,
+        "Denver": 7,
+        "Egstrom": 8,
+        "Bugis": 9,
+        "Comelius": 10,
+        "Brierly": 11,
+        "Jones": 12,
+        "George": 13
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Jim": "Kimberlee",
+        "in": "Aki",
+        "Cornelius": "Tevven",
+        "Jewel": "Isa",
+        "Brown": "Brighton",
+        "Chester": "Ryuji",
+        "Robinson": "Kirin",
+        "Denver": "Methew",
+        "Egstrom": "Skylan",
+        "Bugis": "Amarri",
+        "Comelius": "True",
+        "Brierly": "Cayle",
+        "Jones": "Lenn",
+        "George": "Ren'E"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

@@ -1,0 +1,50 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "John": 0,
+        "Elinor": 1,
+        "Jennings": 3,
+        "Willoughby": 4,
+        "Smith": 5,
+        "Henry": 6,
+        "eles": 9,
+        "Middletons": 10,
+        "Combe": 11,
+        "Robert": 12,
+        "Grey": 13,
+        "Morton": 14,
+        "\\Elinor": 15
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Middleton": 2,
+        "ele": 8,
+        "Lucy": 16
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "John": "Brock",
+        "Elinor": "Kathyann",
+        "Jennings": "Shiva",
+        "Willoughby": "Britain",
+        "Smith": "Kyri",
+        "Henry": "Hakob",
+        "eles": "Ajene",
+        "Middletons": "Jamile",
+        "Combe": "Yi",
+        "Robert": "Saia",
+        "Grey": "Salem",
+        "Morton": "Hilder",
+        "\\Elinor": "Kailen"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Middleton": "Atley",
+        "ele": "Kehinde",
+        "Lucy": "Kyza"
+    }
+}

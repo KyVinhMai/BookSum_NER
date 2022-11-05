@@ -1,0 +1,54 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Bessie": 3,
+        "Misses": 4,
+        "Robert": 5,
+        "Rochester": 6,
+        "Reeds": 7,
+        "Thornfield": 9,
+        "Morton": 10,
+        "Oliver": 14,
+        "Lloyd": 15,
+        "Brocklehurst": 16,
+        "Temple": 17,
+        "Miller": 18,
+        "Helen": 19
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Reed": 2,
+        "Eyre": 8,
+        "Rivers": 11,
+        "John": 13,
+        "Burns": 20
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Bessie": "Inesa",
+        "Misses": "Olamide",
+        "Robert": "Shubhm",
+        "Rochester": "Darnelle",
+        "Reeds": "Eh",
+        "Thornfield": "Sekai",
+        "Morton": "Tionne",
+        "Oliver": "Delvante",
+        "Lloyd": "Prince",
+        "Brocklehurst": "Lyndal",
+        "Temple": "Shell",
+        "Miller": "Ashtan",
+        "Helen": "Zarahi"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Reed": "Kysen",
+        "Eyre": "Jeryn",
+        "Rivers": "Romey",
+        "John": "Yuanchuang",
+        "Burns": "Peyton"
+    }
+}

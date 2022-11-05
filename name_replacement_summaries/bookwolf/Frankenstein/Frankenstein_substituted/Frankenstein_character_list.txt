@@ -1,0 +1,46 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Victor": 0,
+        "Shelley": 1,
+        "Felix": 2,
+        "De": 3,
+        "Milton": 4,
+        "Eve": 5,
+        "Justine": 6,
+        "Henry": 7,
+        "Kirwin": 8,
+        "Robert": 9,
+        "Krempe": 10,
+        "Coleridge": 11,
+        "Ernest": 13
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Moritz": 12
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Victor": "Moaaz",
+        "Shelley": "January",
+        "Felix": "Jaimari",
+        "De": "Ellington",
+        "Milton": "Ryananthony",
+        "Eve": "Kaylia-Jayde",
+        "Justine": "Insiya",
+        "Henry": "Ganan",
+        "Kirwin": "Wisdom",
+        "Robert": "Tiandre",
+        "Krempe": "Rhylan",
+        "Coleridge": "Amaurie",
+        "Ernest": "Janarius"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Moritz": "Rason"
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Will": 0,
+        "Miles": 2,
+        "Erik": 3,
+        "Villets": 4,
+        "Pete": 5,
+        "Guy": 6,
+        "Kennicotts": 8,
+        "Whittier": 9,
+        "Bessie": 10,
+        "Cy": 11,
+        "Percy": 12,
+        "Dyer": 13,
+        "Fern": 14,
+        "Cyrus": 16
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Kennicott": 1,
+        "Pollock": 7,
+        "Mullins": 15
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Will": "Koi",
+        "Miles": "Brodney",
+        "Erik": "Mckinnon",
+        "Villets": "Germany",
+        "Pete": "Shaopeng",
+        "Guy": "Gleb",
+        "Kennicotts": "Berlin",
+        "Whittier": "Bralyn",
+        "Bessie": "Telyiah",
+        "Cy": "Gyula",
+        "Percy": "Gabryal",
+        "Dyer": "Tylar",
+        "Fern": "Mersie",
+        "Cyrus": "Umang"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Kennicott": "Manpreet",
+        "Pollock": "Anay",
+        "Mullins": "Shalin"
+    }
+}

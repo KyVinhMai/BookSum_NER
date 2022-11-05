@@ -1,0 +1,88 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Elliot": 0,
+        "Musgrove": 1,
+        "Shepherd": 2,
+        "Russell": 3,
+        "Elliots": 4,
+        "Croft": 5,
+        "Crofts": 6,
+        "J.": 7,
+        "Kellynch": 9,
+        "Croft\\": 10,
+        "Brown": 11,
+        "Frederick": 13,
+        "Musgroves": 15,
+        "Uppercross": 16,
+        "Shirley": 17,
+        "Winthrop": 18,
+        "Collins": 19,
+        "Dick": 20,
+        "Wordsworth": 21,
+        "Benwick": 22,
+        "Cobb": 23,
+        "Byron": 24,
+        "Wentworth\\": 25,
+        "Smith": 26,
+        "Rooke": 27,
+        "Smith\\": 28,
+        "Scott": 29,
+        "Smiths": 30,
+        "ELLIOT": 31,
+        "John": 32,
+        "Robert": 34
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Debrett": 8,
+        "Wentworth": 14,
+        "Wiltshire": 33,
+        "Hopkins": 35
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Elliot": "Jhace",
+        "Musgrove": "Aimar",
+        "Shepherd": "Shaune",
+        "Russell": "Kordai",
+        "Elliots": "Yuki",
+        "Croft": "Teigan",
+        "Crofts": "Monta",
+        "J.": "Keatyn",
+        "Kellynch": "Child",
+        "Croft\\": "Gaylin",
+        "Brown": "Shiva",
+        "Frederick": "Timetrius",
+        "Musgroves": "Happy",
+        "Uppercross": "Toy",
+        "Shirley": "Mahali",
+        "Winthrop": "Gwin",
+        "Collins": "Lyrick",
+        "Dick": "Ranjeet",
+        "Wordsworth": "Harbor",
+        "Benwick": "Karsen",
+        "Cobb": "Callaway",
+        "Byron": "Frantzy",
+        "Wentworth\\": "Fontaine",
+        "Smith": "Taite",
+        "Rooke": "Terryl",
+        "Smith\\": "name",
+        "Scott": "Marquon",
+        "Smiths": "Barrie",
+        "ELLIOT": "Deniz",
+        "John": "Taeshawn",
+        "Robert": "Deiren"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Debrett": "Kayde",
+        "Wentworth": "Dawsyn",
+        "Wiltshire": "Demetrice",
+        "Hopkins": "Shyler"
+    }
+}

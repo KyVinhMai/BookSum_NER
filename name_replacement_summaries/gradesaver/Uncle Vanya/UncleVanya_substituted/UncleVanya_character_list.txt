@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Voynitsky": 0,
+        "Helen": 1,
+        "Telegin": 2,
+        "Chekhov": 3,
+        "Dostoevsky": 4,
+        "Chekov": 5,
+        "Geoffrey": 6,
+        "Voynitksy": 8,
+        "John": 9,
+        "Dostoevsky\\": 11,
+        "Uncle": 12
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Borny": 7,
+        "Weston": 10
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Voynitsky": "Jacquese",
+        "Helen": "Aime",
+        "Telegin": "Kache",
+        "Chekhov": "Arrin",
+        "Dostoevsky": "Dung",
+        "Chekov": "Avyn",
+        "Geoffrey": "Raki",
+        "Voynitksy": "Sagan",
+        "John": "Stevan",
+        "Dostoevsky\\": "Nazareth",
+        "Uncle": "Gaynor"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Borny": "Ayomide",
+        "Weston": "Stephon"
+    }
+}

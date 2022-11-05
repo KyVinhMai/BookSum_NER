@@ -1,0 +1,86 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Henry": 0,
+        "Mortimer": 1,
+        "Glendower": 2,
+        "Hotspur": 4,
+        "Worcester": 5,
+        "Percies": 6,
+        "Honour": 7,
+        "Prince": 8,
+        "Vernon": 10,
+        "Peto": 12,
+        "Blunt": 13,
+        "\\Turk": 15,
+        "Gregory": 17,
+        "Poins": 20,
+        "Scroop": 21,
+        "Bolingbroke": 22,
+        "Bolingbroke\\": 23,
+        "Richmond": 24,
+        "This": 25,
+        "Robin": 26,
+        "Glendower\\": 28,
+        "Hercules": 29,
+        "John": 30,
+        "Trent": 32,
+        "Quickly": 33
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Percy": 3,
+        "John": 9,
+        "of": 11,
+        "IV": 14,
+        "Gregory\\": 16,
+        "VII": 18,
+        "V": 19,
+        "Ostler": 27,
+        "Lyly": 31
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Henry": "Altan",
+        "Mortimer": "Seyha",
+        "Glendower": "Morad",
+        "Hotspur": "Juda",
+        "Worcester": "Kemoni",
+        "Percies": "Laren",
+        "Honour": "Mishawn",
+        "Prince": "Predeep",
+        "Vernon": "Ladarrell",
+        "Peto": "Baylin",
+        "Blunt": "Amarii",
+        "\\Turk": "Kaisyn",
+        "Gregory": "Jankraj",
+        "Poins": "Amaree",
+        "Scroop": "Jimi",
+        "Bolingbroke": "Riyan",
+        "Bolingbroke\\": "Areon",
+        "Richmond": "Blair",
+        "This": "Rossie",
+        "Robin": "Stephane",
+        "Glendower\\": "Gaylin",
+        "Hercules": "Kayde",
+        "John": "Tuan-Tu",
+        "Trent": "Prashanat",
+        "Quickly": "Bao"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Percy": "Mathura",
+        "John": "Stavro",
+        "of": "Rhyan",
+        "IV": "Ajai",
+        "Gregory\\": "Ivory",
+        "VII": "Lavoris",
+        "V": "Ozie",
+        "Ostler": "Mikah",
+        "Lyly": "Makaleb"
+    }
+}

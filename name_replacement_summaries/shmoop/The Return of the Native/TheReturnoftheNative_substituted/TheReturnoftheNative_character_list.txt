@@ -1,0 +1,58 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Clym": 2,
+        "Wildeve": 4,
+        "Humphrey": 5,
+        "Yeobrights": 6,
+        "Rudolph": 7,
+        "Vyes": 8,
+        "Vye": 9,
+        "Wildeve\\": 10,
+        "Egdon": 11,
+        "Nosey": 12,
+        "Diggory": 14,
+        "Clym\\": 15,
+        "Olly": 16,
+        "Johnny": 18,
+        "Wildeves": 20
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Venn": 1,
+        "Yeobright": 3,
+        "Diggory": 13,
+        "Dowden": 17,
+        "Nunsuch": 19
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Clym": "Robbie",
+        "Wildeve": "Han",
+        "Humphrey": "Ryner",
+        "Yeobrights": "Seneca",
+        "Rudolph": "Jawara",
+        "Vyes": "Dilyn",
+        "Vye": "Latrelle",
+        "Wildeve\\": "Kaydyn",
+        "Egdon": "Jae",
+        "Nosey": "Peyson",
+        "Diggory": "Rielly",
+        "Clym\\": "Wallis",
+        "Olly": "Jeryl",
+        "Johnny": "Ayad",
+        "Wildeves": "Demarie"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Venn": "Britt",
+        "Yeobright": "Danel",
+        "Diggory": "Oakley",
+        "Dowden": "Raylen",
+        "Nunsuch": "Tonnie"
+    }
+}

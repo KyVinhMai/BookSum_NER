@@ -1,0 +1,86 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Jim": 0,
+        "Tiny": 2,
+        "Genevieve": 3,
+        "Burdens": 4,
+        "Otto": 5,
+        "Robinson": 7,
+        "Bushy": 9,
+        "Tony": 10,
+        "Wick": 12,
+        "Nick": 14,
+        "Ole": 15,
+        "Chris": 17,
+        "Nine": 18,
+        "Johnnie": 19,
+        "Sylvester": 20,
+        "Wycliffe": 22,
+        "Pussy": 24,
+        "Cutters": 25,
+        "Cleric": 26,
+        "Benedictine": 27,
+        "Georgics": 28,
+        "Ordinsky": 29,
+        "Lincoln": 30,
+        "morning": 31,
+        "Peter": 32,
+        "Widow": 33,
+        "Leo": 34,
+        "Rudolph": 35
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Burden": 1,
+        "Crusoe": 8,
+        "Fuchs": 11,
+        "Cutter": 13,
+        "Benson": 16,
+        "Lovett": 21
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Jim": "Deontrey",
+        "Tiny": "Kylicia",
+        "Genevieve": "Nicholina",
+        "Burdens": "Berlin",
+        "Otto": "Morlie",
+        "Robinson": "Kayler",
+        "Bushy": "Aarin",
+        "Tony": "Remie",
+        "Wick": "Tatem",
+        "Nick": "Doodhnath",
+        "Ole": "Diab",
+        "Chris": "Jeryn",
+        "Nine": "Teosha",
+        "Johnnie": "Lavon",
+        "Sylvester": "Aweys",
+        "Wycliffe": "Kymoni",
+        "Pussy": "Berkley",
+        "Cutters": "Deane",
+        "Cleric": "Laramie",
+        "Benedictine": "Senai",
+        "Georgics": "Arlyn",
+        "Ordinsky": "Kris",
+        "Lincoln": "Raian",
+        "morning": "Merion",
+        "Peter": "Jennis",
+        "Widow": "Staley",
+        "Leo": "Chia",
+        "Rudolph": "Daytwon"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Burden": "Lattie",
+        "Crusoe": "Lunden",
+        "Fuchs": "Trayce",
+        "Cutter": "Arleigh",
+        "Benson": "Codie",
+        "Lovett": "Devonne"
+    }
+}

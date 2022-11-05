@@ -1,0 +1,50 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Bill": 0,
+        "Henry": 1,
+        "London": 2,
+        "Kiche": 3,
+        "Lip": 4,
+        "Liplip": 5,
+        "Smith": 6,
+        "Weedon": 7,
+        "Roosevelt": 9,
+        "Collie": 10,
+        "Scotts": 11,
+        "One": 12,
+        "Rudolf": 14
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Scott": 8,
+        "Eye": 13,
+        "Otto": 15
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Bill": "Hart",
+        "Henry": "Chela",
+        "London": "name",
+        "Kiche": "Paiden",
+        "Lip": "Kimoni",
+        "Liplip": "Senai",
+        "Smith": "Tam",
+        "Weedon": "Airen",
+        "Roosevelt": "Syden",
+        "Collie": "Chong",
+        "Scotts": "Almer",
+        "One": "Yannie",
+        "Rudolf": "Jasmandip"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Scott": "Gemtree",
+        "Eye": "Elim",
+        "Otto": "Jayni"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Friedrich": 0
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Engels": 1
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Friedrich": "Hamidou"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Engels": "Kendall"
+    }
+}

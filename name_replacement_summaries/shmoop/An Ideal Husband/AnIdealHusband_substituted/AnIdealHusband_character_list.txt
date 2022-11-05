@@ -1,0 +1,52 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Robert": 0,
+        "Gertrude": 1,
+        "Cheveley": 3,
+        "Chilterns": 5,
+        "this": 6,
+        "Lord": 8,
+        "Montford": 10,
+        "Robin": 11,
+        "Tommy": 12,
+        "Phipps": 13,
+        "Butler": 14,
+        "Louis": 15,
+        "Gertrude.\\": 17
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Chiltern": 2,
+        "Mrs.Cheveley": 7,
+        "Goring": 9,
+        "XIV": 16
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Robert": "Cid",
+        "Gertrude": "Sehaj",
+        "Cheveley": "Aarin",
+        "Chilterns": "Alika",
+        "this": "Arden",
+        "Lord": "Tajae",
+        "Montford": "Jaydyn",
+        "Robin": "Elza",
+        "Tommy": "Avdhesh",
+        "Phipps": "Tahjae",
+        "Butler": "Jlyn",
+        "Louis": "Abril",
+        "Gertrude.\\": "Dossie"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Chiltern": "Braylin",
+        "Mrs.Cheveley": "Deane",
+        "Goring": "Amaree",
+        "XIV": "Teran"
+    }
+}

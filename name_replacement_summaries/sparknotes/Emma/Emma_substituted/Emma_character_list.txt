@@ -1,0 +1,70 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Weston": 0,
+        "Elton": 1,
+        "Highbury": 3,
+        "Woodhouse": 4,
+        "Woodhouses": 5,
+        "Westons": 6,
+        "Churchill": 7,
+        "Dixon": 8,
+        "Eltons": 9,
+        "John": 10,
+        "Bickerton": 12,
+        "Perry": 13,
+        "Perrys": 14,
+        "Gypsies": 15,
+        "Churchills": 16,
+        "Smith": 17,
+        "Wingfield": 18,
+        "Knightleys": 19,
+        "Colonel": 20,
+        "Cole": 21,
+        "Coles": 22,
+        "Knighley": 23,
+        "George": 24,
+        "Henry": 25,
+        "Cox": 26
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Knightley": 11
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Weston": "Tyere",
+        "Elton": "Lonzy",
+        "Highbury": "Harley",
+        "Woodhouse": "Laren",
+        "Woodhouses": "Rayen",
+        "Westons": "Amaurie",
+        "Churchill": "Dominque",
+        "Dixon": "Dioni",
+        "Eltons": "Mayan",
+        "John": "Doried",
+        "Bickerton": "Aquarius",
+        "Perry": "Tommy-Justyn",
+        "Perrys": "Jayln",
+        "Gypsies": "Isa",
+        "Churchills": "Meko",
+        "Smith": "Lavaughn",
+        "Wingfield": "Ashtan",
+        "Knightleys": "Celester",
+        "Colonel": "Jaz",
+        "Cole": "Tevye",
+        "Coles": "Kaylor",
+        "Knighley": "Almer",
+        "George": "Adrian-Lee",
+        "Henry": "Gladys",
+        "Cox": "Logyn"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Knightley": "Vernis"
+    }
+}

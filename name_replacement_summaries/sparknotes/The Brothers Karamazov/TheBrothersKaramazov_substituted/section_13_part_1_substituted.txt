@@ -1,0 +1,3 @@
+{"name": "book 11, ", "url": "https://web.archive.org/web/20210305110438/https://www.sparknotes.com/lit/brothersk/section14/", "summary": "But hesitation, anxiety, the struggle between belief and disbelief--all that is sometimes such a torment for a conscientious man like yourself, that it's better to hang oneself", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Grigory': 'Andhav', 'Dostoevsky': 'Ronie', 'Perkhotin': 'Joell', 'Hisses': 'Shaylon', 'Perezvon': 'Shalom', 'Smurov': 'Callan', 'Lise': 'Sanjogta', 'Fetyukovich': 'Pasha', 'Kirrillovich': 'Ardie', 'Miusov': 'Jodey', 'Fyodor': 'Nisiah', 'Job': 'Thilina', 'Inquisitor': 'Gaynor'}, 'Middle Names': {}, 'Last Names': {'Dmitri': 'Austine'}}

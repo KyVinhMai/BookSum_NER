@@ -1,0 +1,52 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Henry": 0,
+        "Mortimer": 1,
+        "Glyndwr": 2,
+        "Hotspur": 3,
+        "Poins": 4,
+        "Bolingbroke": 6,
+        "Worcester": 7,
+        "Ostler": 8,
+        "Peto": 9,
+        "Percy": 10,
+        "Vice": 11,
+        "Vernon": 12,
+        "Blunt": 13,
+        "John": 14,
+        "York": 15
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "IV": 5,
+        "VII": 16
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Henry": "Jeral",
+        "Mortimer": "Malyki",
+        "Glyndwr": "Raedyn",
+        "Hotspur": "Day",
+        "Poins": "Royale",
+        "Bolingbroke": "Lenzie",
+        "Worcester": "Tai",
+        "Ostler": "Ary",
+        "Peto": "Mycah",
+        "Percy": "Giomi",
+        "Vice": "Karell",
+        "Vernon": "Ervey",
+        "Blunt": "Jackie",
+        "John": "Veryl",
+        "York": "Ashfaq"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "IV": "Jaydeen",
+        "VII": "Kylin"
+    }
+}

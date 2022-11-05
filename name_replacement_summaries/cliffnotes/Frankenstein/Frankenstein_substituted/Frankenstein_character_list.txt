@@ -1,0 +1,60 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Victor": 0,
+        "M.": 1,
+        "Justine": 3,
+        "Percy": 5,
+        "Homer": 7,
+        "Milton": 8,
+        "Lord": 9,
+        "Polidori": 11,
+        "Henry": 12,
+        "Coleridge": 13,
+        "Ernest": 14,
+        "Felix": 15,
+        "Wordsworth": 16,
+        "Eve": 17,
+        "Kirwin": 18,
+        "Orkney": 19,
+        "Robert": 20
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Krempe": 2,
+        "Moritz": 4,
+        "Shelley": 6,
+        "Byron": 10
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Victor": "Christianjay",
+        "M.": "Golden",
+        "Justine": "Daycia",
+        "Percy": "Dwan",
+        "Homer": "Ivanka",
+        "Milton": "Rayanthony",
+        "Lord": "Casey",
+        "Polidori": "Aundra",
+        "Henry": "Ryusei",
+        "Coleridge": "Vernie",
+        "Ernest": "Maximilliano",
+        "Felix": "Zaaron",
+        "Wordsworth": "Vernell",
+        "Eve": "Deani",
+        "Kirwin": "Neziah",
+        "Orkney": "Jody",
+        "Robert": "Felisiano"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Krempe": "Loghan",
+        "Moritz": "Granton",
+        "Shelley": "Kaline",
+        "Byron": "Pokhar"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Self": 0,
+        "Hesse": 1
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Self": "Lyndall",
+        "Hesse": "Carlin"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

@@ -1,0 +1,36 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Grose": 0,
+        "Miles": 1,
+        "Peter": 2,
+        "Jessel": 4,
+        "Bly": 5,
+        "Griffin": 6,
+        "Luke": 7,
+        "\\Peter": 8
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Quint": 3
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Grose": "Tris",
+        "Miles": "Zamarii",
+        "Peter": "Gilchrist",
+        "Jessel": "Kele",
+        "Bly": "Micha",
+        "Griffin": "Halsten",
+        "Luke": "Mishri",
+        "\\Peter": "Oluwademilade"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Quint": "Lorren"
+    }
+}

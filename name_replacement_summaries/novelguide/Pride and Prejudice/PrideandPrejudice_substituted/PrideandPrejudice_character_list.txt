@@ -1,0 +1,56 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Bennet": 0,
+        "Longbourn": 1,
+        "Bingley": 2,
+        "Kitty": 3,
+        "Hurst": 4,
+        "Meryton": 5,
+        "Forster": 6,
+        "Pemberley": 7,
+        "Reynolds": 8,
+        "Collins": 9,
+        "Phillips": 10,
+        "Bennets": 11,
+        "De": 12,
+        "Collinses": 14,
+        "Hursts": 15,
+        "Bingleys": 16,
+        "Denny": 17,
+        "Philips": 18
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bourgh": 13
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Bennet": "Limmie",
+        "Longbourn": "Maxi",
+        "Bingley": "Jeris",
+        "Kitty": "Lapreal",
+        "Hurst": "Shady",
+        "Meryton": "Tonnie",
+        "Forster": "Storm",
+        "Pemberley": "Divine",
+        "Reynolds": "Wai",
+        "Collins": "Babe",
+        "Phillips": "Jae",
+        "Bennets": "Chi",
+        "De": "Dilyn",
+        "Collinses": "Adel",
+        "Hursts": "Kayde",
+        "Bingleys": "Gal",
+        "Denny": "Oluwatoni",
+        "Philips": "Armari"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bourgh": "Amaree"
+    }
+}

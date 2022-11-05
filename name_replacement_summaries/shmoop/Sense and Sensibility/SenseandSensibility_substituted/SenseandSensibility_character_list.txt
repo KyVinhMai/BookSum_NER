@@ -1,0 +1,56 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Elinor": 0,
+        "John": 1,
+        "Jennings": 3,
+        "Willoughby": 4,
+        "Lucy": 6,
+        "Morton": 8,
+        "Robert": 9,
+        "Jenkins": 10,
+        "Henry": 11,
+        "Middletons": 12,
+        "Smith": 13,
+        "eles": 15,
+        "Grey": 16,
+        "Willoughbys": 17,
+        "Willoughby\\": 18,
+        "Devonshire": 19
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Middleton": 2,
+        "ele": 7,
+        "rushes": 14
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Elinor": "Charon",
+        "John": "Gagik",
+        "Jennings": "Carlin",
+        "Willoughby": "Harlo",
+        "Lucy": "Ancika",
+        "Morton": "Michael-Jacek",
+        "Robert": "Ayuel",
+        "Jenkins": "Armani",
+        "Henry": "Lamari",
+        "Middletons": "Manpreet",
+        "Smith": "Shell",
+        "eles": "Merion",
+        "Grey": "Halsey",
+        "Willoughbys": "Jamani",
+        "Willoughby\\": "Neema",
+        "Devonshire": "Braylyn"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Middleton": "Jerzy",
+        "ele": "Mycah",
+        "rushes": "Carel"
+    }
+}

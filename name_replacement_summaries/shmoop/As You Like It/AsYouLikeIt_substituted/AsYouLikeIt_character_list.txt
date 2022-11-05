@@ -1,0 +1,52 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Oliver": 0,
+        "Ros": 1,
+        "Duke": 2,
+        "Touchstone": 5,
+        "Corin": 6,
+        "Phoebe": 7,
+        "Silvius": 8,
+        "Robin": 10,
+        "Cupid": 12,
+        "Fortune": 13,
+        "Boys": 14,
+        "Zing": 15,
+        "Hymen": 16,
+        "Jove": 17
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Senior": 3,
+        "Frederick": 9,
+        "Hood": 11
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Oliver": "Loise",
+        "Ros": "Nellike",
+        "Duke": "Laldhari",
+        "Touchstone": "Alexx",
+        "Corin": "Taite",
+        "Phoebe": "Vetta",
+        "Silvius": "De",
+        "Robin": "Kayler",
+        "Cupid": "Vernie",
+        "Fortune": "Tyjae",
+        "Boys": "Tam",
+        "Zing": "Adisa",
+        "Hymen": "Gwin",
+        "Jove": "Climmie"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Senior": "Arien",
+        "Frederick": "Wint",
+        "Hood": "Kelin"
+    }
+}

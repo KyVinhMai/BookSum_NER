@@ -1,0 +1,68 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Brooke": 1,
+        "Milton": 2,
+        "Locke": 3,
+        "George": 4,
+        "Fred": 7,
+        "Shelley": 8,
+        "Will": 9,
+        "Riggs": 10,
+        "Bulstrode": 11,
+        "Dickens": 12,
+        "Dollop": 13,
+        "Lowick": 14,
+        "Vincys": 15,
+        "Tom": 16,
+        "Dunkirk": 18,
+        "Eve": 19,
+        "Rector": 20,
+        "Tyke": 21,
+        "Wrench": 22,
+        "Wordsworth": 23,
+        "Smollet": 24,
+        "Bullstrode": 25,
+        "Brookes": 26
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Eliot": 5,
+        "Vincy": 17
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Brooke": "Violia",
+        "Milton": "Vinzent",
+        "Locke": "Maven",
+        "George": "Harrington",
+        "Fred": "Maziar",
+        "Shelley": "Zoi",
+        "Will": "Dondi",
+        "Riggs": "Callaway",
+        "Bulstrode": "Cledith",
+        "Dickens": "Emanuelle",
+        "Dollop": "Breslin",
+        "Lowick": "Devine",
+        "Vincys": "Kamani",
+        "Tom": "Dyllan",
+        "Dunkirk": "Kimoni",
+        "Eve": "Nali",
+        "Rector": "Rossi",
+        "Tyke": "Gwin",
+        "Wrench": "Rhylan",
+        "Wordsworth": "Cyncere",
+        "Smollet": "Ashtin",
+        "Bullstrode": "Ivory",
+        "Brookes": "Gracin"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Eliot": "Brayon",
+        "Vincy": "Kaydin"
+    }
+}

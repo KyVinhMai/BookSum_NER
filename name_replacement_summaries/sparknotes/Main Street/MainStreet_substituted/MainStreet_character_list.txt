@@ -1,0 +1,64 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Will": 0,
+        "Kennicotts": 2,
+        "Guy": 3,
+        "Miles": 5,
+        "Fern": 6,
+        "Erik": 8,
+        "Lewis": 9,
+        "E.M.": 10,
+        "Villets": 12,
+        "Burns": 13,
+        "Byron": 14,
+        "Perrys": 15,
+        "Bessie": 16,
+        "Whittier": 17,
+        "H.G.": 18,
+        "Dyers": 20,
+        "Cy": 21,
+        "Dickens": 22
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Kennicott": 1,
+        "Pollock": 4,
+        "Mullins": 7,
+        "Forster": 11,
+        "Wells": 19
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Will": "Callaway",
+        "Kennicotts": "Merritt",
+        "Guy": "Ahanu",
+        "Miles": "Levion",
+        "Fern": "Mykale",
+        "Erik": "Kaydon",
+        "Lewis": "Yiran",
+        "E.M.": "Celester",
+        "Villets": "Gal",
+        "Burns": "Tyjae",
+        "Byron": "Delwayne",
+        "Perrys": "Avory",
+        "Bessie": "Destine",
+        "Whittier": "Austyn",
+        "H.G.": "Alexandr",
+        "Dyers": "Donyell",
+        "Cy": "Caydon",
+        "Dickens": "Sonnie"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Kennicott": "Paiden",
+        "Pollock": "Jung",
+        "Mullins": "Sloan",
+        "Forster": "Ajai",
+        "Wells": "Armari"
+    }
+}

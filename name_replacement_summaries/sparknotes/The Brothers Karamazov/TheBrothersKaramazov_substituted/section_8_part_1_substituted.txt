@@ -1,0 +1,3 @@
+{"name": "book 6, ", "url": "https://web.archive.org/web/20210305110438/https://www.sparknotes.com/lit/brothersk/section9/", "summary": "Obedience, fasting, and prayer are laughed at, yet they alone constitute the way to real and true freedom", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Grigory': 'Andhav', 'Dostoevsky': 'Ronie', 'Perkhotin': 'Joell', 'Hisses': 'Shaylon', 'Perezvon': 'Shalom', 'Smurov': 'Callan', 'Lise': 'Sanjogta', 'Fetyukovich': 'Pasha', 'Kirrillovich': 'Ardie', 'Miusov': 'Jodey', 'Fyodor': 'Nisiah', 'Job': 'Thilina', 'Inquisitor': 'Gaynor'}, 'Middle Names': {}, 'Last Names': {'Dmitri': 'Austine'}}

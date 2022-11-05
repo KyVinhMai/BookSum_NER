@@ -1,0 +1,56 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Leontes": 0,
+        "Polixenes": 1,
+        "Hermione": 2,
+        "Delphi": 3,
+        "Shepherd": 4,
+        "Florizel": 5,
+        "Clown": 6,
+        "Gloucester": 7,
+        "Kent": 8,
+        "Henry": 9,
+        "Dion": 11,
+        "Cleomenes": 12,
+        "\\Polixenes": 13,
+        "Homer": 14,
+        "Ovid": 15,
+        "\\Doricles\\": 16,
+        "Pluto": 17,
+        "Edmund": 18
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "VIII": 10
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Leontes": "Lawan",
+        "Polixenes": "Kaedyn",
+        "Hermione": "Makell",
+        "Delphi": "Yee",
+        "Shepherd": "Brittan",
+        "Florizel": "Declyn",
+        "Clown": "Jemiah",
+        "Gloucester": "Maven",
+        "Kent": "Silender",
+        "Henry": "R-Jay",
+        "Dion": "Ishmail",
+        "Cleomenes": "Jourdan",
+        "\\Polixenes": "Puneet",
+        "Homer": "Zakaryah",
+        "Ovid": "Kareen",
+        "\\Doricles\\": "Osiris",
+        "Pluto": "Marvis",
+        "Edmund": "Paul-Micheal"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "VIII": "Eudell"
+    }
+}

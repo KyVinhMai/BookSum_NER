@@ -1,0 +1,36 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Munro": 0,
+        "Webb": 1,
+        "Hurons": 2,
+        "Cooper": 3,
+        "something": 4,
+        "Huron": 5,
+        "Killdeer": 6,
+        "Le": 7
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Subtil.\\": 8
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Munro": "Riley-Wayne",
+        "Webb": "Alika",
+        "Hurons": "Lannie",
+        "Cooper": "Moosa",
+        "something": "Codi",
+        "Huron": "Rieley",
+        "Killdeer": "Zannie",
+        "Le": "Shai"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Subtil.\\": "Riyan"
+    }
+}

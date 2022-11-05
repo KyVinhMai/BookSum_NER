@@ -1,0 +1,30 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Billing": 0,
+        "Peter": 1,
+        "Horster": 2,
+        "Eylif": 3,
+        "Morten": 4
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Kiil": 5
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Billing": "Jayln",
+        "Peter": "Ubaidah",
+        "Horster": "Kyri",
+        "Eylif": "Andree",
+        "Morten": "Mathurin"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Kiil": "Mckinley"
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Fogg": 0,
+        "Byron": 1,
+        "Byron\\": 2,
+        "Verne": 3,
+        "Fix": 4,
+        "Kiouni": 5,
+        "John": 6,
+        "Tingou": 8,
+        "Proctor": 9,
+        "Hitch": 10,
+        "Joseph": 11,
+        "Forster": 13,
+        "Longferry": 14,
+        "Mudge": 15,
+        "Speedy": 16,
+        "Decimus": 17
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bunsby": 7,
+        "Smith": 12
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Fogg": "Tobie",
+        "Byron": "Isaya",
+        "Byron\\": "Mayan",
+        "Verne": "Aldean",
+        "Fix": "Malijah",
+        "Kiouni": "Donyae",
+        "John": "Demon",
+        "Tingou": "Shey",
+        "Proctor": "Tyjai",
+        "Hitch": "Carle",
+        "Joseph": "Izaah",
+        "Forster": "Shann",
+        "Longferry": "Riley",
+        "Mudge": "Hien",
+        "Speedy": "Clemence",
+        "Decimus": "Rameen"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bunsby": "Micha",
+        "Smith": "Liron"
+    }
+}

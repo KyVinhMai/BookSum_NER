@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Don": 0,
+        "Benedick": 2,
+        "Hero": 4,
+        "Shylock": 5,
+        "Egeus": 6,
+        "Hero\\": 7,
+        "Hercules": 8,
+        "Dogberry": 9,
+        "Sexton": 10,
+        "Verges": 11,
+        "Juliet": 12
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Pedro": 1,
+        "John": 3
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Don": "Deyvi",
+        "Benedick": "Seneca",
+        "Hero": "Jubin",
+        "Shylock": "Moe",
+        "Egeus": "Romey",
+        "Hero\\": "Amaurie",
+        "Hercules": "Vail",
+        "Dogberry": "Yanis",
+        "Sexton": "Jael",
+        "Verges": "Bralyn",
+        "Juliet": "Shanga"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Pedro": "Dhruva",
+        "John": "Larissa"
+    }
+}

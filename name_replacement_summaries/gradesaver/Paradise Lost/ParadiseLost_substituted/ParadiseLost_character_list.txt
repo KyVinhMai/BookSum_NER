@@ -1,0 +1,46 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Milton": 0,
+        "Beelzebub": 1,
+        "Homer": 2,
+        "Moses": 3,
+        "Moloch": 4,
+        "Sin": 5,
+        "Night": 6,
+        "Genesis": 7,
+        "Spencer": 8,
+        "Uriel": 9,
+        "Eve": 10,
+        "Even": 11,
+        "Vergil": 12,
+        "Nimrod": 13,
+        "Enoch": 14
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Milton": "Ascenzo",
+        "Beelzebub": "Braylin",
+        "Homer": "Tykel",
+        "Moses": "Jerjuan",
+        "Moloch": "Cristan",
+        "Sin": "Camil",
+        "Night": "Kinyada",
+        "Genesis": "Saffa",
+        "Spencer": "Keagen",
+        "Uriel": "Philopateer",
+        "Eve": "Eiliana",
+        "Even": "Inaki",
+        "Vergil": "Dejhon",
+        "Nimrod": "Usha",
+        "Enoch": "Kele"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

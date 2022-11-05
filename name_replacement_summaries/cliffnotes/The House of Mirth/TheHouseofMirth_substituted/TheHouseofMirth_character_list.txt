@@ -1,0 +1,86 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lily": 0,
+        "Peniston": 1,
+        "Selden": 2,
+        "Judy": 3,
+        "Gus": 4,
+        "Percy": 6,
+        "Wellington": 8,
+        "Dorsets": 10,
+        "George": 11,
+        "Ned": 13,
+        "Gormers": 15,
+        "Gerty": 16,
+        "Seldon": 17,
+        "Brys": 18,
+        "Trenors": 19,
+        "pneys": 20,
+        "Beltshire": 21,
+        "Gwen": 23,
+        "Gormer": 24,
+        "Benedick": 25,
+        "Kilroy": 26,
+        "Evie": 27,
+        "Nettie": 28,
+        "Herbert": 29,
+        "Osburghs": 31,
+        "Doucet": 32,
+        "Lloyd": 34
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Trenor": 5,
+        "Gryce": 7,
+        "Bry": 9,
+        "Dorset": 12,
+        "Silverton": 14,
+        "Melson": 30,
+        "pney": 33
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lily": "Yoshi",
+        "Peniston": "Cameran",
+        "Selden": "Berkley",
+        "Judy": "Baneza",
+        "Gus": "Jekhari",
+        "Percy": "Tustin",
+        "Wellington": "Casey",
+        "Dorsets": "Callaway",
+        "George": "Bille-Anne",
+        "Ned": "Shakoin",
+        "Gormers": "Oddie",
+        "Gerty": "Mei",
+        "Seldon": "Kehinde",
+        "Brys": "Lenell",
+        "Trenors": "Sekai",
+        "pneys": "Austyn",
+        "Beltshire": "Loghan",
+        "Gwen": "Occie",
+        "Gormer": "Karem",
+        "Benedick": "Gal",
+        "Kilroy": "Baylin",
+        "Evie": "Lajoi",
+        "Nettie": "Anthoula",
+        "Herbert": "Gaspar",
+        "Osburghs": "Tajai",
+        "Doucet": "Adrean",
+        "Lloyd": "Leopold"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Trenor": "Ollie",
+        "Gryce": "Mayan",
+        "Bry": "Ollie",
+        "Dorset": "Kayton",
+        "Silverton": "Tomie",
+        "Melson": "Kamoni",
+        "pney": "Tai"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Dormouse": 0,
+        "Gryphon": 1,
+        "Cook": 2,
+        "Bill": 3,
+        "Mouse": 4,
+        "Lory": 5,
+        "Dodo": 6,
+        "Fury": 7,
+        "Duchess": 8,
+        "Mock": 9
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Turtle": 10
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Dormouse": "An",
+        "Gryphon": "Breslin",
+        "Cook": "Donyel",
+        "Bill": "Sarun",
+        "Mouse": "Dawsyn",
+        "Lory": "Modesti",
+        "Dodo": "Lavaughn",
+        "Fury": "Jalani",
+        "Duchess": "Tennessee",
+        "Mock": "Dae"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Turtle": "Manpreet"
+    }
+}

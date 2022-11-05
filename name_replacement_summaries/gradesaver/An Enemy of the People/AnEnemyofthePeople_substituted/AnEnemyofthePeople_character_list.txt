@@ -1,0 +1,46 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Billing": 1,
+        "Tom": 2,
+        "Peter": 3,
+        "Morten": 4,
+        "Ejlif": 5,
+        "Horster": 6,
+        "Ibsen": 7,
+        "Miller": 8,
+        "Henrik": 9,
+        "Jesus": 10,
+        "Bjornson": 11,
+        "Doctor": 13,
+        "Eljeh": 14
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Kiil": 12
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Billing": "Vondell",
+        "Tom": "Jesusjr",
+        "Peter": "Makbul",
+        "Morten": "Kadance",
+        "Ejlif": "Baldini",
+        "Horster": "Rudell",
+        "Ibsen": "Aki",
+        "Miller": "Cailen",
+        "Henrik": "Vin",
+        "Jesus": "Sopheap",
+        "Bjornson": "Aries",
+        "Doctor": "Rudie",
+        "Eljeh": "Mc"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Kiil": "Clemmie"
+    }
+}

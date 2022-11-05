@@ -1,0 +1,34 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Sorin": 0,
+        "Medvedenko": 1,
+        "Trigorin": 2,
+        "Tolstoy": 3,
+        "Trigorin\\": 4,
+        "Dorn": 5,
+        "Gertrude": 6,
+        "Chekhov": 7,
+        "Turgenev": 8
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Sorin": "Ronn",
+        "Medvedenko": "Leotha",
+        "Trigorin": "Odean",
+        "Tolstoy": "Chee",
+        "Trigorin\\": "Donyea",
+        "Dorn": "Alija",
+        "Gertrude": "Ishanthi",
+        "Chekhov": "Evann",
+        "Turgenev": "Jodeci"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

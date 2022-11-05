@@ -1,0 +1,48 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Cunegonde": 0,
+        "Thundertentronckh": 1,
+        "G.W.": 2,
+        "Columbus": 4,
+        "Pope": 5,
+        "Cunegonde.\\": 6,
+        "Don": 7,
+        "Biglugs": 8,
+        "Perigord": 9,
+        "\\Cunegonde\\": 10,
+        "Giroflee": 11,
+        "Homer": 12,
+        "Milton": 13,
+        "Eve": 14
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Leibniz": 3
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Cunegonde": "Aamari",
+        "Thundertentronckh": "Scotland",
+        "G.W.": "Maitland",
+        "Columbus": "Konna",
+        "Pope": "Jireh",
+        "Cunegonde.\\": "Oluwadamilola",
+        "Don": "Aneudi",
+        "Biglugs": "Audi",
+        "Perigord": "Alva",
+        "\\Cunegonde\\": "Alyn",
+        "Giroflee": "Shay",
+        "Homer": "Austyn",
+        "Milton": "Jacobalexander",
+        "Eve": "Zarin"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Leibniz": "Giavonni"
+    }
+}

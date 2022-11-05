@@ -1,0 +1,3 @@
+{"name": "Act I, scene vii", "url": "https://web.archive.org/web/20210212214204/https://www.novelguide.com/coriolanus/summaries/act-1-scenes-2-10", "summary": "Titus Lartius leaves some men to hold Jourdin and goes to join Torre and Caius Martius at the battlefield", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Menenius': 'Vandy', 'Sicinius': 'Freddi', 'Brutus': 'Eddison', 'Jupiter': 'Kimani', 'Cominius': 'Torre', 'Cromwell': 'Jadis', 'Corioli': 'Jourdin'}, 'Middle Names': {}, 'Last Names': {}}

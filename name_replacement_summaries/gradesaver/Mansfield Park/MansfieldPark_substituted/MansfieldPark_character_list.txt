@@ -1,0 +1,38 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Norris": 0,
+        "Price": 1,
+        "Pug": 2,
+        "Tom": 3,
+        "Edmund": 4,
+        "Rushworth": 5,
+        "Henry": 6,
+        "Rushmore": 7,
+        "Lord": 8,
+        "Prices": 9,
+        "Owen": 10
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Norris": "Gerritt",
+        "Price": "Jahlani",
+        "Pug": "Shade",
+        "Tom": "Derreck",
+        "Edmund": "Urbin",
+        "Rushworth": "Jung",
+        "Henry": "Dero",
+        "Rushmore": "Tory",
+        "Lord": "Han",
+        "Prices": "Natale",
+        "Owen": "Tjustin"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

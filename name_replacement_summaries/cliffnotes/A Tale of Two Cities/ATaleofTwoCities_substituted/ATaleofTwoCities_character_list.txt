@@ -1,0 +1,80 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lorry": 0,
+        "Lucie": 1,
+        "Roger": 4,
+        "yver": 6,
+        "Dickens": 7,
+        "George": 8,
+        "Louis": 10,
+        "Southcott": 12,
+        "Johnson": 13,
+        "Oliver": 14,
+        "Sessions": 16,
+        "Monseigneur": 18,
+        "Evremond": 21,
+        "Gorgon": 22,
+        "Tellson": 23,
+        "Young": 24,
+        "Jerry": 26,
+        "Monsieur": 27,
+        "Doctor": 28,
+        "Foulon": 29,
+        "Solomon": 30,
+        "Evremondes": 32,
+        "young": 33
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Cruncher": 3,
+        "Cly": 5,
+        "III": 9,
+        "XVI": 11,
+        "Goldsmith": 15,
+        "Evremonde": 20,
+        "Jerry": 25,
+        "Pross": 31
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lorry": "Pat",
+        "Lucie": "Kimberlynn",
+        "Roger": "Ainslie",
+        "yver": "Oakley",
+        "Dickens": "Salem",
+        "George": "Joh",
+        "Louis": "Baldwin",
+        "Southcott": "Rane",
+        "Johnson": "Azaria",
+        "Oliver": "Nikil",
+        "Sessions": "Teagen",
+        "Monseigneur": "Kimoni",
+        "Evremond": "Chee",
+        "Gorgon": "Terrin",
+        "Tellson": "Oddie",
+        "Young": "Shamell",
+        "Jerry": "Kyele",
+        "Monsieur": "Dail",
+        "Doctor": "Yuki",
+        "Foulon": "Osiris",
+        "Solomon": "Norwin",
+        "Evremondes": "Averey",
+        "young": "Gaylin"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Cruncher": "Leverne",
+        "Cly": "Deone",
+        "III": "Reiley",
+        "XVI": "Kaidyn",
+        "Goldsmith": "Bela",
+        "Evremonde": "Tahje",
+        "Jerry": "Naithe",
+        "Pross": "Arden"
+    }
+}

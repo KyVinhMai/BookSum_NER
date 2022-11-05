@@ -1,0 +1,54 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Tommo": 0,
+        "Toby": 1,
+        "Mehevi": 2,
+        "Typees": 3,
+        "KoryKory": 4,
+        "MowMow": 5,
+        "Jimmy": 6,
+        "Melville": 7,
+        "\\Toby": 8,
+        "Tinor": 9,
+        "Eve": 10,
+        "Typee": 11,
+        "Kolory": 14,
+        "Ti": 17,
+        "Mow": 18,
+        "Topy": 19
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Kory": 13,
+        "Mow": 16
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Tommo": "Ashtan",
+        "Toby": "Riely",
+        "Mehevi": "Jaedyn",
+        "Typees": "Tahjae",
+        "KoryKory": "Neftaly",
+        "MowMow": "Kodie",
+        "Jimmy": "Karvah",
+        "Melville": "Domnique",
+        "\\Toby": "Hartley",
+        "Tinor": "Lashaun",
+        "Eve": "Lauri",
+        "Typee": "Bralyn",
+        "Kolory": "Brookes",
+        "Ti": "Sukhman",
+        "Mow": "Cedar",
+        "Topy": "Geral"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Kory": "Tirese",
+        "Mow": "Samie"
+    }
+}

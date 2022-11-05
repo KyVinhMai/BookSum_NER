@@ -1,0 +1,54 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Elliot": 0,
+        "Russell": 1,
+        "Shepherd": 2,
+        "Elliots": 3,
+        "Smith": 4,
+        "Rooke": 6,
+        "Kellynch": 8,
+        "Croft": 9,
+        "Musgroves": 10,
+        "Crofts": 11,
+        "Frederick": 12,
+        "Dick": 14,
+        "Uppercross": 16,
+        "Benwick": 17,
+        "Shirley": 18,
+        "Rook": 19
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Wentworth": 13,
+        "Musgrove": 15
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Elliot": "Keean",
+        "Russell": "Calis",
+        "Shepherd": "Linn",
+        "Elliots": "Arie",
+        "Smith": "Wrigley",
+        "Rooke": "Laray",
+        "Kellynch": "Arnell",
+        "Croft": "Tam",
+        "Musgroves": "Danel",
+        "Crofts": "Artie",
+        "Frederick": "Tyvez",
+        "Dick": "Amod",
+        "Uppercross": "Raynell",
+        "Benwick": "Jaydee",
+        "Shirley": "Michole",
+        "Rook": "Shadow"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Wentworth": "Koi",
+        "Musgrove": "Sky"
+    }
+}

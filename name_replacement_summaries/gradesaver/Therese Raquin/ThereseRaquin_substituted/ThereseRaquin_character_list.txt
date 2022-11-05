@@ -1,0 +1,24 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Rougon": 0,
+        "Olivier": 1,
+        "Grivet": 2,
+        "sleeping": 3
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Rougon": "Danyl",
+        "Olivier": "Parmodh",
+        "Grivet": "Carey",
+        "sleeping": "Yu"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

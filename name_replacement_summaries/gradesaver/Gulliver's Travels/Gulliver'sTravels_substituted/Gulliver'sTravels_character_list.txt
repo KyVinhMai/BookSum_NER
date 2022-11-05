@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lemuel": 0,
+        "Swift": 2,
+        "Blefuscu": 3,
+        "Lilliput": 4,
+        "Munodi": 5,
+        "Homer": 6,
+        "uldbrug": 7,
+        "Swifts": 8,
+        "uldbrugs": 9,
+        "Houyhnhnms": 10,
+        "Don": 11
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Gulliver": 1,
+        "Pedro": 12
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lemuel": "Stamen",
+        "Swift": "Osiris",
+        "Blefuscu": "Peniel",
+        "Lilliput": "Manpreet",
+        "Munodi": "Haydyn",
+        "Homer": "Lareco",
+        "uldbrug": "Clair",
+        "Swifts": "Bao",
+        "uldbrugs": "Khali",
+        "Houyhnhnms": "Gianny",
+        "Don": "Knate"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Gulliver": "Atari",
+        "Pedro": "Stie"
+    }
+}

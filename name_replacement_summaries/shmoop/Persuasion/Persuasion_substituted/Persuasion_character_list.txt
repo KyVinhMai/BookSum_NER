@@ -1,0 +1,60 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Elliots": 0,
+        "Croft": 1,
+        "Crofts": 2,
+        "Elliot": 4,
+        "Russell": 5,
+        "Musgroves": 6,
+        "Benwick": 7,
+        "Smith": 8,
+        "Eeyore": 9,
+        "Musgrove": 10,
+        "Tim": 11,
+        "Uppercross": 13,
+        "Rooke": 14,
+        "Smiths": 15,
+        "Kellynch": 16,
+        "Shepherd": 17,
+        "Frederick": 18,
+        "Dick": 20,
+        "Winthrop": 21
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Gunn": 12,
+        "Wentworth": 19
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Elliots": "Sloan",
+        "Croft": "Kirin",
+        "Crofts": "Hudsyn",
+        "Elliot": "Light",
+        "Russell": "Xing",
+        "Musgroves": "Asuncion",
+        "Benwick": "Jaydn",
+        "Smith": "Daine",
+        "Eeyore": "Marquette",
+        "Musgrove": "Maxi",
+        "Tim": "Glynndon",
+        "Uppercross": "Daylin",
+        "Rooke": "Skylur",
+        "Smiths": "Deniz",
+        "Kellynch": "Tanay",
+        "Shepherd": "Aundra",
+        "Frederick": "Paulus",
+        "Dick": "Juwel",
+        "Winthrop": "Ocean"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Gunn": "Najarana",
+        "Wentworth": "Talyn"
+    }
+}

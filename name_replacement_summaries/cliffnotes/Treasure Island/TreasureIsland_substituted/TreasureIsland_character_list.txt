@@ -1,0 +1,66 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Billy": 0,
+        "Jim": 2,
+        "Livesey": 3,
+        "Flint": 4,
+        "Long": 5,
+        "Smollett": 7,
+        "Ben": 8,
+        "O'Brien": 10,
+        "Pew": 11,
+        "venson": 12,
+        "Victor": 13,
+        "Dick": 17,
+        "Hunter": 19,
+        "Joyce": 20,
+        "George": 23,
+        "keelson": 25
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bones": 1,
+        "Silver": 6,
+        "Gunn": 9,
+        "Fleming": 14,
+        "Redruth": 16,
+        "Bones'": 18,
+        "Tom": 21,
+        "Merry": 24
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Billy": "Samil",
+        "Jim": "Jayvion",
+        "Livesey": "Jacquise",
+        "Flint": "Tenzin",
+        "Long": "Raylen",
+        "Smollett": "Ossie",
+        "Ben": "Jamiel",
+        "O'Brien": "Olanda",
+        "Pew": "Lyndal",
+        "venson": "Phoenix",
+        "Victor": "Benicio",
+        "Dick": "Marwan",
+        "Hunter": "Hien",
+        "Joyce": "Taliah",
+        "George": "Maddock",
+        "keelson": "Amarii"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bones": "Donnelle",
+        "Silver": "Abdollah",
+        "Gunn": "Gwlenys",
+        "Fleming": "Tamari",
+        "Redruth": "Oluwatosin",
+        "Bones'": "Loghan",
+        "Tom": "Bird",
+        "Merry": "Kendie"
+    }
+}

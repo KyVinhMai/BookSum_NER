@@ -1,0 +1,70 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Jurgis": 0,
+        "Mike": 3,
+        "Henderson": 5,
+        "Wilde": 6,
+        "Jukniene": 7,
+        "Olszewski": 8,
+        "Freddie": 9,
+        "Jones": 11,
+        "\\Serge": 13,
+        "Goldberger": 15,
+        "Murphy": 16,
+        "\\Scotty\\": 17,
+        "Phil": 19,
+        "Ostrinski": 21,
+        "Tommy": 22,
+        "Brown": 24,
+        "Fisher": 25,
+        "Jesus": 26
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Rudkus": 1,
+        "Scully": 4,
+        "Jones": 10,
+        "Senior": 12,
+        "Reminitsky\\": 14,
+        "Doyle": 18,
+        "Connor": 20,
+        "Hinds": 23
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Jurgis": "Graciano",
+        "Mike": "Jian-Ming",
+        "Henderson": "Bravyn",
+        "Wilde": "Arden",
+        "Jukniene": "Jamani",
+        "Olszewski": "Christan",
+        "Freddie": "Carrington",
+        "Jones": "Seumas",
+        "\\Serge": "Germany",
+        "Goldberger": "Ayomide",
+        "Murphy": "Brint",
+        "\\Scotty\\": "Tyjae",
+        "Phil": "Zione",
+        "Ostrinski": "Shaquelle",
+        "Tommy": "Emmule",
+        "Brown": "Ozie",
+        "Fisher": "Kaedyn",
+        "Jesus": "Lenzie"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Rudkus": "Lashaun",
+        "Scully": "Jerre",
+        "Jones": "Ayuel",
+        "Senior": "Nakota",
+        "Reminitsky\\": "Evann",
+        "Doyle": "Hose",
+        "Connor": "Jonai",
+        "Hinds": "Yona"
+    }
+}

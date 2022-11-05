@@ -1,0 +1,74 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Egeus": 0,
+        "Demetrius": 1,
+        "Puck": 2,
+        "Oberon": 3,
+        "Bottom": 4,
+        "Duke": 5,
+        "Thisbe": 6,
+        "Ninus": 7,
+        "Dr.": 8,
+        "Peter": 10,
+        "Snug": 12,
+        "Flute": 13,
+        "Snout": 14,
+        "Ovid": 15,
+        "Hercules": 16,
+        "Robin": 17,
+        "Pucks": 19,
+        "Cupid": 20,
+        "Forester": 21,
+        "Muses": 22,
+        "John": 23,
+        "Ninny": 24,
+        "Lion": 25,
+        "Moonshine": 26,
+        "Folger": 27
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Phil": 9,
+        "Quince": 11,
+        "Goodfellow": 18
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Egeus": "Oddie",
+        "Demetrius": "Jaben",
+        "Puck": "Brittin",
+        "Oberon": "Sloan",
+        "Bottom": "Ozie",
+        "Duke": "Neelajan",
+        "Thisbe": "Vernell",
+        "Ninus": "Koi",
+        "Dr.": "Jianni",
+        "Peter": "Baby",
+        "Snug": "Isa",
+        "Flute": "Makana",
+        "Snout": "Dannell",
+        "Ovid": "Jaelin",
+        "Hercules": "Lavaughn",
+        "Robin": "Jaydence",
+        "Pucks": "Adisa",
+        "Cupid": "Jodeci",
+        "Forester": "Kamani",
+        "Muses": "Zaylin",
+        "John": "Aalias",
+        "Ninny": "Jaydeen",
+        "Lion": "Ratikant",
+        "Moonshine": "Navjot",
+        "Folger": "Avrey"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Phil": "Mauel",
+        "Quince": "Manpreet",
+        "Goodfellow": "Teagen"
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "yvers": 0,
+        "yver": 1,
+        "Lorry": 2,
+        "Pross": 3,
+        "Lucie": 4,
+        "Monseigneur": 5,
+        "Evremondes": 8,
+        "Lucies": 9,
+        "Jerry": 10,
+        "Roger": 12,
+        "Ernest": 14,
+        "Doctor": 15,
+        "Foulon": 16,
+        "Foulons": 17,
+        "Solomon": 18,
+        "George": 19,
+        "Louis": 21
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Evremonde": 7,
+        "Cruncher": 11,
+        "Cly": 13,
+        "III": 20,
+        "XVI": 22
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "yvers": "Haedyn",
+        "yver": "Larin",
+        "Lorry": "Zarin",
+        "Pross": "Chapel",
+        "Lucie": "Domiana",
+        "Monseigneur": "Braylyn",
+        "Evremondes": "Makell",
+        "Lucies": "Quanta",
+        "Jerry": "Indyanna",
+        "Roger": "Crae",
+        "Ernest": "Maceson",
+        "Doctor": "Cledith",
+        "Foulon": "Nyaire",
+        "Foulons": "Sehaj",
+        "Solomon": "Nevo",
+        "George": "Tyquane",
+        "Louis": "Darrel"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Evremonde": "Skylier",
+        "Cruncher": "Danyl",
+        "Cly": "Linn",
+        "III": "Amory",
+        "XVI": "Aldean"
+    }
+}

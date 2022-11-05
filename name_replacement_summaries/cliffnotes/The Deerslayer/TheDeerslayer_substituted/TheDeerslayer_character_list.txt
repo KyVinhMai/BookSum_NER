@@ -1,0 +1,48 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Tom": 0,
+        "Judith": 2,
+        "Hetty": 3,
+        "Mingo": 5,
+        "Hist": 6,
+        "Mingos": 7,
+        "Killdeer": 8,
+        "Bumppo": 9,
+        "Hurry": 10,
+        "Cooper": 11,
+        "Kidd": 12,
+        "Hutters": 13,
+        "Scott": 14
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Hotter": 1,
+        "Hutter": 4
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Tom": "Keyvonte",
+        "Judith": "Khadeshia",
+        "Hetty": "Tanijah",
+        "Mingo": "Ji",
+        "Hist": "Dustine",
+        "Mingos": "Azariah",
+        "Killdeer": "Arlyn",
+        "Bumppo": "Daylin",
+        "Hurry": "Avry",
+        "Cooper": "Vennie",
+        "Kidd": "Connelly",
+        "Hutters": "Tahje",
+        "Scott": "Anjuan"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Hotter": "Miciah",
+        "Hutter": "Chidera"
+    }
+}

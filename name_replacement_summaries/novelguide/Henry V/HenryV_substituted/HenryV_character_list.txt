@@ -1,0 +1,86 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Gower": 0,
+        "Fluellen": 1,
+        "Gloucester": 2,
+        "Henry": 3,
+        "Exeter": 4,
+        "Bourbon": 5,
+        "Montjoy": 6,
+        "Leroi": 8,
+        "Court": 9,
+        "York": 10,
+        "John": 12,
+        "Robert": 14,
+        "Winston": 15,
+        "Monsieur": 17,
+        "Le": 19,
+        "le": 20,
+        "Nym": 21,
+        "Ely": 22,
+        "Holinshed": 24,
+        "Burgundy": 25,
+        "Philip": 27,
+        "Nell": 28,
+        "Hostess": 30,
+        "Boy": 31,
+        "Scrope": 32,
+        "Grey": 33
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "V": 11,
+        "Kennedy": 13,
+        "Churchill": 16,
+        "Fer": 18,
+        "IV": 23,
+        "VI": 26,
+        "Quickly": 29,
+        "Pistol": 34
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Gower": "Kmari",
+        "Fluellen": "Wrigley",
+        "Gloucester": "Ottie",
+        "Henry": "Azeil",
+        "Exeter": "Rainn",
+        "Bourbon": "Liron",
+        "Montjoy": "Eudell",
+        "Leroi": "Coren",
+        "Court": "Romey",
+        "York": "Ataan",
+        "John": "Nickali",
+        "Robert": "Michaelangel",
+        "Winston": "Rojelio",
+        "Monsieur": "Casy",
+        "Le": "Oluwatosin",
+        "le": "Kallan",
+        "Nym": "Charly",
+        "Ely": "Arieon",
+        "Holinshed": "Skyeler",
+        "Burgundy": "Indiana",
+        "Philip": "Ratwari",
+        "Nell": "Shekh",
+        "Hostess": "Austine",
+        "Boy": "Haoyuan",
+        "Scrope": "Torre",
+        "Grey": "Kamori"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "V": "Dondi",
+        "Kennedy": "Earlie",
+        "Churchill": "Kendel",
+        "Fer": "Ahadu",
+        "IV": "Ottie",
+        "VI": "Quinn",
+        "Quickly": "Jaton",
+        "Pistol": "Carle"
+    }
+}

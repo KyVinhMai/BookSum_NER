@@ -1,0 +1,52 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Titus": 0,
+        "Chiron": 1,
+        "Mutius": 3,
+        "Elvis": 4,
+        "Virginius": 5,
+        "Demetrius": 6,
+        "Quintus": 7,
+        "Philomel": 8,
+        "Rome": 9,
+        "Young": 10,
+        "Ovid": 12,
+        "Procne": 13,
+        "Odes": 14,
+        "Publius": 15,
+        "Sempronius": 16,
+        "Pluto": 17
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Lucius": 11
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Titus": "Paris",
+        "Chiron": "Jael",
+        "Mutius": "Meko",
+        "Elvis": "Mirek",
+        "Virginius": "Harbor",
+        "Demetrius": "Jermal",
+        "Quintus": "Laurice",
+        "Philomel": "Yael",
+        "Rome": "Matisse",
+        "Young": "Jaydn",
+        "Ovid": "Agam",
+        "Procne": "Kymari",
+        "Odes": "Aundra",
+        "Publius": "Adisa",
+        "Sempronius": "Akili",
+        "Pluto": "Salem"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Lucius": "Joseadrian"
+    }
+}

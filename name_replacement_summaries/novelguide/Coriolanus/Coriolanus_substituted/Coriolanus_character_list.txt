@@ -1,0 +1,30 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Menenius": 0,
+        "Sicinius": 1,
+        "Brutus": 2,
+        "Jupiter": 3,
+        "Cominius": 4,
+        "Cromwell": 5,
+        "Corioli": 6
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Menenius": "Vandy",
+        "Sicinius": "Freddi",
+        "Brutus": "Eddison",
+        "Jupiter": "Kimani",
+        "Cominius": "Torre",
+        "Cromwell": "Jadis",
+        "Corioli": "Jourdin"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

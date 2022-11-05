@@ -1,0 +1,34 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Crewe": 0,
+        "Minchin": 1,
+        "Emily": 2,
+        "Crewes": 3,
+        "Jessie": 4,
+        "Lottie": 5,
+        "Burnett": 6,
+        "Becky": 7,
+        "Melchisedec": 8
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Crewe": "Luverne",
+        "Minchin": "Jaidan",
+        "Emily": "Ernesta",
+        "Crewes": "Charley",
+        "Jessie": "Aivi",
+        "Lottie": "Gearl",
+        "Burnett": "Callaway",
+        "Becky": "Dzidra",
+        "Melchisedec": "Devlyn"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

@@ -1,0 +1,50 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Oliver": 0,
+        "Duke": 2,
+        "Robin": 5,
+        "Touchstone": 7,
+        "Silvius": 8,
+        "Phoebe": 9,
+        "Hymen": 10,
+        "Denis": 11,
+        "Jove": 12,
+        "Corin": 13,
+        "Feste": 14,
+        "Fortune": 15,
+        "Cupid": 16
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Senior": 3,
+        "Frederick": 4,
+        "Hood": 6
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Oliver": "Dynamie",
+        "Duke": "Ahmet",
+        "Robin": "Rayen",
+        "Touchstone": "Frankie",
+        "Silvius": "Mell",
+        "Phoebe": "Sanjay",
+        "Hymen": "Shayde",
+        "Denis": "Joanthony",
+        "Jove": "Kylin",
+        "Corin": "Faiq",
+        "Feste": "Maika",
+        "Fortune": "Amory",
+        "Cupid": "Hoa"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Senior": "Camauri",
+        "Frederick": "Blaxlan",
+        "Hood": "Ozie"
+    }
+}

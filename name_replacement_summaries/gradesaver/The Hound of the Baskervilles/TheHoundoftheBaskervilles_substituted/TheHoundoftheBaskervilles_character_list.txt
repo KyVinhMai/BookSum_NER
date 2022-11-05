@@ -1,0 +1,46 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Sherlock": 0,
+        "Mortimer": 2,
+        "Murphy": 3,
+        "Doyle": 4,
+        "Hound": 5,
+        "Henry": 6,
+        "Desmonds": 7,
+        "Desmond": 9,
+        "Selden": 10,
+        "Homes": 11,
+        "Rodger": 12,
+        "Beryl": 13
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Holmes": 1,
+        "Holmes\\": 8
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Sherlock": "Pat",
+        "Mortimer": "Alston",
+        "Murphy": "Bhuwan",
+        "Doyle": "Kanhaiyalal",
+        "Hound": "Ossie",
+        "Henry": "Monu@",
+        "Desmonds": "Dae",
+        "Desmond": "Dellen",
+        "Selden": "Erian",
+        "Homes": "Valen",
+        "Rodger": "Jave",
+        "Beryl": "Shontelle"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Holmes": "Storm",
+        "Holmes\\": "Jahdai"
+    }
+}

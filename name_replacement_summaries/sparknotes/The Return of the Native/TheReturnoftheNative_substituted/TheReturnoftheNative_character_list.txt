@@ -1,0 +1,46 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Diggory": 0,
+        "Wildeve": 2,
+        "Clym": 3,
+        "Olly": 5,
+        "Vye": 7,
+        "Johnny": 8,
+        "Heloises": 10,
+        "Humphrey": 11,
+        "Yeobrights": 12
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Venn": 1,
+        "Yeobright": 4,
+        "Dowden": 6,
+        "Nonsuch": 9,
+        "George": 14
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Diggory": "Aziah",
+        "Wildeve": "Skylier",
+        "Clym": "Skyler",
+        "Olly": "Climmie",
+        "Vye": "Toryn",
+        "Johnny": "Murton",
+        "Heloises": "Climmie",
+        "Humphrey": "Avy",
+        "Yeobrights": "Tru"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Venn": "Demarie",
+        "Yeobright": "Bao",
+        "Dowden": "Carlin",
+        "Nonsuch": "Lauris",
+        "George": "Jeshaun"
+    }
+}

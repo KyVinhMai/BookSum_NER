@@ -1,0 +1,48 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lucy": 0,
+        "Selby": 2,
+        "Foster": 3,
+        "Pettengill": 4,
+        "Gordon": 5,
+        "Pribble": 6,
+        "Emmons": 7,
+        "George": 8,
+        "Korobkin": 10,
+        "J.": 11,
+        "Heidi": 13,
+        "Sumners": 15
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Sumner": 9,
+        "Boyer": 12,
+        "Johnson": 14
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lucy": "Matoyla",
+        "Selby": "Larin",
+        "Foster": "Tanisha",
+        "Pettengill": "Alexiz",
+        "Gordon": "Arshaun",
+        "Pribble": "Blayke",
+        "Emmons": "Soua",
+        "George": "Ryanmatthew",
+        "Korobkin": "Temiloluwa",
+        "J.": "Natale",
+        "Heidi": "Khyleigh",
+        "Sumners": "Selby"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Sumner": "Celester",
+        "Boyer": "Britain",
+        "Johnson": "Si-Vinh"
+    }
+}

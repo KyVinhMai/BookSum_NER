@@ -1,0 +1,30 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Kurtz": 0,
+        "Intended": 1,
+        "Fresleven": 2,
+        "Leopold": 3,
+        "T.": 4
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Eliot": 5
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Kurtz": "Danel",
+        "Intended": "Marquette",
+        "Fresleven": "Terrin",
+        "Leopold": "Giann",
+        "T.": "Kendall"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Eliot": "Saif"
+    }
+}

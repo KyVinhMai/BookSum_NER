@@ -1,0 +1,72 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Demetrius": 0,
+        "Cupid": 1,
+        "Dido": 2,
+        "Virgil": 3,
+        "Peter": 4,
+        "Thisbe": 6,
+        "Nick": 7,
+        "Flute": 9,
+        "Snug": 10,
+        "Romeo": 11,
+        "Juliet": 12,
+        "Spencer": 13,
+        "Oberon": 14,
+        "Phibbus": 15,
+        "Robin": 16,
+        "Puck": 18,
+        "Corin": 19,
+        "Hiems": 20,
+        "Eve": 21,
+        "Snout": 22,
+        "Cobweb": 23,
+        "Egeus": 24,
+        "Helen": 25,
+        "Hero": 26
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Quince": 5,
+        "Bottom": 8,
+        "Goodfellow": 17
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Demetrius": "Winfried",
+        "Cupid": "Min",
+        "Dido": "Vanessa-Mae",
+        "Virgil": "Larken",
+        "Peter": "Jerison",
+        "Thisbe": "Germany",
+        "Nick": "Elohim",
+        "Flute": "Donne",
+        "Snug": "Ryley",
+        "Romeo": "Sariel",
+        "Juliet": "Kahlika",
+        "Spencer": "Devrim",
+        "Oberon": "Deshannon",
+        "Phibbus": "Ottie",
+        "Robin": "Min",
+        "Puck": "Giani",
+        "Corin": "Arik",
+        "Hiems": "Reilly",
+        "Eve": "Delma",
+        "Snout": "Nesta",
+        "Cobweb": "Rylin",
+        "Egeus": "Kery",
+        "Helen": "Rilynn",
+        "Hero": "Rilan"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Quince": "Breslin",
+        "Bottom": "Kamarii",
+        "Goodfellow": "Amandeep"
+    }
+}

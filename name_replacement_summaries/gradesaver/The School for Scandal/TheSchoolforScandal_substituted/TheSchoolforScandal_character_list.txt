@@ -1,0 +1,42 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Sneerwell": 0,
+        "Joseph": 1,
+        "Peter": 2,
+        "Rowley": 3,
+        "Oliver": 4,
+        "Moses": 5,
+        "Premium": 6,
+        "Henry": 7,
+        "OLIVEROh": 9,
+        "OLIVERMy": 10,
+        "Trip": 11
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "VI": 8
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Sneerwell": "Eaden",
+        "Joseph": "Michial",
+        "Peter": "Ajaj",
+        "Rowley": "Malone",
+        "Oliver": "Tiit",
+        "Moses": "Natanaele",
+        "Premium": "Brae",
+        "Henry": "Othell",
+        "OLIVEROh": "Miciah",
+        "OLIVERMy": "Siah",
+        "Trip": "Shawne"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "VI": "Amil"
+    }
+}

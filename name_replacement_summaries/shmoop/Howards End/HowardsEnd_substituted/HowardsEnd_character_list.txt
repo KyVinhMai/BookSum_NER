@@ -1,0 +1,74 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Schlegels": 0,
+        "Helen": 1,
+        "Tibby": 2,
+        "Wilcoxes": 3,
+        "Evie": 5,
+        "Henry": 6,
+        "Meg": 8,
+        "Dolly": 9,
+        "Schlegel": 10,
+        "Juley": 11,
+        "Jezebel": 12,
+        "Percy": 13,
+        "Bryce": 14,
+        "Ruth": 15,
+        "Burton": 16,
+        "Oniton": 17,
+        "Fussell": 18,
+        "Munt": 19,
+        "Wilcoxes\\": 20,
+        "Tom": 21,
+        "Beethoven": 22,
+        "Herr": 23,
+        "Forster": 25,
+        "John": 26,
+        "Bruno": 28
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Wilcox": 7,
+        "Liesecke": 24,
+        "Ruskin": 27
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Schlegels": "March",
+        "Helen": "Antaja",
+        "Tibby": "Yee",
+        "Wilcoxes": "Jlyn",
+        "Evie": "Ova",
+        "Henry": "Torien",
+        "Meg": "Amavil",
+        "Dolly": "Tingshu",
+        "Schlegel": "Raynell",
+        "Juley": "Jaelin",
+        "Jezebel": "Jazz",
+        "Percy": "Boyce",
+        "Bryce": "Jlyn",
+        "Ruth": "Lisa-Renee",
+        "Burton": "Josefina",
+        "Oniton": "Rameen",
+        "Fussell": "Jae",
+        "Munt": "Liron",
+        "Wilcoxes\\": "Dayan",
+        "Tom": "Kazuo",
+        "Beethoven": "Harbor",
+        "Herr": "Neziah",
+        "Forster": "Agam",
+        "John": "Latham",
+        "Bruno": "Jem"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Wilcox": "Kendel",
+        "Liesecke": "Deone",
+        "Ruskin": "Lyrik"
+    }
+}

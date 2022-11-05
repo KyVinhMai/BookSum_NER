@@ -1,0 +1,50 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Shelley": 0,
+        "Victor": 1,
+        "Young": 2,
+        "Henry": 3,
+        "Krempe": 4,
+        "Justine": 5,
+        "Ernest": 7,
+        "Felix": 8,
+        "De": 9,
+        "Milton": 10,
+        "Werter": 11,
+        "Eve": 12,
+        "venson": 13,
+        "Hyde": 14,
+        "Kirwin": 15
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Moritz": 6
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Shelley": "Renesme",
+        "Victor": "Nussen",
+        "Young": "Jayel",
+        "Henry": "Mcgregor",
+        "Krempe": "Cypress",
+        "Justine": "Serin",
+        "Ernest": "Jayten",
+        "Felix": "Ariana",
+        "De": "Audi",
+        "Milton": "Christos",
+        "Werter": "Michaela",
+        "Eve": "Yudani",
+        "venson": "Kalani",
+        "Hyde": "Skyler",
+        "Kirwin": "Aeon"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Moritz": "Tennie"
+    }
+}

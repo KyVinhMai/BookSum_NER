@@ -1,0 +1,82 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "M.": 0,
+        "Porthos": 2,
+        "Musketeers": 3,
+        "Rochefort": 4,
+        "Meung": 5,
+        "de": 6,
+        "Musketeer": 8,
+        "Don": 10,
+        "Monsieur": 12,
+        "Mousqueton": 13,
+        "Pothos": 14,
+        "Lubin": 15,
+        "Kitty": 17,
+        "Lord": 18,
+        "Comte": 19,
+        "Henry": 20,
+        "Brisemont": 22,
+        "Schomberg": 23,
+        "Judith": 24,
+        "John": 26,
+        "De": 28,
+        "\\Heyo": 29,
+        "Richelieu": 30,
+        "Lille": 31,
+        "Tremouille": 32
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Treville": 1,
+        "Chevreuse": 7,
+        "Seguier": 9,
+        "Quixote": 11,
+        "Winter": 16,
+        "IV": 21,
+        "Felton": 27
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "M.": "Evann",
+        "Porthos": "Ariyan",
+        "Musketeers": "Arien",
+        "Rochefort": "Oluwaseun",
+        "Meung": "Eh",
+        "de": "Skyler",
+        "Musketeer": "Tobie",
+        "Don": "Shafeeq",
+        "Monsieur": "Kaedyn",
+        "Mousqueton": "Shamell",
+        "Pothos": "Aalijah",
+        "Lubin": "Harlyn",
+        "Kitty": "Zera",
+        "Lord": "Natale",
+        "Comte": "Maxi",
+        "Henry": "Kedwin",
+        "Brisemont": "Jessie",
+        "Schomberg": "Blaike",
+        "Judith": "Kerily",
+        "John": "Montie",
+        "De": "Jerre",
+        "\\Heyo": "Kalani",
+        "Richelieu": "Amaurie",
+        "Lille": "Arniece",
+        "Tremouille": "Charley"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Treville": "Hyun",
+        "Chevreuse": "Vail",
+        "Seguier": "Leighton",
+        "Quixote": "Ekam",
+        "Winter": "Davonne",
+        "IV": "Latrelle",
+        "Felton": "Zuwaid"
+    }
+}

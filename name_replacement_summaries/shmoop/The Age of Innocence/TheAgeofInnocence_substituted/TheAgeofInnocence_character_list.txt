@@ -1,0 +1,68 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Gounod": 0,
+        "Lovell": 1,
+        "Low": 3,
+        "Mingotts": 4,
+        "Ellen": 5,
+        "Ned": 6,
+        "Thorley": 9,
+        "Monsieur": 11,
+        "Lefferts": 13,
+        "Blenkers": 14,
+        "Sillertons": 15,
+        "Sillerton": 16,
+        "Blenker": 17,
+        "Selfridge": 18,
+        "Reggie": 19,
+        "Bill": 22,
+        "Merrys": 23,
+        "Duke": 24,
+        "Julius": 25
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Mingott": 2,
+        "Winsett": 7,
+        "Rushworth": 10,
+        "Riviere": 12,
+        "Chivers": 20,
+        "Merry": 21
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Gounod": "Cire",
+        "Lovell": "Nesta",
+        "Low": "Averey",
+        "Mingotts": "Lenzie",
+        "Ellen": "Shenetra",
+        "Ned": "Lakieth",
+        "Thorley": "Harbor",
+        "Monsieur": "Aries",
+        "Lefferts": "Collen",
+        "Blenkers": "Ricki",
+        "Sillertons": "Juda",
+        "Sillerton": "Quanta",
+        "Blenker": "Amadi",
+        "Selfridge": "Charley",
+        "Reggie": "Timon",
+        "Bill": "Kenyota",
+        "Merrys": "Alika",
+        "Duke": "Tengis",
+        "Julius": "Andrien"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Mingott": "Eldean",
+        "Winsett": "Jayel",
+        "Rushworth": "Senai",
+        "Riviere": "Kriston",
+        "Chivers": "Codee",
+        "Merry": "Keo"
+    }
+}

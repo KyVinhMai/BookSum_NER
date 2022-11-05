@@ -1,0 +1,56 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Jim": 0,
+        "Otto": 2,
+        "Burdens": 4,
+        "Cleric": 5,
+        "Virgil": 6,
+        "Ole": 7,
+        "Ordinsky": 9,
+        "Tiny": 10,
+        "Cutters": 11,
+        "Wick": 12,
+        "Peter": 14,
+        "Bushy": 16,
+        "Nick": 17,
+        "Chris": 19
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Burden": 1,
+        "Fuchs": 3,
+        "Benson": 8,
+        "Cutter": 15,
+        "Svendsen": 18
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Jim": "Emraan",
+        "Otto": "Sirak",
+        "Burdens": "Sully",
+        "Cleric": "Jaelin",
+        "Virgil": "Dominicc",
+        "Ole": "Herodotus",
+        "Ordinsky": "Kiran",
+        "Tiny": "Vere",
+        "Cutters": "Kem",
+        "Wick": "Mckinley",
+        "Peter": "Beulah",
+        "Bushy": "Amarri",
+        "Nick": "Hanniel",
+        "Chris": "Jaelin"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Burden": "Jourdan",
+        "Fuchs": "Rhyan",
+        "Benson": "Luverne",
+        "Cutter": "Dondi",
+        "Svendsen": "Reign"
+    }
+}

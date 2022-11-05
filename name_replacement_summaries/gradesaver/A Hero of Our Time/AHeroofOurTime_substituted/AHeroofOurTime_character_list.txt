@@ -1,0 +1,30 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lermontov": 0,
+        "Pechorin": 1,
+        "Grushnitsky": 2,
+        "Werner": 3,
+        "Ligovskoy": 4,
+        "Vulich": 5,
+        "Yefimich": 6
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lermontov": "Alyn",
+        "Pechorin": "Jamille",
+        "Grushnitsky": "Monta",
+        "Werner": "Mattheu",
+        "Ligovskoy": "Vandy",
+        "Vulich": "Trayce",
+        "Yefimich": "Xan"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

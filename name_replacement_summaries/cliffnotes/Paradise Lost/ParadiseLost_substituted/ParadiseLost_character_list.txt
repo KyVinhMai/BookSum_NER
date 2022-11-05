@@ -1,0 +1,72 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Milton": 0,
+        "Lucifer": 1,
+        "Mulciber": 2,
+        "Eve": 3,
+        "Homer": 4,
+        "Virgil": 5,
+        "Edmund": 6,
+        "Isis": 8,
+        "Osiris": 9,
+        "Zeus": 10,
+        "Enoch": 11,
+        "Jesus": 12,
+        "Enochs": 13,
+        "Eves": 14,
+        "Nimrod": 15,
+        "Moses": 16,
+        "Moloch": 17,
+        "Beelzebub": 18,
+        "Sin": 19,
+        "Diomedes": 20,
+        "Uriel": 21,
+        "Empedocles": 22,
+        "Ithuriel": 23,
+        "Cromwell": 24,
+        "Copernicus": 25,
+        "Kepler": 26
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Spenser": 7
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Milton": "Rambrij",
+        "Lucifer": "Daryan",
+        "Mulciber": "Kimani",
+        "Eve": "Suedell",
+        "Homer": "Clarry",
+        "Virgil": "Loth",
+        "Edmund": "Datavious",
+        "Isis": "Novea",
+        "Osiris": "Kaydin",
+        "Zeus": "Jayln",
+        "Enoch": "Daron",
+        "Jesus": "Rainn",
+        "Enochs": "Jule",
+        "Eves": "Codee",
+        "Nimrod": "Harlowe",
+        "Moses": "Kalish",
+        "Moloch": "Gianny",
+        "Beelzebub": "Alvia",
+        "Sin": "Payson",
+        "Diomedes": "Osiris",
+        "Uriel": "Shaine",
+        "Empedocles": "Dwan",
+        "Ithuriel": "Ottie",
+        "Cromwell": "Peyson",
+        "Copernicus": "Deshannon",
+        "Kepler": "Charley"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Spenser": "Maclyan"
+    }
+}

@@ -1,0 +1,68 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Robert": 1,
+        "Ross": 3,
+        "Bush": 5,
+        "Lodbrog": 6,
+        "John": 7,
+        "Henry": 9,
+        "Bilson": 11,
+        "Fortescue": 12,
+        "Friedrich": 13,
+        "Oliver": 15,
+        "Hooker": 17,
+        "Hobbes": 18,
+        "Tully": 20,
+        "Tuckness": 24,
+        "Jefferson": 25
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Filmer": 2,
+        "Corbett": 4,
+        "Locke": 8,
+        "VI": 10,
+        "Engel": 14,
+        "Cromwell": 16,
+        "Novick": 19,
+        "Simmons": 21,
+        "Dunn": 22,
+        "Nozick": 23
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Robert": "Guenter",
+        "Ross": "Vanness",
+        "Bush": "Lakota",
+        "Lodbrog": "Bay",
+        "John": "Azadveer",
+        "Henry": "Gie",
+        "Bilson": "Tajai",
+        "Fortescue": "Kimari",
+        "Friedrich": "Vass",
+        "Oliver": "Ramil",
+        "Hooker": "Kalani",
+        "Hobbes": "Jianni",
+        "Tully": "Samar",
+        "Tuckness": "Kaydin",
+        "Jefferson": "Mahender"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Filmer": "Raylen",
+        "Corbett": "Linnell",
+        "Locke": "Gwin",
+        "VI": "Armani",
+        "Engel": "Tajae",
+        "Cromwell": "Meko",
+        "Novick": "Kellis",
+        "Simmons": "Ji",
+        "Dunn": "Rameen",
+        "Nozick": "Jaelin"
+    }
+}

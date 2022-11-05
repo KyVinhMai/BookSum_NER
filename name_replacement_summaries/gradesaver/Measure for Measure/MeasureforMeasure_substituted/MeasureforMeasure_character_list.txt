@@ -1,0 +1,40 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lucio": 0,
+        "Mistress": 1,
+        "Juliet": 3,
+        "Elbow": 4,
+        "Froth": 5,
+        "Pompey": 6,
+        "Duke": 7,
+        "Provost": 8,
+        "Peter": 9,
+        "Prospero": 10
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Overdone": 2
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lucio": "Cad",
+        "Mistress": "Wai",
+        "Juliet": "Calii",
+        "Elbow": "Jaleen",
+        "Froth": "Jasmon",
+        "Pompey": "Emerson",
+        "Duke": "Nielsen",
+        "Provost": "Lennie",
+        "Peter": "Keseva",
+        "Prospero": "Katlyn"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Overdone": "Alexandr"
+    }
+}

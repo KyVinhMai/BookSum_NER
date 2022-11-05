@@ -1,0 +1,60 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Gurth": 0,
+        "Cedric": 1,
+        "Prior": 2,
+        "Scott": 3,
+        "De": 4,
+        "Higg": 6,
+        "Locksley": 7,
+        "Prince": 8,
+        "Fitzurse": 10,
+        "Robin": 11,
+        "Tuck": 13,
+        "Edith": 14,
+        "Essex": 15,
+        "FrontdeBoeuf": 16,
+        "Wilfred": 17,
+        "Hubert": 18,
+        "Knight": 19,
+        "Urfried": 20
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "BoisGuilbert": 5,
+        "John": 9,
+        "Hood": 12
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Gurth": "Camdyn",
+        "Cedric": "Scyler",
+        "Prior": "Tamari",
+        "Scott": "Aizel",
+        "De": "Toy",
+        "Higg": "Wrigley",
+        "Locksley": "Kijana",
+        "Prince": "Shakor",
+        "Fitzurse": "Collen",
+        "Robin": "Jaryn",
+        "Tuck": "Cedar",
+        "Edith": "Willoe",
+        "Essex": "Kris",
+        "FrontdeBoeuf": "Aquarius",
+        "Wilfred": "Khodee",
+        "Hubert": "Mataihau",
+        "Knight": "Shamari",
+        "Urfried": "Dru"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "BoisGuilbert": "Edris",
+        "John": "Hillie",
+        "Hood": "Kareen"
+    }
+}

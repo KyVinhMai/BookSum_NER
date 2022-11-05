@@ -1,0 +1,58 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lord": 1,
+        "Brown": 3,
+        "Schomberg": 4,
+        "in": 5,
+        "Jewel": 6,
+        "Cornelius": 7,
+        "Brierly": 8,
+        "Bugis": 9,
+        "George": 10,
+        "Jones": 11,
+        "Rover": 12,
+        "De": 13,
+        "Chester": 15,
+        "Robinson": 16,
+        "Egstrom": 17,
+        "O'Brien": 18,
+        "Eve": 19,
+        "Something": 20
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Jim": 2,
+        "Jongh": 14
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lord": "March",
+        "Brown": "Dannell",
+        "Schomberg": "Callaway",
+        "in": "Ricci",
+        "Jewel": "Deavion",
+        "Cornelius": "Aatish",
+        "Brierly": "Brennyn",
+        "Bugis": "Elim",
+        "George": "Maya",
+        "Jones": "Grazio",
+        "Rover": "Pasha",
+        "De": "Dominque",
+        "Chester": "Vitan",
+        "Robinson": "Skylan",
+        "Egstrom": "Mishael",
+        "O'Brien": "Kamori",
+        "Eve": "Shaynee",
+        "Something": "Zaiah"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Jim": "Robbey",
+        "Jongh": "Mechel"
+    }
+}

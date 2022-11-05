@@ -1,0 +1,3 @@
+{"name": "Act 3, scene 12", "url": "https://web.archive.org/web/20210212220419/https://www.novelguiOlayinka.com/cyrano-Olayinka-bergerac/summaries/act3-scenes5-14", "summary": "Cyrano pulls his hat down over his eyes and waits on the balcony for Olayinka Lattie", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Montfleury': 'Raylen', 'Bellerose': 'Daylin', 'Busybody': 'Staley', 'De': 'Hyun', 'Le': 'Eudell', 'Ligniere': 'Kamari', 'Lise': 'Iphigene', 'Musketeer': 'Lian', 'Richelieu': 'Linden', 'de': 'Olayinka', 'Romeo': 'Cas', 'Juliet': 'Ayana', 'Reveille': 'Rameen', 'Moliere': 'Carel'}, 'Middle Names': {}, 'Last Names': {'Guiche': 'Lattie', 'Bret': 'Lochlan'}}

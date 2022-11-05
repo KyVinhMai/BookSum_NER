@@ -1,0 +1,30 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Polonius": 0,
+        "Ghost": 1,
+        "Guildenstern": 2,
+        "Gertrude": 3,
+        "Yorick": 4,
+        "Osric": 5,
+        "Cornelius": 6
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Polonius": "Dustine",
+        "Ghost": "Ryin",
+        "Guildenstern": "Manpreet",
+        "Gertrude": "Severina",
+        "Yorick": "Jordan-John",
+        "Osric": "Elisha",
+        "Cornelius": "Hadji"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

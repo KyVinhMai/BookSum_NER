@@ -1,0 +1,70 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Henry": 0,
+        "John": 2,
+        "Solomon": 5,
+        "Jose": 6,
+        "Ignosi": 8,
+        "George": 9,
+        "Jim": 10,
+        "Tom": 12,
+        "Ventvogel": 13,
+        "Odysseus": 14,
+        "Lindy": 16,
+        "Hottentot": 18,
+        "Dom": 19,
+        "Imotu": 20,
+        "Loo": 21,
+        "Greys": 22,
+        "Hector": 23,
+        "\\Incubu": 24,
+        "Chimosh": 25,
+        "Milcom": 26
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Curtis": 1,
+        "Good": 3,
+        "Silvestre": 7,
+        "Neville": 11,
+        "Orwell": 15,
+        "ibel": 17
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Henry": "Conagher",
+        "John": "Neaven",
+        "Solomon": "Terrel",
+        "Jose": "Tabias",
+        "Ignosi": "Mattia",
+        "George": "Americus",
+        "Jim": "Guerno",
+        "Tom": "Martise",
+        "Ventvogel": "Landry",
+        "Odysseus": "Jeryn",
+        "Lindy": "Viveka",
+        "Hottentot": "Laray",
+        "Dom": "Kary",
+        "Imotu": "Jaz",
+        "Loo": "Burnice",
+        "Greys": "Teigan",
+        "Hector": "Joel-Cedric",
+        "\\Incubu": "Lannie",
+        "Chimosh": "Koi",
+        "Milcom": "Kirin"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Curtis": "Voldemars",
+        "Good": "Connelly",
+        "Silvestre": "Sencere",
+        "Neville": "Jillian",
+        "Orwell": "Thanh",
+        "ibel": "Kerry"
+    }
+}

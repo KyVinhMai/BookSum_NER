@@ -1,0 +1,68 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Rumor": 0,
+        "Henry": 1,
+        "Hotspur": 3,
+        "Morton": 4,
+        "Prince": 6,
+        "Shrewsbury": 8,
+        "Hostess": 10,
+        "Gower": 12,
+        "Poins": 13,
+        "Pistol": 14,
+        "Northumberlund": 15,
+        "Sleep": 16,
+        "John": 17,
+        "Glendower": 19,
+        "Silence": 20,
+        "Norfolk": 21,
+        "Mouldy": 22,
+        "Feeble": 23,
+        "Colevile": 24,
+        "Gloucester": 25
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "IV": 2,
+        "John": 7,
+        "V": 9,
+        "Quickly": 11,
+        "Blunt": 18
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Rumor": "Kaidyn",
+        "Henry": "Manhattan",
+        "Hotspur": "Ji",
+        "Morton": "Auren",
+        "Prince": "Emanouele",
+        "Shrewsbury": "Ariyan",
+        "Hostess": "Kery",
+        "Gower": "Johany",
+        "Poins": "Rowan",
+        "Pistol": "Coren",
+        "Northumberlund": "Rylin",
+        "Sleep": "Leighton",
+        "John": "Hongxu",
+        "Glendower": "Fillipo",
+        "Silence": "Ekam",
+        "Norfolk": "Markelle",
+        "Mouldy": "Oluwatomisin",
+        "Feeble": "Yardley",
+        "Colevile": "Avery",
+        "Gloucester": "Thanh"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "IV": "Feliz",
+        "John": "Caseson",
+        "V": "Maika",
+        "Quickly": "Kary",
+        "Blunt": "Taygen"
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Berte": 0,
+        "Elvsted": 1,
+        "Ejlert": 2,
+        "Julle": 4,
+        "Ibsen": 5,
+        "Elvert": 6,
+        "Elvsted\\": 7,
+        "One)Ibsen": 8,
+        "Evlsted": 9,
+        "Jorgen": 10,
+        "K.": 11
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Lovborg": 3,
+        "Drury": 12
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Berte": "Harlo",
+        "Elvsted": "Amandeep",
+        "Ejlert": "Avon",
+        "Julle": "Rudie",
+        "Ibsen": "Maven",
+        "Elvert": "Tajae",
+        "Elvsted\\": "Jimi",
+        "One)Ibsen": "Min",
+        "Evlsted": "Kodee",
+        "Jorgen": "Jaydeen",
+        "K.": "Chong"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Lovborg": "Jeffie",
+        "Drury": "Shady"
+    }
+}

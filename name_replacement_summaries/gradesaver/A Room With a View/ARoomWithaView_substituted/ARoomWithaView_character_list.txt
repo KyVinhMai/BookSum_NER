@@ -1,0 +1,66 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lucy": 0,
+        "George": 3,
+        "Emersons": 5,
+        "Forster": 7,
+        "Giotto": 8,
+        "Beethoven": 9,
+        "\\Lucy": 11,
+        "Persephone": 12,
+        "Honeychurches": 13,
+        "Freddy": 14,
+        "Cecil": 15,
+        "Minnie": 17,
+        "Vyses": 19,
+        "Nietzsche": 20,
+        "Butterworth": 21,
+        "Floyd": 22,
+        "Cissie": 23,
+        "Florence": 24,
+        "Vyse\\": 25,
+        "Eros": 26
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Honeychurch": 1,
+        "Emerson": 4,
+        "Vyse": 16,
+        "Beebe": 18
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lucy": "Zoe-Ann",
+        "George": "Deyme",
+        "Emersons": "Lovelle",
+        "Forster": "Jodey",
+        "Giotto": "Brooklynn",
+        "Beethoven": "Harlo",
+        "\\Lucy": "Deondrea",
+        "Persephone": "Dezi",
+        "Honeychurches": "Oluwatosin",
+        "Freddy": "Noble",
+        "Cecil": "Sophanna",
+        "Minnie": "Trevena",
+        "Vyses": "Justice",
+        "Nietzsche": "Rogue",
+        "Butterworth": "Jaidan",
+        "Floyd": "Madhava",
+        "Cissie": "Karlin",
+        "Florence": "Nyrelle",
+        "Vyse\\": "Celester",
+        "Eros": "Tamarah"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Honeychurch": "Hudsyn",
+        "Emerson": "Lorren",
+        "Vyse": "Carey",
+        "Beebe": "Harvest"
+    }
+}

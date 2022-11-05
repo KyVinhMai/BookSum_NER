@@ -1,0 +1,52 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Slender": 0,
+        "Pistol": 2,
+        "Nim": 3,
+        "Simple": 5,
+        "Fenton": 6,
+        "Brooke": 7,
+        "Host": 8,
+        "Mistresses": 9,
+        "Mistress": 10,
+        "Henry": 13,
+        "Herne": 16,
+        "Friedrich": 17
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Quickly": 11,
+        "Ford": 12,
+        "IV": 14,
+        "V.": 15,
+        "Engels": 18
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Slender": "Myan",
+        "Pistol": "Adrean",
+        "Nim": "Ottie",
+        "Simple": "Jaspreet",
+        "Fenton": "Bay",
+        "Brooke": "Betania",
+        "Host": "Armani",
+        "Mistresses": "Vail",
+        "Mistress": "Rayen",
+        "Henry": "Berman",
+        "Herne": "Rhyan",
+        "Friedrich": "Loky"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Quickly": "Paxtyn",
+        "Ford": "Shaden",
+        "IV": "Sage",
+        "V.": "Mckinley",
+        "Engels": "Eh"
+    }
+}

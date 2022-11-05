@@ -1,0 +1,46 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Rusticus": 0,
+        "Epictetus": 1,
+        "Sextus": 2,
+        "Fronto": 3,
+        "Severus": 4,
+        "Epicurus": 5,
+        "Homer": 6,
+        "Hesiod": 7,
+        "Scipio": 8,
+        "Clotho": 9,
+        "Zeus": 10,
+        "Euripides": 11,
+        "J": 12,
+        "C": 13,
+        "Pete": 14
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Rusticus": "Ossie",
+        "Epictetus": "Trenell",
+        "Sextus": "Deone",
+        "Fronto": "Cledith",
+        "Severus": "Ardie",
+        "Epicurus": "Mycah",
+        "Homer": "Cobie",
+        "Hesiod": "Vernie",
+        "Scipio": "Arien",
+        "Clotho": "Lorenza",
+        "Zeus": "Cache",
+        "Euripides": "Germany",
+        "J": "Staley",
+        "C": "Santana",
+        "Pete": "Esiquiel"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

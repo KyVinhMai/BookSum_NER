@@ -1,0 +1,58 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Jurgis": 0,
+        "Jukniene": 2,
+        "Henry": 3,
+        "Mike": 5,
+        "Henderson": 7,
+        "Connor": 8,
+        "Kitty": 9,
+        "Freddie": 10,
+        "\\Scotty\\": 12,
+        "Engels": 14,
+        "Tolstoy": 15,
+        "Ostrinski": 16,
+        "Hinds": 17,
+        "writing": 18,
+        "Fisher": 19
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Rudkus": 1,
+        "Ford": 4,
+        "Scully": 6,
+        "Jones": 11,
+        "Doyle": 13
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Jurgis": "Amorion",
+        "Jukniene": "Zell",
+        "Henry": "Branan",
+        "Mike": "Shomari",
+        "Henderson": "Kallahan",
+        "Connor": "Megharaj",
+        "Kitty": "Akida",
+        "Freddie": "Mc",
+        "\\Scotty\\": "Shamell",
+        "Engels": "Maddyx",
+        "Tolstoy": "Burnice",
+        "Ostrinski": "Londen",
+        "Hinds": "Jazz",
+        "writing": "Kamoni",
+        "Fisher": "Shaune"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Rudkus": "Dalyn",
+        "Ford": "Christan",
+        "Scully": "Oluwaseun",
+        "Jones": "Jemarr",
+        "Doyle": "Joachim"
+    }
+}

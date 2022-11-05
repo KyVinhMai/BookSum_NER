@@ -1,0 +1,30 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Gertrude": 0,
+        "Polonius": 1,
+        "Guildenstern": 2,
+        "Yorick": 3,
+        "Osric": 4,
+        "Cornelius": 5,
+        "Olivier": 6
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Gertrude": "Ronnesha",
+        "Polonius": "March",
+        "Guildenstern": "Kaedyn",
+        "Yorick": "Canyn",
+        "Osric": "Lorren",
+        "Cornelius": "Ramwatar",
+        "Olivier": "Antohny"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

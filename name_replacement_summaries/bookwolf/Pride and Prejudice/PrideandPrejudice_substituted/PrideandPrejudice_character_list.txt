@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Bingley": 0,
+        "Bennett": 1,
+        "Collins": 2,
+        "Kent": 3,
+        "Kitty": 4,
+        "Longbourn": 5,
+        "Pemberley": 6,
+        "Lizzie": 7,
+        "Lord": 8,
+        "Hurst": 9,
+        "Philips": 10,
+        "De": 11
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bourgh": 12
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Bingley": "Rayen",
+        "Bennett": "Criztian",
+        "Collins": "Onnie",
+        "Kent": "North",
+        "Kitty": "Saniha",
+        "Longbourn": "Aamari",
+        "Pemberley": "Verdell",
+        "Lizzie": "Middie",
+        "Lord": "Deundra",
+        "Hurst": "Romey",
+        "Philips": "Storm",
+        "De": "Kriss"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bourgh": "Neftaly"
+    }
+}

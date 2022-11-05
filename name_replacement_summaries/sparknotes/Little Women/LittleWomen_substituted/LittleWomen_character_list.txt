@@ -1,0 +1,62 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Meg": 0,
+        "Jo": 1,
+        "Beth": 2,
+        "Hummels": 3,
+        "Hummel": 4,
+        "Brooke": 5,
+        "Mercy": 7,
+        "Uncle": 8,
+        "Chloe": 9,
+        "Josephine": 10,
+        "Snow": 11,
+        "Fred": 12,
+        "John": 13,
+        "Chesters": 14,
+        "Chester": 15,
+        "Florence": 16,
+        "Kirke": 17,
+        "Nick": 18,
+        "Dodo": 21,
+        "Brookes": 22
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bottom": 19,
+        "Demi": 20
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Meg": "Jisselle",
+        "Jo": "Eh",
+        "Beth": "Seanagh",
+        "Hummels": "Khanh",
+        "Hummel": "Milan",
+        "Brooke": "Toyin",
+        "Mercy": "Jayel",
+        "Uncle": "Shaquelle",
+        "Chloe": "Trilla",
+        "Josephine": "Rhegan",
+        "Snow": "Avon",
+        "Fred": "Aken",
+        "John": "Lamour",
+        "Chesters": "Marrion",
+        "Chester": "Theus",
+        "Florence": "Shellyanne",
+        "Kirke": "Luverne",
+        "Nick": "Nacoma",
+        "Dodo": "Tarren",
+        "Brookes": "Rennie"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bottom": "Nyaire",
+        "Demi": "Jeanise"
+    }
+}

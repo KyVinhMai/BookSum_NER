@@ -1,0 +1,46 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Jurgis": 0,
+        "Henderson": 2,
+        "Phil": 3,
+        "Freddie": 5,
+        "Mike": 7,
+        "Jesus": 9,
+        "\\Jones": 10,
+        "Ostrinski": 11,
+        "Tommy": 12
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Rudkus": 1,
+        "Connor": 4,
+        "Jones": 6,
+        "Scully": 8,
+        "Hinds": 13
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Jurgis": "Tarqhuin",
+        "Henderson": "Devereaux",
+        "Phil": "Valiant",
+        "Freddie": "Bao",
+        "Mike": "Naresh",
+        "Jesus": "Denym",
+        "\\Jones": "Jamani",
+        "Ostrinski": "Skylen",
+        "Tommy": "Dakin"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Rudkus": "Asheton",
+        "Connor": "Nicolo",
+        "Jones": "Cleven",
+        "Scully": "Aundra",
+        "Hinds": "Marlowe"
+    }
+}

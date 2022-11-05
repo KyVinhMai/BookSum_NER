@@ -1,0 +1,54 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Kimbro": 0,
+        "Bledsoe": 1,
+        "Wrestrum": 2,
+        "Norton": 3,
+        "Exhorter": 5,
+        "Tod": 6,
+        "Cliftons": 8,
+        "Rine": 9,
+        "Sybil": 10,
+        "Scofield": 11,
+        "Dupre": 12,
+        "Emerson": 13,
+        "Jim": 14,
+        "Pershing": 16,
+        "Nortons": 17,
+        "Robin": 18
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Clifton": 7,
+        "Trueblood": 15
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Kimbro": "Rease",
+        "Bledsoe": "Reise",
+        "Wrestrum": "Jaydence",
+        "Norton": "Toddy",
+        "Exhorter": "Christan",
+        "Tod": "Laderrian",
+        "Cliftons": "Tahje",
+        "Rine": "Mirabell",
+        "Sybil": "Annily",
+        "Scofield": "Eri",
+        "Dupre": "Mckinley",
+        "Emerson": "Jyhe",
+        "Jim": "Keisen",
+        "Pershing": "Ramey",
+        "Nortons": "Geral",
+        "Robin": "Jackie"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Clifton": "Valentina",
+        "Trueblood": "Kailen"
+    }
+}

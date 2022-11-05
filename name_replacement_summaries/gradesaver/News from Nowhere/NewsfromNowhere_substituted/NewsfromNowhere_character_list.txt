@@ -1,0 +1,36 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Robert": 0,
+        "Boffin": 1,
+        "Dick": 2,
+        "Morris": 3,
+        "Niels": 5,
+        "Ellen": 7,
+        "Henry": 8
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Horrebow": 6,
+        "Morsom": 9
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Robert": "Aaravdeep",
+        "Boffin": "Murle",
+        "Dick": "Sanuel",
+        "Morris": "Kahlen",
+        "Niels": "Shelton",
+        "Ellen": "Zahava",
+        "Henry": "Lamauri"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Horrebow": "Britain",
+        "Morsom": "Joell"
+    }
+}

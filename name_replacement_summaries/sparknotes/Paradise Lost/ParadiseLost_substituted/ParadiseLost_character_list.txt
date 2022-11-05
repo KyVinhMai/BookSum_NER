@@ -1,0 +1,54 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Milton": 0,
+        "Eve": 1,
+        "Uriel": 2,
+        "Enoch": 3,
+        "Nimrod": 4,
+        "Moses": 5,
+        "Jesus": 6,
+        "Homer": 7,
+        "Virgil": 8,
+        "Beelzebub": 9,
+        "Moloch": 10,
+        "Jove": 11,
+        "Sin": 12,
+        "Night": 13,
+        "Confusion": 14,
+        "Discord": 15,
+        "Hell": 16,
+        "Ovid": 17,
+        "Spenser": 18
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Milton": "Mtende",
+        "Eve": "Rosealeigh",
+        "Uriel": "Aiddan",
+        "Enoch": "Kiere",
+        "Nimrod": "Valeriano",
+        "Moses": "Juma",
+        "Jesus": "Truth",
+        "Homer": "Yengkong",
+        "Virgil": "Eider",
+        "Beelzebub": "Linden",
+        "Moloch": "Min",
+        "Jove": "Harley",
+        "Sin": "Lunden",
+        "Night": "Kakodah",
+        "Confusion": "Zaiah",
+        "Discord": "Trenell",
+        "Hell": "Joell",
+        "Ovid": "Jayel",
+        "Spenser": "Bozidar"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

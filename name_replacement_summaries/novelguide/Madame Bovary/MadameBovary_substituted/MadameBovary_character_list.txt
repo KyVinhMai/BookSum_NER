@@ -1,0 +1,56 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lon": 0,
+        "Justin": 1,
+        "Monsieur": 2,
+        "Rodolphe": 4,
+        "Rollet": 5,
+        "Leon": 6,
+        "Hirondelle": 7,
+        "Flicit": 8,
+        "Felicite": 9,
+        "Hippolyte": 12,
+        "Thodore": 13,
+        "Tostes": 14,
+        "Hivert": 17,
+        "Berth": 18,
+        "Lestiboudois": 19
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Lheureux": 3,
+        "Bournisien": 11,
+        "Binet": 15,
+        "Dupuis": 16
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lon": "Jule",
+        "Justin": "Wesleigh",
+        "Monsieur": "Maziah",
+        "Rodolphe": "Gevork",
+        "Rollet": "Britain",
+        "Leon": "Mast",
+        "Hirondelle": "Tagen",
+        "Flicit": "Pasha",
+        "Felicite": "Kendel",
+        "Hippolyte": "Daveen",
+        "Thodore": "Arlyn",
+        "Tostes": "Pat",
+        "Hivert": "Mykah",
+        "Berth": "Ardie",
+        "Lestiboudois": "Da"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Lheureux": "Jermany",
+        "Bournisien": "Alvia",
+        "Binet": "Merlyn",
+        "Dupuis": "Uchenna"
+    }
+}

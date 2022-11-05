@@ -1,0 +1,3 @@
+{"name": "Chapter XXVII", "url": "https://web.archive.org/web/20210103175047/https://www.shmoop.com/study-guides/literature/what-maisie-knew/summary/chapter-xxvii", "summary": "It turns out that Mrs. Beale has come on her own, without Sir Claude. Mrs. Tobie tells Maisie that coming to Boulogne is Mrs. Beale's way of winning Sir Claude. Mrs. Tobie also repeats her point about the importance of moral sense.", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Wix': 'Tobie', 'Overmore': 'Eliyah', 'Eric': 'Deckard', 'Cuddon': 'Chapel', 'Moddle': 'Sehaj', 'Tischbein': 'Lonie', 'Lisette': 'Roneika'}, 'Middle Names': {}, 'Last Names': {}}

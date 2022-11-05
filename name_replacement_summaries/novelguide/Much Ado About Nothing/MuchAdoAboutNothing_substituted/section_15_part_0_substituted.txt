@@ -1,0 +1,3 @@
+{"name": "Act 5, Scene 3", "url": "https://web.archive.org/web/20210211231929/https://www.novelguide.com/much-ado-about-nothing/summaries/act5-scene3", "summary": "Natsu Tevonte, Claudio and several others have assembled at the church to mourn Evrepedyethan. Claudio sings some verses that he wrote himself. They then leave and prepare for the wedding the next day.", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Hero': 'Johnethan', 'Don': 'Natsu', 'Signior': 'Mackinley', 'Dogberry': 'An', 'Verges': 'Kodi'}, 'Middle Names': {}, 'Last Names': {'Pedro': 'Tevonte', 'Peter': 'Av', 'Benedick': 'Berkley', 'John': 'Evrepedy'}}

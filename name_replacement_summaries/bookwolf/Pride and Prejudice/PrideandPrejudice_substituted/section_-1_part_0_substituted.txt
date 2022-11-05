@@ -1,0 +1,3 @@
+{"name": "Pride and Prejudice", "summary": "", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Bingley': 'Rayen', 'Bennett': 'Criztian', 'Collins': 'Onnie', 'Kent': 'North', 'Kitty': 'Saniha', 'Longbourn': 'Aamari', 'Pemberley': 'Verdell', 'Lizzie': 'Middie', 'Lord': 'Deundra', 'Hurst': 'Romey', 'Philips': 'Storm', 'De': 'Kriss'}, 'Middle Names': {}, 'Last Names': {'Bourgh': 'Neftaly'}}

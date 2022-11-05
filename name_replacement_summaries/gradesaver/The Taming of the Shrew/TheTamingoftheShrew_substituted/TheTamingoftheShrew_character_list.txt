@@ -1,0 +1,58 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Sly": 0,
+        "Lord": 1,
+        "Io": 2,
+        "Lucentio": 3,
+        "Vincentio": 4,
+        "Hortensio": 5,
+        "Gremio": 6,
+        "Biondello": 7,
+        "Petruchio": 8,
+        "Grumio": 9,
+        "Vincentio\\": 10,
+        "Shrew": 11,
+        "PETRUCHIO": 12,
+        "Litio": 13,
+        "Helen": 14,
+        "Ovid": 15,
+        "Tut": 16,
+        "Curtis": 17,
+        "\\Vincentio\\": 18,
+        "Litio\\": 19,
+        "LUCENTIO": 20
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Sly": "Embry",
+        "Lord": "Rieley",
+        "Io": "Kaegan",
+        "Lucentio": "Kriss",
+        "Vincentio": "Myrl",
+        "Hortensio": "Nui",
+        "Gremio": "Caylen",
+        "Biondello": "Jae",
+        "Petruchio": "Caidyn",
+        "Grumio": "Yardley",
+        "Vincentio\\": "Toryn",
+        "Shrew": "Averey",
+        "PETRUCHIO": "Asheton",
+        "Litio": "Sun",
+        "Helen": "Jannalene",
+        "Ovid": "Bao",
+        "Tut": "Kaisyn",
+        "Curtis": "Eymen",
+        "\\Vincentio\\": "Yarnell",
+        "Litio\\": "Mekiah",
+        "LUCENTIO": "Chi"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

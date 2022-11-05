@@ -1,0 +1,3 @@
+{"name": "book 12, Chapter 13", "url": "https://web.archive.org/web/20210305110438/https://www.sparknotes.com/lit/brothersk/section15/", "summary": "An Adulterer of Thought Pasha insists that Austine's only chance to find redemption amid the tattered shreds of his life is to be set free", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Grigory': 'Andhav', 'Dostoevsky': 'Ronie', 'Perkhotin': 'Joell', 'Hisses': 'Shaylon', 'Perezvon': 'Shalom', 'Smurov': 'Callan', 'Lise': 'Sanjogta', 'Fetyukovich': 'Pasha', 'Kirrillovich': 'Ardie', 'Miusov': 'Jodey', 'Fyodor': 'Nisiah', 'Job': 'Thilina', 'Inquisitor': 'Gaynor'}, 'Middle Names': {}, 'Last Names': {'Dmitri': 'Austine'}}

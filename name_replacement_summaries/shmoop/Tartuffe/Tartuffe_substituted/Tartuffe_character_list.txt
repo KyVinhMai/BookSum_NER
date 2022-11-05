@@ -1,0 +1,28 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Orgon": 0,
+        "Pernelle": 1,
+        "Dorine": 2,
+        "Elmire": 3,
+        "Flipote": 4,
+        "Co.": 5
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Orgon": "Yoltzin",
+        "Pernelle": "Ashna",
+        "Dorine": "Avri",
+        "Elmire": "Kirti",
+        "Flipote": "Ayomide",
+        "Co.": "Rilley"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

@@ -1,0 +1,76 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Jerry": 0,
+        "Lorry": 2,
+        "Lucie": 3,
+        "yver": 4,
+        "Evremonde": 5,
+        "Roger": 6,
+        "Solomon": 8,
+        "Evremondes": 10,
+        "Dickens": 11,
+        "Wilkie": 12,
+        "John": 14,
+        "Cock": 16,
+        "George": 17,
+        "Emily": 19,
+        "Finding": 21,
+        "Monseigneur": 22,
+        "Gorgon": 23,
+        "young": 24,
+        "\\Dickens": 25,
+        "Tellson": 26,
+        "Foulon": 27,
+        "Tophet": 28
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Cruncher": 1,
+        "Cly": 7,
+        "Pross": 9,
+        "Collins": 13,
+        "Forster": 15,
+        "III": 18,
+        "Bronte": 20
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Jerry": "Jianwen",
+        "Lorry": "Kendel",
+        "Lucie": "Kaizlynn",
+        "yver": "Rael",
+        "Evremonde": "Posey",
+        "Roger": "Amarieon",
+        "Solomon": "Etzio",
+        "Evremondes": "Garnett",
+        "Dickens": "Lunden",
+        "Wilkie": "Shalin",
+        "John": "Hakop",
+        "Cock": "Chidera",
+        "George": "Hilman",
+        "Emily": "Rakel",
+        "Finding": "Atley",
+        "Monseigneur": "Salem",
+        "Gorgon": "Camil",
+        "young": "Clemence",
+        "\\Dickens": "Rane",
+        "Tellson": "Bela",
+        "Foulon": "Shell",
+        "Tophet": "Skylan"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Cruncher": "Kendel",
+        "Cly": "Skylur",
+        "Pross": "Ricci",
+        "Collins": "Chandlar",
+        "Forster": "Rilley",
+        "III": "Shey",
+        "Bronte": "Natividad"
+    }
+}

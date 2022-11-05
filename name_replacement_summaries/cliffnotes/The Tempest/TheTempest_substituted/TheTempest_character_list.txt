@@ -1,0 +1,36 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Prospero": 0,
+        "Trinculo": 1,
+        "pied": 2,
+        "Iris": 4,
+        "Juno": 5,
+        "Ceres": 6,
+        "Venus": 7,
+        "Phoebus": 8
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "ninny": 3
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Prospero": "Leikolo",
+        "Trinculo": "Carey",
+        "pied": "Kelyn",
+        "Iris": "Cherish",
+        "Juno": "Tavie",
+        "Ceres": "Lattie",
+        "Venus": "Torah-Lee",
+        "Phoebus": "Luvern"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "ninny": "Arlis"
+    }
+}

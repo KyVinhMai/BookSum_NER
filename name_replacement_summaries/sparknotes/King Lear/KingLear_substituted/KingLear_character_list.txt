@@ -1,0 +1,36 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Goneril": 0,
+        "Fool": 1,
+        "Kent": 2,
+        "Gloucester": 3,
+        "Edmund": 4,
+        "Burgundy": 5,
+        "Poor": 7,
+        "Polonius": 9
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Tom": 8
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Goneril": "Sukhman",
+        "Fool": "Miciah",
+        "Kent": "Jannel",
+        "Gloucester": "Olanda",
+        "Edmund": "Akai",
+        "Burgundy": "Parris",
+        "Poor": "Happy",
+        "Polonius": "Kodi"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Tom": "Othniel"
+    }
+}

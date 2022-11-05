@@ -1,0 +1,28 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Frome": 0,
+        "Ruth": 1,
+        "Fromes": 2,
+        "Denis": 3,
+        "Ned": 4,
+        "Buck": 5
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Frome": "Ebbie",
+        "Ruth": "Romita",
+        "Fromes": "Amory",
+        "Denis": "Angie",
+        "Ned": "Selton",
+        "Buck": "Jak"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

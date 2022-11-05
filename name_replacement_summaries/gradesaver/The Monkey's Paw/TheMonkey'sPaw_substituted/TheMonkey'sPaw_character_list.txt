@@ -1,0 +1,30 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Morris": 1,
+        "Herbert": 2,
+        "Simpsons": 3,
+        "Grove": 4
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Koger": 5,
+        "White": 6
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Morris": "Ethangabriel",
+        "Herbert": "Wani",
+        "Simpsons": "Jolly",
+        "Grove": "Gaylin"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Koger": "Carey",
+        "White": "Brownie"
+    }
+}

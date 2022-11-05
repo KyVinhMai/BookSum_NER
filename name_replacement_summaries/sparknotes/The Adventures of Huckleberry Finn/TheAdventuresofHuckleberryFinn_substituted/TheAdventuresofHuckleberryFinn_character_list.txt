@@ -1,0 +1,82 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Huckleberry": 0,
+        "Huck": 2,
+        "Tom": 3,
+        "Widow": 4,
+        "Jim": 5,
+        "Shepherdsons": 6,
+        "Shepherdson": 7,
+        "Peter": 8,
+        "Phelpses": 10,
+        "Phelps": 11,
+        "Sid": 12,
+        "Polly": 13,
+        "Wilkses": 16,
+        "Robinson": 17,
+        "Moses": 18,
+        "Don": 19,
+        "Bessie": 21,
+        "George": 22,
+        "Judith": 24,
+        "Solomon": 26,
+        "Louis": 27,
+        "Buck": 29,
+        "Emmeline": 30,
+        "Bob": 31,
+        "Sherburn": 32
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Finn": 1,
+        "Wilks": 9,
+        "G.": 15,
+        "Quixote": 20,
+        "Peters": 23,
+        "Loftus": 25,
+        "XVI": 28
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Huckleberry": "Kache",
+        "Huck": "Sevyn",
+        "Tom": "Govanni",
+        "Widow": "Jaylenn",
+        "Jim": "Tyzer",
+        "Shepherdsons": "Myrl",
+        "Shepherdson": "Johany",
+        "Peter": "Gill",
+        "Phelpses": "Dalyn",
+        "Phelps": "Indy",
+        "Sid": "Daylin",
+        "Polly": "Ruoshui",
+        "Wilkses": "Teran",
+        "Robinson": "Rajah",
+        "Moses": "Manaby",
+        "Don": "Aamar",
+        "Bessie": "Adaleya",
+        "George": "Demetra",
+        "Judith": "Kuriakoula",
+        "Solomon": "Rahman",
+        "Louis": "Dhalchand",
+        "Buck": "Laughlan",
+        "Emmeline": "Odessie",
+        "Bob": "Nahil",
+        "Sherburn": "Amadi"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Finn": "Rayshan",
+        "Wilks": "Oreoluwa",
+        "G.": "Monti",
+        "Quixote": "Kery",
+        "Peters": "Lyrick",
+        "Loftus": "Payton",
+        "XVI": "Kodee"
+    }
+}

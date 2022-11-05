@@ -1,0 +1,30 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Wix": 0,
+        "Overmore": 1,
+        "Eric": 2,
+        "Cuddon": 3,
+        "Moddle": 4,
+        "Tischbein": 5,
+        "Lisette": 6
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Wix": "Tobie",
+        "Overmore": "Eliyah",
+        "Eric": "Deckard",
+        "Cuddon": "Chapel",
+        "Moddle": "Sehaj",
+        "Tischbein": "Lonie",
+        "Lisette": "Roneika"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

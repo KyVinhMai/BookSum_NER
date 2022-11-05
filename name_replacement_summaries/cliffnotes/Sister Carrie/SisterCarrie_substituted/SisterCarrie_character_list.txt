@@ -1,0 +1,52 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Drouet": 0,
+        "Minnie": 1,
+        "Sven": 2,
+        "George": 3,
+        "Dreiser": 5,
+        "Moy": 6,
+        "\\G.": 7,
+        "Kenny": 9,
+        "Wheeler": 10,
+        "Drouet.\\": 11,
+        "Elks": 12,
+        "\\Murdock\\": 13,
+        "Bermudez": 14,
+        "\\Drouet": 15,
+        "b'George": 16
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Hurstwood": 4,
+        "Murdock": 8
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Drouet": "Andree",
+        "Minnie": "Armonia",
+        "Sven": "Tyjier",
+        "George": "Siyun",
+        "Dreiser": "Ying",
+        "Moy": "Freddi",
+        "\\G.": "Ardell",
+        "Kenny": "Jacyon",
+        "Wheeler": "Grier",
+        "Drouet.\\": "Aziah",
+        "Elks": "Dorsie",
+        "\\Murdock\\": "Kem",
+        "Bermudez": "Maven",
+        "\\Drouet": "Brittin",
+        "b'George": "Makell"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Hurstwood": "Jaylenn",
+        "Murdock": "Lajuan"
+    }
+}

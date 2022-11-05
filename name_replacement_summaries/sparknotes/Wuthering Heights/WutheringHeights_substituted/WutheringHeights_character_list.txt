@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lockwood": 0,
+        "Nelly": 1,
+        "Hindley": 2,
+        "Linton": 3,
+        "Young": 4,
+        "Emily": 5,
+        "Lintons": 7,
+        "Joseph": 8,
+        "young": 9,
+        "Skulker": 10,
+        "Green": 11,
+        "Devil": 12
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bronte": 6
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lockwood": "March",
+        "Nelly": "Noeline",
+        "Hindley": "Finnley",
+        "Linton": "Kyann",
+        "Young": "Weslie",
+        "Emily": "Lennae",
+        "Lintons": "Weslie",
+        "Joseph": "Izaia",
+        "young": "Golden",
+        "Skulker": "Jolly",
+        "Green": "Cypress",
+        "Devil": "Casy"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bronte": "Cameran"
+    }
+}

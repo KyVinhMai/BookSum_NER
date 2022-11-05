@@ -1,0 +1,36 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Frome": 0,
+        "Fromes": 1,
+        "Silver": 2,
+        "Bettsbridge": 3,
+        "Hester": 4,
+        "Ned": 6,
+        "Ruth": 7,
+        "Powell": 8
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Prynne": 5
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Frome": "Jody",
+        "Fromes": "Finley",
+        "Silver": "Alter",
+        "Bettsbridge": "Domnique",
+        "Hester": "Pansey",
+        "Ned": "Michie",
+        "Ruth": "Ary",
+        "Powell": "Wykeham"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Prynne": "Maitland"
+    }
+}

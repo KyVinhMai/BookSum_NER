@@ -1,0 +1,58 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Eve": 0,
+        "Milton": 1,
+        "Beelzebub": 2,
+        "Osiris": 3,
+        "Orus": 4,
+        "Nimrod": 5,
+        "Moses": 6,
+        "Moloch": 7,
+        "Sin": 8,
+        "Homer": 9,
+        "Cherub": 10,
+        "Uriel": 11,
+        "Uzziel": 12,
+        "Zephon": 13,
+        "Ithuriel": 14,
+        "Son": 15,
+        "Nisroc": 16,
+        "Jesus": 17,
+        "Orpheus": 18,
+        "Virgil": 19,
+        "Spenser": 20
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Eve": "Tanikia",
+        "Milton": "Alyxander",
+        "Beelzebub": "Reilly",
+        "Osiris": "Lamari",
+        "Orus": "Merlyn",
+        "Nimrod": "Jerral",
+        "Moses": "Bartholomew",
+        "Moloch": "Jaidan",
+        "Sin": "Gaylin",
+        "Homer": "Sahill",
+        "Cherub": "name",
+        "Uriel": "Mattison",
+        "Uzziel": "Skyler",
+        "Zephon": "Storm",
+        "Ithuriel": "Rudie",
+        "Son": "Navdeep",
+        "Nisroc": "Bobie",
+        "Jesus": "Shiloh",
+        "Orpheus": "Jazz",
+        "Virgil": "Durg",
+        "Spenser": "Lavel"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

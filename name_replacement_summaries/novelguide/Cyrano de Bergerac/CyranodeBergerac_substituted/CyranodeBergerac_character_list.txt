@@ -1,0 +1,50 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Montfleury": 0,
+        "Bellerose": 1,
+        "Busybody": 2,
+        "De": 3,
+        "Le": 5,
+        "Ligniere": 7,
+        "Lise": 8,
+        "Musketeer": 9,
+        "Richelieu": 10,
+        "de": 11,
+        "Romeo": 12,
+        "Juliet": 13,
+        "Reveille": 14,
+        "Moliere": 15
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Guiche": 4,
+        "Bret": 6
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Montfleury": "Raylen",
+        "Bellerose": "Daylin",
+        "Busybody": "Staley",
+        "De": "Hyun",
+        "Le": "Eudell",
+        "Ligniere": "Kamari",
+        "Lise": "Iphigene",
+        "Musketeer": "Lian",
+        "Richelieu": "Linden",
+        "de": "Olayinka",
+        "Romeo": "Cas",
+        "Juliet": "Ayana",
+        "Reveille": "Rameen",
+        "Moliere": "Carel"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Guiche": "Lattie",
+        "Bret": "Lochlan"
+    }
+}

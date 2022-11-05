@@ -1,0 +1,68 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Treville": 0,
+        "Musketeers": 1,
+        "Porthos": 2,
+        "Musketeer": 3,
+        "Meung": 4,
+        "Don": 5,
+        "de": 8,
+        "Louis": 10,
+        "Rochefort": 11,
+        "Richelieu": 12,
+        "Tom": 13,
+        "Tremouille": 15,
+        "Seguier": 16,
+        "Chevreuse": 17,
+        "suffering": 19,
+        "Lupin": 20,
+        "Kitty": 21,
+        "ring": 22,
+        "John": 23,
+        "Lord": 25
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Quixote": 6,
+        "Winter": 9,
+        "Reiss": 14,
+        "XIII": 18,
+        "Felton": 24
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Treville": "Lyndal",
+        "Musketeers": "Maika",
+        "Porthos": "Deshay",
+        "Musketeer": "Carey",
+        "Meung": "Gwin",
+        "Don": "Bettina",
+        "de": "Atley",
+        "Louis": "Bezaleel",
+        "Rochefort": "Caelin",
+        "Richelieu": "Jae",
+        "Tom": "Charalampos",
+        "Tremouille": "Kmari",
+        "Seguier": "Jamile",
+        "Chevreuse": "Isa",
+        "suffering": "De",
+        "Lupin": "Jaton",
+        "Kitty": "Ramdhani",
+        "ring": "Avory",
+        "John": "Watkins",
+        "Lord": "Sloan"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Quixote": "Zohar",
+        "Winter": "Sully",
+        "Reiss": "Evann",
+        "XIII": "Juliani",
+        "Felton": "Hattie"
+    }
+}

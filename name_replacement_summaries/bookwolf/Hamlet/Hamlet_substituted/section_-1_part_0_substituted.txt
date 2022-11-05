@@ -1,0 +1,3 @@
+{"name": "Hamlet", "summary": "", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Gertrude': 'Ronnesha', 'Polonius': 'March', 'Guildenstern': 'Kaedyn', 'Yorick': 'Canyn', 'Osric': 'Lorren', 'Cornelius': 'Ramwatar', 'Olivier': 'Antohny'}, 'Middle Names': {}, 'Last Names': {}}

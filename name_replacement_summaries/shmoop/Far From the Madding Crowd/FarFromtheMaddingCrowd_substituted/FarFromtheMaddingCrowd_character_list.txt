@@ -1,0 +1,30 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Boldwood": 0,
+        "Troy": 1,
+        "Liddy": 2,
+        "Henery": 3,
+        "B.S.": 4,
+        "Thirdly": 5,
+        "Everdene": 6
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Boldwood": "Olanda",
+        "Troy": "Zeyad",
+        "Liddy": "Anna-Kate",
+        "Henery": "Kamdyn",
+        "B.S.": "Airen",
+        "Thirdly": "Kodie",
+        "Everdene": "Ayo"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

@@ -1,0 +1,62 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Fred": 1,
+        "Brooke": 2,
+        "John": 3,
+        "Will": 5,
+        "Lowick": 7,
+        "Rigg": 8,
+        "Bulstrode": 9,
+        "Dunkirk": 10,
+        "Vincys": 11,
+        "Trumbell": 12,
+        "giving": 13,
+        "Tyke": 14,
+        "Noble": 15,
+        "Brookes": 16,
+        "George": 17,
+        "Wrench": 19,
+        "Ned": 20,
+        "Tipton": 21,
+        "Freshitt": 22
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Milton": 4,
+        "Vincy": 6,
+        "Eliot": 18
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Fred": "Rosalie",
+        "Brooke": "Laketia",
+        "John": "Javel",
+        "Will": "Rhyan",
+        "Lowick": "Oluwademilade",
+        "Rigg": "Sage",
+        "Bulstrode": "Rhyan",
+        "Dunkirk": "Dalyn",
+        "Vincys": "Maddyx",
+        "Trumbell": "Brookes",
+        "giving": "Mechel",
+        "Tyke": "Mishawn",
+        "Noble": "Rayshone",
+        "Brookes": "Jacquese",
+        "George": "Rrok",
+        "Wrench": "Marrion",
+        "Ned": "Maikel",
+        "Tipton": "Altair",
+        "Freshitt": "Karem"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Milton": "Gsn",
+        "Vincy": "Payton",
+        "Eliot": "Gaston"
+    }
+}

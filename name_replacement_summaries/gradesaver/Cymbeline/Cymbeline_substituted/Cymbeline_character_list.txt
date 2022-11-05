@@ -1,0 +1,48 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Cymbeline": 0,
+        "Imogen": 1,
+        "Cloten": 2,
+        "Posthumus": 3,
+        "Cornelius": 4,
+        "Lucius": 5,
+        "Polydore": 6,
+        "Guiderius": 7,
+        "Euriphile": 8,
+        "Rome": 9,
+        "Fidele": 10,
+        "J.M.": 11,
+        "Jupiter": 13,
+        "Kermode": 14
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Nosworthy": 12
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Cymbeline": "Amarii",
+        "Imogen": "Hallie",
+        "Cloten": "Paxtyn",
+        "Posthumus": "Eh",
+        "Cornelius": "Kymel",
+        "Lucius": "Rangi",
+        "Polydore": "Gianny",
+        "Guiderius": "Rei",
+        "Euriphile": "Kailan",
+        "Rome": "Brier",
+        "Fidele": "Riyan",
+        "J.M.": "Harlo",
+        "Jupiter": "Cypress",
+        "Kermode": "Brylin"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Nosworthy": "Lorrin"
+    }
+}

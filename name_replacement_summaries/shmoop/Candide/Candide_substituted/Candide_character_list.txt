@@ -1,0 +1,32 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Thundertentronckh": 0,
+        "Cunegonde": 1,
+        "Oreillons": 2,
+        "Optimism": 3,
+        "Homer": 4,
+        "Virgil": 5,
+        "Jesuit": 6,
+        "Columbus": 7
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Thundertentronckh": "Meko",
+        "Cunegonde": "Jeryl",
+        "Oreillons": "Indy",
+        "Optimism": "Dossie",
+        "Homer": "Ermia",
+        "Virgil": "Bostian",
+        "Jesuit": "Caylor",
+        "Columbus": "Orben"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

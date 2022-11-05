@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Helen": 0,
+        "Troilus": 1,
+        "Ulysses": 2,
+        "Troy": 3,
+        "Nestor": 4,
+        "Hector": 5,
+        "Hersione": 6,
+        "Telemon": 7,
+        "Cressid\\": 8,
+        "Diomedes": 9,
+        "Cressid": 10,
+        "\\Diomed": 11,
+        "Myrmidons": 12,
+        "Diomed": 13
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Helen": "Kylie-Ann",
+        "Troilus": "Alyn",
+        "Ulysses": "Abundio",
+        "Troy": "Baidnath",
+        "Nestor": "South",
+        "Hector": "Junior",
+        "Hersione": "Weslie",
+        "Telemon": "Eliyah",
+        "Cressid\\": "Chey",
+        "Diomedes": "Jazz",
+        "Cressid": "Garnett",
+        "\\Diomed": "Teddie",
+        "Myrmidons": "Raylen",
+        "Diomed": "Brier"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

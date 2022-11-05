@@ -1,0 +1,52 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Prospero": 0,
+        "Prince": 1,
+        "Trinculo": 2,
+        "Duke": 3,
+        "Devil": 4,
+        "Jello": 5,
+        "John": 6,
+        "Iris": 8,
+        "Juno": 9,
+        "Ceres": 10,
+        "Cupid": 11,
+        "Venus": 12,
+        "Proserpine": 13,
+        "Pluto": 14,
+        "Frederick": 15,
+        "P.S.": 16
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Florio": 7
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Prospero": "Anthoy",
+        "Prince": "Arville",
+        "Trinculo": "Dae",
+        "Duke": "Jahrrad",
+        "Devil": "Brylin",
+        "Jello": "Sun",
+        "John": "Harlis",
+        "Iris": "Louishia",
+        "Juno": "Keeta",
+        "Ceres": "Amarii",
+        "Cupid": "Tarrin",
+        "Venus": "Rylinn",
+        "Proserpine": "Arie",
+        "Pluto": "Cristan",
+        "Frederick": "Billy-Joe",
+        "P.S.": "Merion"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Florio": "Reeden"
+    }
+}

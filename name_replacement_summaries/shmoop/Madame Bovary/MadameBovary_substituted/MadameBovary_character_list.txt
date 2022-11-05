@@ -1,0 +1,58 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Leon": 0,
+        "Rodolphe": 2,
+        "Tostes": 3,
+        "Felicite": 4,
+        "Rollet": 5,
+        "Justin": 6,
+        "Binet": 7,
+        "Monsieur": 8,
+        "Bournisien": 10,
+        "Tellier": 11,
+        "Hippolyte": 12,
+        "Donizetti": 13,
+        "Hivert": 14,
+        "Hirondelle": 15,
+        "Morel": 16,
+        "Viscount": 17,
+        "Huchette": 18,
+        "Lestiboudois": 19
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Dupuis": 1,
+        "Lheureux": 9
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Leon": "Thacher",
+        "Rodolphe": "Nayshaun",
+        "Tostes": "Staley",
+        "Felicite": "Lyan",
+        "Rollet": "Duanne",
+        "Justin": "Jetziel",
+        "Binet": "Allyn",
+        "Monsieur": "Shadee",
+        "Bournisien": "Aziah",
+        "Tellier": "Dae",
+        "Hippolyte": "Rajuel",
+        "Donizetti": "Jaidan",
+        "Hivert": "Jourdan",
+        "Hirondelle": "Quanta",
+        "Morel": "Kenyatte",
+        "Viscount": "Kaedyn",
+        "Huchette": "Carle",
+        "Lestiboudois": "Xan"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Dupuis": "Kadian",
+        "Lheureux": "Ayomide"
+    }
+}

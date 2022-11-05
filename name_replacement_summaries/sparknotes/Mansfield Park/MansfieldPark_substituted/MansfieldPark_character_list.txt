@@ -1,0 +1,32 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Norris": 0,
+        "Tom": 1,
+        "Edmund": 2,
+        "Henry": 3,
+        "Rushworth": 4,
+        "Dickens": 5,
+        "Price": 6,
+        "Lovers": 7
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Norris": "Naszier",
+        "Tom": "Malec",
+        "Edmund": "Yoshansri",
+        "Henry": "Imtiaz",
+        "Rushworth": "Arleigh",
+        "Dickens": "Rowan",
+        "Price": "Ldarius",
+        "Lovers": "Shadee"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

@@ -1,0 +1,46 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Grigory": 1,
+        "Dostoevsky": 2,
+        "Perkhotin": 3,
+        "Hisses": 4,
+        "Perezvon": 6,
+        "Smurov": 7,
+        "Lise": 8,
+        "Fetyukovich": 9,
+        "Kirrillovich": 10,
+        "Miusov": 11,
+        "Fyodor": 12,
+        "Job": 13,
+        "Inquisitor": 14
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Dmitri": 5
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Grigory": "Andhav",
+        "Dostoevsky": "Ronie",
+        "Perkhotin": "Joell",
+        "Hisses": "Shaylon",
+        "Perezvon": "Shalom",
+        "Smurov": "Callan",
+        "Lise": "Sanjogta",
+        "Fetyukovich": "Pasha",
+        "Kirrillovich": "Ardie",
+        "Miusov": "Jodey",
+        "Fyodor": "Nisiah",
+        "Job": "Thilina",
+        "Inquisitor": "Gaynor"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Dmitri": "Austine"
+    }
+}

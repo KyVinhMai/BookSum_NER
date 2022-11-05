@@ -1,0 +1,38 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Gertrude": 0,
+        "Polonius": 1,
+        "Guildenstern": 2,
+        "Essex": 3,
+        "Yorick": 4,
+        "Yorick\\": 5,
+        "Oscric": 6,
+        "Osric": 7,
+        "Cornelius": 8,
+        "Pyrrhus": 9,
+        "Nero": 10
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Gertrude": "Colean",
+        "Polonius": "Aziah",
+        "Guildenstern": "Lakoda",
+        "Essex": "Koree",
+        "Yorick": "Pacifico",
+        "Yorick\\": "Dilyn",
+        "Oscric": "Yael",
+        "Osric": "Jianni",
+        "Cornelius": "Windom",
+        "Pyrrhus": "Reiley",
+        "Nero": "Emari"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

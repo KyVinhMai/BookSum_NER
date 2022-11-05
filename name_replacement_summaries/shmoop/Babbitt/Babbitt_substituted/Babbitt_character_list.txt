@@ -1,0 +1,86 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "George": 0,
+        "Ted": 1,
+        "Eunice": 2,
+        "Lucile": 4,
+        "Prout": 6,
+        "McKelveys": 7,
+        "Ed": 8,
+        "Overbrooks": 10,
+        "John": 11,
+        "Chum": 13,
+        "Ken": 15,
+        "Booster": 17,
+        "Eddie": 18,
+        "Joe": 19,
+        "Vergil": 20,
+        "Snow": 22,
+        "Dilling": 23,
+        "Henry": 24,
+        "Chester": 26,
+        "Purdy": 27,
+        "Lyte": 28,
+        "Vergel": 29,
+        "Sid": 30,
+        "Lewis": 32,
+        "Rieslings": 33
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Littlefield": 3,
+        "McKelvey": 5,
+        "Overbrook": 9,
+        "Drew": 12,
+        "Frink": 14,
+        "Escott": 16,
+        "Gunch": 21,
+        "Thompson": 25,
+        "Finklestein": 31
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "George": "Markum",
+        "Ted": "Leroi",
+        "Eunice": "Poleth",
+        "Lucile": "Kayjah",
+        "Prout": "Atari",
+        "McKelveys": "Tennessee",
+        "Ed": "Kojak",
+        "Overbrooks": "Reese",
+        "John": "Eliger",
+        "Chum": "Braelin",
+        "Ken": "Seamas",
+        "Booster": "Dell",
+        "Eddie": "Clem",
+        "Joe": "Manoj",
+        "Vergil": "Alvyn",
+        "Snow": "Bela",
+        "Dilling": "Nakota",
+        "Henry": "Medford",
+        "Chester": "Laquavis",
+        "Purdy": "Jule",
+        "Lyte": "Sage",
+        "Vergel": "Jordin",
+        "Sid": "Kele",
+        "Lewis": "Zealous",
+        "Rieslings": "Corley"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Littlefield": "Shia",
+        "McKelvey": "Callahan",
+        "Overbrook": "Blaike",
+        "Drew": "Metaxa",
+        "Frink": "Audi",
+        "Escott": "Yee",
+        "Gunch": "Myrl",
+        "Thompson": "Connelly",
+        "Finklestein": "Daine"
+    }
+}

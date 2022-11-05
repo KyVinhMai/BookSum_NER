@@ -1,0 +1,22 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Burnet": 0,
+        "Coleridge": 1,
+        "Hermit": 2
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Burnet": "Ryley",
+        "Coleridge": "Ekam",
+        "Hermit": "Caylen"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

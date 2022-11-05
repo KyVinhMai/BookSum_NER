@@ -1,0 +1,48 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Miller": 0,
+        "Roger": 3,
+        "Hutchinson": 6,
+        "John": 7,
+        "Red": 9,
+        "Mistress": 11,
+        "Winthrop": 14,
+        "Devil": 16
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Prynne": 2,
+        "Chillingworth": 4,
+        "Wilson": 8,
+        "Rose": 10,
+        "Hibbins": 12,
+        "Chillingworth.\\": 13,
+        "Hester": 15
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Miller": "Demetrice",
+        "Roger": "Caise",
+        "Hutchinson": "Vernell",
+        "John": "Jhony",
+        "Red": "Tobie",
+        "Mistress": "Yarnell",
+        "Winthrop": "Mackinley",
+        "Devil": "Aziah"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Prynne": "Nakota",
+        "Chillingworth": "Raeden",
+        "Wilson": "Adler",
+        "Rose": "Sophannary",
+        "Hibbins": "Sevyn",
+        "Chillingworth.\\": "Haydin",
+        "Hester": "Dallie"
+    }
+}

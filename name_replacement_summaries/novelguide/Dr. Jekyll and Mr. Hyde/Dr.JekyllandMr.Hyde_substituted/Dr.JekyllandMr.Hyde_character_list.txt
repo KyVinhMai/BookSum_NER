@@ -1,0 +1,32 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "venson": 0,
+        "Utterson": 1,
+        "Enfield": 2,
+        "Hyde": 3,
+        "Poole": 5,
+        "Henry": 6
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Jekyll": 7
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "venson": "Shey",
+        "Utterson": "Brighton",
+        "Enfield": "Domnique",
+        "Hyde": "Kaedyn",
+        "Poole": "Osiris",
+        "Henry": "Jhace"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Jekyll": "Laramie"
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Joe": 0,
+        "Reefy": 2,
+        "Queer": 3,
+        "Elmer": 4,
+        "Ebenezer": 6,
+        "Cowleys": 7,
+        "George": 8,
+        "Enoch": 9,
+        "Seth": 10,
+        "Helen": 12,
+        "Whites": 14,
+        "Ned": 15,
+        "Louise": 17,
+        "Nell": 19,
+        "Windpeter": 20,
+        "Henry": 22,
+        "Belle": 23,
+        "Ed": 24,
+        "Tom": 25,
+        "Jesse": 27,
+        "John": 29,
+        "Wing": 30,
+        "Myers": 31
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Welling": 1,
+        "Cowley": 5,
+        "Richmond": 11,
+        "White": 13,
+        "Currie": 16,
+        "Trunnion": 18,
+        "Winters": 21,
+        "Foster": 26,
+        "Bentley": 28,
+        "Robinson": 32
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Joe": "Monu",
+        "Reefy": "Neftaly",
+        "Queer": "Collen",
+        "Elmer": "Kylin",
+        "Ebenezer": "Andhika",
+        "Cowleys": "Donne",
+        "George": "Shase",
+        "Enoch": "Frazier",
+        "Seth": "Rhoen",
+        "Helen": "Emara",
+        "Whites": "Shadow",
+        "Ned": "Yuvraan",
+        "Louise": "Arlia",
+        "Nell": "Kenae",
+        "Windpeter": "Lavoris",
+        "Henry": "Marreo",
+        "Belle": "Kimmy",
+        "Ed": "Sidakpreet",
+        "Tom": "Rahmund",
+        "Jesse": "Yunishs",
+        "John": "Altay",
+        "Wing": "Landry",
+        "Myers": "Gurpreet"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Welling": "Thanh",
+        "Cowley": "Tahjae",
+        "Richmond": "Kam",
+        "White": "Deavion",
+        "Currie": "Gwin",
+        "Trunnion": "Joell",
+        "Winters": "Burnice",
+        "Foster": "Zihan",
+        "Bentley": "Channing",
+        "Robinson": "Teigan"
+    }
+}

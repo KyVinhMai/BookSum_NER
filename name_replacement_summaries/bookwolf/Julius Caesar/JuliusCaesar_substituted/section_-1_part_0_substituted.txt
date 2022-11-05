@@ -1,0 +1,3 @@
+{"name": "Julius Caesar", "summary": "", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Pompey': 'Declyn', 'Lucius': 'Aury', 'Titinius': 'Lyan', 'Volumnius': 'Joell', 'Clitus': 'Indiana', 'Sleek': 'Amari', 'Cicero': 'Posey', 'Decius': 'Mahari', 'Trebonius': 'Kamali', 'Metellus': 'Carey', 'Hitler': 'Brighten', 'Winston': 'Jaikah', 'John': 'Swedesh'}, 'Middle Names': {}, 'Last Names': {'Brutus': 'Mikail', 'Cimber': 'Gurpreet', 'Churchill': 'Arlyn', 'Kennedy': 'Tyjai'}}

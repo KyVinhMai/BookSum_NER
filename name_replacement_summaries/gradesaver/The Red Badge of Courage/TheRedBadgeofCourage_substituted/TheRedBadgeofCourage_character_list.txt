@@ -1,0 +1,28 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Jim": 0,
+        "Henry": 1,
+        "Wilson": 4
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Fleming": 2,
+        "Conklin": 3
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Jim": "Maycen",
+        "Henry": "Kazimer",
+        "Wilson": "Merida"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Fleming": "Jessie",
+        "Conklin": "Jackie"
+    }
+}

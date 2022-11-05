@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Gertrude": 0,
+        "Cornelius": 1,
+        "Polonius": 2,
+        "Empson": 4,
+        "T.S.": 6,
+        "Guildenstern": 8,
+        "Sigmund": 9,
+        "Yorick": 11,
+        "Osric": 12,
+        "Johnson": 13,
+        "Bloom": 14
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Eliot": 7,
+        "Freud": 10
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Gertrude": "Adiyah",
+        "Cornelius": "Surya",
+        "Polonius": "Sonnie",
+        "Empson": "Adel",
+        "T.S.": "Sayre",
+        "Guildenstern": "Raynell",
+        "Sigmund": "Joannis",
+        "Yorick": "Brodey",
+        "Osric": "Rhylan",
+        "Johnson": "Dornell",
+        "Bloom": "Zaelyn"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Eliot": "Thorton",
+        "Freud": "Jaydeen"
+    }
+}

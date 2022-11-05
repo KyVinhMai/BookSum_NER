@@ -1,0 +1,38 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Phillotson": 0,
+        "Jude": 1,
+        "Sue": 2,
+        "Edlin": 3,
+        "Job": 4,
+        "Joseph": 5,
+        "Shelley": 6,
+        "Vilbert": 7,
+        "Donn": 8,
+        "Venus": 9,
+        "Gibbon": 10
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Phillotson": "Zaylin",
+        "Jude": "Posey",
+        "Sue": "Lyncoln",
+        "Edlin": "Schylar",
+        "Job": "Pakgo",
+        "Joseph": "Michell",
+        "Shelley": "Asiha",
+        "Vilbert": "Rebel",
+        "Donn": "Vaiben",
+        "Venus": "Nahlani",
+        "Gibbon": "Cypress"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

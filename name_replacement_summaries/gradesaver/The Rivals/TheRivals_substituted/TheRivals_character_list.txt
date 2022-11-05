@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lucius": 0,
+        "Quick": 2,
+        "Bulkley": 3,
+        "Muse": 4,
+        "Ensign": 6,
+        "Lucy": 8,
+        "Beverly": 9,
+        "\\Ensign": 10,
+        "Beverley\\": 12,
+        "\\Beverley\\": 13
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "O'Trigger": 1,
+        "Beverley": 7,
+        "Beverley.\\": 11
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lucius": "Jabraylon",
+        "Quick": "Brighten",
+        "Bulkley": "Lennie",
+        "Muse": "Ashtan",
+        "Ensign": "Kailen",
+        "Lucy": "Avee",
+        "Beverly": "Norelis",
+        "\\Ensign": "Aki",
+        "Beverley\\": "Blair",
+        "\\Beverley\\": "Samar"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "O'Trigger": "Lexington",
+        "Beverley": "Joell",
+        "Beverley.\\": "Gurpreet"
+    }
+}

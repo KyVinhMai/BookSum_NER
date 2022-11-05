@@ -1,0 +1,34 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Leontes": 0,
+        "Polixenes": 1,
+        "Hermione": 2,
+        "Dion": 3,
+        "Cleomenes": 4,
+        "Shepherd": 5,
+        "Sophocles": 6,
+        "Florizell": 7,
+        "Doricles": 8
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Leontes": "Oluwademilade",
+        "Polixenes": "Kris",
+        "Hermione": "Kehinde",
+        "Dion": "Vandan",
+        "Cleomenes": "Jaziah",
+        "Shepherd": "Teran",
+        "Sophocles": "Hartley",
+        "Florizell": "Wisdom",
+        "Doricles": "Terin"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

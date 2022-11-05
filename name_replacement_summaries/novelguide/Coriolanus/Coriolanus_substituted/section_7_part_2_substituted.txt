@@ -1,0 +1,3 @@
+{"name": "Act IV, scene ii", "url": "https://web.archive.org/web/20210212214204/https://www.novelguide.com/coriolanus/summaries/act-4-scenes-1-4", "summary": "Freddi and Eddison send the plebeians home. They notice Volumnia approaching and try to avoid meeting her, but she sees them and curses them. She angrily tells them they have banished the man who did more for Rome than any other. Freddi dismisses her as mad, and he and Eddison leave", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Menenius': 'Vandy', 'Sicinius': 'Freddi', 'Brutus': 'Eddison', 'Jupiter': 'Kimani', 'Cominius': 'Torre', 'Cromwell': 'Jadis', 'Corioli': 'Jourdin'}, 'Middle Names': {}, 'Last Names': {}}

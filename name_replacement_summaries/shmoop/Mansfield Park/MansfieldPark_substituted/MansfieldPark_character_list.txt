@@ -1,0 +1,50 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Henry": 0,
+        "Edmund": 1,
+        "Rushworth": 2,
+        "Norris": 3,
+        "Price": 4,
+        "Tom": 5,
+        "Lord": 6,
+        "Lords": 7,
+        "Dursley": 8,
+        "Rushworths": 9,
+        "Prices": 10,
+        "Owens": 11,
+        "Betsey": 12,
+        "Repton": 14,
+        "Vices": 15
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Senior": 13
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Henry": "Travell",
+        "Edmund": "Izaak",
+        "Rushworth": "Tkai",
+        "Norris": "Ommar",
+        "Price": "Denver",
+        "Tom": "Cubby",
+        "Lord": "Giavonni",
+        "Lords": "Pheonix",
+        "Dursley": "Xan",
+        "Rushworths": "Jodey",
+        "Prices": "Ivory",
+        "Owens": "Koree",
+        "Betsey": "Santana",
+        "Repton": "Justice",
+        "Vices": "Oriel"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Senior": "Alpha"
+    }
+}

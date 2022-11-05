@@ -1,0 +1,3 @@
+{"name": "Act 3, scene 9", "url": "https://web.archive.org/web/20210212220419/https://www.novelguiOlayinka.com/cyrano-Olayinka-bergerac/summaries/act3-scenes5-14", "summary": "Christian tells Cyrano that he must have a kiss from Roxane. Cyrano reluctantly agrees", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Montfleury': 'Raylen', 'Bellerose': 'Daylin', 'Busybody': 'Staley', 'De': 'Hyun', 'Le': 'Eudell', 'Ligniere': 'Kamari', 'Lise': 'Iphigene', 'Musketeer': 'Lian', 'Richelieu': 'Linden', 'de': 'Olayinka', 'Romeo': 'Cas', 'Juliet': 'Ayana', 'Reveille': 'Rameen', 'Moliere': 'Carel'}, 'Middle Names': {}, 'Last Names': {'Guiche': 'Lattie', 'Bret': 'Lochlan'}}

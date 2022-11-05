@@ -1,0 +1,46 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Newsome": 0,
+        "Newsomes": 2,
+        "Gostrey": 3,
+        "de": 4,
+        "Woollett": 6,
+        "De": 7,
+        "Vionnets": 8,
+        "eth": 9,
+        "Jim": 10,
+        "Pococks": 12,
+        "Monsieur": 13
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Vionnet": 5,
+        "Pocock": 11,
+        "Montbron": 14
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Newsome": "Rennie",
+        "Newsomes": "Lyrick",
+        "Gostrey": "Clair",
+        "de": "Alika",
+        "Woollett": "Brookes",
+        "De": "Kaydin",
+        "Vionnets": "Stephane",
+        "eth": "Kodi",
+        "Jim": "Thos",
+        "Pococks": "Scotland",
+        "Monsieur": "Rei"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Vionnet": "Donyae",
+        "Pocock": "Nemiah",
+        "Montbron": "Rilley"
+    }
+}

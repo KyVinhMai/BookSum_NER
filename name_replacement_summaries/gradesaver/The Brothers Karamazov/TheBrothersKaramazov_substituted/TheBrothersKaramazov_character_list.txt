@@ -1,0 +1,48 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Fyodor": 0,
+        "Dmitri": 1,
+        "Vorohkov": 2,
+        "Dostoevsky": 3,
+        "Lise": 4,
+        "Grigory": 5,
+        "Snegiryov": 6,
+        "Peter": 7,
+        "Schiller": 9,
+        "Snegiryovs": 10,
+        "John": 11,
+        "Dmiti": 12,
+        "Perhotin": 13,
+        "Smurov": 14
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Miusov": 8
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Fyodor": "Lyn-Marie",
+        "Dmitri": "Konstadine",
+        "Vorohkov": "Jamoni",
+        "Dostoevsky": "Deshay",
+        "Lise": "Zariyana",
+        "Grigory": "Vincient",
+        "Snegiryov": "Latrelle",
+        "Peter": "Daton",
+        "Schiller": "Ryin",
+        "Snegiryovs": "Coren",
+        "John": "Athanase",
+        "Dmiti": "An",
+        "Perhotin": "Jermany",
+        "Smurov": "Allyn"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Miusov": "Monta"
+    }
+}

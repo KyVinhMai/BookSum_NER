@@ -1,0 +1,62 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "phen": 0,
+        "Cusins": 1,
+        "Snobby": 2,
+        "Rummy": 4,
+        "Jenny": 6,
+        "Bill": 8,
+        "Bodger": 9,
+        "Morrison": 10,
+        "Euripides": 11,
+        "Peter": 12,
+        "Cockney": 14,
+        "Nietzsche": 15,
+        "Dionysus": 16,
+        "Todger": 17,
+        "Mog": 18,
+        "Bilton": 19,
+        "Jesus": 20,
+        "Bodgers": 21
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Price": 3,
+        "Mitchens": 5,
+        "Hill": 7,
+        "Shirley": 13
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "phen": "Currie",
+        "Cusins": "Oreoluwa",
+        "Snobby": "Lauris",
+        "Rummy": "Jayln",
+        "Jenny": "Keyiana",
+        "Bill": "Devjith",
+        "Bodger": "Teigan",
+        "Morrison": "Antyon",
+        "Euripides": "Ary",
+        "Peter": "Dilshad",
+        "Cockney": "Abrar",
+        "Nietzsche": "Carey",
+        "Dionysus": "Ardie",
+        "Todger": "Maitland",
+        "Mog": "Harbor",
+        "Bilton": "Alpha",
+        "Jesus": "Maziah",
+        "Bodgers": "Haydin"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Price": "Khiv",
+        "Mitchens": "Demetrice",
+        "Hill": "Asheton",
+        "Shirley": "Timeko"
+    }
+}

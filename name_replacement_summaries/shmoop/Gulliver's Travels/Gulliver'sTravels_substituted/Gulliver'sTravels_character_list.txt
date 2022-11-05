@@ -1,0 +1,58 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lemuel": 0,
+        "Houyhnhnms": 2,
+        "Houyhnhnm": 3,
+        "Hurgo": 4,
+        "Robinson": 5,
+        "Munodi": 6,
+        "Homer": 7,
+        "Swift": 8,
+        "Horse": 9,
+        "Don": 12,
+        "Sinon": 14,
+        "Blefuscu": 15,
+        "Lilliput": 16,
+        "Burglum": 17,
+        "Limtoc": 18,
+        "Biddell": 19,
+        "Grildrig": 20
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Gulliver": 1,
+        "Mendez": 11,
+        "Pedro": 13
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lemuel": "Benaiah",
+        "Houyhnhnms": "Sukhman",
+        "Houyhnhnm": "Tris",
+        "Hurgo": "Oluwadarasimi",
+        "Robinson": "Shay",
+        "Munodi": "Ajene",
+        "Homer": "Semaj",
+        "Swift": "Arnell",
+        "Horse": "Terrin",
+        "Don": "Murray",
+        "Sinon": "Skiler",
+        "Blefuscu": "Micaiah",
+        "Lilliput": "Preet",
+        "Burglum": "Preet",
+        "Limtoc": "Caidyn",
+        "Biddell": "Maddyx",
+        "Grildrig": "Amadi"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Gulliver": "Kalin",
+        "Mendez": "Alpha",
+        "Pedro": "Jair"
+    }
+}

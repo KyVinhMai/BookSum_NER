@@ -1,0 +1,76 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lorry": 0,
+        "Lucie": 1,
+        "Dickens": 2,
+        "Evremonde": 3,
+        "Evremondes": 4,
+        "yver": 5,
+        "Pross": 6,
+        "Monseigneur": 7,
+        "Crunchers": 9,
+        "Roger": 10,
+        "Young": 13,
+        "Jerry": 15,
+        "Joe": 19,
+        "Tom": 20,
+        "Ernest": 21,
+        "yvers": 22,
+        "Foulon": 23,
+        "Monsieur": 24,
+        "Solomon": 25,
+        "M.": 26,
+        "Mel": 27,
+        "Judge": 29
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Cly": 11,
+        "Jerry": 14,
+        "Sr.": 16,
+        "Jr.": 17,
+        "Cruncher": 18,
+        "Gibson": 28,
+        "Judy": 30
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lorry": "Jamy",
+        "Lucie": "Krithi",
+        "Dickens": "Onyx",
+        "Evremonde": "Kymoni",
+        "Evremondes": "Jasmon",
+        "yver": "Zaiah",
+        "Pross": "Latrelle",
+        "Monseigneur": "Jaylin",
+        "Crunchers": "Garnett",
+        "Roger": "Raishaun",
+        "Young": "Asuncion",
+        "Jerry": "Andew",
+        "Joe": "Jem",
+        "Tom": "Agapitos",
+        "Ernest": "Jhordy",
+        "yvers": "Schyler",
+        "Foulon": "Jireh",
+        "Monsieur": "Jaidan",
+        "Solomon": "Norvelle",
+        "M.": "Shia",
+        "Mel": "Rossi",
+        "Judge": "Olivet"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Cly": "Bela",
+        "Jerry": "Cassel",
+        "Sr.": "Terin",
+        "Jr.": "Declyn",
+        "Cruncher": "Skylur",
+        "Gibson": "Raynell",
+        "Judy": "Virigina"
+    }
+}

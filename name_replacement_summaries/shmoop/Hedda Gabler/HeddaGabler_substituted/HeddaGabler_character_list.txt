@@ -1,0 +1,36 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "George": 0,
+        "Julie": 1,
+        "Elvsted": 2,
+        "Eilert": 3,
+        "Jochum": 5,
+        "Rysing": 6,
+        "Elvsteds": 7,
+        "Judge": 8
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Lovborg": 4
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "George": "Felimon",
+        "Julie": "Sarah'Rose",
+        "Elvsted": "Tajae",
+        "Eilert": "Ashan",
+        "Jochum": "Sj",
+        "Rysing": "Sekai",
+        "Elvsteds": "Freddi",
+        "Judge": "Sudhdev"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Lovborg": "Gabryel"
+    }
+}

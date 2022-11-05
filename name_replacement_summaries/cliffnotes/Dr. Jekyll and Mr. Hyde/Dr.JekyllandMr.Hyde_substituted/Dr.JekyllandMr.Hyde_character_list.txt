@@ -1,0 +1,58 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Enfield": 1,
+        "Henry": 2,
+        "Hyde": 4,
+        "Poole": 5,
+        "Robert": 6,
+        "Sigmund": 8,
+        "Je": 10,
+        "Newcomen": 13,
+        "Guest": 14,
+        "G.": 15,
+        "Brown": 18,
+        "H.J.": 20
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Jekyll": 3,
+        "venson": 7,
+        "Freud": 9,
+        "Kill": 11,
+        "Utterson": 16,
+        "Jekyll.\\": 17,
+        "Jekyll\\": 19,
+        "P.S.": 21
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Enfield": "Sonnie",
+        "Henry": "Daral",
+        "Hyde": "Staley",
+        "Poole": "Meko",
+        "Robert": "Ivana",
+        "Sigmund": "Jess",
+        "Je": "Leverne",
+        "Newcomen": "Skylier",
+        "Guest": "Ossie",
+        "G.": "Reign",
+        "Brown": "Donyae",
+        "H.J.": "Vernie"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Jekyll": "Demarie",
+        "venson": "Sehaj",
+        "Freud": "Bao",
+        "Kill": "Oluwanifemi",
+        "Utterson": "Tahje",
+        "Jekyll.\\": "Berkeley",
+        "Jekyll\\": "Deniz",
+        "P.S.": "Foye"
+    }
+}

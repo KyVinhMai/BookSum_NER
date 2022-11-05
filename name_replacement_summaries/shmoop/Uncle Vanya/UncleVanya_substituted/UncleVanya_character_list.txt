@@ -1,0 +1,22 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Telegin": 0,
+        "Voynitsky": 1,
+        "Professor": 2
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Telegin": "Jaydyn",
+        "Voynitsky": "Tyjae",
+        "Professor": "Chae"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

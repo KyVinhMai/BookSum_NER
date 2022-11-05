@@ -1,0 +1,50 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Shield": 0,
+        "Beow": 1,
+        "Hygd": 2,
+        "Modthryrh": 3,
+        "Beowulf": 4,
+        "Ingeld": 5,
+        "Grendel": 6,
+        "Heremod": 7,
+        "Unferth": 8,
+        "Wulf": 9,
+        "Eofor": 10,
+        "Shieldings": 11,
+        "Sigemund": 12,
+        "Homer": 13,
+        "Finn": 14,
+        "Hildeburth": 15,
+        "Hildeburh": 16
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Shield": "Sehaj",
+        "Beow": "Paxtyn",
+        "Hygd": "name",
+        "Modthryrh": "Kylin",
+        "Beowulf": "Scotland",
+        "Ingeld": "Shamell",
+        "Grendel": "Jaedyn",
+        "Heremod": "Kamani",
+        "Unferth": "Jamile",
+        "Wulf": "Ghanshyam",
+        "Eofor": "Londen",
+        "Shieldings": "Feliz",
+        "Sigemund": "Dakotah",
+        "Homer": "Nyke",
+        "Finn": "Adarryl",
+        "Hildeburth": "Brownie",
+        "Hildeburh": "Da"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

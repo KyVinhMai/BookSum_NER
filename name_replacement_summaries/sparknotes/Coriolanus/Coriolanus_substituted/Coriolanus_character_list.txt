@@ -1,0 +1,36 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Brutus": 0,
+        "Sicinius": 1,
+        "Menenius": 2,
+        "Volsces": 3,
+        "Cominius": 4,
+        "Corioles": 5,
+        "Hector": 6,
+        "Henry": 7
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "V": 8
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Brutus": "Ariston",
+        "Sicinius": "Zaide",
+        "Menenius": "Evyn",
+        "Volsces": "Deone",
+        "Cominius": "Rian",
+        "Corioles": "Mc",
+        "Hector": "Druga",
+        "Henry": "Rakhi"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "V": "Ardell"
+    }
+}

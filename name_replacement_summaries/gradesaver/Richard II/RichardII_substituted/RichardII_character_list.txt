@@ -1,0 +1,50 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Bolingbroke": 0,
+        "Gloucester": 1,
+        "John": 2,
+        "York": 3,
+        "Ross": 4,
+        "Willoughby": 5,
+        "Bushy": 6,
+        "Henry": 7,
+        "Green": 9,
+        "Berkeley": 10,
+        "Hereford": 11,
+        "Scrope": 12,
+        "Piers": 14
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "IV": 8,
+        "V.": 13,
+        "Exton": 15
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Bolingbroke": "Ekam",
+        "Gloucester": "Zohar",
+        "John": "Caullin",
+        "York": "Jaisiah",
+        "Ross": "Terray",
+        "Willoughby": "Oakley",
+        "Bushy": "Reiley",
+        "Henry": "Adiyan",
+        "Green": "Dilyn",
+        "Berkeley": "Tenzin",
+        "Hereford": "Michal",
+        "Scrope": "Lexington",
+        "Piers": "Keddrick"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "IV": "Austine",
+        "V.": "Claudie",
+        "Exton": "Dannell"
+    }
+}

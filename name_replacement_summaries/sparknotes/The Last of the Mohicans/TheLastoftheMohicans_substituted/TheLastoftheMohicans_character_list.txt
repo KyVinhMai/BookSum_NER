@@ -1,0 +1,46 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Munro": 0,
+        "Webb": 1,
+        "Cooper": 2,
+        "Shylock": 3,
+        "Leslie": 4,
+        "Huck": 6,
+        "Jim": 8,
+        "Queequeg": 9,
+        "Huron": 10,
+        "Mingo": 11,
+        "Iroquois": 12,
+        "Hurons": 13
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Fiedler": 5,
+        "Finn": 7
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Munro": "Ettian",
+        "Webb": "Yu",
+        "Cooper": "Alarick",
+        "Shylock": "Ellery",
+        "Leslie": "Dilyn",
+        "Huck": "Dezi",
+        "Jim": "Marqwan",
+        "Queequeg": "Maysen",
+        "Huron": "Verdell",
+        "Mingo": "Ajai",
+        "Iroquois": "Tomie",
+        "Hurons": "Jeris"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Fiedler": "Mykah",
+        "Finn": "Zoyan"
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Boethius": 0,
+        "Muses": 1,
+        "Zeno": 2,
+        "Fortune": 3,
+        "Homer": 4,
+        "Nero": 5,
+        "Brutus": 6,
+        "Edmund": 7,
+        "John": 9,
+        "Orpheus": 11,
+        "Hercules": 12
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Spenser": 8,
+        "Milton": 10
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Boethius": "Neema",
+        "Muses": "Jordin",
+        "Zeno": "Decclan",
+        "Fortune": "Rilley",
+        "Homer": "Joschka",
+        "Nero": "Isa",
+        "Brutus": "Trently",
+        "Edmund": "Mort",
+        "John": "Oji",
+        "Orpheus": "Shayde",
+        "Hercules": "Kellis"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Spenser": "Samba",
+        "Milton": "Lonny"
+    }
+}

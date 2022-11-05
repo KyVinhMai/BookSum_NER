@@ -1,0 +1,34 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Hester": 0,
+        "Roger": 2,
+        "Hibbins": 4,
+        "Winthrop": 6,
+        "John": 7
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Prynne": 1,
+        "Chillingworth": 3,
+        "Wilson": 8
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Hester": "Sherran",
+        "Roger": "Jettson",
+        "Hibbins": "Cypress",
+        "Winthrop": "Anmol",
+        "John": "Nixin"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Prynne": "Skyeler",
+        "Chillingworth": "Torey",
+        "Wilson": "Shatish"
+    }
+}

@@ -1,0 +1,3 @@
+{"name": "Act IV, scene ii", "url": "https://web.archive.org/web/20210115184120/https://www.sparknotes.com/lit/cyrano/section6/", "summary": "Dawn breaks, drums sound, and Cyrano goes off to write another letter. The caCheneyts awaken and complain about their hunger. There is talk of a mutiny, and Carbon asks Cyrano for his help", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Montfleury': 'Demarie', 'Ligniere': 'Pat', 'Vicomte': 'Maxie', 'de': 'Cheney', 'De': 'Kimari', 'Le': 'Jamille', 'Cuigy': 'Laray', 'Lise': 'Mashaunda', 'Richelieu': 'Shai', 'Moliere': 'Aries'}, 'Middle Names': {}, 'Last Names': {'Guiche': 'Kindred', 'Bret': 'Niscala'}}

@@ -1,0 +1,64 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Jerry": 0,
+        "Lorry": 1,
+        "Lucie": 2,
+        "Dickens": 4,
+        "yver": 5,
+        "Foulon": 6,
+        "ver": 8,
+        "Evrmonde": 9,
+        "Evremonde": 10,
+        "Tellson": 11,
+        "Solomon": 12,
+        "Roger": 13,
+        "Monsieur": 15,
+        "Doctor": 16,
+        "Evremondes": 17,
+        "Miss": 18,
+        "George": 20,
+        "Monseigneur": 22,
+        "Young": 23
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Cruncher": 7,
+        "Cly": 14,
+        "Pross": 19,
+        "III": 21
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Jerry": "Kelsen",
+        "Lorry": "Keylen",
+        "Lucie": "Regan-Joanne",
+        "Dickens": "Payson",
+        "yver": "Jaz",
+        "Foulon": "Juda",
+        "ver": "Riley",
+        "Evrmonde": "Senai",
+        "Evremonde": "Kelechi",
+        "Tellson": "Miko",
+        "Solomon": "Eufracio",
+        "Roger": "Halit",
+        "Monsieur": "Embry",
+        "Doctor": "Quanta",
+        "Evremondes": "Toryn",
+        "Miss": "Braelin",
+        "George": "Eizan",
+        "Monseigneur": "Kendel",
+        "Young": "Ocean"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Cruncher": "Maziah",
+        "Cly": "Rebel",
+        "Pross": "Jule",
+        "III": "Jerzy"
+    }
+}

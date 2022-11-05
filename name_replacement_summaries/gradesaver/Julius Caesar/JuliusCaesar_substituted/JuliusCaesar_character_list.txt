@@ -1,0 +1,52 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Murellus": 0,
+        "Pompey": 1,
+        "Brutus": 2,
+        "Cicero": 3,
+        "Lucius": 4,
+        "Decius": 5,
+        "Metellus": 6,
+        "Trebonius": 7,
+        "Rome": 8,
+        "Olympus": 10,
+        "Colossus": 11,
+        "Titinius": 12,
+        "Hotspur": 13,
+        "Lepidus": 14,
+        "Lucillius": 15,
+        "Volumnius": 16
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Cimber": 9
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Murellus": "Edris",
+        "Pompey": "Zamari",
+        "Brutus": "Nathanael",
+        "Cicero": "Caelin",
+        "Lucius": "Izaack",
+        "Decius": "Mikele",
+        "Metellus": "Kenyatte",
+        "Trebonius": "Mell",
+        "Rome": "Chayanne",
+        "Olympus": "Kamani",
+        "Colossus": "Inioluwa",
+        "Titinius": "Torey",
+        "Hotspur": "Embry",
+        "Lepidus": "Mechel",
+        "Lucillius": "Maui",
+        "Volumnius": "Parris"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Cimber": "Eh"
+    }
+}

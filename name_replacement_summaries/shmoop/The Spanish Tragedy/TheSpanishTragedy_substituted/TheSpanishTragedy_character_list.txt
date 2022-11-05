@@ -1,0 +1,42 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Revenge": 0,
+        "Lorenzo": 1,
+        "Hieronimo": 2,
+        "Serberine": 3,
+        "Cerberus": 4,
+        "Minos": 5,
+        "Pluto": 6,
+        "Proserpine": 7,
+        "Fortune": 8,
+        "Villupo": 9,
+        "Romeo": 10,
+        "Shmoop": 11,
+        "Bel": 12
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Revenge": "Kymoni",
+        "Lorenzo": "Reyhen",
+        "Hieronimo": "Asheton",
+        "Serberine": "Justice",
+        "Cerberus": "Sehaj",
+        "Minos": "Terrin",
+        "Pluto": "Temiloluwa",
+        "Proserpine": "Aziah",
+        "Fortune": "Devine",
+        "Villupo": "Navdeep",
+        "Romeo": "Phinneas",
+        "Shmoop": "Casey",
+        "Bel": "Henriette"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

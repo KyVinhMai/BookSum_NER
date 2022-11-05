@@ -1,0 +1,52 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Pompey": 0,
+        "Lucius": 2,
+        "Titinius": 3,
+        "Volumnius": 4,
+        "Clitus": 5,
+        "Sleek": 6,
+        "Cicero": 7,
+        "Decius": 8,
+        "Trebonius": 10,
+        "Metellus": 11,
+        "Hitler": 13,
+        "Winston": 14,
+        "John": 16
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Brutus": 9,
+        "Cimber": 12,
+        "Churchill": 15,
+        "Kennedy": 17
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Pompey": "Declyn",
+        "Lucius": "Aury",
+        "Titinius": "Lyan",
+        "Volumnius": "Joell",
+        "Clitus": "Indiana",
+        "Sleek": "Amari",
+        "Cicero": "Posey",
+        "Decius": "Mahari",
+        "Trebonius": "Kamali",
+        "Metellus": "Carey",
+        "Hitler": "Brighten",
+        "Winston": "Jaikah",
+        "John": "Swedesh"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Brutus": "Mikail",
+        "Cimber": "Gurpreet",
+        "Churchill": "Arlyn",
+        "Kennedy": "Tyjai"
+    }
+}

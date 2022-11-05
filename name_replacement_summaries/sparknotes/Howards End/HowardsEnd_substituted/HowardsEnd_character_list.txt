@@ -1,0 +1,52 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Helen": 0,
+        "Wilcoxes": 2,
+        "Schlegels": 3,
+        "Beethoven": 4,
+        "Henry": 6,
+        "Evie": 7,
+        "Tibby": 8,
+        "Juley": 9,
+        "Emily": 10,
+        "Forster": 11,
+        "Ruskin": 12,
+        "Dolly": 13,
+        "Ruth": 14,
+        "Oniton": 16,
+        "Porphyrion": 17
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Schlegel": 1,
+        "Wilcox": 15
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Helen": "Lanabella",
+        "Wilcoxes": "Liron",
+        "Schlegels": "Dustine",
+        "Beethoven": "Mell",
+        "Henry": "Talford",
+        "Evie": "Ambermarie",
+        "Tibby": "Haedyn",
+        "Juley": "Audi",
+        "Emily": "Jaene",
+        "Forster": "Collen",
+        "Ruskin": "Rian",
+        "Dolly": "Balin",
+        "Ruth": "Clydine",
+        "Oniton": "Meiko",
+        "Porphyrion": "Brownie"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Schlegel": "Shade",
+        "Wilcox": "Cedar"
+    }
+}

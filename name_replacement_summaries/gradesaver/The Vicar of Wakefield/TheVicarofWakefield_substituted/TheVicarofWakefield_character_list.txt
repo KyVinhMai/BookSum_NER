@@ -1,0 +1,60 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "George": 1,
+        "Moses": 2,
+        "Dick": 3,
+        "Bill": 4,
+        "Wilmot": 5,
+        "Squire": 6,
+        "Burchell": 8,
+        "Edwin": 9,
+        "Oliver": 10,
+        "Colt": 12,
+        "Solomon": 13,
+        "Venus": 14,
+        "Jenkinson": 15,
+        "Ned": 17,
+        "Cripse": 18,
+        "Pinwire": 19,
+        "Wilkinson": 20,
+        "Job": 21
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Thornhill": 7,
+        "Goldsmith": 11,
+        "Primrose": 16
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "George": "Amrish",
+        "Moses": "Elyh",
+        "Dick": "Teej",
+        "Bill": "Bradrick",
+        "Wilmot": "Kippy",
+        "Squire": "Storm",
+        "Burchell": "Adi",
+        "Edwin": "Faraja",
+        "Oliver": "Jakkeb",
+        "Colt": "Brynne",
+        "Solomon": "Spiridon",
+        "Venus": "Tijanae",
+        "Jenkinson": "Tian",
+        "Ned": "Garef",
+        "Cripse": "Javonne",
+        "Pinwire": "Harbor",
+        "Wilkinson": "Teigan",
+        "Job": "Prakash"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Thornhill": "Chey",
+        "Goldsmith": "Olayinka",
+        "Primrose": "Gianny"
+    }
+}

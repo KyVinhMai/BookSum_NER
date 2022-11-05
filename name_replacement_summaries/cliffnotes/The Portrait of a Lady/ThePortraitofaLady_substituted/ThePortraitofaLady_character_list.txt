@@ -1,0 +1,40 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Touchett": 0,
+        "Goodwood": 1,
+        "Merle": 2,
+        "Gilbert": 3,
+        "Gemini": 5,
+        "Rosier": 6,
+        "flush": 7,
+        "Rosier\\": 8,
+        "Ludlow": 9,
+        "Molyneux": 10
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Osmond": 4
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Touchett": "Seneca",
+        "Goodwood": "Teddie",
+        "Merle": "Casy",
+        "Gilbert": "Bolling",
+        "Gemini": "Kemoni",
+        "Rosier": "Olayinka",
+        "flush": "Donnelle",
+        "Rosier\\": "Valen",
+        "Ludlow": "Linell",
+        "Molyneux": "Mycah"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Osmond": "Neema"
+    }
+}

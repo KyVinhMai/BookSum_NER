@@ -1,0 +1,30 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Frome": 0,
+        "Huxley": 1,
+        "Spencer": 2,
+        "Denis": 3,
+        "Fromes": 4,
+        "Ruth": 5,
+        "Ned": 6
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Frome": "Jaylenn",
+        "Huxley": "Scotland",
+        "Spencer": "Zohdi",
+        "Denis": "Zaylor",
+        "Fromes": "Arie",
+        "Ruth": "Lourdes",
+        "Ned": "Rayvaughn"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

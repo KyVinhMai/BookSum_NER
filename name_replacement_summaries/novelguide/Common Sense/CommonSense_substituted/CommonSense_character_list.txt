@@ -1,0 +1,28 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "George": 0,
+        "Jefferson": 2,
+        "John": 3
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "III": 1,
+        "Locke": 4
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "George": "Jarvon",
+        "Jefferson": "Dakota",
+        "John": "Jay-De"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "III": "Tarren",
+        "Locke": "Teddie"
+    }
+}

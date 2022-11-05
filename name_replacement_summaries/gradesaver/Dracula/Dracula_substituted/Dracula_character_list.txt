@@ -1,0 +1,52 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "ker": 0,
+        "Count": 1,
+        "Quincey": 2,
+        "Lucy": 4,
+        "Renfield": 5,
+        "Whitby": 6,
+        "Demeter": 7,
+        "Persephone": 8,
+        "shotQuincey": 9,
+        "Henry": 10,
+        "shortRenfield": 12,
+        "Rufus": 13,
+        "Petrof": 15
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Morris": 3,
+        "Irving": 11,
+        "Smith": 14,
+        "Skinsky": 16
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "ker": "Rilley",
+        "Count": "Lunden",
+        "Quincey": "Austyn",
+        "Lucy": "Donje",
+        "Renfield": "Logyn",
+        "Whitby": "Lin",
+        "Demeter": "Bhargav",
+        "Persephone": "Rhythm",
+        "shotQuincey": "Chidera",
+        "Henry": "Priscila",
+        "shortRenfield": "Cire",
+        "Rufus": "Jacorious",
+        "Petrof": "Kaedyn"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Morris": "Saxyn",
+        "Irving": "Braxsen",
+        "Smith": "Terin",
+        "Skinsky": "Reign"
+    }
+}

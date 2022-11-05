@@ -1,0 +1,38 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Julien": 0,
+        "Josephine": 2,
+        "Verrieres": 3,
+        "Louis": 4,
+        "\\Julien": 6,
+        "Fouque": 8,
+        "Norbert": 9
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Sorel": 1,
+        "Jenrel": 5,
+        "Sorel.\\": 7
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Julien": "Thinuk",
+        "Josephine": "Stevy",
+        "Verrieres": "Jamisen",
+        "Louis": "Rykan",
+        "\\Julien": "Jermany",
+        "Fouque": "Ashten",
+        "Norbert": "Rachael"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Sorel": "Amarii",
+        "Jenrel": "Onnie",
+        "Sorel.\\": "Jahdai"
+    }
+}

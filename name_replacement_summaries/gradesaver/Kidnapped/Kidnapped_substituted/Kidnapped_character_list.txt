@@ -1,0 +1,84 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "venson": 0,
+        "Robert": 1,
+        "Ebenezer": 3,
+        "Jennet": 4,
+        "Ebenzer": 6,
+        "George": 7,
+        "Red": 8,
+        "Edwin": 11,
+        "John": 13,
+        "Vourich": 15,
+        "Cluny": 16,
+        "Whig": 17,
+        "\\venson": 18,
+        "Robin": 19,
+        "Rob": 21,
+        "Huck": 23,
+        "Jim": 24,
+        "\\": 25,
+        "Leslie": 27,
+        "Limekilns": 29,
+        "Thomson": 30,
+        "Thompson": 31,
+        "Jekyll": 32,
+        "Hyde": 33
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Kiely": 2,
+        "Clouston": 5,
+        "Fox": 9,
+        "Louis": 10,
+        "Eigner": 12,
+        "Breck": 14,
+        "Oig": 20,
+        "Roy": 22,
+        "Fiedler": 28
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "venson": "Yarnell",
+        "Robert": "Mickele",
+        "Ebenezer": "Lauro",
+        "Jennet": "Natilyn",
+        "Ebenzer": "Clemmie",
+        "George": "Andress",
+        "Red": "Jammie",
+        "Edwin": "Indigo",
+        "John": "Pearse",
+        "Vourich": "Robbie",
+        "Cluny": "Piercen",
+        "Whig": "Jari",
+        "\\venson": "Berlin",
+        "Robin": "Amadi",
+        "Rob": "Havloch",
+        "Huck": "Jaydn",
+        "Jim": "Auric",
+        "\\": "Kelechi",
+        "Leslie": "Daryan",
+        "Limekilns": "Vandy",
+        "Thomson": "Alva",
+        "Thompson": "Peyton",
+        "Jekyll": "Linell",
+        "Hyde": "Dwan"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Kiely": "Michiah",
+        "Clouston": "Aundra",
+        "Fox": "Mycah",
+        "Louis": "Hatem",
+        "Eigner": "Jerzy",
+        "Breck": "Rease",
+        "Oig": "Arleigh",
+        "Roy": "Somtochukwu",
+        "Fiedler": "Gaynor"
+    }
+}

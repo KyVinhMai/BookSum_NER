@@ -1,0 +1,54 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Demetrius": 0,
+        "Egeus": 1,
+        "Peter": 2,
+        "Thisbe": 4,
+        "Flute": 5,
+        "Bottom": 6,
+        "Puck": 7,
+        "Oberon": 8,
+        "Robin": 9,
+        "Snug": 11,
+        "Snout": 12,
+        "Cobweb": 13,
+        "Moth": 14,
+        "Moonshine": 15,
+        "Lion": 16,
+        "Ninus": 17
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Quince": 3,
+        "Goodfellow": 10
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Demetrius": "Brevon",
+        "Egeus": "Aly",
+        "Peter": "Phanuel",
+        "Thisbe": "Raynell",
+        "Flute": "Phenix",
+        "Bottom": "Luvern",
+        "Puck": "Arlis",
+        "Oberon": "Britten",
+        "Robin": "Olayinka",
+        "Snug": "Taje",
+        "Snout": "Jacquese",
+        "Cobweb": "Shell",
+        "Moth": "Mandeep",
+        "Moonshine": "Brittin",
+        "Lion": "Meika",
+        "Ninus": "Ary"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Quince": "Skiler",
+        "Goodfellow": "Jaydeen"
+    }
+}

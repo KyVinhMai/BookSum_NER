@@ -1,0 +1,78 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Jim": 0,
+        "Otto": 2,
+        "Peter": 4,
+        "Wick": 5,
+        "Burdens": 7,
+        "Cutters": 8,
+        "Cleric": 9,
+        "Virgil": 10,
+        "Sylvester": 11,
+        "Tiny": 13,
+        "Ordinsky": 14,
+        "Leo": 15,
+        "Rudolph": 16,
+        "John": 17,
+        "Robin": 18,
+        "Homer": 20,
+        "Odysseus": 21,
+        "Joseph": 22,
+        "Mormon": 24,
+        "Jelinek": 25,
+        "Ole": 26,
+        "Circe": 28,
+        "Chris": 29
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Burden": 1,
+        "Fuchs": 3,
+        "Cutter": 6,
+        "Lovett": 12,
+        "Hood": 19,
+        "Smith": 23,
+        "Benson": 27
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Jim": "Nyerere",
+        "Otto": "Oney",
+        "Peter": "Antowine",
+        "Wick": "Rivers",
+        "Burdens": "Oriel",
+        "Cutters": "Callan",
+        "Cleric": "Emari",
+        "Virgil": "Arandjel",
+        "Sylvester": "Eddis",
+        "Tiny": "Josiah",
+        "Ordinsky": "Daylyn",
+        "Leo": "Nishon",
+        "Rudolph": "Brenda",
+        "John": "Achira",
+        "Robin": "Fontaine",
+        "Homer": "Feish",
+        "Odysseus": "Tyjae",
+        "Joseph": "Jm",
+        "Mormon": "Samie",
+        "Jelinek": "Amarii",
+        "Ole": "Rothana",
+        "Circe": "Kemani",
+        "Chris": "Emari"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Burden": "Lavaughn",
+        "Fuchs": "Rielly",
+        "Cutter": "Rudell",
+        "Lovett": "Rorey",
+        "Hood": "Kymoni",
+        "Smith": "Aamari",
+        "Benson": "Chayanne"
+    }
+}

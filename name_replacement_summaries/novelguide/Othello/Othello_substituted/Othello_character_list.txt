@@ -1,0 +1,22 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Roderigo": 0,
+        "Lodovico": 1,
+        "Duke": 2
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Roderigo": "Brae",
+        "Lodovico": "Al-Baraa",
+        "Duke": "Oather"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

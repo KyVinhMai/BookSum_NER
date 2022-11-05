@@ -1,0 +1,64 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Poyser": 0,
+        "Seth": 1,
+        "Hetty": 3,
+        "Poysers": 5,
+        "Lisbeth": 6,
+        "Squire": 7,
+        "Irwine": 9,
+        "Wiry": 10,
+        "Gyp": 12,
+        "Eliot": 13,
+        "Jesus": 14,
+        "niton": 15,
+        "Totty": 16,
+        "Burge": 17,
+        "Bedes": 18,
+        "Snowfield": 19,
+        "ne": 20,
+        "John": 21
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bede": 2,
+        "Sorrel": 4,
+        "Donnithorne": 8,
+        "Ben": 11,
+        "Olding": 22
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Poyser": "Bralyn",
+        "Seth": "Kamry",
+        "Hetty": "Temetrius",
+        "Poysers": "Taite",
+        "Lisbeth": "Seriya",
+        "Squire": "Gianny",
+        "Irwine": "Gianny",
+        "Wiry": "Danel",
+        "Gyp": "Jodey",
+        "Eliot": "Kemoni",
+        "Jesus": "Kaegan",
+        "niton": "Alexy",
+        "Totty": "Teddie",
+        "Burge": "Rayn",
+        "Bedes": "Avery",
+        "Snowfield": "Abrar",
+        "ne": "Thanh",
+        "John": "Emmanoil"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bede": "Sully",
+        "Sorrel": "Alvia",
+        "Donnithorne": "Linnell",
+        "Ben": "Ousainou",
+        "Olding": "Alexx"
+    }
+}

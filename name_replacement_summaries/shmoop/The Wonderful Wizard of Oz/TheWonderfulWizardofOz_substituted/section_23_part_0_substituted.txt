@@ -1,0 +1,3 @@
+{"name": "Chapter 24", "url": "https://web.archive.org/web/20210617042157/https://www.shmoop.com/study-guides/literature/wonderful-wizard-of-oz-book/summary/chapter-24", "summary": "Here's Aunt Gianny! Rayyana runs into her arms. There's no place like home.", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Em': 'Gianny', 'Dorothy': 'Rayyana', 'Oz': 'Ubaldo', 'Toto': 'Maciah', 'Lion': 'Skye-Anne', 'Winkies': 'Kamani', 'Uncle': 'Liron', 'Munchkins': 'Jianni', 'Sherlock': 'Giani', 'Siri': 'Sheilly', 'Boq': 'Jahdai', 'Munchkin': 'Jaedyn'}, 'Middle Names': {}, 'Last Names': {'Henry': 'Orrell'}}

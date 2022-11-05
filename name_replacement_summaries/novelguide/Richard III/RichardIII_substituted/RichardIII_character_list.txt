@@ -1,0 +1,64 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Henry": 0,
+        "Grey": 2,
+        "Rivers": 3,
+        "Ely": 4,
+        "Pomfret": 5,
+        "Lovel": 6,
+        "Gloucester": 7,
+        "Lucy": 8,
+        "Dorset": 9,
+        "York": 10,
+        "Richmond": 12,
+        "Tyrrel": 14,
+        "Morton": 15,
+        "Hereford": 16,
+        "Norfolk": 17,
+        "Blunt": 18,
+        "Ghosts": 19,
+        "Woodvilles": 20,
+        "Woodville": 21,
+        "Bourchier": 22
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "VI": 1,
+        "Tudor": 11,
+        "VII": 13
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Henry": "Pavan",
+        "Grey": "Gean",
+        "Rivers": "Raylen",
+        "Ely": "Kam",
+        "Pomfret": "Kamerin",
+        "Lovel": "Kathryn",
+        "Gloucester": "Manjot",
+        "Lucy": "Denedra",
+        "Dorset": "Amari",
+        "York": "Sulaiman",
+        "Richmond": "Evyn",
+        "Tyrrel": "Tamari",
+        "Morton": "Spyridon",
+        "Hereford": "Amandeep",
+        "Norfolk": "Celester",
+        "Blunt": "Cristan",
+        "Ghosts": "Mackinley",
+        "Woodvilles": "Tenzin",
+        "Woodville": "Abrar",
+        "Bourchier": "Amari"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "VI": "Eliyah",
+        "Tudor": "Madde",
+        "VII": "Camil"
+    }
+}

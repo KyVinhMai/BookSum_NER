@@ -1,0 +1,48 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Ghost": 0,
+        "Polonius": 1,
+        "Gertrude": 2,
+        "Guildenstern": 3,
+        "Olivier": 4,
+        "Elisinore": 5,
+        "Yorick": 6,
+        "Osric": 7,
+        "Cornelius": 8,
+        "Hyperion": 9,
+        "clepe": 10,
+        "Hercules": 11,
+        "T.S.": 12,
+        "Brutus": 14
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Eliot": 13
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Ghost": "Rhyan",
+        "Polonius": "Rajah",
+        "Gertrude": "Quinsha",
+        "Guildenstern": "Aly",
+        "Olivier": "Arturo",
+        "Elisinore": "Rayen",
+        "Yorick": "Atreju",
+        "Osric": "Zell",
+        "Cornelius": "Merchant",
+        "Hyperion": "Gillie",
+        "clepe": "Kamerin",
+        "Hercules": "Lavaughn",
+        "T.S.": "Kary",
+        "Brutus": "Denorris"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Eliot": "Peniel"
+    }
+}

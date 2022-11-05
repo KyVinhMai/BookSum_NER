@@ -1,0 +1,62 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Publius": 0,
+        "Pinckney": 1,
+        "Pierce": 2,
+        "Solon": 4,
+        "Louis": 5,
+        "Delome": 7,
+        "Montesquieu": 8,
+        "Hume": 9,
+        "Hobbes": 10,
+        "Coke": 11,
+        "Locke": 12,
+        "Jefferson": 13,
+        "Polybius": 14,
+        "Montesqieu": 15,
+        "Condorcet": 16,
+        "Centinel": 17,
+        "Bill": 18,
+        "Whig": 20,
+        "Tory": 21
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Butler": 3,
+        "XIV": 6,
+        "Clinton": 19
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Publius": "Vandy",
+        "Pinckney": "Airen",
+        "Pierce": "William-Kendryk",
+        "Solon": "Mishawn",
+        "Louis": "Vir",
+        "Delome": "Vail",
+        "Montesquieu": "Logyn",
+        "Hume": "Amerigo",
+        "Hobbes": "Cailan",
+        "Coke": "Zell",
+        "Locke": "Maven",
+        "Jefferson": "Drevan",
+        "Polybius": "Markelle",
+        "Montesqieu": "Khali",
+        "Condorcet": "Aidynn",
+        "Centinel": "Dominque",
+        "Bill": "Keondrae",
+        "Whig": "Santana",
+        "Tory": "Raequawn"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Butler": "Rayen",
+        "XIV": "Artie",
+        "Clinton": "Doanld"
+    }
+}

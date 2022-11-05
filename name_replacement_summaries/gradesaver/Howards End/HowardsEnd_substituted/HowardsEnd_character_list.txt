@@ -1,0 +1,64 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Helen": 0,
+        "Meg": 2,
+        "Tibby": 4,
+        "Juley": 5,
+        "Schlegels": 7,
+        "Wilcoxes": 8,
+        "E.M.": 9,
+        "Herr": 11,
+        "Beethoven": 13,
+        "Ruskin": 14,
+        "Dolly": 15,
+        "Evie": 17,
+        "Cyrus": 18,
+        "Oniton": 20,
+        "Ruth": 21,
+        "Tom": 23
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Schlegel": 1,
+        "Munt": 6,
+        "Forster": 10,
+        "Liesecke": 12,
+        "Fussell": 16,
+        "Hoy": 19,
+        "Wilcox": 22
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Helen": "Naiyma",
+        "Meg": "Dalene",
+        "Tibby": "Alvia",
+        "Juley": "Tatem",
+        "Schlegels": "Lashaun",
+        "Wilcoxes": "Tarren",
+        "E.M.": "Lavoris",
+        "Herr": "Chapel",
+        "Beethoven": "Hoa",
+        "Ruskin": "Artie",
+        "Dolly": "Jakki",
+        "Evie": "Chenin",
+        "Cyrus": "Reygan",
+        "Oniton": "Lavaughn",
+        "Ruth": "Shawniqua",
+        "Tom": "Daid"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Schlegel": "Shade",
+        "Munt": "Callahan",
+        "Forster": "Camdyn",
+        "Liesecke": "Sekai",
+        "Fussell": "Rumi",
+        "Hoy": "Rhylan",
+        "Wilcox": "Terryl"
+    }
+}

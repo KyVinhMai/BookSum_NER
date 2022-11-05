@@ -1,0 +1,50 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Pompey": 0,
+        "Brutus": 1,
+        "Cicero": 2,
+        "Decius": 3,
+        "Titinius": 4,
+        "Murellus": 5,
+        "Lucilius": 6,
+        "Lucius": 7,
+        "Clitus": 8,
+        "Volumnius": 9,
+        "Rome": 10,
+        "Trebonius": 11,
+        "Tom": 12,
+        "Dick": 13,
+        "Popilius": 14,
+        "Metellus": 15,
+        "Publius": 16
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Pompey": "Sehaj",
+        "Brutus": "Devrin",
+        "Cicero": "Kayler",
+        "Decius": "Yoltzin",
+        "Titinius": "Kehinde",
+        "Murellus": "Wisdom",
+        "Lucilius": "Monta",
+        "Lucius": "Rashadd",
+        "Clitus": "Kerry",
+        "Volumnius": "Akili",
+        "Rome": "Lian",
+        "Trebonius": "Lonie",
+        "Tom": "Brosius",
+        "Dick": "Carlson",
+        "Popilius": "Londen",
+        "Metellus": "Tanay",
+        "Publius": "Harlo"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

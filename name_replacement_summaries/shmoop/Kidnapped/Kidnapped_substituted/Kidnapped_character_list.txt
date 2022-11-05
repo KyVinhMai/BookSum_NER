@@ -1,0 +1,64 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Ebenezer": 0,
+        "Colin": 1,
+        "Red": 3,
+        "Neil": 5,
+        "Mungo": 6,
+        "Jennet": 7,
+        "John": 9,
+        "\\Cluny": 10,
+        "Cluny": 11,
+        "Whig": 12,
+        "Whigs": 14,
+        "Robin": 15,
+        "Rob": 17,
+        "Leyden": 18,
+        "Thomson\\": 19,
+        "Belflower\\": 20,
+        "venson": 21,
+        "VII": 22
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Roy": 2,
+        "Fox": 4,
+        "Clouston": 8,
+        "Cope": 13,
+        "Oig": 16
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Ebenezer": "Shakobe",
+        "Colin": "Geremyah",
+        "Red": "Nyaire",
+        "Neil": "Damier",
+        "Mungo": "Eddwyn",
+        "Jennet": "Arabellarose",
+        "John": "Cordney",
+        "\\Cluny": "Campbell",
+        "Cluny": "Hesam",
+        "Whig": "Adi",
+        "Whigs": "Kayton",
+        "Robin": "Merrit",
+        "Rob": "Ghaseeta",
+        "Leyden": "Altair",
+        "Thomson\\": "Blair",
+        "Belflower\\": "Rhyan",
+        "venson": "Kimoni",
+        "VII": "Elya"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Roy": "Chien",
+        "Fox": "Marice",
+        "Clouston": "Wrigley",
+        "Cope": "Terin",
+        "Oig": "Maui"
+    }
+}

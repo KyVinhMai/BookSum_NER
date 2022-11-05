@@ -1,0 +1,64 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lorenzo": 0,
+        "Benedict": 2,
+        "Julius": 4,
+        "Leo": 5,
+        "Philip": 6,
+        "Shmoopton": 8,
+        "Niccolo": 9,
+        "Scipio": 10,
+        "Severus": 11,
+        "Moses": 12,
+        "Cyrus": 13,
+        "de'": 14,
+        "Louis": 15,
+        "Ludovico": 17,
+        "Hiero": 18,
+        "Remirro": 19,
+        "de": 21,
+        "Oliverotto": 22
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Medici": 1,
+        "XVI": 3,
+        "II": 7,
+        "XII": 16,
+        "Orco": 20
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lorenzo": "Hermilo",
+        "Benedict": "Sukhmit",
+        "Julius": "Santiel",
+        "Leo": "Jerrik",
+        "Philip": "Willington",
+        "Shmoopton": "Jael",
+        "Niccolo": "Shaya",
+        "Scipio": "Kaydin",
+        "Severus": "Denym",
+        "Moses": "Keaun",
+        "Cyrus": "Jalontae",
+        "de'": "Kamani",
+        "Louis": "Crown",
+        "Ludovico": "Trvis",
+        "Hiero": "Skiler",
+        "Remirro": "Hudsyn",
+        "de": "Aly",
+        "Oliverotto": "Dalyn"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Medici": "Dannell",
+        "XVI": "Dondi",
+        "II": "Akili",
+        "XII": "Eastyn",
+        "Orco": "Khanh"
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Middletons": 0,
+        "Elinor": 1,
+        "John": 2,
+        "Lucy": 4,
+        "Jennings": 7,
+        "Robert": 8,
+        "Grey": 9,
+        "Henry": 11,
+        "Wordsworth": 12,
+        "Coleridge": 13,
+        "Smith": 14,
+        "Mercutio": 15,
+        "eles": 16,
+        "Morton": 17,
+        "Dennison": 18
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Willoughby": 3,
+        "ele": 5,
+        "Middleton": 10
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Middletons": "Perris",
+        "Elinor": "Hannie",
+        "John": "Jamesdaniel",
+        "Lucy": "Lillyonna",
+        "Jennings": "Aaryn",
+        "Robert": "Coleone",
+        "Grey": "Marshell",
+        "Henry": "Brooklynn",
+        "Wordsworth": "Feliz",
+        "Coleridge": "Kippy",
+        "Smith": "Asheton",
+        "Mercutio": "Payton",
+        "eles": "Jaelin",
+        "Morton": "Taeshawn",
+        "Dennison": "Foye"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Willoughby": "Zaylin",
+        "ele": "Malone",
+        "Middleton": "Aldean"
+    }
+}

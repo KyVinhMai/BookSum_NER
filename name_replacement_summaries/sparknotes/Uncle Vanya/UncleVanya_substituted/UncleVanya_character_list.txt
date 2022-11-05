@@ -1,0 +1,38 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Voynitsky": 0,
+        "Telegin": 1,
+        "Chekhov": 2,
+        "Eugene": 3,
+        "Ibsen": 5,
+        "indberg": 6,
+        "Eric": 7
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Briscow": 4,
+        "Bentley": 8,
+        "Bristow": 9
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Voynitsky": "Sol",
+        "Telegin": "Almer",
+        "Chekhov": "Lorin",
+        "Eugene": "Suyash",
+        "Ibsen": "Deniz",
+        "indberg": "Maven",
+        "Eric": "Bemnet"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Briscow": "Andree",
+        "Bentley": "Rainn",
+        "Bristow": "Rei"
+    }
+}

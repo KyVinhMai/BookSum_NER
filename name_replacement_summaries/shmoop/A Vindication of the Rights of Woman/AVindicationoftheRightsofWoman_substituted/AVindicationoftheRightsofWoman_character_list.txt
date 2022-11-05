@@ -1,0 +1,24 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Gregory": 0,
+        "Fordyce": 1,
+        "Piozzi": 2,
+        "Genlis": 3
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Gregory": "Wilbern",
+        "Fordyce": "Lavaughn",
+        "Piozzi": "Kaelen",
+        "Genlis": "Remy"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

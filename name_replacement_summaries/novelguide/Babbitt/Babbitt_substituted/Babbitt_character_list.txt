@@ -1,0 +1,82 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Ted": 0,
+        "Henry": 1,
+        "McKelveys": 3,
+        "Dilling": 5,
+        "McGoun": 6,
+        "Eunice": 7,
+        "Zenith": 10,
+        "Drew": 11,
+        "Sneeth": 12,
+        "Lyte": 13,
+        "Purdy": 14,
+        "Vergil": 15,
+        "Milton": 17,
+        "Lucile": 18,
+        "Chum": 20,
+        "Eddie": 22,
+        "GoGetter": 23,
+        "Koplinsky": 24,
+        "Prout": 25,
+        "Ed": 26,
+        "Overbrooks": 28,
+        "Kenneth": 29,
+        "Jerry": 31,
+        "Bunch": 32,
+        "Mudge": 33
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Thompson": 2,
+        "Littlefield": 8,
+        "Gunch": 16,
+        "McKelvey": 19,
+        "Frink": 21,
+        "Overbrook": 27,
+        "Escott": 30
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Ted": "Rhoen",
+        "Henry": "Jodarius",
+        "McKelveys": "Evann",
+        "Dilling": "Currie",
+        "McGoun": "Tai",
+        "Eunice": "Grystalla",
+        "Zenith": "Oakley",
+        "Drew": "Rithan",
+        "Sneeth": "Lakoda",
+        "Lyte": "Kimari",
+        "Purdy": "Matisse",
+        "Vergil": "Garrel",
+        "Milton": "Dmani",
+        "Lucile": "Apsana",
+        "Chum": "Sukhman",
+        "Eddie": "Ellery",
+        "GoGetter": "Deniz",
+        "Koplinsky": "Bay",
+        "Prout": "Kehinde",
+        "Ed": "Ompal",
+        "Overbrooks": "Maziah",
+        "Kenneth": "Keatyn",
+        "Jerry": "Tupou",
+        "Bunch": "Davi",
+        "Mudge": "Kamari"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Thompson": "Cheney",
+        "Littlefield": "Avery",
+        "Gunch": "Jael",
+        "McKelvey": "Rivers",
+        "Frink": "Kelechi",
+        "Overbrook": "Jayel",
+        "Escott": "Reiley"
+    }
+}

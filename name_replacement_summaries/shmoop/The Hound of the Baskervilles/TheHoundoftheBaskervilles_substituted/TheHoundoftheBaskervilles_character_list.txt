@@ -1,0 +1,38 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Sherlock": 0,
+        "Mortimer": 2,
+        "Henry": 3,
+        "Selden": 4,
+        "Hound": 5,
+        "Beryl": 6,
+        "Cujo": 7,
+        "Rodger": 8,
+        "Lyons": 9
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Holmes": 1
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Sherlock": "Cache",
+        "Mortimer": "Dirck",
+        "Henry": "Xander",
+        "Selden": "Mekiah",
+        "Hound": "Remy",
+        "Beryl": "Mackennah",
+        "Cujo": "Elza",
+        "Rodger": "Gavyne",
+        "Lyons": "Shia"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Holmes": "Kaydin"
+    }
+}

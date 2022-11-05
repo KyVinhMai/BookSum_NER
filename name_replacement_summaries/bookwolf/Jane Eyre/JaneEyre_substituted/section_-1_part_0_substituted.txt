@@ -1,0 +1,3 @@
+{"name": "Jane Oakley", "summary": "", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Rochester': 'Aries', 'Thornfield': 'Shyler', 'Bessie': 'Shakuntala', 'Bront': 'Vandy', 'Sophie': 'Bousavanh', 'Briggs': 'Vinnie', 'John': 'Sundeep', 'Lloyd': 'Let', 'Brocklehurst': 'Kimoni', 'Pilot': 'Yu', 'Miller': 'Jaki', 'Helen': 'Mckinlea', 'Temple': 'Ajene', 'Pierrot': 'Jubilee', 'Lowood': 'Ji', 'Fortune': 'Ary', 'Viscount': 'Kimoni', "C'line": 'Demarie', 'Rizzio': 'Waverly', 'Bothwell': 'Mekiah'}, 'Middle Names': {}, 'Last Names': {'Reed': 'Nedd', 'Eyre': 'Oakley', 'Rivers': 'Zamari', 'John': 'Gailon', 'Burns': 'Damarie', 'Lee': 'Bless'}}

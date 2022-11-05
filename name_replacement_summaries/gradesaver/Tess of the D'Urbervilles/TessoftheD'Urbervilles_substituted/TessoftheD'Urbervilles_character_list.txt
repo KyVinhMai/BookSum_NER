@@ -1,0 +1,74 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "John": 0,
+        "Tess": 3,
+        "d'Urbervilles": 4,
+        "Rolliver": 6,
+        "Durbeyfields": 7,
+        "Sorrow": 8,
+        "Crick": 9,
+        "Demeter": 10,
+        "Eve": 11,
+        "Retty": 12,
+        "Izz": 13,
+        "Izzy": 15,
+        "Wordsworth": 16,
+        "Shelley": 17,
+        "Cricks": 18,
+        "Beck": 20,
+        "Felix": 22,
+        "Cuthbert": 23,
+        "Mercy": 24,
+        "Wellbridge": 25,
+        "Groby": 26,
+        "Reverend": 27,
+        "Brooks": 28
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Durbeyfield": 1,
+        "d'Urberville": 5,
+        "Huett": 14,
+        "Priddle": 19,
+        "Knibbs": 21
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "John": "Bharathan",
+        "Tess": "Elaf",
+        "d'Urbervilles": "Shawne",
+        "Rolliver": "Lovelle",
+        "Durbeyfields": "Emari",
+        "Sorrow": "Freedom",
+        "Crick": "Stevie",
+        "Demeter": "Aylen",
+        "Eve": "Sristi",
+        "Retty": "Clair",
+        "Izz": "Sekai",
+        "Izzy": "Alpha",
+        "Wordsworth": "Markelle",
+        "Shelley": "Chrisanya",
+        "Cricks": "Braylin",
+        "Beck": "Britain",
+        "Felix": "Jathon",
+        "Cuthbert": "Jiden",
+        "Mercy": "Arlyn",
+        "Wellbridge": "Kodi",
+        "Groby": "Rilley",
+        "Reverend": "Jeryl",
+        "Brooks": "Anastasio"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Durbeyfield": "Yarden",
+        "d'Urberville": "Arden",
+        "Huett": "Oluwaseun",
+        "Priddle": "Arin",
+        "Knibbs": "Jari"
+    }
+}

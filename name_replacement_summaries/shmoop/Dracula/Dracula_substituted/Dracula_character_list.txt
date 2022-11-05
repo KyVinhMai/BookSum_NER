@@ -1,0 +1,48 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lucy": 0,
+        "Quincey": 1,
+        "Holmwood": 3,
+        "Bistritz": 5,
+        "Berserker": 6,
+        "Hennessey": 7,
+        "Host": 8,
+        "Whitby": 9,
+        "ker": 10,
+        "Hildesheim": 11,
+        "\\Mr.": 12,
+        "R.M.": 14
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Morris": 2,
+        "Ville\\": 13,
+        "Renfield": 15
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lucy": "Lauryl",
+        "Quincey": "Vernis",
+        "Holmwood": "Delane",
+        "Bistritz": "Jasmon",
+        "Berserker": "Lyrik",
+        "Hennessey": "March",
+        "Host": "Mishael",
+        "Whitby": "Mikah",
+        "ker": "Ocean",
+        "Hildesheim": "Kodee",
+        "\\Mr.": "Leighton",
+        "R.M.": "Toy"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Morris": "Jakahri",
+        "Ville\\": "Aris",
+        "Renfield": "Dru"
+    }
+}

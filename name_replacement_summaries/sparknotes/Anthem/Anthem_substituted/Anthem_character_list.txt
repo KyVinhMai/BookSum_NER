@@ -1,0 +1,24 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Peikoff": 0,
+        "Lenin": 1,
+        "Eve": 2,
+        "Hitler": 3
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Peikoff": "Kymoni",
+        "Lenin": "Reiley",
+        "Eve": "Jasleen",
+        "Hitler": "Kijana"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

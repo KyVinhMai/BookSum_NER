@@ -1,0 +1,32 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lockwood": 0,
+        "Joseph": 1,
+        "Ellen": 2,
+        "Linton": 3,
+        "Green": 4,
+        "Hindley": 5,
+        "Nelly": 6,
+        "Young": 7
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lockwood": "Jahdai",
+        "Joseph": "Miykael",
+        "Ellen": "Chrisanya",
+        "Linton": "Tullun",
+        "Green": "Uchenna",
+        "Hindley": "Jeffie",
+        "Nelly": "Quanaisha",
+        "Young": "Koi"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

@@ -1,0 +1,48 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Bill": 0,
+        "Henry": 1,
+        "Klookooch": 2,
+        "Liplip": 3,
+        "Kiche": 4,
+        "Smith": 5,
+        "Weedon": 6,
+        "Scotts": 8,
+        "Bills": 9,
+        "Collie": 10,
+        "Dick": 11,
+        "One": 12,
+        "Lip": 14
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Scott": 7,
+        "Eye": 13
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Bill": "Tyandre",
+        "Henry": "Rahyl",
+        "Klookooch": "Donne",
+        "Liplip": "Dwan",
+        "Kiche": "Marvis",
+        "Smith": "Berkeley",
+        "Weedon": "Peniel",
+        "Scotts": "Maika",
+        "Bills": "Halsey",
+        "Collie": "Lyndall",
+        "Dick": "Trushal",
+        "One": "Autmn",
+        "Lip": "Justice"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Scott": "Harrol",
+        "Eye": "Lavon"
+    }
+}

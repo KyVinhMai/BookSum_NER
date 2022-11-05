@@ -1,0 +1,48 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lord": 1,
+        "in": 3,
+        "Jewel": 4,
+        "Cornelius": 5,
+        "Brown": 6,
+        "Elliott": 7,
+        "Brierly": 8,
+        "Jones": 9,
+        "George": 10,
+        "Chester": 11,
+        "O'Brien": 12,
+        "Egstrom": 13,
+        "De": 14
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Jim": 2,
+        "Jongh": 15
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lord": "Kyri",
+        "in": "Jae",
+        "Jewel": "Elis",
+        "Cornelius": "Theral",
+        "Brown": "Maziah",
+        "Elliott": "Damiso",
+        "Brierly": "Yardley",
+        "Jones": "Hazle",
+        "George": "Inam",
+        "Chester": "Omaru",
+        "O'Brien": "Rio",
+        "Egstrom": "Liron",
+        "De": "Jae"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Jim": "Amarien",
+        "Jongh": "Elza"
+    }
+}

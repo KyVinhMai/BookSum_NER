@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Goneril": 0,
+        "Kent": 1,
+        "Gloucester": 2,
+        "Edmund": 3,
+        "Fool": 4,
+        "Burgundy": 6,
+        "Merlin": 7,
+        "Poor": 8,
+        "Phillip": 10,
+        "Cupid": 12,
+        "Fortune": 13
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Tom": 9,
+        "Sidney": 11
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Goneril": "Jaydn",
+        "Kent": "Jelan",
+        "Gloucester": "Peyson",
+        "Edmund": "Hewey",
+        "Fool": "Dae",
+        "Burgundy": "Ariyan",
+        "Merlin": "Tithi",
+        "Poor": "Shamari",
+        "Phillip": "Lamir",
+        "Cupid": "Tagan",
+        "Fortune": "Jessie"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Tom": "Draiven",
+        "Sidney": "Arlyn"
+    }
+}

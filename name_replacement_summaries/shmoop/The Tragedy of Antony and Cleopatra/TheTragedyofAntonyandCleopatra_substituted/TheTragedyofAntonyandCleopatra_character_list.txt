@@ -1,0 +1,56 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Sextus": 0,
+        "Pompey": 2,
+        "Hercules": 3,
+        "Eros": 4,
+        "Diomedes": 5,
+        "Proculeius": 6,
+        "Lucius": 7,
+        "Lepidus": 8,
+        "Ventidius": 9,
+        "Philippi": 10,
+        "Brutus": 11,
+        "Cleo": 12,
+        "Herod": 13,
+        "Fortune": 14,
+        "Pompeys": 15,
+        "Pomey": 16,
+        "Jerry": 17
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Pompeius": 1,
+        "Springer": 18
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Sextus": "Cledith",
+        "Pompey": "Deone",
+        "Hercules": "Kimoni",
+        "Eros": "Arun",
+        "Diomedes": "Harpreet",
+        "Proculeius": "Ebbie",
+        "Lucius": "Markel",
+        "Lepidus": "Ellison",
+        "Ventidius": "Jasiyah",
+        "Philippi": "Amari",
+        "Brutus": "Stavros",
+        "Cleo": "Kao",
+        "Herod": "Luverne",
+        "Fortune": "Mahari",
+        "Pompeys": "Wallis",
+        "Pomey": "Pasha",
+        "Jerry": "Lakshay"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Pompeius": "Zamari",
+        "Springer": "Jasmond"
+    }
+}

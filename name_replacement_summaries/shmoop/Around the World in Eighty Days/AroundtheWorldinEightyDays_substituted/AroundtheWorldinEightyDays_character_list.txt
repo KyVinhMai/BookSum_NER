@@ -1,0 +1,34 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Fogg": 1,
+        "Foster": 2,
+        "Kiouni": 3,
+        "Sly": 4,
+        "Proctor": 6,
+        "P.F.": 7,
+        "Detective": 8
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Fix": 5
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Fogg": "Kitt",
+        "Foster": "Hadleigh",
+        "Kiouni": "Kary",
+        "Sly": "Yu",
+        "Proctor": "Meiko",
+        "P.F.": "Preet",
+        "Detective": "Oluwadarasimi"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Fix": "Lavoris"
+    }
+}

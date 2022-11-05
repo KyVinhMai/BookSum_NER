@@ -1,0 +1,54 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "John": 0,
+        "Gregory": 2,
+        "Mill": 3,
+        "Milton": 4,
+        "Eileen": 5,
+        "Mott": 7,
+        "Fordyce": 8,
+        "Hervey": 9,
+        "Piozzi": 10,
+        "Genlis": 11,
+        "Chesterfield": 12,
+        "Smith": 13,
+        "Edmund": 14,
+        "Skolnik": 16,
+        "Ferguson": 17
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Locke": 1,
+        "Botting": 6,
+        "Burke": 15
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "John": "Aaroosh",
+        "Gregory": "Deewan",
+        "Mill": "Lavon",
+        "Milton": "Koru",
+        "Eileen": "Earnstine",
+        "Mott": "Wai",
+        "Fordyce": "Audi",
+        "Hervey": "Brylin",
+        "Piozzi": "Meiko",
+        "Genlis": "Rian",
+        "Chesterfield": "Berkeley",
+        "Smith": "Paxtyn",
+        "Edmund": "Candy",
+        "Skolnik": "name",
+        "Ferguson": "Aditiya"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Locke": "Sagan",
+        "Botting": "Dawsyn",
+        "Burke": "Kayler"
+    }
+}

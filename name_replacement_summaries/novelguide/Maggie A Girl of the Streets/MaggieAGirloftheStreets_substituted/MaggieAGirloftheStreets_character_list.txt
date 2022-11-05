@@ -1,0 +1,40 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Jimmie": 0,
+        "Pete": 1,
+        "Riley": 2,
+        "Nellie.\\": 4,
+        "Nellie": 5,
+        "Nell": 6,
+        "Freddie": 7,
+        "Smith": 8,
+        "Tommie": 9,
+        "Jimmies": 10
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Johnson": 3
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Jimmie": "Meiko",
+        "Pete": "Winner",
+        "Riley": "Jasmond",
+        "Nellie.\\": "Zaide",
+        "Nellie": "Citalli",
+        "Nell": "Timothea",
+        "Freddie": "Tyjae",
+        "Smith": "Monta",
+        "Tommie": "Elworth",
+        "Jimmies": "Rylin"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Johnson": "Raiph"
+    }
+}

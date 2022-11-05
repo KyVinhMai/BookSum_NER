@@ -1,0 +1,66 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Wolsey": 0,
+        "Winchester": 1,
+        "Cromwell": 2,
+        "Griffith": 3,
+        "Norfolk": 4,
+        "Lovell": 5,
+        "Suffolk": 6,
+        "Henry": 7,
+        "Butts": 8,
+        "Porter": 10,
+        "Epilogue": 11,
+        "Gilbert": 13,
+        "Second": 15,
+        "Hopkins/Henton": 17,
+        "Hopkins": 18,
+        "Pembroke": 19,
+        "Lincoln": 20,
+        "Lords": 21,
+        "Surrey": 22,
+        "Lucifer": 23
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "VIII": 9,
+        "Guilford": 12,
+        "Perk": 14,
+        "VII": 16
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Wolsey": "Kylin",
+        "Winchester": "Ziyan",
+        "Cromwell": "Braelin",
+        "Griffith": "Brantly",
+        "Norfolk": "Shalom",
+        "Lovell": "Babe",
+        "Suffolk": "Wai",
+        "Henry": "Pratul",
+        "Butts": "Keylen",
+        "Porter": "Jetzael",
+        "Epilogue": "Staley",
+        "Gilbert": "Ly",
+        "Second": "Ji",
+        "Hopkins/Henton": "Giani",
+        "Hopkins": "Kodie",
+        "Pembroke": "Kenyetta",
+        "Lincoln": "Ahmaud",
+        "Lords": "Marvis",
+        "Surrey": "Haydyn",
+        "Lucifer": "Jaylenn"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "VIII": "Seville",
+        "Guilford": "Torey",
+        "Perk": "Marquette",
+        "VII": "Akili"
+    }
+}

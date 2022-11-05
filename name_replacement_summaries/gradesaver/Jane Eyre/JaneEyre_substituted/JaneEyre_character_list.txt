@@ -1,0 +1,68 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Bewick": 1,
+        "Bronte": 3,
+        "Bessie": 4,
+        "Lloyd": 5,
+        "Brocklehurst": 6,
+        "Temple": 7,
+        "Helen": 8,
+        "no": 10,
+        "Edwin": 11,
+        "Rochester": 14,
+        "Thornfield": 15,
+        "Pilot": 16,
+        "Celine": 18,
+        "Bridewell": 19,
+        "\\Rochester": 20,
+        "Briggs": 22,
+        "John": 25,
+        "Oliver": 26,
+        "Morton": 27
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Burns": 9,
+        "Vere": 12,
+        "Eyre": 13,
+        "Rivers": 17,
+        "Reed": 21,
+        "John": 24
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Bewick": "Tkai",
+        "Bronte": "Cheney",
+        "Bessie": "Antionette",
+        "Lloyd": "Eftihis",
+        "Brocklehurst": "Jae",
+        "Temple": "Denym",
+        "Helen": "Danaly",
+        "no": "Shaylon",
+        "Edwin": "Gelacio",
+        "Rochester": "Rennie",
+        "Thornfield": "Storm",
+        "Pilot": "Shiva",
+        "Celine": "Mycah",
+        "Bridewell": "Christan",
+        "\\Rochester": "Kailen",
+        "Briggs": "Vernis",
+        "John": "Coury",
+        "Oliver": "Ghage",
+        "Morton": "T-Jay"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Burns": "Camil",
+        "Vere": "Murle",
+        "Eyre": "Cheney",
+        "Rivers": "Torey",
+        "Reed": "Dominyc",
+        "John": "Rashed"
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Timon": 0,
+        "Fortune": 1,
+        "Ventidius": 2,
+        "Lucilius": 3,
+        "Cupid": 4,
+        "Lionel": 5,
+        "Isidore": 7,
+        "Fool": 8,
+        "Sempronius": 9,
+        "Lucullus": 10,
+        "Lucius": 11,
+        "Servilius": 12,
+        "Hortensius": 13
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Richie": 6
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Timon": "Pompeo",
+        "Fortune": "Shaquel",
+        "Ventidius": "Oluwadarasimi",
+        "Lucilius": "Kodee",
+        "Cupid": "Ricki",
+        "Lionel": "Lenz",
+        "Isidore": "Wyle",
+        "Fool": "Deshay",
+        "Sempronius": "Andree",
+        "Lucullus": "Jourdin",
+        "Lucius": "Domagoj",
+        "Servilius": "Jeryn",
+        "Hortensius": "Kadian"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Richie": "Jacbo"
+    }
+}

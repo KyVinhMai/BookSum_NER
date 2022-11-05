@@ -1,0 +1,56 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Jim": 0,
+        "Jimmy": 1,
+        "Brierly": 2,
+        "Chester": 3,
+        "Robinson": 4,
+        "Egstrom": 5,
+        "O'Brien": 6,
+        "De": 7,
+        "in": 9,
+        "Cornelius": 10,
+        "Jewel": 11,
+        "Brown": 12,
+        "Shmoopers": 13,
+        "Elliot": 14,
+        "Tommy": 15,
+        "B": 17,
+        "George": 18
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Jongh": 8,
+        "Jones": 16
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Jim": "Jesee",
+        "Jimmy": "Deimian",
+        "Brierly": "Chey",
+        "Chester": "Nannie",
+        "Robinson": "Linell",
+        "Egstrom": "Hoa",
+        "O'Brien": "Osie",
+        "De": "Climmie",
+        "in": "Jaydence",
+        "Cornelius": "Adelbert",
+        "Jewel": "Adair",
+        "Brown": "Chai",
+        "Shmoopers": "Raynell",
+        "Elliot": "Tochi",
+        "Tommy": "Kessel",
+        "B": "Dossie",
+        "George": "Severiano"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Jongh": "Jackie",
+        "Jones": "Yasen"
+    }
+}

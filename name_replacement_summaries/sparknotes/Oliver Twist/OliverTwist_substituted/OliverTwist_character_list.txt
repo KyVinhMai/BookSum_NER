@@ -1,0 +1,72 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Oliver": 0,
+        "Bumble": 2,
+        "Sowerberry": 3,
+        "Sowerberrys": 4,
+        "Brownlow": 5,
+        "Bill": 6,
+        "Rose": 8,
+        "Monks": 9,
+        "Leeford": 10,
+        "Dickens": 11,
+        "Tom": 12,
+        "Grimwig": 14,
+        "Losberne": 15,
+        "Dick": 16,
+        "Dodger": 17,
+        "Bet": 18,
+        "\\Oliver": 19,
+        "Bedwin": 21,
+        "Corney": 22,
+        "Giles": 23,
+        "Brittles": 24,
+        "Duff": 25,
+        "Bumbles": 26
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Twist": 1,
+        "Sikes": 7,
+        "Chitling": 13,
+        "Twist\\": 20
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Oliver": "Newell",
+        "Bumble": "Rhythm",
+        "Sowerberry": "Gaylin",
+        "Sowerberrys": "Hyun",
+        "Brownlow": "Kao",
+        "Bill": "Shallum",
+        "Rose": "Wendla",
+        "Monks": "Maven",
+        "Leeford": "Sukhman",
+        "Dickens": "Deshay",
+        "Tom": "Bronwyn",
+        "Grimwig": "Lenell",
+        "Losberne": "Jourdan",
+        "Dick": "Izayha",
+        "Dodger": "Emery",
+        "Bet": "Daryana",
+        "\\Oliver": "Indiana",
+        "Bedwin": "Tarren",
+        "Corney": "Arin",
+        "Giles": "Skylr",
+        "Brittles": "Rian",
+        "Duff": "Demetrice",
+        "Bumbles": "Amarii"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Twist": "Climmie",
+        "Sikes": "Jonel",
+        "Chitling": "Domnique",
+        "Twist\\": "Keymani"
+    }
+}

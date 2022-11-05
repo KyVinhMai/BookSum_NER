@@ -1,0 +1,58 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Pet": 0,
+        "Flintwich": 1,
+        "Flintwinch": 2,
+        "Little": 3,
+        "Frederick": 5,
+        "Tip": 6,
+        "Dorritt": 7,
+        "Doyce": 8,
+        "Plornish": 9,
+        "Dickens": 10,
+        "Henry": 11,
+        "John": 12,
+        "Dorrits": 14,
+        "Merdle": 15,
+        "Merdles": 16,
+        "Edmund": 17,
+        "Rugg": 18,
+        "Plornishes": 19
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Dorrit": 4,
+        "Chivery": 13
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Pet": "Arin",
+        "Flintwich": "Berkley",
+        "Flintwinch": "Ashtan",
+        "Little": "Reilley",
+        "Frederick": "Eldrich",
+        "Tip": "Olanda",
+        "Dorritt": "Tylar",
+        "Doyce": "Juel",
+        "Plornish": "Gianny",
+        "Dickens": "Rudie",
+        "Henry": "Herley",
+        "John": "Gurfateh",
+        "Dorrits": "Puneet",
+        "Merdle": "Linell",
+        "Merdles": "Kmari",
+        "Edmund": "Adrew",
+        "Rugg": "Leotha",
+        "Plornishes": "Dakotah"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Dorrit": "Nionila",
+        "Chivery": "Duanne"
+    }
+}

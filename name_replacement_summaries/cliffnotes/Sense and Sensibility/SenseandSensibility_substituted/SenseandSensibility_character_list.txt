@@ -1,0 +1,62 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Elinor": 0,
+        "John": 1,
+        "Henry": 2,
+        "Smith": 5,
+        "Jennings": 6,
+        "Lucy": 8,
+        "Grey": 9,
+        "Middletons": 10,
+        "Robert": 12,
+        "eles": 13,
+        "Ellison": 15,
+        "Willoughbys": 17,
+        "Cowper": 18,
+        "Scott": 19,
+        "Elinor.\\": 20,
+        "George": 21,
+        "Willoughby\\": 23
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Middleton": 3,
+        "Willoughby": 4,
+        "ele": 11,
+        "Middleron": 16,
+        "III": 22
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Elinor": "Azaela",
+        "John": "Tajon",
+        "Henry": "Arndrae",
+        "Smith": "Freedom",
+        "Jennings": "Kayton",
+        "Lucy": "Shelsey",
+        "Grey": "Brier",
+        "Middletons": "Kao",
+        "Robert": "Chhiv",
+        "eles": "Alika",
+        "Ellison": "Jaree",
+        "Willoughbys": "Samie",
+        "Cowper": "Myan",
+        "Scott": "Jorryn",
+        "Elinor.\\": "Gurpreet",
+        "George": "Domenick",
+        "Willoughby\\": "Eri"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Middleton": "Hero",
+        "Willoughby": "Shamari",
+        "ele": "Sutton",
+        "Middleron": "Vail",
+        "III": "Ramey"
+    }
+}

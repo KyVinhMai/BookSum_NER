@@ -1,0 +1,66 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "W.": 0,
+        "Bryce": 2,
+        "Burns": 3,
+        "Ottoline": 4,
+        "Billy": 6,
+        "River": 8,
+        "Wilfred": 9,
+        "Lizzie": 11,
+        "H.": 12,
+        "Orme": 14,
+        "Dr.": 15,
+        "during": 17,
+        "Peter": 18,
+        "Betty": 19,
+        "Don": 20,
+        "Robert": 22
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Rivers": 1,
+        "Morrell": 5,
+        "Prior": 7,
+        "Owen": 10,
+        "Wells": 13,
+        "Rivers.": 16,
+        "Quixote": 21,
+        "Ross": 23
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "W.": "Jung",
+        "Bryce": "Dwan",
+        "Burns": "Jahni",
+        "Ottoline": "Dail",
+        "Billy": "Ephrim",
+        "River": "Muhanad",
+        "Wilfred": "Pers",
+        "Lizzie": "Lakida",
+        "H.": "Avyn",
+        "Orme": "Juliani",
+        "Dr.": "Lakoda",
+        "during": "Samar",
+        "Peter": "Gurshan",
+        "Betty": "Katina-Joy",
+        "Don": "Honest",
+        "Robert": "Traeden"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Rivers": "Halsey",
+        "Morrell": "Rowan",
+        "Prior": "Jaydeen",
+        "Owen": "Norville",
+        "Wells": "Jasmond",
+        "Rivers.": "Mikah",
+        "Quixote": "Brae",
+        "Ross": "Zj"
+    }
+}

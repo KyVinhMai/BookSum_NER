@@ -1,0 +1,3 @@
+{"name": "King Lear", "summary": "", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Gloucester': 'Caylor', 'Edmund': 'Erek', 'Goneril': 'Ermal', 'Kent': 'Piotr', 'Burgundy': 'Osiris', 'Fool': 'Dannell', 'Tom': 'Satoshi'}, 'Middle Names': {}, 'Last Names': {}}

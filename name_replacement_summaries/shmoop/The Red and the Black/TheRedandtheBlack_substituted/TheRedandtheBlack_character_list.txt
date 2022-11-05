@@ -1,0 +1,48 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Julien": 0,
+        "Dervilles": 2,
+        "Fouqe": 3,
+        "M.": 5,
+        "Monsieur": 7,
+        "Verrieres": 8,
+        "Signor": 9,
+        "Norbert": 11,
+        "Croisenois": 12,
+        "Duke": 13,
+        "Fervques": 14,
+        "Julie": 15
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Sorel": 1,
+        "Derville": 6,
+        "Geronimo": 10
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Julien": "Rondol",
+        "Dervilles": "Lunden",
+        "Fouqe": "Soua",
+        "M.": "Amel",
+        "Monsieur": "Tahjae",
+        "Verrieres": "Shaya",
+        "Signor": "Dai",
+        "Norbert": "Rekahn",
+        "Croisenois": "Larin",
+        "Duke": "Nafee",
+        "Fervques": "Jemiah",
+        "Julie": "Brecia"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Sorel": "Davi",
+        "Derville": "Rielly",
+        "Geronimo": "Agrim"
+    }
+}

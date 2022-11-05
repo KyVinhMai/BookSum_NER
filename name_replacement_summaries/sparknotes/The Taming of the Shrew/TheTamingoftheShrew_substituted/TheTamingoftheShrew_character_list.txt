@@ -1,0 +1,40 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Sly": 0,
+        "Lucentio": 1,
+        "Biondello": 2,
+        "Gremio": 3,
+        "Hortensio": 4,
+        "Vincentio": 6,
+        "Grumio": 7,
+        "Hercules": 8,
+        "Litio": 9,
+        "Curtis": 10
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Petruchio": 11
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Sly": "Tagan",
+        "Lucentio": "Phenix",
+        "Biondello": "Anmol",
+        "Gremio": "Brittin",
+        "Hortensio": "Graison",
+        "Vincentio": "Perris",
+        "Grumio": "Pasha",
+        "Hercules": "Lenzie",
+        "Litio": "Cypress",
+        "Curtis": "Alexaner"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Petruchio": "Berkeley"
+    }
+}

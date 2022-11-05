@@ -1,0 +1,74 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lucy": 0,
+        "George": 3,
+        "Emersons": 4,
+        "Cecil": 6,
+        "Freddy": 8,
+        "Forster": 9,
+        "Florence": 10,
+        "Vyses": 12,
+        "Beethoven": 13,
+        "V.": 14,
+        "Giotto": 15,
+        "Butterworth": 16,
+        "Honeychurches": 17,
+        "Minnie": 18,
+        "Lennie": 20,
+        "Bertolini": 21,
+        "E": 22,
+        "World": 23,
+        "Botticelli": 25,
+        "Venus": 26,
+        "Cissie": 27,
+        "Tennyson": 28,
+        "Miss": 29
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Honeychurch": 1,
+        "Vyse": 7,
+        "Emerson": 11,
+        "Beebe": 19,
+        "Honeychurch!\\": 24
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lucy": "Vontella",
+        "George": "Thies",
+        "Emersons": "Shiva",
+        "Cecil": "Jagjot",
+        "Freddy": "Sefat",
+        "Forster": "Ricki",
+        "Florence": "Keerti",
+        "Vyses": "Jamy",
+        "Beethoven": "Freddi",
+        "V.": "Meiko",
+        "Giotto": "Quillen",
+        "Butterworth": "Kam",
+        "Honeychurches": "Teran",
+        "Minnie": "Bernelda",
+        "Lennie": "Xy",
+        "Bertolini": "Berkley",
+        "E": "Jaelin",
+        "World": "Devyn",
+        "Botticelli": "Ryin",
+        "Venus": "Chakelia",
+        "Cissie": "Deondrea",
+        "Tennyson": "Rayen",
+        "Miss": "Toy"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Honeychurch": "Vernell",
+        "Vyse": "Riley",
+        "Emerson": "Jacqual",
+        "Beebe": "Ricci",
+        "Honeychurch!\\": "Lorrin"
+    }
+}

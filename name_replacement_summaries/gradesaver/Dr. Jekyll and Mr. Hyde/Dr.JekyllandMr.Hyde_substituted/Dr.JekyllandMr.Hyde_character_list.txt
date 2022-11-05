@@ -1,0 +1,40 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Utterson": 0,
+        "Enfield": 1,
+        "Henry": 2,
+        "venson": 4,
+        "Hyde": 5,
+        "Seek": 6,
+        "Percy": 7,
+        "Poole": 9,
+        "Guest": 10
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Jekyll": 3,
+        "Shelley": 8
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Utterson": "Rainn",
+        "Enfield": "Bela",
+        "Henry": "Satyanarayan",
+        "venson": "Schylar",
+        "Hyde": "Osiris",
+        "Seek": "Alexx",
+        "Percy": "Cevion",
+        "Poole": "Davonne",
+        "Guest": "Logyn"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Jekyll": "Finnley",
+        "Shelley": "Iszabella-Rose"
+    }
+}

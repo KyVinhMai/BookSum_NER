@@ -1,0 +1,60 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Cymbeline": 0,
+        "Imogen": 1,
+        "Posthumus": 2,
+        "Cloten": 3,
+        "Holinshed": 4,
+        "Lucius": 5,
+        "Jupiter": 6,
+        "Julius": 7,
+        "Guiderius": 8,
+        "Polydore": 9,
+        "Phoenix": 10,
+        "Osiris": 11,
+        "Fidele": 12,
+        "Imogen/Fidele": 13,
+        "Jove": 14,
+        "dig": 15,
+        "Cornelius": 16,
+        "Euriphile": 17,
+        "Second": 18,
+        "Sicilius": 20
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Lord": 19
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Cymbeline": "Casey",
+        "Imogen": "Kellisha",
+        "Posthumus": "Demetrice",
+        "Cloten": "Tommie",
+        "Holinshed": "Rashi",
+        "Lucius": "Evins",
+        "Jupiter": "Luvern",
+        "Julius": "Kevan",
+        "Guiderius": "Hartley",
+        "Polydore": "Tavi",
+        "Phoenix": "Amarii",
+        "Osiris": "Sevyn",
+        "Fidele": "Avrey",
+        "Imogen/Fidele": "Remy",
+        "Jove": "Asheton",
+        "dig": "Chancey",
+        "Cornelius": "Hutchison",
+        "Euriphile": "Kem",
+        "Second": "Vinnie",
+        "Sicilius": "Shalom"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Lord": "Kayton"
+    }
+}

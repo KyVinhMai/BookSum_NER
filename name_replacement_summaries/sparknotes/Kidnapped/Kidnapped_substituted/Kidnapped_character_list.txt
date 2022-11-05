@@ -1,0 +1,58 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Ebenezer": 0,
+        "Cluny": 1,
+        "Robin": 2,
+        "venson": 4,
+        "Whigs": 5,
+        "George": 6,
+        "Glenure": 7,
+        "Merlin": 8,
+        "Dumbledore": 9,
+        "Luke": 10,
+        "Defoe": 11,
+        "Robinson": 12,
+        "Henderson": 14,
+        "Whig": 15,
+        "Culloden": 16,
+        "Rob": 17,
+        "Thomson": 19
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Oig": 3,
+        "Crusoe": 13,
+        "Roy": 18
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Ebenezer": "Lukas",
+        "Cluny": "Prabhnoor",
+        "Robin": "Skyeler",
+        "venson": "Kamarri",
+        "Whigs": "Edris",
+        "George": "Yuv",
+        "Glenure": "Devonne",
+        "Merlin": "Amielia",
+        "Dumbledore": "Evyn",
+        "Luke": "Sheean",
+        "Defoe": "Deshay",
+        "Robinson": "Neema",
+        "Henderson": "Jaitegh",
+        "Whig": "Donyel",
+        "Culloden": "Rebel",
+        "Rob": "Aswin",
+        "Thomson": "Mikele"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Oig": "Jody",
+        "Crusoe": "Jacquise",
+        "Roy": "Yankarlo"
+    }
+}

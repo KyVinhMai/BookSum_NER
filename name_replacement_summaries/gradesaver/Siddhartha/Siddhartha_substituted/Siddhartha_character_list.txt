@@ -1,0 +1,24 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Hesse": 0,
+        "Self": 1,
+        "Bodhi": 2,
+        "Om": 3
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Hesse": "Donyell",
+        "Self": "Dallis",
+        "Bodhi": "Jaime",
+        "Om": "Rocci"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

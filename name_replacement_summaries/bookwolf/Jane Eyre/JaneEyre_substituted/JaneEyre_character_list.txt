@@ -1,0 +1,70 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Rochester": 3,
+        "Thornfield": 4,
+        "Bessie": 5,
+        "Bront": 7,
+        "Sophie": 8,
+        "Briggs": 9,
+        "John": 14,
+        "Lloyd": 15,
+        "Brocklehurst": 16,
+        "Pilot": 17,
+        "Miller": 18,
+        "Helen": 19,
+        "Temple": 21,
+        "Pierrot": 22,
+        "Lowood": 24,
+        "Fortune": 25,
+        "Viscount": 26,
+        "C'line": 27,
+        "Rizzio": 28,
+        "Bothwell": 29
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Reed": 2,
+        "Eyre": 6,
+        "Rivers": 12,
+        "John": 13,
+        "Burns": 20,
+        "Lee": 23
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Rochester": "Aries",
+        "Thornfield": "Shyler",
+        "Bessie": "Shakuntala",
+        "Bront": "Vandy",
+        "Sophie": "Bousavanh",
+        "Briggs": "Vinnie",
+        "John": "Sundeep",
+        "Lloyd": "Let",
+        "Brocklehurst": "Kimoni",
+        "Pilot": "Yu",
+        "Miller": "Jaki",
+        "Helen": "Mckinlea",
+        "Temple": "Ajene",
+        "Pierrot": "Jubilee",
+        "Lowood": "Ji",
+        "Fortune": "Ary",
+        "Viscount": "Kimoni",
+        "C'line": "Demarie",
+        "Rizzio": "Waverly",
+        "Bothwell": "Mekiah"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Reed": "Nedd",
+        "Eyre": "Oakley",
+        "Rivers": "Zamari",
+        "John": "Gailon",
+        "Burns": "Damarie",
+        "Lee": "Bless"
+    }
+}

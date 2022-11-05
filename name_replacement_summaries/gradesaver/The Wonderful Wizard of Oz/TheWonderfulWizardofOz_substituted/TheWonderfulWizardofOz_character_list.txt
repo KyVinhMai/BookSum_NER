@@ -1,0 +1,70 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Dorothy": 0,
+        "Henry": 1,
+        "Em": 2,
+        "Toto": 3,
+        "Witch": 4,
+        "Munchkins": 5,
+        "Boq": 6,
+        "Oz": 7,
+        "Gulch": 8,
+        "Munchkin": 9,
+        "W.W.": 10,
+        "Winkies": 12,
+        "Lion": 13,
+        "rk": 14,
+        "Wolstenholme": 15,
+        "Melville": 16,
+        "Tip": 17,
+        "Jerry": 19,
+        "Snow": 21,
+        "Joker": 23,
+        "Mercury": 24,
+        "McKinley": 25
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Denslow": 11,
+        "Littlefield": 18,
+        "Griswold": 20,
+        "White": 22
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Dorothy": "Raylon",
+        "Henry": "Herberth",
+        "Em": "Jaylenn",
+        "Toto": "Gracin",
+        "Witch": "Lajuan",
+        "Munchkins": "Caidyn",
+        "Boq": "Kao",
+        "Oz": "Ty-Jay",
+        "Gulch": "Ying",
+        "Munchkin": "Dakotah",
+        "W.W.": "Vinnie",
+        "Winkies": "Taite",
+        "Lion": "Baudoin",
+        "rk": "Eaden",
+        "Wolstenholme": "Bobie",
+        "Melville": "Jasmon",
+        "Tip": "Harvest",
+        "Jerry": "Mukund",
+        "Snow": "Ekam",
+        "Joker": "Latrelle",
+        "Mercury": "Phoenix",
+        "McKinley": "Alphonce"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Denslow": "Jaleen",
+        "Littlefield": "Babe",
+        "Griswold": "Ricki",
+        "White": "Jalani"
+    }
+}

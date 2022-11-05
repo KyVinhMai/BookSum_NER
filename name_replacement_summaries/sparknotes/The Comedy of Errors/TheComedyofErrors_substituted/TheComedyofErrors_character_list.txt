@@ -1,0 +1,46 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Egeon": 0,
+        "Dromios": 2,
+        "Cymbeline": 3,
+        "Dromio": 4,
+        "Luce": 6,
+        "Nell": 7,
+        "Pinch": 9,
+        "Doctor": 10,
+        "Ephesus": 11,
+        "Duke": 12,
+        "Circe": 13
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "E.": 5,
+        "S.": 8,
+        "Solinus": 14
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Egeon": "Zaiah",
+        "Dromios": "Oriel",
+        "Cymbeline": "Allyn",
+        "Dromio": "Rio",
+        "Luce": "Krishna",
+        "Nell": "Zariya",
+        "Pinch": "Ronne",
+        "Doctor": "Meiko",
+        "Ephesus": "Carrol",
+        "Duke": "Rasheim",
+        "Circe": "Daryan"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "E.": "Keymani",
+        "S.": "Cristan",
+        "Solinus": "Nakota"
+    }
+}

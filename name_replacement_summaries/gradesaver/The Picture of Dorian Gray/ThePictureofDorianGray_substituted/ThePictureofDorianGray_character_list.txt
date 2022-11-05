@@ -1,0 +1,48 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Wilde": 0,
+        "Lord": 3,
+        "Sibyl": 5,
+        "Geoffrey": 6,
+        "Hetty": 8,
+        "Chopin": 9,
+        "George": 10,
+        "Kelso": 12,
+        "Juliet": 13,
+        "Victor": 14,
+        "Lippincott": 15
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Wotton": 2,
+        "Henry": 4,
+        "Clouston": 7,
+        "Fermor": 11
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Wilde": "Rylin",
+        "Lord": "Berkeley",
+        "Sibyl": "Michaeline",
+        "Geoffrey": "Mohab",
+        "Hetty": "Wini",
+        "Chopin": "Oluwademilade",
+        "George": "Raffallo",
+        "Kelso": "Verdell",
+        "Juliet": "Metasebiya",
+        "Victor": "Zylan",
+        "Lippincott": "Harley"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Wotton": "Avry",
+        "Henry": "Peniasi",
+        "Clouston": "Kelechi",
+        "Fermor": "Kamerin"
+    }
+}

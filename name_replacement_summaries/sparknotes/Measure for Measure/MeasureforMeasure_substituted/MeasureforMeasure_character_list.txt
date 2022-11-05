@@ -1,0 +1,34 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Juliet": 0,
+        "Lucio": 1,
+        "Overdone": 2,
+        "Pompey": 3,
+        "Elbow": 4,
+        "Froth": 5,
+        "Duke": 6,
+        "Peter": 7,
+        "Lodowick": 8
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Juliet": "Erinique",
+        "Lucio": "Magic",
+        "Overdone": "Rhyan",
+        "Pompey": "Austine",
+        "Elbow": "Caelin",
+        "Froth": "Jourdin",
+        "Duke": "Alvert",
+        "Peter": "Norland",
+        "Lodowick": "Anay"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

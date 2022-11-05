@@ -1,0 +1,42 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Montfleury": 0,
+        "Ligniere": 1,
+        "Vicomte": 2,
+        "de": 3,
+        "De": 5,
+        "Le": 6,
+        "Cuigy": 8,
+        "Lise": 9,
+        "Richelieu": 10,
+        "Moliere": 11
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Guiche": 4,
+        "Bret": 7
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Montfleury": "Demarie",
+        "Ligniere": "Pat",
+        "Vicomte": "Maxie",
+        "de": "Cheney",
+        "De": "Kimari",
+        "Le": "Jamille",
+        "Cuigy": "Laray",
+        "Lise": "Mashaunda",
+        "Richelieu": "Shai",
+        "Moliere": "Aries"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Guiche": "Kindred",
+        "Bret": "Niscala"
+    }
+}

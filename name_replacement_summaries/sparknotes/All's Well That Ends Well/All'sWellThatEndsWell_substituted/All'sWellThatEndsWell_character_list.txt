@@ -1,0 +1,32 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Rousillon": 0,
+        "Widow": 1,
+        "Florence": 2,
+        "Helen": 3,
+        "First": 4,
+        "Second": 5,
+        "Lords": 6,
+        "Countess": 7
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Rousillon": "Aldean",
+        "Widow": "Reilly",
+        "Florence": "Sonnie",
+        "Helen": "Bavan",
+        "First": "Kemoni",
+        "Second": "Arlis",
+        "Lords": "Aven",
+        "Countess": "Pat"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

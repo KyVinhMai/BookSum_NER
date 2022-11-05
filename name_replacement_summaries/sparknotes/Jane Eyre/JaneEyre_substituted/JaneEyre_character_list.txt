@@ -1,0 +1,74 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Bessie": 1,
+        "Lloyd": 4,
+        "Brocklehurst": 5,
+        "Helen": 6,
+        "Rochester": 8,
+        "Riverses": 12,
+        "Reeds": 13,
+        "Emily": 15,
+        "Uncle": 18,
+        "Temple": 19,
+        "Lord": 20,
+        "Thornfield": 22,
+        "Lowood": 23,
+        "Celine": 24,
+        "Sophie": 25,
+        "Briggs": 26,
+        "Elliott": 28,
+        "Morton": 29,
+        "Byron": 30,
+        "John": 31
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Reed": 3,
+        "Burns": 7,
+        "Rivers": 10,
+        "Eyre": 11,
+        "Bronte": 16,
+        "Lee": 17,
+        "Vere": 21,
+        "John": 27
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Bessie": "Renae",
+        "Lloyd": "Deareon",
+        "Brocklehurst": "Elim",
+        "Helen": "Lilianna",
+        "Rochester": "Brier",
+        "Riverses": "Brier",
+        "Reeds": "Tru",
+        "Emily": "Christa-Lee",
+        "Uncle": "Laren",
+        "Temple": "Rane",
+        "Lord": "Jerre",
+        "Thornfield": "Clemence",
+        "Lowood": "Cire",
+        "Celine": "Linn",
+        "Sophie": "Tahlia-Jada",
+        "Briggs": "Lavaughn",
+        "Elliott": "Sam-Arth",
+        "Morton": "Matthewdavid",
+        "Byron": "Rhylin",
+        "John": "Ekram"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Reed": "Alaan",
+        "Burns": "Ashtin",
+        "Rivers": "Leotha",
+        "Eyre": "Aris",
+        "Bronte": "Ariyan",
+        "Lee": "Jonel",
+        "Vere": "Dae",
+        "John": "Omead"
+    }
+}

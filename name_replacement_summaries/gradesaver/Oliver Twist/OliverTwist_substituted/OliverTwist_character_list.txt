@@ -1,0 +1,78 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Oliver": 0,
+        "Thingummy": 2,
+        "Bumble": 3,
+        "Sowerberry": 4,
+        "Sowerberrys": 5,
+        "Dick": 6,
+        "Dickens": 7,
+        "Dodger": 8,
+        "Bet": 9,
+        "Brownlow": 10,
+        "Bedwin": 11,
+        "Bill": 12,
+        "Grimwig": 14,
+        "Rose": 15,
+        "Tom": 16,
+        "Corney": 18,
+        "Monks": 19,
+        "Giles": 20,
+        "Brittle": 21,
+        "Losberne": 22,
+        "Brittles": 23,
+        "Duff": 24,
+        "Bumbles": 25,
+        "Edwin": 27,
+        "Toby": 29,
+        "Cripples": 30
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Twist": 1,
+        "Sikes": 13,
+        "Chitling": 17,
+        "Leeford": 28
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Oliver": "Pollard",
+        "Thingummy": "Shyler",
+        "Bumble": "Codi",
+        "Sowerberry": "Camil",
+        "Sowerberrys": "Ottie",
+        "Dick": "Ivette",
+        "Dickens": "Samar",
+        "Dodger": "Averey",
+        "Bet": "Twaina",
+        "Brownlow": "Kamali",
+        "Bedwin": "Gwin",
+        "Bill": "Elary",
+        "Grimwig": "Yoltzin",
+        "Rose": "Nicte",
+        "Tom": "Linward",
+        "Corney": "Jerre",
+        "Monks": "Mechel",
+        "Giles": "Rafer",
+        "Brittle": "Jeryn",
+        "Losberne": "Joell",
+        "Brittles": "Kayde",
+        "Duff": "Ryen",
+        "Bumbles": "Kendall",
+        "Edwin": "Malloy",
+        "Toby": "Devonne",
+        "Cripples": "Siah"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Twist": "Kriston",
+        "Sikes": "Javonne",
+        "Chitling": "Kodi",
+        "Leeford": "Michal"
+    }
+}

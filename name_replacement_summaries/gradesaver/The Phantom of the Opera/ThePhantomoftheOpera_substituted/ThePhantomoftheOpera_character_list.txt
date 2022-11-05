@@ -1,0 +1,50 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Debienne": 0,
+        "Poligny": 1,
+        "Sorelli": 2,
+        "Meg": 3,
+        "Joseph": 5,
+        "Philippe": 7,
+        "Leroux": 8,
+        "Mercier": 9,
+        "Bois": 10,
+        "Perros": 11,
+        "Erik": 12,
+        "Ghost": 13,
+        "Remy": 14,
+        "Mifroid": 15
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Giry": 4,
+        "Buquet": 6
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Debienne": "Shiva",
+        "Poligny": "Evann",
+        "Sorelli": "Abrar",
+        "Meg": "Drishti",
+        "Joseph": "Tufel",
+        "Philippe": "Pager",
+        "Leroux": "Rhylan",
+        "Mercier": "Vondell",
+        "Bois": "Rorey",
+        "Perros": "Peyton",
+        "Erik": "Ilyos",
+        "Ghost": "Lian",
+        "Remy": "Reygan",
+        "Mifroid": "Tommie"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Giry": "Areon",
+        "Buquet": "Sekai"
+    }
+}

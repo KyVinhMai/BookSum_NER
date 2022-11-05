@@ -1,0 +1,48 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Griffin": 0,
+        "Grose": 1,
+        "Miles": 2,
+        "Bly": 3,
+        "Peter": 4,
+        "Eve": 6,
+        "Dicken": 7,
+        "Jessel": 8,
+        "Groses": 9,
+        "Fielding": 10,
+        "Bennet": 11,
+        "Flint": 12,
+        "Luke": 13,
+        "\\Peter": 14
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Quint": 5
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Griffin": "Yale",
+        "Grose": "Kymari",
+        "Miles": "Sanjya",
+        "Bly": "Carle",
+        "Peter": "Jazarian",
+        "Eve": "Llasmin",
+        "Dicken": "Kallan",
+        "Jessel": "Amarii",
+        "Groses": "Ocie",
+        "Fielding": "Cedar",
+        "Bennet": "Dakshya",
+        "Flint": "Johany",
+        "Luke": "Aderemi",
+        "\\Peter": "Jamille"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Quint": "Rudi"
+    }
+}

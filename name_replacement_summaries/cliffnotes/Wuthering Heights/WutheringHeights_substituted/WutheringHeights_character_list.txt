@@ -1,0 +1,38 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lockwood": 0,
+        "Nelly": 1,
+        "Hindley": 2,
+        "Lintons": 3,
+        "Linton": 4,
+        "Joseph": 5,
+        "Bronte": 6,
+        "young": 7,
+        "Green": 8,
+        "Milo": 9,
+        "sizer": 10
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lockwood": "Senai",
+        "Nelly": "Aunaleigh",
+        "Hindley": "Truth",
+        "Lintons": "Rossi",
+        "Linton": "Macallen",
+        "Joseph": "Jeremaine",
+        "Bronte": "Mikele",
+        "young": "Claudie",
+        "Green": "Peyson",
+        "Milo": "Diabolique",
+        "sizer": "Audi"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

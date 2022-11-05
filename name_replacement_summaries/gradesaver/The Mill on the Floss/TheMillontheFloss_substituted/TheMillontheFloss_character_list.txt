@@ -1,0 +1,88 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Tullier": 1,
+        "Tom": 2,
+        "Bessy": 3,
+        "Riley": 4,
+        "lling": 5,
+        "Luke": 6,
+        "Tullivers": 7,
+        "Bob": 8,
+        "Sophy": 9,
+        "Lucy": 11,
+        "Gregg": 12,
+        "Glegg": 13,
+        "Gritty": 14,
+        "Moss": 15,
+        "Pullets": 16,
+        "Gleggs": 20,
+        "George": 21,
+        "Dodsons": 23,
+        "Dodson": 24,
+        "Philip": 25,
+        "Poulter": 26,
+        "Phillip": 27,
+        "Furley": 28,
+        "Gore": 29,
+        "Louis": 31,
+        "phen": 33,
+        "Guests": 35,
+        "Kenn": 36
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Pullet": 10,
+        "Ogg": 19,
+        "Eliot": 22,
+        "Tulliver": 30,
+        "XIV": 32,
+        "Guest": 34,
+        "Dr.": 37
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Tullier": "Halsey",
+        "Tom": "Elonzo",
+        "Bessy": "Murle",
+        "Riley": "Teigan",
+        "lling": "Han",
+        "Luke": "Rampati",
+        "Tullivers": "Oluwatomisin",
+        "Bob": "Nishaan",
+        "Sophy": "Udona",
+        "Lucy": "Ayngel",
+        "Gregg": "Grish",
+        "Glegg": "Jari",
+        "Gritty": "Maxie",
+        "Moss": "Tien",
+        "Pullets": "An",
+        "Gleggs": "Braylyn",
+        "George": "Ratwari",
+        "Dodsons": "Jordin",
+        "Dodson": "Mekiah",
+        "Philip": "Nedrick",
+        "Poulter": "Dalyn",
+        "Phillip": "Takoma",
+        "Furley": "Lannie",
+        "Gore": "Tulsi",
+        "Louis": "Eula",
+        "phen": "Kaylon",
+        "Guests": "Markelle",
+        "Kenn": "Taoran"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Pullet": "Altair",
+        "Ogg": "Demetrice",
+        "Eliot": "Marteus",
+        "Tulliver": "Kindred",
+        "XIV": "Jazz",
+        "Guest": "Amarii",
+        "Dr.": "Dannell"
+    }
+}

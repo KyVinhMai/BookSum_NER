@@ -1,0 +1,26 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Boldwood": 0,
+        "Troy": 1,
+        "Liddy": 2,
+        "George": 3,
+        "Dorsetshire": 4
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Boldwood": "Ronit",
+        "Troy": "Hope",
+        "Liddy": "Krishuna",
+        "George": "Ravin",
+        "Dorsetshire": "Chayanne"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

@@ -1,0 +1,70 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Will": 0,
+        "Brooke": 1,
+        "Vincys": 3,
+        "Bulstrode": 4,
+        "Bob": 5,
+        "Fred": 6,
+        "Tyke": 8,
+        "Minchin": 9,
+        "Noble": 10,
+        "Wrench": 11,
+        "Toller": 12,
+        "Lowick": 13,
+        "Trumbull": 14,
+        "Rigg": 15,
+        "George": 16,
+        "Brookes": 19,
+        "Brook": 20,
+        "Tipton": 21,
+        "Bulstrodes": 22,
+        "Dunkirk": 23,
+        "Ned": 24,
+        "Hopkins": 25,
+        "Chichely": 26
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Vincy": 7,
+        "Eliot": 17,
+        "IV": 18
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Will": "Chandlar",
+        "Brooke": "Klaira",
+        "Vincys": "Paiden",
+        "Bulstrode": "Nieves",
+        "Bob": "Davor",
+        "Fred": "Jaxom",
+        "Tyke": "Reily",
+        "Minchin": "Kaydin",
+        "Noble": "Lazareth",
+        "Wrench": "Kymoni",
+        "Toller": "Mandeep",
+        "Lowick": "Declyn",
+        "Trumbull": "Brenn",
+        "Rigg": "Ary",
+        "George": "Pietre",
+        "Brookes": "Jacquese",
+        "Brook": "Deone",
+        "Tipton": "Rudie",
+        "Bulstrodes": "Dakotah",
+        "Dunkirk": "March",
+        "Ned": "Siam",
+        "Hopkins": "Rio",
+        "Chichely": "Hadyn"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Vincy": "Krishna",
+        "Eliot": "Khaelen",
+        "IV": "Oluwademilade"
+    }
+}

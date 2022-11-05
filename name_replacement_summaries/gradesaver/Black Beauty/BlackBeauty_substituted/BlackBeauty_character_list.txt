@@ -1,0 +1,82 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Duchess": 0,
+        "George": 1,
+        "Squire": 3,
+        "Rob": 4,
+        "Ginger": 6,
+        "Merrylegs": 7,
+        "John": 8,
+        "Sewell": 9,
+        "Thoroughgood": 10,
+        "Birtwick": 11,
+        "Job": 12,
+        "Oliver": 13,
+        "Joe": 14,
+        "White": 16,
+        "Tom": 17,
+        "York": 18,
+        "Lizzie": 19,
+        "Reuben": 20,
+        "Rory": 22,
+        "Peggy": 23,
+        "Filcher": 24,
+        "Smirk": 25,
+        "Polly": 26,
+        "Dolly": 27,
+        "Jerry": 28,
+        "Briggs": 29,
+        "Jones": 30,
+        "Willie": 31
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Gordon": 2,
+        "Roy": 5,
+        "Green": 15,
+        "Smith": 21
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Duchess": "Myrl",
+        "George": "Kayvin",
+        "Squire": "Donyae",
+        "Rob": "Ra'Ed",
+        "Ginger": "Clintona",
+        "Merrylegs": "Perris",
+        "John": "Ulysees",
+        "Sewell": "Chi",
+        "Thoroughgood": "Kitt",
+        "Birtwick": "Azariah",
+        "Job": "Daytwan",
+        "Oliver": "Peirce",
+        "Joe": "Dieter",
+        "White": "Avyn",
+        "Tom": "Diwakar",
+        "York": "Braedy",
+        "Lizzie": "Tonoa",
+        "Reuben": "Keymonte",
+        "Rory": "Amaan",
+        "Peggy": "Edie",
+        "Filcher": "Truth",
+        "Smirk": "Rudie",
+        "Polly": "Tiamara",
+        "Dolly": "Pollie",
+        "Jerry": "Jaxden",
+        "Briggs": "Mykah",
+        "Jones": "Trahern",
+        "Willie": "Yuki"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Gordon": "Trey-Kai",
+        "Roy": "Edoardo",
+        "Green": "Bergen",
+        "Smith": "Truth"
+    }
+}

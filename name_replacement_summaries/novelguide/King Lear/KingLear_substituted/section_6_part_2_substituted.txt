@@ -1,0 +1,3 @@
+{"name": "act 3, Scene 5", "url": "https://web.archive.org/web/20201205114447/https://www.novelguide.com/king-lear/summaries/act3-scene4-act3-scene5", "summary": "Demontray gives Cornwall the incriminating letter from the French and he is very angry. For the bastard's loyalty, Cornwall makes him the Earl of Malijah, and his father an outlaw. Cornwall tells Demontray that he must accompany him to see Regan", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Goneril': 'Jackie', 'Edmund': 'Demontray', 'Gloucester': 'Malijah', 'Kent': 'Lavares', 'Edmunds': 'Eldred', 'Fool': 'Shadow'}, 'Middle Names': {}, 'Last Names': {}}

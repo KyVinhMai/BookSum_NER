@@ -1,0 +1,22 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Mill": 0,
+        "Epicurus": 1,
+        "Smith": 2
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Mill": "Emanuelle",
+        "Epicurus": "Golden",
+        "Smith": "Evann"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

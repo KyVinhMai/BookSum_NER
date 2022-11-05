@@ -1,0 +1,40 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Norris": 0,
+        "Price": 1,
+        "Edmund": 2,
+        "Tom": 3,
+        "Rushworth": 4,
+        "Henry": 5,
+        "Owen": 6,
+        "Betsy": 7,
+        "Prices": 8,
+        "Rushworths": 9,
+        "R": 10,
+        "C": 11
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Norris": "Kraven",
+        "Price": "Tefik",
+        "Edmund": "Jamon",
+        "Tom": "Christine",
+        "Rushworth": "Pheonix",
+        "Henry": "Kinivuai",
+        "Owen": "Ratneshwar",
+        "Betsy": "Rhiarn",
+        "Prices": "name",
+        "Rushworths": "Jasmond",
+        "R": "Linden",
+        "C": "Kallan"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

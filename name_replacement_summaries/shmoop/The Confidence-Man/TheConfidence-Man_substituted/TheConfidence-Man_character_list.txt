@@ -1,0 +1,72 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Fidele": 0,
+        "Pitch": 1,
+        "Melville": 2,
+        "Roberts": 3,
+        "Goneril": 4,
+        "Weeds": 5,
+        "Providence": 6,
+        "Miser": 7,
+        "McCoy": 8,
+        "Penguin": 9,
+        "Tom": 10,
+        "PIO": 11,
+        "Diogenes": 12,
+        "Timon": 13,
+        "John": 14,
+        "Colonel": 16,
+        "Egbert": 17,
+        "Winsome": 18,
+        "Orchis": 19,
+        "Old": 20,
+        "Pete": 22,
+        "Milton": 23,
+        "Ruby": 24,
+        "Grey": 25,
+        "Robbie": 26
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Moredock": 15,
+        "Prudence": 21
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Fidele": "Sun",
+        "Pitch": "Tomie",
+        "Melville": "Jlyn",
+        "Roberts": "Hien-The",
+        "Goneril": "Kitt",
+        "Weeds": "Kamerin",
+        "Providence": "Kaelen",
+        "Miser": "Jaelin",
+        "McCoy": "Elisha",
+        "Penguin": "Tai",
+        "Tom": "Aarushreddy",
+        "PIO": "Rylin",
+        "Diogenes": "Tru",
+        "Timon": "Ronell",
+        "John": "Scion",
+        "Colonel": "Merion",
+        "Egbert": "Lawand",
+        "Winsome": "Wrigley",
+        "Orchis": "Trenell",
+        "Old": "Oluwaseun",
+        "Pete": "Rafay",
+        "Milton": "Heesham",
+        "Ruby": "Nissy",
+        "Grey": "Nakota",
+        "Robbie": "Tajinder"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Moredock": "Tarrin",
+        "Prudence": "Darlana"
+    }
+}

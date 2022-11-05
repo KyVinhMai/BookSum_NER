@@ -1,0 +1,34 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Gow": 0,
+        "Ruth": 1,
+        "Frome": 2,
+        "Fromes": 3,
+        "Denis": 4,
+        "Ned": 5,
+        "Orin": 6
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Silver": 7
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Gow": "Dallis",
+        "Ruth": "Vetrice",
+        "Frome": "Mishael",
+        "Fromes": "Giavonni",
+        "Denis": "Bintu",
+        "Ned": "Maurie",
+        "Orin": "Jahoor"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Silver": "Saboor"
+    }
+}

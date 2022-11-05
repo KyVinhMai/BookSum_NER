@@ -1,0 +1,54 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lucy": 0,
+        "George": 3,
+        "Beebe": 4,
+        "Emersons": 5,
+        "Freddy": 6,
+        "Cecil": 7,
+        "Honeychurches": 9,
+        "Forster": 10,
+        "Giotto": 12,
+        "Vyses": 13,
+        "Cissie": 14,
+        "Minnie": 15,
+        "Beethoven": 16,
+        "Butterworth": 17,
+        "Floyd": 18
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Honeychurch": 1,
+        "Vyse": 8,
+        "Emerson": 11
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lucy": "Liarna",
+        "George": "Abdujilil",
+        "Beebe": "Sevyn",
+        "Emersons": "Gracin",
+        "Freddy": "Donny",
+        "Cecil": "Harkeem",
+        "Honeychurches": "Yanis",
+        "Forster": "Britten",
+        "Giotto": "Andersen",
+        "Vyses": "Charley",
+        "Cissie": "Tenzin",
+        "Minnie": "Tenille",
+        "Beethoven": "Amory",
+        "Butterworth": "Aijalon",
+        "Floyd": "Yusif"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Honeychurch": "Camdyn",
+        "Vyse": "Juliani",
+        "Emerson": "Tundra"
+    }
+}

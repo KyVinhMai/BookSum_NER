@@ -1,0 +1,38 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Hero": 0,
+        "Don": 1,
+        "Dogberry": 5,
+        "Verges": 6,
+        "Signor": 7,
+        "Cupid": 9,
+        "Edmund": 10
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Pedro": 2,
+        "John": 4,
+        "Benedick": 8
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Hero": "Kenyatta",
+        "Don": "Dawran",
+        "Dogberry": "Shia",
+        "Verges": "Monti",
+        "Signor": "Duanne",
+        "Cupid": "Day",
+        "Edmund": "Brennan-Ceasor"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Pedro": "Ratna",
+        "John": "Mukunda",
+        "Benedick": "Ozie"
+    }
+}

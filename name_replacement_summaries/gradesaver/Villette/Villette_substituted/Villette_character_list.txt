@@ -1,0 +1,80 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lucy": 0,
+        "Brettons": 2,
+        "Bretton": 3,
+        "Polly": 5,
+        "Bretton\\": 6,
+        "Bronte": 7,
+        "Beck": 8,
+        "John": 9,
+        "Justine": 10,
+        "Justice": 11,
+        "M.": 12,
+        "Goton": 14,
+        "Villette": 15,
+        "Desiree": 16,
+        "Cholmondeley": 17,
+        "Clotilde": 18,
+        "Vivid": 19,
+        "Sweeney": 20,
+        "Wilson": 21,
+        "Fifine": 23,
+        "Pillule": 24,
+        "Georgette": 25,
+        "Rosine": 26,
+        "Sirius": 29,
+        "Zelie": 30
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Snowe": 1,
+        "Miret": 13,
+        "Isidore": 22,
+        "Josef": 27,
+        "Home": 28,
+        "Pierre": 31
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lucy": "Valita",
+        "Brettons": "Harley",
+        "Bretton": "Jamiir",
+        "Polly": "Aminat",
+        "Bretton\\": "Jerzy",
+        "Bronte": "Londen",
+        "Beck": "Eldean",
+        "John": "Shubham",
+        "Justine": "Evelien",
+        "Justice": "Kelin",
+        "M.": "Laray",
+        "Goton": "Jamoni",
+        "Villette": "Ariyan",
+        "Desiree": "Tanyla",
+        "Cholmondeley": "Kodee",
+        "Clotilde": "Donasia",
+        "Vivid": "Lyrick",
+        "Sweeney": "Brighten",
+        "Wilson": "Alta",
+        "Fifine": "Shai",
+        "Pillule": "Ermal",
+        "Georgette": "Amity-Rose",
+        "Rosine": "Taritha",
+        "Sirius": "Tamari",
+        "Zelie": "Cledith"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Snowe": "Kairee",
+        "Miret": "Ossie",
+        "Isidore": "Tygh",
+        "Josef": "Kijon",
+        "Home": "Kaedyn",
+        "Pierre": "Kendrel"
+    }
+}

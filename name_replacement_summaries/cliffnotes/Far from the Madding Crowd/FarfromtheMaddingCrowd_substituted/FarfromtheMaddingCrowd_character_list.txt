@@ -1,0 +1,60 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Boldwood": 0,
+        "Troy": 1,
+        "Wessex": 2,
+        "Liddy": 3,
+        "Wisdom": 4,
+        "Folly": 5,
+        "\\Boldwood": 6,
+        "Henery": 7,
+        "Joseph": 8,
+        "Eve": 9,
+        "Everdene": 10,
+        "Moses": 11,
+        "Leicesters": 12,
+        "Homer": 13,
+        "Tophet": 14,
+        "Poppet": 15,
+        "Hurst": 16,
+        "Robin": 17,
+        "Liddy.\\": 18,
+        "\\Troy": 19,
+        "Budmouth": 20,
+        "George": 21
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Boldwood": "Quanta",
+        "Troy": "Syrius",
+        "Wessex": "Devine",
+        "Liddy": "Skyllar",
+        "Wisdom": "Arnell",
+        "Folly": "Clair",
+        "\\Boldwood": "Milan",
+        "Henery": "Donyae",
+        "Joseph": "Franck",
+        "Eve": "Tawiana",
+        "Everdene": "Lonie",
+        "Moses": "Rix",
+        "Leicesters": "Currie",
+        "Homer": "Aymon",
+        "Tophet": "Charly",
+        "Poppet": "Kitt",
+        "Hurst": "Loghan",
+        "Robin": "Kippy",
+        "Liddy.\\": "Seneca",
+        "\\Troy": "Brier",
+        "Budmouth": "Clemmie",
+        "George": "Fu"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

@@ -1,0 +1,38 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Mingott": 0,
+        "Ellen": 1,
+        "Olenski": 2,
+        "Lefferts": 3,
+        "Old": 4,
+        "Henry": 6,
+        "Ned": 7,
+        "Mingotts": 9
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "York": 5,
+        "Winsett": 8
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Mingott": "Kendall",
+        "Ellen": "Ashwini",
+        "Olenski": "Ajai",
+        "Lefferts": "Kemoni",
+        "Old": "Christan",
+        "Henry": "Rodrique",
+        "Ned": "Calvin",
+        "Mingotts": "Teegan"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "York": "Ladarian",
+        "Winsett": "Miko"
+    }
+}

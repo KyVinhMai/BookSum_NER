@@ -1,0 +1,52 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Sextus": 0,
+        "Philo": 2,
+        "Lepidus": 4,
+        "Ventidius": 5,
+        "Egypt": 6,
+        "Silius": 7,
+        "Messenger": 8,
+        "Eros": 9,
+        "Misenum": 10,
+        "Gneius": 11,
+        "Hercules": 13,
+        "Diomedes": 14,
+        "Proculeius": 15,
+        "Fortune": 16,
+        "Seleucus": 17
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Pompeius": 1,
+        "Pompey": 12
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Sextus": "Mattia",
+        "Philo": "Adair",
+        "Lepidus": "Jody",
+        "Ventidius": "Atari",
+        "Egypt": "Oakley",
+        "Silius": "Keatyn",
+        "Messenger": "Ollie",
+        "Eros": "Taesean",
+        "Misenum": "Shann",
+        "Gneius": "Storm",
+        "Hercules": "Marlowe",
+        "Diomedes": "Kindred",
+        "Proculeius": "Amori",
+        "Fortune": "Merlyn",
+        "Seleucus": "Kaidyn"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Pompeius": "Audi",
+        "Pompey": "Marvis"
+    }
+}

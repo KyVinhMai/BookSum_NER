@@ -1,0 +1,80 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Will": 0,
+        "Sibley": 2,
+        "Frederick": 3,
+        "wbody": 5,
+        "Gurrey": 6,
+        "Doc": 7,
+        "Guy": 9,
+        "Cyrus": 11,
+        "\\Doc": 12,
+        "Miles": 13,
+        "Cy": 14,
+        "Villets": 15,
+        "George": 16,
+        "Perry": 18,
+        "Pete": 19,
+        "Whittier": 20,
+        "Bessie": 21,
+        "Jorelemon": 22,
+        "Erik": 23,
+        "Fern": 24,
+        "Ferd": 26,
+        "Dyers": 27,
+        "Honest": 28,
+        "Lewis": 30
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Kennicott": 1,
+        "Ludelmeyer": 4,
+        "Kennicott\\": 8,
+        "Pollock": 10,
+        "Mott": 17,
+        "Mullins": 25,
+        "Jim": 29
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Will": "Cayle",
+        "Sibley": "Callahan",
+        "Frederick": "Aquavion",
+        "wbody": "Yarden",
+        "Gurrey": "Marlowe",
+        "Doc": "Quanta",
+        "Guy": "Teaowera",
+        "Cyrus": "Ann-Maree",
+        "\\Doc": "Dae",
+        "Miles": "Zivojin",
+        "Cy": "Warder",
+        "Villets": "Yi",
+        "George": "Racheal",
+        "Perry": "Navin",
+        "Pete": "Derald",
+        "Whittier": "Yael",
+        "Bessie": "Liam",
+        "Jorelemon": "Carey",
+        "Erik": "Leeann",
+        "Fern": "Mariaximena",
+        "Ferd": "Jakyren",
+        "Dyers": "Zaiah",
+        "Honest": "Vernie",
+        "Lewis": "Zedan"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Kennicott": "Brae",
+        "Ludelmeyer": "Lakoda",
+        "Kennicott\\": "Robbie",
+        "Pollock": "Nyaire",
+        "Mott": "Jonel",
+        "Mullins": "Marlowe",
+        "Jim": "Shanen"
+    }
+}

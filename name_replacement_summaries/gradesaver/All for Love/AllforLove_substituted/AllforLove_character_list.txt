@@ -1,0 +1,28 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Isis": 1,
+        "Myris": 2,
+        "Ventidius": 3,
+        "John": 4
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Dryden": 5
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Isis": "Amore",
+        "Myris": "Brownie",
+        "Ventidius": "Micha",
+        "John": "Xaidyn"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Dryden": "Elim"
+    }
+}

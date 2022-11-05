@@ -1,0 +1,24 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Huxley": 0,
+        "Liberty": 1
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "53000": 2
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Huxley": "Dakotah",
+        "Liberty": "Kushia"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "53000": "Kimari"
+    }
+}

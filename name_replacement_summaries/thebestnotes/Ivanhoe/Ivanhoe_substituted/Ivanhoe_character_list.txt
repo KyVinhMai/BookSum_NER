@@ -1,0 +1,64 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Scott": 0,
+        "Gurth": 2,
+        "Cedric": 3,
+        "FrontdeBouef": 4,
+        "Fitzurse": 5,
+        "Robin": 6,
+        "Locksley": 7,
+        "Hubert": 8,
+        "Prince": 10,
+        "Tuck": 12,
+        "FrontdeBoeuf": 13,
+        "BoisGuilbert": 14,
+        "Urfried": 15,
+        "FrontdeBouefs": 16,
+        "Front": 17,
+        "Cedrics": 19,
+        "Prior": 20,
+        "Torquilstone": 21,
+        "Jewess": 22,
+        "Essex": 23
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Hood": 9,
+        "John": 11,
+        "Boeuf": 18
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Scott": "Wahab",
+        "Gurth": "Trayce",
+        "Cedric": "Ilijah",
+        "FrontdeBouef": "Maddyx",
+        "Fitzurse": "Lavon",
+        "Robin": "Stephane",
+        "Locksley": "Elya",
+        "Hubert": "Ekin",
+        "Prince": "Anshveer",
+        "Tuck": "Pat",
+        "FrontdeBoeuf": "Lyndall",
+        "BoisGuilbert": "Hien",
+        "Urfried": "Hero",
+        "FrontdeBouefs": "Darly",
+        "Front": "Bao",
+        "Cedrics": "Britten",
+        "Prior": "Kodee",
+        "Torquilstone": "Kery",
+        "Jewess": "Deshay",
+        "Essex": "Scotland"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Hood": "Tanay",
+        "John": "Finis",
+        "Boeuf": "Daine"
+    }
+}

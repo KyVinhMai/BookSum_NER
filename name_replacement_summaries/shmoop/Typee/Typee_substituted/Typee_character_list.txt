@@ -1,0 +1,42 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Melville": 0,
+        "Tom": 1,
+        "Toby": 2,
+        "Tommo": 3,
+        "KoryKory": 4,
+        "Typee": 5,
+        "Jimmy": 6,
+        "Mehevi": 7,
+        "Tinor": 8,
+        "Kolory": 9,
+        "Typees": 10,
+        "Mehevi\\": 11,
+        "MowMow": 12
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Melville": "Payson",
+        "Tom": "Oluwalonimi",
+        "Toby": "Yael",
+        "Tommo": "Tommie",
+        "KoryKory": "Ocean",
+        "Typee": "Emari",
+        "Jimmy": "Lonnie",
+        "Mehevi": "Christan",
+        "Tinor": "Arleigh",
+        "Kolory": "Lian",
+        "Typees": "Artie",
+        "Mehevi\\": "Ebbie",
+        "MowMow": "Davonne"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

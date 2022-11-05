@@ -1,0 +1,40 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lockwood": 0,
+        "Joseph": 1,
+        "Emily": 3,
+        "Hindley": 5,
+        "Ellen": 6,
+        "Lintons": 7,
+        "Linton": 8,
+        "Nelly": 9,
+        "Kenneth": 10,
+        "Green": 11
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bronte": 4
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lockwood": "Areon",
+        "Joseph": "Journey",
+        "Emily": "Ying-Li",
+        "Hindley": "Happy",
+        "Ellen": "Marieda",
+        "Lintons": "Osie",
+        "Linton": "Traxton",
+        "Nelly": "Morley",
+        "Kenneth": "Jaymes",
+        "Green": "Chi"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bronte": "Shia"
+    }
+}

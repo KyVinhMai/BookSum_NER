@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Romeo": 0,
+        "Juliet": 1,
+        "Mercutio": 2,
+        "Benvolio": 3,
+        "Nurse": 4,
+        "phenie": 5,
+        "Gregory": 7,
+        "Lord": 8,
+        "John": 9,
+        "Peter": 10,
+        "Eyeroll": 11,
+        "Chorus": 12
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Meyer": 6
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Romeo": "Rakwan",
+        "Juliet": "Deianira",
+        "Mercutio": "Jireh",
+        "Benvolio": "Jodeci",
+        "Nurse": "Sky",
+        "phenie": "Lattie",
+        "Gregory": "Keason",
+        "Lord": "Yoltzin",
+        "John": "Motley",
+        "Peter": "Elvia",
+        "Eyeroll": "Yael",
+        "Chorus": "Nesta"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Meyer": "Mycah"
+    }
+}

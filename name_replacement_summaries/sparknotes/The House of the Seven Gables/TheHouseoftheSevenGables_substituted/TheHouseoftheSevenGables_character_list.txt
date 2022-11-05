@@ -1,0 +1,38 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Pyncheons": 1,
+        "Clifford": 2,
+        "Phoebe": 5,
+        "young": 6,
+        "Uncle": 7,
+        "Ned": 9,
+        "Colonel": 11
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Pyncheon": 3,
+        "Venner": 8,
+        "Higgins": 10
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Pyncheons": "Skylen",
+        "Clifford": "Frankline",
+        "Phoebe": "Emma-Bell",
+        "young": "March",
+        "Uncle": "Sun",
+        "Ned": "Christoss",
+        "Colonel": "Rilley"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Pyncheon": "Amaree",
+        "Venner": "Linn",
+        "Higgins": "Marquette"
+    }
+}

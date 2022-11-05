@@ -1,0 +1,42 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lucy": 0,
+        "Quincey": 1,
+        "Holmwood": 3,
+        "Renfield": 4,
+        "ker": 5,
+        "Sigmund": 6,
+        "C.F.": 8,
+        "Petrof": 10
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Morris": 2,
+        "Freud": 7,
+        "Bentley": 9,
+        "Skinsky": 11
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lucy": "Lachristy",
+        "Quincey": "Kymari",
+        "Holmwood": "Kellis",
+        "Renfield": "Posey",
+        "ker": "Tai",
+        "Sigmund": "Nax",
+        "C.F.": "Peyton",
+        "Petrof": "Camil"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Morris": "Fawaz",
+        "Freud": "Aundra",
+        "Bentley": "Cailen",
+        "Skinsky": "Trayce"
+    }
+}

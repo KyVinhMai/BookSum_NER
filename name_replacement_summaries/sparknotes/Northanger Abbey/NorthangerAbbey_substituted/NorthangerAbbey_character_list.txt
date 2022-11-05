@@ -1,0 +1,38 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Henry": 0,
+        "John": 3,
+        "Frederick": 5,
+        "Tilneys": 6,
+        "Woodston": 7,
+        "Fullerton": 8,
+        "Thorpes": 9,
+        "Clifton": 10
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Tilney": 1,
+        "Thorpe": 4
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Henry": "Truu",
+        "John": "Truthe",
+        "Frederick": "Joshuajames",
+        "Tilneys": "Remmy",
+        "Woodston": "Kalani",
+        "Fullerton": "Lunden",
+        "Thorpes": "Aarin",
+        "Clifton": "Pesandu"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Tilney": "Kodie",
+        "Thorpe": "Shell"
+    }
+}

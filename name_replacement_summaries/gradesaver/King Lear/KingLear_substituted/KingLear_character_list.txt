@@ -1,0 +1,38 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Gloucester": 0,
+        "Kent": 1,
+        "Edmund": 2,
+        "Goneril": 3,
+        "Fool": 4,
+        "Tom": 5,
+        "Dukes": 6,
+        "Robin": 7,
+        "Fortune": 9
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Hood": 8
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Gloucester": "Paxtyn",
+        "Kent": "Demsew",
+        "Edmund": "Langley",
+        "Goneril": "Dorsie",
+        "Fool": "Oriel",
+        "Tom": "Karroll",
+        "Dukes": "Linden",
+        "Robin": "Clair",
+        "Fortune": "Mc"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Hood": "Harpreet"
+    }
+}

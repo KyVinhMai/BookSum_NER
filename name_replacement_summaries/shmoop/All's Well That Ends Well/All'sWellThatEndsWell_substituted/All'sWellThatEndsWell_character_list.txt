@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Helen": 0,
+        "Roussillon": 1,
+        "Shmoopers": 2,
+        "John": 3,
+        "Romeo": 5,
+        "Juliet": 6,
+        "P.S.": 7,
+        "Lords": 8,
+        "Widow": 9,
+        "Troy": 10,
+        "\\Cressid": 11,
+        "Bert": 12
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Donne": 4
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Helen": "Brittanee",
+        "Roussillon": "Kayton",
+        "Shmoopers": "Kamani",
+        "John": "Dulton",
+        "Romeo": "Sien",
+        "Juliet": "Ajaye",
+        "P.S.": "Altair",
+        "Lords": "Delane",
+        "Widow": "Jaydee",
+        "Troy": "Shaurish",
+        "\\Cressid": "Remy",
+        "Bert": "Stefan-Jay"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Donne": "Freddi"
+    }
+}

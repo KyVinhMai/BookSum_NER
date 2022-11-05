@@ -1,0 +1,34 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Bill": 0,
+        "Dodo": 1,
+        "Mouse": 2,
+        "York": 3,
+        "Gryphon": 4,
+        "Mock": 5,
+        "Croquet": 7
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Turtle": 6
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Bill": "Issac",
+        "Dodo": "Caylan",
+        "Mouse": "Devlyn",
+        "York": "Aydrik",
+        "Gryphon": "Alyn",
+        "Mock": "Deundra",
+        "Croquet": "Talyn"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Turtle": "Jayel"
+    }
+}

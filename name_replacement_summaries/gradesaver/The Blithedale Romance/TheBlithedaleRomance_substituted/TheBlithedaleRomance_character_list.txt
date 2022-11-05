@@ -1,0 +1,64 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Moodie": 0,
+        "Hollingsworth": 1,
+        "Eve": 2,
+        "Foster": 3,
+        "Fourier": 4,
+        "Hester": 6,
+        "Fuller": 7,
+        "Westervelt\\": 8,
+        "Eliot": 9,
+        "Leo": 10,
+        "Devil": 12,
+        "Kelley": 13,
+        "Griffith": 15,
+        "Jim": 16,
+        "Professor": 18,
+        "Lewis": 20,
+        "McElroy": 22,
+        "Providence": 23
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Levy": 11,
+        "Jr.": 14,
+        "Crow": 17,
+        "Westervelt": 19,
+        "Prynne": 21
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Moodie": "Anay",
+        "Hollingsworth": "Ivory",
+        "Eve": "Antasia",
+        "Foster": "Marguette",
+        "Fourier": "Jolly",
+        "Hester": "Kanesia",
+        "Fuller": "Maxi",
+        "Westervelt\\": "Haedyn",
+        "Eliot": "Wenzel",
+        "Leo": "Baird",
+        "Devil": "Kaylon",
+        "Kelley": "Sloan",
+        "Griffith": "Aliyaan",
+        "Jim": "Veron",
+        "Professor": "Cameran",
+        "Lewis": "Zakyrie",
+        "McElroy": "Soua",
+        "Providence": "Oluwadarasimi"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Levy": "Taite",
+        "Jr.": "Posey",
+        "Crow": "Armari",
+        "Westervelt": "Jimi",
+        "Prynne": "Lenell"
+    }
+}

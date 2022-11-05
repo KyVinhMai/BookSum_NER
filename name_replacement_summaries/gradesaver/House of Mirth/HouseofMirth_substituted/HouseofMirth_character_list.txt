@@ -1,0 +1,72 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Selden": 0,
+        "Lily": 1,
+        "\\Selden": 2,
+        "Gus": 3,
+        "Percy": 5,
+        "George": 7,
+        "Trenors": 9,
+        "Peniston": 10,
+        "Judy": 11,
+        "Gerty": 12,
+        "Evie": 13,
+        "Wellington": 14,
+        "Brys": 16,
+        "Reynolds": 17,
+        "pneys": 18,
+        "Ned": 19,
+        "Dorsets": 21,
+        "Duchess": 22,
+        "Hubert": 23,
+        "Gormers": 24,
+        "Gormer": 25,
+        "Nettie": 26
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Trenor": 4,
+        "Gryce": 6,
+        "Dorset": 8,
+        "Bry": 15,
+        "Silverton": 20
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Selden": "Jlyn",
+        "Lily": "Mkaila",
+        "\\Selden": "Rowan",
+        "Gus": "Mar",
+        "Percy": "Jeg",
+        "George": "Auren",
+        "Trenors": "Bergen",
+        "Peniston": "Ary",
+        "Judy": "Ritchie-Lee",
+        "Gerty": "Rabecka",
+        "Evie": "Bernie",
+        "Wellington": "Nemiah",
+        "Brys": "Jaydence",
+        "Reynolds": "Kendle",
+        "pneys": "Kiran",
+        "Ned": "Merrit",
+        "Dorsets": "Eastyn",
+        "Duchess": "Koi",
+        "Hubert": "Anmol",
+        "Gormers": "Mc",
+        "Gormer": "Corley",
+        "Nettie": "Musarrat"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Trenor": "Shalom",
+        "Gryce": "Chee",
+        "Dorset": "Chapel",
+        "Bry": "Manpreet",
+        "Silverton": "Jermany"
+    }
+}

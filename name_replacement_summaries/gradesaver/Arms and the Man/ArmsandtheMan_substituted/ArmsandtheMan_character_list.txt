@@ -1,0 +1,34 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Sergius": 0,
+        "Petkoffs": 1,
+        "Don": 2,
+        "Bluntschli": 4,
+        "Virgil": 5,
+        "Dido": 6,
+        "Petkoff": 7
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Quixote": 3
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Sergius": "Wayllyne",
+        "Petkoffs": "Malone",
+        "Don": "Roan",
+        "Bluntschli": "Ermal",
+        "Virgil": "Sajjan",
+        "Dido": "Zeya",
+        "Petkoff": "Zarin"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Quixote": "Osie"
+    }
+}

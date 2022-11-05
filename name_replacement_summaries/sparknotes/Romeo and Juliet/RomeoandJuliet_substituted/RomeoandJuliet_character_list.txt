@@ -1,0 +1,36 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Benvolio": 0,
+        "Romeo": 1,
+        "Juliet": 2,
+        "Mercutio": 3,
+        "Nurse": 4,
+        "John": 5,
+        "Prince": 6,
+        "Peter": 7,
+        "Gregory": 8,
+        "Cupid": 9
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Benvolio": "Ying",
+        "Romeo": "Henrique",
+        "Juliet": "Eirene",
+        "Mercutio": "Merrit",
+        "Nurse": "Paiden",
+        "John": "Romello",
+        "Prince": "Jabrill",
+        "Peter": "Wolodymir",
+        "Gregory": "Sinai",
+        "Cupid": "Jackie"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

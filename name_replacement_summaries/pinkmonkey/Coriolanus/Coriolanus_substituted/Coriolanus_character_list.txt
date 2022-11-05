@@ -1,0 +1,14 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {},
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {},
+    "Middle Names": {},
+    "Last Names": {}
+}

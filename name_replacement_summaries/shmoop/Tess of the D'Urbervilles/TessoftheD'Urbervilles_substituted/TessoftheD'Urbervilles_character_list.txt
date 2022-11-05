@@ -1,0 +1,82 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Tess": 0,
+        "D'Urbervilles": 2,
+        "D'Urberville": 3,
+        "\\Durbeyfield\\": 4,
+        "Johns": 5,
+        "John": 6,
+        "Fred": 8,
+        "Providence": 9,
+        "Sorrow": 10,
+        "Crick": 11,
+        "Eve": 12,
+        "Felix": 13,
+        "Cuthbert": 14,
+        "Izz": 15,
+        "Retty": 16,
+        "Cricks": 17,
+        "Rolliver": 20,
+        "Prince": 21,
+        "Mercy": 22,
+        "D'Urberville\\": 23,
+        "keD'Urbervilles": 24,
+        "Simon": 25,
+        "\\D'Urberville\\": 27,
+        "Durbeyfields": 28,
+        "kes": 29,
+        "Brooks": 30,
+        "Tib": 31
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Durbeyfield": 1,
+        "D'Urberville.\\": 7,
+        "Huett": 18,
+        "Priddle": 19,
+        "ke": 26
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Tess": "Deonda",
+        "D'Urbervilles": "Rennie",
+        "D'Urberville": "Shawne",
+        "\\Durbeyfield\\": "Lavaughn",
+        "Johns": "Kmari",
+        "John": "Laborn",
+        "Fred": "Tarahji",
+        "Providence": "Tam",
+        "Sorrow": "Indiana",
+        "Crick": "Kendle",
+        "Eve": "Chinester",
+        "Felix": "Armonte",
+        "Cuthbert": "Ajene",
+        "Izz": "Kayler",
+        "Retty": "Adi",
+        "Cricks": "Shell",
+        "Rolliver": "Jourdin",
+        "Prince": "Jaydem",
+        "Mercy": "Merion",
+        "D'Urberville\\": "Eliyah",
+        "keD'Urbervilles": "Avyn",
+        "Simon": "Jawan",
+        "\\D'Urberville\\": "Anay",
+        "Durbeyfields": "Lunden",
+        "kes": "Jeffie",
+        "Brooks": "Aleksandrs",
+        "Tib": "Min"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Durbeyfield": "Alija",
+        "D'Urberville.\\": "Devyn",
+        "Huett": "Ekam",
+        "Priddle": "Brennyn",
+        "ke": "Britt"
+    }
+}

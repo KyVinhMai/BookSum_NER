@@ -1,0 +1,50 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Emil": 0,
+        "Joe": 1,
+        "Linstrum": 3,
+        "John": 5,
+        "Lou": 7,
+        "Nelse": 8,
+        "Milly": 10,
+        "Bergsons": 11,
+        "Hiller": 12,
+        "Lee": 13,
+        "Pierre": 15
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Tovesky": 2,
+        "Bergson": 6,
+        "Jensen": 9,
+        "Jenson": 14,
+        "Seguin": 16
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Emil": "Sylar",
+        "Joe": "Shahzaib",
+        "Linstrum": "Vernell",
+        "John": "Damanjeet",
+        "Lou": "Elza",
+        "Nelse": "Gracin",
+        "Milly": "Erdell",
+        "Bergsons": "Donyae",
+        "Hiller": "Arin",
+        "Lee": "Lakoda",
+        "Pierre": "Hattan"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Tovesky": "Schyler",
+        "Bergson": "Ajene",
+        "Jensen": "Moe",
+        "Jenson": "Todderick",
+        "Seguin": "Verdell"
+    }
+}

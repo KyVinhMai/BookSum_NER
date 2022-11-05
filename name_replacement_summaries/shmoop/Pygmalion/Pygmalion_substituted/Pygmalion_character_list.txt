@@ -1,0 +1,32 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Freddy": 0,
+        "Henry": 1,
+        "Pickering": 3,
+        "Doolittle": 4,
+        "Eynsford": 5
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Higgins": 2,
+        "Hill": 6
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Freddy": "Ronique",
+        "Henry": "Parsnath",
+        "Pickering": "Donnelle",
+        "Doolittle": "Mycah",
+        "Eynsford": "Frankie"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Higgins": "Avyn",
+        "Hill": "Terryl"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Henry": 0,
+        "Jessie": 1,
+        "Violet": 2,
+        "Benny": 3,
+        "Moore": 4,
+        "Shmoop": 5
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Henry": "Maria",
+        "Jessie": "Tianna-Lea",
+        "Violet": "Tanari",
+        "Benny": "Yasha",
+        "Moore": "Mikah",
+        "Shmoop": "Armani"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

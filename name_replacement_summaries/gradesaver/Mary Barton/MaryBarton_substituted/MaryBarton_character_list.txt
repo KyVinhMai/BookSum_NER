@@ -1,0 +1,78 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "George": 0,
+        "John": 2,
+        "Jem": 3,
+        "Wilsons": 4,
+        "Hunter": 5,
+        "Tom": 6,
+        "Simmonds": 7,
+        "Job": 8,
+        "Will": 10,
+        "Ogden": 11,
+        "Simmons": 12,
+        "Molly": 13,
+        "Eve": 15,
+        "Helen": 16,
+        "Sophy": 17,
+        "Ruth": 18,
+        "Jones": 19,
+        "Cheshire": 20,
+        "Bridgenorth": 21,
+        "Joneses": 22,
+        "Ben": 23,
+        "O'Brien": 25,
+        "rgises": 26,
+        "Duncombe": 27,
+        "Butterfly": 28,
+        "Johnnie": 29
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Wilson": 1,
+        "Legh": 9,
+        "Gibson": 14,
+        "rgis": 24
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "George": "Jaidyn",
+        "John": "Jovohn",
+        "Jem": "Burnice",
+        "Wilsons": "Bela",
+        "Hunter": "Maysen",
+        "Tom": "Himbazwa",
+        "Simmonds": "Kalani",
+        "Job": "Nikhith",
+        "Will": "Eliyah",
+        "Ogden": "Waverly",
+        "Simmons": "Ashtin",
+        "Molly": "Elyse-Ann",
+        "Eve": "Raffinee",
+        "Helen": "Keyon",
+        "Sophy": "Catalayah",
+        "Ruth": "Danilee",
+        "Jones": "Sajju",
+        "Cheshire": "Marrion",
+        "Bridgenorth": "Armani",
+        "Joneses": "Codee",
+        "Ben": "Dorance",
+        "O'Brien": "Jaime",
+        "rgises": "Tru",
+        "Duncombe": "Pasha",
+        "Butterfly": "Skiler",
+        "Johnnie": "Reilley"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Wilson": "Averie",
+        "Legh": "Halen",
+        "Gibson": "Maddyx",
+        "rgis": "Rogue"
+    }
+}

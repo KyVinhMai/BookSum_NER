@@ -1,0 +1,50 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Ross": 0,
+        "Porter": 1,
+        "ROSS": 2,
+        "Weird": 3,
+        "Lennox": 5,
+        "John": 6,
+        "Inverness": 8,
+        "Fife": 9,
+        "Menteith": 10,
+        "Seyton": 11,
+        "Mentieth": 12,
+        "Fortune": 13,
+        "Fie": 14,
+        "Th'usurper": 15
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Sisters": 4,
+        "Ruskin": 7
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Ross": "Tayber",
+        "Porter": "Kaleem",
+        "ROSS": "Gentry",
+        "Weird": "Makana",
+        "Lennox": "Hubart",
+        "John": "Kenzy",
+        "Inverness": "Nyaire",
+        "Fife": "Carey",
+        "Menteith": "Eri",
+        "Seyton": "Nike",
+        "Mentieth": "Lenzie",
+        "Fortune": "Channing",
+        "Fie": "Hassana",
+        "Th'usurper": "Cledith"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Sisters": "Ziyan",
+        "Ruskin": "Chey"
+    }
+}

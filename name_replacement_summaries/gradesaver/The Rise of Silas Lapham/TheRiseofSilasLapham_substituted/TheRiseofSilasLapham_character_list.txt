@@ -1,0 +1,88 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Persis": 0,
+        "Irene": 1,
+        "Penelope": 2,
+        "Coreys": 3,
+        "everything": 5,
+        "Rogers": 6,
+        "Howells": 7,
+        "Tom": 8,
+        "Bromfield": 11,
+        "Giles": 12,
+        "George": 13,
+        "Phillips": 15,
+        "Jim": 16,
+        "Gibbon": 17,
+        "Tennyson": 18,
+        "Rene": 19,
+        "Lily": 20,
+        "Henry": 21,
+        "Seymour": 23,
+        "Molly": 25,
+        "Revered": 26,
+        "Will": 28,
+        "Wm.": 29,
+        "Hen": 31,
+        "Wemmel": 32,
+        "Millons": 33,
+        "Roger": 35,
+        "Molley": 36,
+        "Sewells": 37
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Corey": 9,
+        "Eliot": 14,
+        "Millon": 24,
+        "Sewell": 27,
+        "M.": 30,
+        "Dewey": 34
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Persis": "Jaidan",
+        "Irene": "Phaedra",
+        "Penelope": "Anariya",
+        "Coreys": "Landry",
+        "everything": "Seville",
+        "Rogers": "Jerzy",
+        "Howells": "Berlin",
+        "Tom": "Kaitlin",
+        "Bromfield": "Jailin",
+        "Giles": "Bricker",
+        "George": "Wynd",
+        "Phillips": "Divine",
+        "Jim": "Bill",
+        "Gibbon": "Luan",
+        "Tennyson": "Bay",
+        "Rene": "Kerwin",
+        "Lily": "Abrianna",
+        "Henry": "Cherles",
+        "Seymour": "Markevus",
+        "Molly": "Madhubala",
+        "Revered": "Kamani",
+        "Will": "Charly",
+        "Wm.": "Tenzin",
+        "Hen": "Davonne",
+        "Wemmel": "Audi",
+        "Millons": "Vandy",
+        "Roger": "Edio",
+        "Molley": "Connelly",
+        "Sewells": "Kendle"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Corey": "Ara",
+        "Eliot": "Noah-Joel",
+        "Millon": "Riely",
+        "Sewell": "Donyea",
+        "M.": "Tagen",
+        "Dewey": "Jaddan"
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lorenzo": 0,
+        "Louis": 2,
+        "Julius": 3,
+        "Orsini": 4,
+        "Orsinis": 5,
+        "Remirro": 6,
+        "Rouen": 8,
+        "Moses": 9,
+        "Cyrus": 10,
+        "Romulus": 11,
+        "Fermo": 13,
+        "Oliverotto": 14,
+        "Kissinger": 15,
+        "Corleone": 16,
+        "Leo": 17,
+        "Prince": 19,
+        "Moors": 20,
+        "Fortune": 21
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Medici.\\": 1,
+        "Orco": 7,
+        "Medici": 12,
+        "XI": 18
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lorenzo": "Jamer",
+        "Louis": "Slaven",
+        "Julius": "Abheek",
+        "Orsini": "Posey",
+        "Orsinis": "Donne",
+        "Remirro": "Amandeep",
+        "Rouen": "Aundra",
+        "Moses": "Kaceon",
+        "Cyrus": "Cluster",
+        "Romulus": "Mattis",
+        "Fermo": "Billison",
+        "Oliverotto": "Delane",
+        "Kissinger": "Kaylor",
+        "Corleone": "Clemence",
+        "Leo": "Tommylee",
+        "Prince": "Balram",
+        "Moors": "Maitland",
+        "Fortune": "Jeffie"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Medici.\\": "Parris",
+        "Orco": "Kayde",
+        "Medici": "Tkai",
+        "XI": "Germany"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lennox": 0,
+        "Ross": 1,
+        "Fife": 2,
+        "Sweno": 3
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lennox": "Harlis",
+        "Ross": "Cgianluigi",
+        "Fife": "Jimi",
+        "Sweno": "Mc"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

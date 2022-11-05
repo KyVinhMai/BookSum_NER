@@ -1,0 +1,60 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Cedric": 1,
+        "FrontdeBoeuf": 2,
+        "de": 3,
+        "Robin": 5,
+        "Gurth": 7,
+        "De": 8,
+        "Scott": 9,
+        "Shylock": 10,
+        "Miller": 11,
+        "FrontdeBouef": 12,
+        "Fitzurse": 13,
+        "Locksley": 14,
+        "Hubert": 15,
+        "Prince": 16,
+        "Torquilstone": 18,
+        "Prior": 19,
+        "Knight": 20,
+        "Tuck": 21
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "BoisGuilbert": 4,
+        "Hood": 6,
+        "John": 17
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Cedric": "Pramjeet",
+        "FrontdeBoeuf": "Peniel",
+        "de": "Tris",
+        "Robin": "Tennessee",
+        "Gurth": "Carlin",
+        "De": "Quanta",
+        "Scott": "Kamuela",
+        "Shylock": "Rudie",
+        "Miller": "Lannie",
+        "FrontdeBouef": "Taylen",
+        "Fitzurse": "Jerris",
+        "Locksley": "Mayan",
+        "Hubert": "Qianyuan",
+        "Prince": "Wattie",
+        "Torquilstone": "Alpha",
+        "Prior": "Halen",
+        "Knight": "Gaylin",
+        "Tuck": "Eudell"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "BoisGuilbert": "Hero",
+        "Hood": "Aeon",
+        "John": "Jiya"
+    }
+}

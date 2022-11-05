@@ -1,0 +1,24 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Vishnu": 0,
+        "Bhumi": 1
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Devi": 2
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Vishnu": "Senai",
+        "Bhumi": "Embry"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Devi": "Lamisa"
+    }
+}

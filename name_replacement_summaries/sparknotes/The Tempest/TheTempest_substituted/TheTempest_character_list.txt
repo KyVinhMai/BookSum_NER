@@ -1,0 +1,38 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Trinculo": 0,
+        "Prospero": 1,
+        "Fortune": 2,
+        "Ceres": 3,
+        "Juno": 4,
+        "Iris": 5,
+        "Setebos": 6,
+        "Venus": 7,
+        "Cupid": 8,
+        "Pluto": 9,
+        "Persephone": 10
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Trinculo": "Yuki",
+        "Prospero": "Queshaun",
+        "Fortune": "Eaden",
+        "Ceres": "Gianny",
+        "Juno": "Jammie",
+        "Iris": "Asae",
+        "Setebos": "Dell",
+        "Venus": "Pomposa",
+        "Cupid": "Nemiah",
+        "Pluto": "Yoltzin",
+        "Persephone": "Adama"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

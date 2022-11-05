@@ -1,0 +1,54 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Quincey": 0,
+        "Holmwood": 2,
+        "Lucy": 3,
+        "Count": 4,
+        "ker": 5,
+        "Wilkie": 6,
+        "Petrof": 8,
+        "Winchesters": 10,
+        "R.": 11,
+        "S.": 13,
+        "Demeter": 15,
+        "Bersicker": 16,
+        "Vincent": 17
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Morris": 1,
+        "Collins": 7,
+        "Skinsky": 9,
+        "Renfield": 12,
+        "Billington": 14
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Quincey": "Jerzy",
+        "Holmwood": "Chee",
+        "Lucy": "Larue",
+        "Count": "Jermany",
+        "ker": "Shady",
+        "Wilkie": "Rylin",
+        "Petrof": "Skylen",
+        "Winchesters": "Cristan",
+        "R.": "Ottie",
+        "S.": "Cailan",
+        "Demeter": "Apollon",
+        "Bersicker": "Haydin",
+        "Vincent": "Hollace"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Morris": "Tyleek",
+        "Collins": "Jael",
+        "Skinsky": "Trinidad",
+        "Renfield": "Adama",
+        "Billington": "Kaydyn"
+    }
+}

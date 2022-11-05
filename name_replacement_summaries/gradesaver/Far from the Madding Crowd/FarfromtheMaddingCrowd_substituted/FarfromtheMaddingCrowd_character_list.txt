@@ -1,0 +1,30 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Hurst": 0,
+        "Liddy": 1,
+        "Boldwood": 2,
+        "Troy": 3,
+        "Everdene": 4,
+        "Joseph": 5,
+        "Robbins": 6
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Hurst": "Lenzie",
+        "Liddy": "Mirakel",
+        "Boldwood": "Drue",
+        "Troy": "Rangelo",
+        "Everdene": "Rease",
+        "Joseph": "Mikelle",
+        "Robbins": "Jaree"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

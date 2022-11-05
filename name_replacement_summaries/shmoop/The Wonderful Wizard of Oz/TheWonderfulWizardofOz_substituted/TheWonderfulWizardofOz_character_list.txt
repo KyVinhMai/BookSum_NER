@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Em": 0,
+        "Dorothy": 1,
+        "Oz": 2,
+        "Toto": 3,
+        "Lion": 4,
+        "Winkies": 5,
+        "Uncle": 6,
+        "Munchkins": 8,
+        "Sherlock": 9,
+        "Siri": 10,
+        "Boq": 11,
+        "Munchkin": 12
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Henry": 7
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Em": "Gianny",
+        "Dorothy": "Rayyana",
+        "Oz": "Ubaldo",
+        "Toto": "Maciah",
+        "Lion": "Skye-Anne",
+        "Winkies": "Kamani",
+        "Uncle": "Liron",
+        "Munchkins": "Jianni",
+        "Sherlock": "Giani",
+        "Siri": "Sheilly",
+        "Boq": "Jahdai",
+        "Munchkin": "Jaedyn"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Henry": "Orrell"
+    }
+}

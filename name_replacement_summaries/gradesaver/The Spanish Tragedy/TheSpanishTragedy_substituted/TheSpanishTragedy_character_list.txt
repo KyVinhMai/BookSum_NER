@@ -1,0 +1,52 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Ghost": 0,
+        "Cerberus": 1,
+        "Minos": 2,
+        "Pluto": 3,
+        "Proserpine": 4,
+        "Revenge": 5,
+        "Kyd": 6,
+        "Lorenzo": 7,
+        "Villuppo": 8,
+        "Hieronimo": 9,
+        "Nemesis": 10,
+        "Serberine": 11,
+        "Viceroy": 12,
+        "Fury": 13,
+        "Hymen": 14,
+        "\\Hieronimo": 15,
+        "Vic": 16,
+        "Pedro": 17
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Ghost": "Teagen",
+        "Cerberus": "Kendal",
+        "Minos": "Rennie",
+        "Pluto": "Jamile",
+        "Proserpine": "Nasiah",
+        "Revenge": "Kamdyn",
+        "Kyd": "Jacquese",
+        "Lorenzo": "Jomarcus",
+        "Villuppo": "Aldean",
+        "Hieronimo": "Kitt",
+        "Nemesis": "Shiloh",
+        "Serberine": "Eastyn",
+        "Viceroy": "Mayan",
+        "Fury": "Kaylor",
+        "Hymen": "Kaegan",
+        "\\Hieronimo": "Talyn",
+        "Vic": "Monti",
+        "Pedro": "Atlin"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

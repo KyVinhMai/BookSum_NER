@@ -1,0 +1,48 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Bill": 0,
+        "Henry": 1,
+        "One": 2,
+        "Liplip": 4,
+        "Weedon": 5,
+        "Mom": 7,
+        "London": 8,
+        "Kiche": 9,
+        "Lip": 10,
+        "Klookooch": 11,
+        "Cherokee": 12,
+        "Tim": 13,
+        "Collie": 14
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Eye": 3,
+        "Scott": 6
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Bill": "Senai",
+        "Henry": "Akwasi",
+        "One": "Ashney",
+        "Liplip": "Chayanne",
+        "Weedon": "Sage",
+        "Mom": "Shann",
+        "London": "Azariah",
+        "Kiche": "Jayln",
+        "Lip": "Bay",
+        "Klookooch": "Claudie",
+        "Cherokee": "Shaune",
+        "Tim": "Savir",
+        "Collie": "Lovelle"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Eye": "Luan",
+        "Scott": "Dzuy"
+    }
+}

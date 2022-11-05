@@ -1,0 +1,52 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "venson": 0,
+        "George": 1,
+        "Lee": 3,
+        "Ebenezer": 5,
+        "Jennet": 6,
+        "Glens": 8,
+        "Cluny": 9,
+        "Robin": 10,
+        "Rob": 12,
+        "Thomson": 14,
+        "Glen": 15,
+        "Thomson\\": 16
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "II": 2,
+        "Holcombe": 4,
+        "Clouston": 7,
+        "Oig": 11,
+        "Roy": 13
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "venson": "Nyaire",
+        "George": "Myrl",
+        "Lee": "Kaedyn",
+        "Ebenezer": "Mariah",
+        "Jennet": "Crystall",
+        "Glens": "Damarie",
+        "Cluny": "Barrymore",
+        "Robin": "Casy",
+        "Rob": "Amechi",
+        "Thomson": "Kamarri",
+        "Glen": "Bonita",
+        "Thomson\\": "Maven"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "II": "Harley",
+        "Holcombe": "Bao",
+        "Clouston": "Payton",
+        "Oig": "Ajene",
+        "Roy": "Zlata"
+    }
+}

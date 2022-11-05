@@ -1,0 +1,50 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Bill": 0,
+        "Henry": 1,
+        "Liplip": 2,
+        "McGurry": 4,
+        "Frog": 5,
+        "London": 6,
+        "Kiche": 7,
+        "One": 8,
+        "Weedon": 10,
+        "Klookooch": 12,
+        "Mit": 13,
+        "Cherokee": 14,
+        "Collie": 15,
+        "Dick": 16
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Eye": 9,
+        "Scott": 11
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Bill": "Shemar",
+        "Henry": "Othel",
+        "Liplip": "Teegan",
+        "McGurry": "Tajae",
+        "Frog": "De",
+        "London": "Jamy",
+        "Kiche": "Ricki",
+        "One": "Dennielle",
+        "Weedon": "Yuval",
+        "Klookooch": "Haedyn",
+        "Mit": "Chey",
+        "Cherokee": "Marquette",
+        "Collie": "Teigan",
+        "Dick": "Pascale"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Eye": "Preet",
+        "Scott": "Dewie"
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Zverkov": 0,
+        "Heinrich": 1,
+        "Homer": 3,
+        "Byron": 4,
+        "Pius": 5,
+        "Simonov": 7,
+        "Ferfitchkin": 8,
+        "Trudolyubov": 9,
+        "Dostoevsky": 10,
+        "Helios": 11
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Heine": 2,
+        "VII": 6
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Zverkov": "Tris",
+        "Heinrich": "Douglas-John",
+        "Homer": "Jasere",
+        "Byron": "Gryffon",
+        "Pius": "Verner",
+        "Simonov": "Shell",
+        "Ferfitchkin": "Asuncion",
+        "Trudolyubov": "Chong",
+        "Dostoevsky": "Onnie",
+        "Helios": "Bralyn"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Heine": "Nayte",
+        "VII": "Sutton"
+    }
+}

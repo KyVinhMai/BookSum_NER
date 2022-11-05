@@ -1,0 +1,24 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Nicholl": 0,
+        "Biggie": 1,
+        "Elphiston": 2,
+        "Verne": 3
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Nicholl": "Alvia",
+        "Biggie": "Reise",
+        "Elphiston": "Ramey",
+        "Verne": "Akili"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

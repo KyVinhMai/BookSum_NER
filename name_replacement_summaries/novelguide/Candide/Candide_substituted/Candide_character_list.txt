@@ -1,0 +1,32 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Cunegonde": 0,
+        "Homer": 1,
+        "Virgil": 2,
+        "Milton": 3,
+        "Leibniz": 4,
+        "Pope": 5,
+        "Columbus": 6,
+        "Cungonde": 7
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Cunegonde": "Nieves",
+        "Homer": "Flabio",
+        "Virgil": "Turrell",
+        "Milton": "Tailo",
+        "Leibniz": "Rielly",
+        "Pope": "Londen",
+        "Columbus": "Arkley",
+        "Cungonde": "Kamdyn"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

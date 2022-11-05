@@ -1,0 +1,30 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Duchess": 0,
+        "Delio": 1,
+        "Coco": 2,
+        "Shmoopers": 3,
+        "Webster": 4,
+        "Ferdo": 5,
+        "Silvio": 6
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Duchess": "Britt",
+        "Delio": "Raimundo",
+        "Coco": "Jane-Marie",
+        "Shmoopers": "Berlin",
+        "Webster": "Tejasvir",
+        "Ferdo": "Sudesh",
+        "Silvio": "Jahsiyah"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

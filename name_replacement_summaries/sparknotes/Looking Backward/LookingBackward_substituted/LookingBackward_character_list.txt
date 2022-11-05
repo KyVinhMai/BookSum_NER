@@ -1,0 +1,36 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Pillsbury": 0,
+        "Edith": 2,
+        "Leetes": 4,
+        "Leete": 5,
+        "Thorstein": 6,
+        "John": 8
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Leete": 3,
+        "Veblen": 7,
+        "Dewey": 9
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Pillsbury": "Donnelle",
+        "Edith": "Cambrie",
+        "Leetes": "Sukhman",
+        "Leete": "Jammie",
+        "Thorstein": "Silviano",
+        "John": "Malakei"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Leete": "Jamani",
+        "Veblen": "Zell",
+        "Dewey": "Steffon"
+    }
+}

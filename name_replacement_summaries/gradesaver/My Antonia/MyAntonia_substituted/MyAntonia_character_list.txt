@@ -1,0 +1,86 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Jim": 0,
+        "Otto": 2,
+        "Burdens": 4,
+        "morning": 5,
+        "Peter": 6,
+        "Tony": 7,
+        "Eve": 8,
+        "Wick": 9,
+        "Robinson": 11,
+        "Jelinek": 13,
+        "Bushy": 14,
+        "Ole": 15,
+        "Tiny": 17,
+        "Chris": 18,
+        "Sylvester": 19,
+        "Cutters": 21,
+        "\\Wick": 22,
+        "Virgil": 24,
+        "Ordinsky": 25,
+        "Colonel": 26,
+        "Ordinksy": 27,
+        "Prince": 28,
+        "Lincoln": 29,
+        "Johnson": 30,
+        "Leo": 31,
+        "Rudolph": 32,
+        "Destiny": 33
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Burden": 1,
+        "Fuchs": 3,
+        "Cutter": 10,
+        "Crusoe": 12,
+        "Benson": 16,
+        "Lovett": 20,
+        "Cutter\\": 23
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Jim": "Ankaj",
+        "Otto": "Perrish",
+        "Burdens": "Kemoni",
+        "morning": "Lin",
+        "Peter": "Winiford",
+        "Tony": "Blanchard",
+        "Eve": "Khtia",
+        "Wick": "Dawsyn",
+        "Robinson": "Marrion",
+        "Jelinek": "Dustine",
+        "Bushy": "Emery",
+        "Ole": "Jumarion",
+        "Tiny": "Katrianna",
+        "Chris": "Cayle",
+        "Sylvester": "Ganza",
+        "Cutters": "Rayn",
+        "\\Wick": "Kodee",
+        "Virgil": "Aadit",
+        "Ordinsky": "Meiko",
+        "Colonel": "Anay",
+        "Ordinksy": "Mishael",
+        "Prince": "Alaistair",
+        "Lincoln": "Markail",
+        "Johnson": "Javares",
+        "Leo": "Dhramender",
+        "Rudolph": "Stefan",
+        "Destiny": "Fynleigh"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Burden": "Casy",
+        "Fuchs": "Damarie",
+        "Cutter": "Areon",
+        "Crusoe": "Delane",
+        "Benson": "Rajah",
+        "Lovett": "Giavonni",
+        "Cutter\\": "Rhyan"
+    }
+}

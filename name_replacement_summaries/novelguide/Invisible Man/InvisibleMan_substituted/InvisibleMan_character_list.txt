@@ -1,0 +1,48 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Ellison": 0,
+        "Sybil": 1,
+        "Norton": 3,
+        "Jim": 4,
+        "Bledsoe": 6,
+        "Emerson": 7,
+        "Huck": 8,
+        "Young": 9,
+        "Beethoven": 10,
+        "Wrestrum": 11,
+        "Tod": 12,
+        "Clinton": 14,
+        "Tobitt": 15
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Trueblood": 5,
+        "Clifton": 13
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Ellison": "Alika",
+        "Sybil": "Shenan",
+        "Norton": "Algert",
+        "Jim": "Shadrach",
+        "Bledsoe": "Ronne",
+        "Emerson": "Steffan",
+        "Huck": "Jaydee",
+        "Young": "Oreoluwa",
+        "Beethoven": "Jazz",
+        "Wrestrum": "Giani",
+        "Tod": "Jeree",
+        "Clinton": "Ata",
+        "Tobitt": "Rian"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Trueblood": "Kary",
+        "Clifton": "Jamarri"
+    }
+}

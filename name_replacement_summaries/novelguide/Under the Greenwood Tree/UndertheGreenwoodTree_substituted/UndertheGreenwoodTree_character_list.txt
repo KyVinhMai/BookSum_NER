@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Dick": 0,
+        "Robert": 2,
+        "Reuben": 4,
+        "Dewys": 5,
+        "Tommy": 6,
+        "Brownjohn": 7,
+        "Geoffrey": 8,
+        "Spinks": 9,
+        "Mellstock": 10,
+        "Enoch": 11,
+        "Endorfield": 12
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Dewy": 1,
+        "Penny": 3
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Dick": "Woodson",
+        "Robert": "Giovonnie",
+        "Reuben": "Tyreak",
+        "Dewys": "Shadee",
+        "Tommy": "Tequan",
+        "Brownjohn": "Teigan",
+        "Geoffrey": "Bo'Az",
+        "Spinks": "Trayce",
+        "Mellstock": "Shadow",
+        "Enoch": "Jairee",
+        "Endorfield": "Cailan"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Dewy": "Carrol",
+        "Penny": "Larry"
+    }
+}

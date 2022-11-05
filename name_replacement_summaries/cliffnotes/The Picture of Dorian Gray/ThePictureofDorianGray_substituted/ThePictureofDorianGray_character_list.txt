@@ -1,0 +1,84 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Sibyl": 1,
+        "Wilde": 2,
+        "Victor": 3,
+        "Petronius": 4,
+        "Chopin": 5,
+        "Beethoven": 6,
+        "during": 7,
+        "Gwendolyn": 8,
+        "Geoffrey": 9,
+        "Thornton": 11,
+        "Moliere": 12,
+        "Hetty": 13,
+        "Lord": 15,
+        "Florizel": 17,
+        "Henry": 18,
+        "Grosvenor": 20,
+        "Fermor": 21,
+        "Kelso": 22,
+        "Juliet": 23,
+        "Dreyfus": 24,
+        "Prince": 25,
+        "Homer": 26,
+        "Echo": 27,
+        "Sybil": 28,
+        "Cyril": 33,
+        "Helen": 35
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Clouston": 10,
+        "Merton": 14,
+        "Henry": 16,
+        "Wotton": 19,
+        "Webster": 30,
+        "Ford": 32,
+        "Tourneur": 34
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Sibyl": "Nadia-Ruth",
+        "Wilde": "Shawne",
+        "Victor": "Rajeshwar@Moni",
+        "Petronius": "Zyus",
+        "Chopin": "Shaune",
+        "Beethoven": "Halsey",
+        "during": "Bobie",
+        "Gwendolyn": "Btittany",
+        "Geoffrey": "Kennett",
+        "Thornton": "Blaike",
+        "Moliere": "Juda",
+        "Hetty": "Payten",
+        "Lord": "Eh",
+        "Florizel": "Dail",
+        "Henry": "Zackeri",
+        "Grosvenor": "Dorsie",
+        "Fermor": "Jaki",
+        "Kelso": "Arlis",
+        "Juliet": "Deadrie",
+        "Dreyfus": "Santana",
+        "Prince": "Keoni",
+        "Homer": "Deakon",
+        "Echo": "Halen",
+        "Sybil": "Abgail",
+        "Cyril": "Ridwaan",
+        "Helen": "Abcde"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Clouston": "Jeryl",
+        "Merton": "Graham-Kenneth",
+        "Henry": "Shadd",
+        "Wotton": "Child",
+        "Webster": "Nicolo",
+        "Ford": "Jule",
+        "Tourneur": "Brighten"
+    }
+}

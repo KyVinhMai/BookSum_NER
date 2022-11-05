@@ -1,0 +1,3 @@
+{"name": "Othello", "summary": "", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Roderigo': 'Larkin', 'Moor': 'Kailen', 'Lodovico': 'Jamal', 'Romeo': 'Sakhichander', 'Juliet': 'Cassander', 'Jove': 'Temiloluwa'}, 'Middle Names': {}, 'Last Names': {}}

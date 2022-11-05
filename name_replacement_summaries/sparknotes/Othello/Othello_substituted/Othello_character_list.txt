@@ -1,0 +1,24 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Roderigo": 0,
+        "Lodovico": 1,
+        "Vice": 2,
+        "Moor": 3
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Roderigo": "Leotha",
+        "Lodovico": "Wright",
+        "Vice": "Trevion",
+        "Moor": "Miciah"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

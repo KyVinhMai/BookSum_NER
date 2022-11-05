@@ -1,0 +1,42 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Utterson": 0,
+        "Enfield": 1,
+        "Hyde": 2,
+        "Poole": 4,
+        "venson": 5,
+        "Henry": 6,
+        "Guest": 8,
+        "Thornfield": 10,
+        "Jekylls": 11,
+        "Hydes": 12
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Jekyll": 7,
+        "Jekyll.\\": 9
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Utterson": "Marquette",
+        "Enfield": "Evyn",
+        "Hyde": "Tam",
+        "Poole": "Shayde",
+        "venson": "Alvia",
+        "Henry": "Rhodric",
+        "Guest": "Romelle",
+        "Thornfield": "Onnie",
+        "Jekylls": "Brylin",
+        "Hydes": "Lyndal"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Jekyll": "Braylin",
+        "Jekyll.\\": "Sayre"
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Prospero": 0,
+        "Trinculo": 1,
+        "Polonius": 2,
+        "Virgil": 3,
+        "Romeo": 4,
+        "Juliet": 5,
+        "Juno": 6,
+        "Ceres": 7,
+        "Iris": 8,
+        "Hymen": 9,
+        "Jonson": 10,
+        "Proserpine": 11,
+        "Cupid": 12,
+        "Venus": 13,
+        "Ovid": 14,
+        "Orsino": 15,
+        "Hero": 16
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Prospero": "Kay",
+        "Trinculo": "Happy",
+        "Polonius": "Tajai",
+        "Virgil": "Braderick",
+        "Romeo": "Gyanendra",
+        "Juliet": "Mattilda",
+        "Juno": "Vonette",
+        "Ceres": "Teigan",
+        "Iris": "Zuriana",
+        "Hymen": "Tristyn",
+        "Jonson": "Larkin",
+        "Proserpine": "Arin",
+        "Cupid": "Soua",
+        "Venus": "Carys",
+        "Ovid": "Shell",
+        "Orsino": "Dedrick",
+        "Hero": "Briyan"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

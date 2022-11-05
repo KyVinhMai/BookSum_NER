@@ -1,0 +1,60 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Tess": 1,
+        "d'Urberville": 3,
+        "Prince": 4,
+        "d'Urbervilles": 5,
+        "John": 6,
+        "Durbeyfields": 7,
+        "Rolliver": 8,
+        "Sorrow": 9,
+        "Crick": 10,
+        "Cricks": 11,
+        "Izz": 12,
+        "Retty": 13,
+        "Eve": 14,
+        "Felix": 15,
+        "Cuthbert": 16,
+        "Dollop": 17,
+        "Jesus": 19,
+        "Groby": 20,
+        "Brooks": 21
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Durbeyfield": 2,
+        "Huett": 18
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Tess": "Traie",
+        "d'Urberville": "Chey",
+        "Prince": "Alric",
+        "d'Urbervilles": "Kimani",
+        "John": "Chau",
+        "Durbeyfields": "Jerzy",
+        "Rolliver": "Erian",
+        "Sorrow": "Reilley",
+        "Crick": "Kamerin",
+        "Cricks": "Ebbie",
+        "Izz": "Meko",
+        "Retty": "Devlyn",
+        "Eve": "Azra",
+        "Felix": "Kaixiang",
+        "Cuthbert": "Byron",
+        "Dollop": "Latrelle",
+        "Jesus": "Shyler",
+        "Groby": "Hudsyn",
+        "Brooks": "Jarvas"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Durbeyfield": "Harbor",
+        "Huett": "Andree"
+    }
+}

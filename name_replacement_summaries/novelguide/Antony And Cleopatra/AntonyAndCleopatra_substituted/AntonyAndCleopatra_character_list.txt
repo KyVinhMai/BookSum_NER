@@ -1,0 +1,20 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Pompey": 0,
+        "Eros": 1
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Pompey": "Chey",
+        "Eros": "Kierre"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

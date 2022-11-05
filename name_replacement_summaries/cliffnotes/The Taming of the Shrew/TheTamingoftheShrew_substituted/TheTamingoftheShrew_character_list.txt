@@ -1,0 +1,72 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Sly": 0,
+        "Hostess": 1,
+        "Slys": 2,
+        "Lord": 3,
+        "Lucentio": 4,
+        "Vincentio": 5,
+        "Biondello": 6,
+        "Petruchio": 7,
+        "Hortensio": 8,
+        "Grumio": 9,
+        "Gremio": 10,
+        "Widow": 11,
+        "Zeus": 12,
+        "Thisbe": 13,
+        "Dido": 14,
+        "Jove": 15,
+        "John": 16,
+        "Sibyl": 18,
+        "Helen": 20,
+        "Troy": 21,
+        "Hercules": 22,
+        "Litio": 23,
+        "Curtis": 24,
+        "cock": 25,
+        "Ovid": 26
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Gower": 17,
+        "prophetess": 19
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Sly": "Logyn",
+        "Hostess": "Armari",
+        "Slys": "Jaime",
+        "Lord": "Teddie",
+        "Lucentio": "Oluwanifemi",
+        "Vincentio": "Tagan",
+        "Biondello": "Yardley",
+        "Petruchio": "Jae",
+        "Hortensio": "Khabir",
+        "Grumio": "Nemiah",
+        "Gremio": "Bao",
+        "Widow": "Taygen",
+        "Zeus": "Lorren",
+        "Thisbe": "Kaelen",
+        "Dido": "Alii",
+        "Jove": "Mckinley",
+        "John": "Sidahmed",
+        "Sibyl": "Parveen",
+        "Helen": "Catosha",
+        "Troy": "Laquavis",
+        "Hercules": "Logyn",
+        "Litio": "Hien",
+        "Curtis": "Finnlaigh",
+        "cock": "Vinnie",
+        "Ovid": "Rashi"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Gower": "Myan",
+        "prophetess": "Delane"
+    }
+}

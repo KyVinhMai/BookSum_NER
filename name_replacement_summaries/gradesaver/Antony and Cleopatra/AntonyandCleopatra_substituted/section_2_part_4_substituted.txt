@@ -1,0 +1,3 @@
+{"name": "act 2, Scene 4", "url": "https://web.archive.org/web/20210419231323/https://www.gradesaver.com/antony-and-cleopatra/study-guide/summary-act-two-scenes-1-5", "summary": "A street in Rome. Jody, Agrippa, and Maecenas part. Their different forces will meet again on the field", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Sextus': 'Mattia', 'Philo': 'Adair', 'Lepidus': 'Jody', 'Ventidius': 'Atari', 'Egypt': 'Oakley', 'Silius': 'Keatyn', 'Messenger': 'Ollie', 'Eros': 'Taesean', 'Misenum': 'Shann', 'Gneius': 'Storm', 'Hercules': 'Marlowe', 'Diomedes': 'Kindred', 'Proculeius': 'Amori', 'Fortune': 'Merlyn', 'Seleucus': 'Kaidyn'}, 'Middle Names': {}, 'Last Names': {'Pompeius': 'Audi', 'Pompey': 'Marvis'}}

@@ -1,0 +1,32 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Terne": 0,
+        "Finn": 1,
+        "Geric": 2,
+        "Kildenree": 3,
+        "Pete": 4,
+        "Jok": 5,
+        "Isi": 6,
+        "Beier": 7
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Terne": "Channing",
+        "Finn": "Warwich",
+        "Geric": "Elza",
+        "Kildenree": "Avry",
+        "Pete": "Teodulo",
+        "Jok": "Codee",
+        "Isi": "Kamani",
+        "Beier": "Danel"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

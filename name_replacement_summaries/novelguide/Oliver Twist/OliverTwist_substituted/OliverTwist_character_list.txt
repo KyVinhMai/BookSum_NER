@@ -1,0 +1,80 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Oliver": 0,
+        "Bumble": 1,
+        "Duff": 2,
+        "Losberne": 3,
+        "Rose": 4,
+        "Giles": 5,
+        "Brownlow": 6,
+        "Bedwin": 8,
+        "Grimwig": 9,
+        "Monks": 11,
+        "Bumbles": 12,
+        "Dodger": 13,
+        "Sowerberry": 14,
+        "Morris": 15,
+        "Bill": 17,
+        "Leeford": 19,
+        "Tom": 20,
+        "Dick": 22,
+        "Sowerberrys": 23,
+        "liver": 24,
+        "Bet": 25,
+        "Jew": 26,
+        "Betty": 27,
+        "Toby": 28,
+        "Corney": 29,
+        "Betsy": 30,
+        "Brittles": 31
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Twist": 10,
+        "Bolter": 16,
+        "Sikes": 18,
+        "Chitling": 21
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Oliver": "Do",
+        "Bumble": "Trinidad",
+        "Duff": "Feliz",
+        "Losberne": "Lorrin",
+        "Rose": "Laziyah",
+        "Giles": "Gaintarna",
+        "Brownlow": "Maxie",
+        "Bedwin": "Yee",
+        "Grimwig": "Aijalon",
+        "Monks": "Ebbie",
+        "Bumbles": "Natividad",
+        "Dodger": "Aly",
+        "Sowerberry": "Schylar",
+        "Morris": "Garrek",
+        "Bill": "Shloke",
+        "Leeford": "Jerris",
+        "Tom": "Cooper",
+        "Dick": "Shaymin-Trent",
+        "Sowerberrys": "Aris",
+        "liver": "Dorsie",
+        "Bet": "Moy",
+        "Jew": "Kenyatte",
+        "Betty": "Aana",
+        "Toby": "Cristan",
+        "Corney": "Quinn",
+        "Betsy": "Jaada",
+        "Brittles": "Eudell"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Twist": "Kaegan",
+        "Bolter": "Sekai",
+        "Sikes": "Babe",
+        "Chitling": "Ajene"
+    }
+}

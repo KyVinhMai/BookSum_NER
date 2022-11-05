@@ -1,0 +1,30 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Frederick": 0,
+        "Miller": 2,
+        "Millers": 3,
+        "Costello": 4,
+        "Eugenio": 5
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Winterbourne": 1
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Frederick": "Da",
+        "Miller": "Adel",
+        "Millers": "Akili",
+        "Costello": "Sopheap",
+        "Eugenio": "Permeshwar"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Winterbourne": "Tyjae"
+    }
+}

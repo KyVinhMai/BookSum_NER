@@ -1,0 +1,24 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Kurtz": 0,
+        "Fresleven": 1,
+        "Slick": 2,
+        "Shmoop": 3
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Kurtz": "Dawsyn",
+        "Fresleven": "Osiris",
+        "Slick": "Tatem",
+        "Shmoop": "Shaden"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

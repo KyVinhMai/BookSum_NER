@@ -1,0 +1,70 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lucy": 0,
+        "George": 3,
+        "Emersons": 5,
+        "Giotto": 6,
+        "Bertolini": 7,
+        "Venus": 8,
+        "Botticelli": 9,
+        "Forster": 11,
+        "Beethoven": 12,
+        "Vyses": 13,
+        "Freddy": 14,
+        "Cecil": 15,
+        "Lorenzo": 17,
+        "Persephone": 19,
+        "Honeychurches": 20,
+        "Minnie": 21,
+        "Byron": 23,
+        "Nietzsche": 24,
+        "Butterworth": 25,
+        "Floyd": 26
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Honeychurch": 1,
+        "Emerson": 10,
+        "Vyse": 16,
+        "Medici": 18,
+        "Beebe": 22,
+        "Vyse\\": 27
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lucy": "Jamie'Lee",
+        "George": "Kuparth",
+        "Emersons": "Donnelle",
+        "Giotto": "Qirui",
+        "Bertolini": "Donnelle",
+        "Venus": "Taiyler",
+        "Botticelli": "Shyler",
+        "Forster": "Deone",
+        "Beethoven": "Nazareth",
+        "Vyses": "Arrin",
+        "Freddy": "Derreon",
+        "Cecil": "Deterrius",
+        "Lorenzo": "Allenby",
+        "Persephone": "Jaydee",
+        "Honeychurches": "Keylen",
+        "Minnie": "Ceci",
+        "Byron": "Brecken",
+        "Nietzsche": "Juliani",
+        "Butterworth": "Cheney",
+        "Floyd": "Julie-Anne"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Honeychurch": "Jayel",
+        "Emerson": "Daymir",
+        "Vyse": "Laramie",
+        "Medici": "Remmy",
+        "Beebe": "Tobie",
+        "Vyse\\": "Osie"
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "W.H.R.": 0,
+        "Burns": 2,
+        "Wilfred": 4,
+        "W.": 6,
+        "Siegfried": 7,
+        "Bryce": 8,
+        "Ottoline": 9,
+        "Lloyd": 11,
+        "Sigmund": 13,
+        "Billy": 15,
+        "Brock": 17,
+        "Lizzie": 18,
+        "Orme": 19,
+        "Ruth": 20,
+        "Henry": 21,
+        "Peter": 22,
+        "Betty": 23,
+        "Mercier": 24,
+        "Robert": 25
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Rivers": 1,
+        "Owen": 5,
+        "Morrell": 10,
+        "George": 12,
+        "Freud": 14,
+        "Prior": 16,
+        "Ross": 26
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "W.H.R.": "Payson",
+        "Burns": "Cagney",
+        "Wilfred": "Haku",
+        "W.": "Cagney",
+        "Siegfried": "Jorge",
+        "Bryce": "Ronne",
+        "Ottoline": "Shiloh",
+        "Lloyd": "Welsey",
+        "Sigmund": "Javonni",
+        "Billy": "Crewe",
+        "Brock": "Jermany",
+        "Lizzie": "Tushima",
+        "Orme": "Devlyn",
+        "Ruth": "Gavy",
+        "Henry": "Tyhir",
+        "Peter": "Mustfa",
+        "Betty": "Shovonne",
+        "Mercier": "Kendal",
+        "Robert": "Sakhi"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Rivers": "Meko",
+        "Owen": "Sadod",
+        "Morrell": "Laray",
+        "George": "Prayas",
+        "Freud": "Tanis",
+        "Prior": "Jemiah",
+        "Ross": "Teddrick"
+    }
+}

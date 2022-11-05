@@ -1,0 +1,34 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Miles": 0,
+        "Grose": 1,
+        "Peter": 2,
+        "Jessel": 4,
+        "Luke": 5,
+        "Bly": 6,
+        "Griffin": 7
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Quint": 3
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Miles": "Tage",
+        "Grose": "Ashtan",
+        "Peter": "Danterius",
+        "Jessel": "Arlyn",
+        "Luke": "Deniss",
+        "Bly": "Kamali",
+        "Griffin": "Viraj"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Quint": "Rivers"
+    }
+}

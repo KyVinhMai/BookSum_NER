@@ -1,0 +1,24 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Helmer": 0,
+        "Linde": 1,
+        "Helmers": 2,
+        "Ibsen": 3
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Helmer": "Quinnie",
+        "Linde": "Osha",
+        "Helmers": "Cache",
+        "Ibsen": "Jae"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

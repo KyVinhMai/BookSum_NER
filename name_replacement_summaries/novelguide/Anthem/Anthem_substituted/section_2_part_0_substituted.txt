@@ -1,0 +1,3 @@
+{"name": "Chapter 3", "url": "https://web.archive.org/web/20200131031441/http://www.novelguide.com/anthem/summaries/chap3", "summary": "In his tunnel, Equality 7-2521 rediscovers the secret of electricity, alone, apart from his \"brothers.\" He realizes that the Council of Scholars, which uses its central planning to find and administer all knowledge, \"is blind,\" while he, who can invent better technology by himself, can see.", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Huxley': 'Dakotah', 'Liberty': 'Kushia'}, 'Middle Names': {}, 'Last Names': {'53000': 'Kimari'}}

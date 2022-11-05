@@ -1,0 +1,72 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Brooke": 0,
+        "Eliot": 1,
+        "Fred": 2,
+        "Lowick": 4,
+        "Will": 5,
+        "Bulstrode": 6,
+        "Tyke": 7,
+        "Vincys": 8,
+        "Chichely": 9,
+        "George": 10,
+        "Wisdom": 12,
+        "Trumbull": 13,
+        "Wrench": 14,
+        "Wrench/": 15,
+        "Tyke/": 16,
+        "Imogen": 17,
+        "Rigg": 18,
+        "Bulstrodes": 19,
+        "Whig": 20,
+        "Jim": 21,
+        "Key": 22,
+        "Freshitt": 23,
+        "ne": 24,
+        "Ned": 25,
+        "Noble": 26
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Vincy": 3,
+        "IV": 11
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Brooke": "Alene-George",
+        "Eliot": "Andrell",
+        "Fred": "Ywa",
+        "Lowick": "Daylyn",
+        "Will": "Kindred",
+        "Bulstrode": "Sher",
+        "Tyke": "Adama",
+        "Vincys": "Dannell",
+        "Chichely": "Myrl",
+        "George": "Jhamere",
+        "Wisdom": "Dwan",
+        "Trumbull": "Aarin",
+        "Wrench": "Jahdai",
+        "Wrench/": "Kriss",
+        "Tyke/": "Kaelen",
+        "Imogen": "Ketisha",
+        "Rigg": "Markelle",
+        "Bulstrodes": "Berkeley",
+        "Whig": "Baby",
+        "Jim": "Trennen",
+        "Key": "Waldemar",
+        "Freshitt": "Shaya",
+        "ne": "Alexy",
+        "Ned": "Angelus",
+        "Noble": "Brit"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Vincy": "Mycah",
+        "IV": "Yona"
+    }
+}

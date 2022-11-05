@@ -1,0 +1,56 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "J.": 0,
+        "Ibsen": 2,
+        "Pegeen": 3,
+        "Reilly": 5,
+        "Philly": 7,
+        "Jimmy": 9,
+        "Boers": 10,
+        "Nelly": 11,
+        "Honor": 12,
+        "Colum": 13,
+        "Holy": 15,
+        "Widow": 17,
+        "George": 19
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Synge": 1,
+        "Mike": 4,
+        "Cullen": 8,
+        "Brigid": 16,
+        "Quin": 18,
+        "Russell": 20
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "J.": "Jimi",
+        "Ibsen": "Rumi",
+        "Pegeen": "Laressa",
+        "Reilly": "Onyx",
+        "Philly": "Meko",
+        "Jimmy": "Kyton",
+        "Boers": "Rian",
+        "Nelly": "Adelfa",
+        "Honor": "Juliani",
+        "Colum": "Delone",
+        "Holy": "Ronit",
+        "Widow": "Amel",
+        "George": "Yandel"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Synge": "Zekiah",
+        "Mike": "Roper",
+        "Cullen": "Zam",
+        "Brigid": "Yuette",
+        "Quin": "Kao",
+        "Russell": "Leevan"
+    }
+}

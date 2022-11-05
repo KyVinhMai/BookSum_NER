@@ -1,0 +1,26 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Mill": 0,
+        "Wilhelm": 1,
+        "von": 3
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Humboldt": 2
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Mill": "Alpha",
+        "Wilhelm": "Terrence",
+        "von": "Oluwatosin"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Humboldt": "Skyeler"
+    }
+}

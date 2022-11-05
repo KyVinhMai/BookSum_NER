@@ -1,0 +1,66 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Dickens": 0,
+        "George": 1,
+        "Louis": 3,
+        "Luce": 5,
+        "Lucie": 6,
+        "yver": 7,
+        "Lorry": 8,
+        "Roger": 12,
+        "Young": 14,
+        "Revolution": 18,
+        "Doctor": 19,
+        "Foulon": 21,
+        "Jerry": 22,
+        "Solomon": 23,
+        "M.": 25,
+        "Tellson": 26,
+        "Judge": 27
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "III": 2,
+        "XVI": 4,
+        "Cruncher": 11,
+        "Cly": 13,
+        "Jerry": 15,
+        "Evremonde": 17,
+        "Pross": 24
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Dickens": "Lamari",
+        "George": "Ratko",
+        "Louis": "Maxie",
+        "Luce": "Ricci",
+        "Lucie": "Margaretmary",
+        "yver": "Lavern",
+        "Lorry": "Jaspreet",
+        "Roger": "Ja-Rule",
+        "Young": "Harley",
+        "Revolution": "Domnique",
+        "Doctor": "Tahje",
+        "Foulon": "Maciah",
+        "Jerry": "Rovin",
+        "Solomon": "Tazeem",
+        "M.": "Ronit",
+        "Tellson": "Jacquise",
+        "Judge": "Paycee"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "III": "Dallis",
+        "XVI": "Tagan",
+        "Cruncher": "Cire",
+        "Cly": "Tahje",
+        "Jerry": "Ittai",
+        "Evremonde": "Matisse",
+        "Pross": "Yanis"
+    }
+}

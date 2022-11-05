@@ -1,0 +1,64 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Turgenieff": 0,
+        "Gilbert": 1,
+        "Merle": 3,
+        "Touchett": 4,
+        "Ludlows": 5,
+        "Goodwood": 6,
+        "Gemini": 7,
+        "Robert": 9,
+        "Peter": 11,
+        "Countess": 13,
+        "Ludlow": 14,
+        "Edith": 15,
+        "Touchetts": 16,
+        "Mildred": 17,
+        "Lockleigh": 19,
+        "Pensil": 20,
+        "Schubert": 21,
+        "Ned": 22
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Osmond": 2,
+        "Pippin": 10,
+        "Brooks'": 12,
+        "Molyneux": 18,
+        "Rosier": 23
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Turgenieff": "Inioluwa",
+        "Gilbert": "Joandre",
+        "Merle": "Zohar",
+        "Touchett": "Rhylan",
+        "Ludlows": "Kareen",
+        "Goodwood": "Wai",
+        "Gemini": "Tam",
+        "Robert": "Tyreese",
+        "Peter": "Sudhaunshu",
+        "Countess": "Mekiah",
+        "Ludlow": "Quanta",
+        "Edith": "Enesha",
+        "Touchetts": "Shade",
+        "Mildred": "Clare-Marie",
+        "Lockleigh": "Odean",
+        "Pensil": "Clemence",
+        "Schubert": "Linden",
+        "Ned": "Shakel"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Osmond": "Avyn",
+        "Pippin": "Lashaun",
+        "Brooks'": "Chidera",
+        "Molyneux": "Sevyn",
+        "Rosier": "Jamoni"
+    }
+}

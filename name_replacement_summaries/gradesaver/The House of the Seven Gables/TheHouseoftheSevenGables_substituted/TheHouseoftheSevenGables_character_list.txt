@@ -1,0 +1,48 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "John": 1,
+        "Higginson": 3,
+        "Pyncheons": 4,
+        "Colonel": 5,
+        "Uncle": 7,
+        "Phoebe": 9,
+        "Clifford": 10,
+        "Gentility": 11,
+        "Ned": 12,
+        "Scipio": 14,
+        "Gubbins": 15
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Swinnerton": 2,
+        "Pyncheon": 6,
+        "Venner": 8,
+        "Higgins": 13
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "John": "Baris",
+        "Higginson": "Taje",
+        "Pyncheons": "Kam",
+        "Colonel": "Tatem",
+        "Uncle": "Chancey",
+        "Phoebe": "Abbey-Lee",
+        "Clifford": "Dearl",
+        "Gentility": "Evian",
+        "Ned": "Mentino",
+        "Scipio": "Kache",
+        "Gubbins": "Yuval"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Swinnerton": "Eh",
+        "Pyncheon": "Dae",
+        "Venner": "Casey",
+        "Higgins": "Brae"
+    }
+}

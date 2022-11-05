@@ -1,0 +1,48 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Leon": 0,
+        "Rodolphe": 1,
+        "Heloise": 2,
+        "Monsieur": 4,
+        "Tostes": 6,
+        "Hippolyte": 7,
+        "Hirondelle": 8,
+        "Justin": 9,
+        "Destiny": 10,
+        "Justine": 11,
+        "Viscount": 12,
+        "Hivert": 13,
+        "Binet": 14,
+        "Felicite": 15
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Lheureux": 5
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Leon": "Matadeen",
+        "Rodolphe": "Raechelle",
+        "Heloise": "Genesse",
+        "Monsieur": "Kaylor",
+        "Tostes": "Zaiah",
+        "Hippolyte": "Zayvon",
+        "Hirondelle": "Elisha",
+        "Justin": "Nekhi",
+        "Destiny": "Lafawn",
+        "Justine": "Amilda",
+        "Viscount": "Harley",
+        "Hivert": "Hyun",
+        "Binet": "Ronne",
+        "Felicite": "Jacquese"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Lheureux": "Casy"
+    }
+}

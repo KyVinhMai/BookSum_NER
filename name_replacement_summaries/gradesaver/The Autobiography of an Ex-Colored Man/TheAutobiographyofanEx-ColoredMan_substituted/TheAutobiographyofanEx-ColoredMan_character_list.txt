@@ -1,0 +1,62 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Red": 0,
+        "Shiny": 1,
+        "Chopin": 2,
+        "Uncle": 4,
+        "W.E.B.": 6,
+        "Zoe": 8,
+        "Goellnicht": 10,
+        "Beethoven": 11,
+        "Du": 13,
+        "Mendelssohn": 15,
+        "Pfeiffer": 16,
+        "John": 17,
+        "Singing": 19,
+        "Neil": 21
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Tom": 5,
+        "Bois": 7,
+        "Trodd": 9,
+        "DuBois": 12,
+        "Remus": 14,
+        "Brown": 18,
+        "Johnson": 20,
+        "Brooks": 22
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Red": "Cayle",
+        "Shiny": "Ricki",
+        "Chopin": "Amori",
+        "Uncle": "Donnelle",
+        "W.E.B.": "Mishawn",
+        "Zoe": "Bryda",
+        "Goellnicht": "Maxie",
+        "Beethoven": "Blair",
+        "Du": "Callaway",
+        "Mendelssohn": "Ramey",
+        "Pfeiffer": "Siah",
+        "John": "Gulam",
+        "Singing": "Sher",
+        "Neil": "Prodromos"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Tom": "Clate",
+        "Bois": "Alexandr",
+        "Trodd": "Makell",
+        "DuBois": "Campbell",
+        "Remus": "Pecho",
+        "Brown": "Rease",
+        "Johnson": "Tyreion",
+        "Brooks": "Pradyumna"
+    }
+}

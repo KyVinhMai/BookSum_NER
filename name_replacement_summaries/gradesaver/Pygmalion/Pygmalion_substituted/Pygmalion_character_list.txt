@@ -1,0 +1,38 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Freddy": 0,
+        "Pickering": 1,
+        "Higgins": 2,
+        "Doolittle": 3,
+        "Eynsford": 4,
+        "H.G.": 6,
+        "Milton": 8,
+        "Erin": 9
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Hill": 5,
+        "Wells": 7
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Freddy": "Harroll",
+        "Pickering": "Jamile",
+        "Higgins": "Rane",
+        "Doolittle": "Marshell",
+        "Eynsford": "Santana",
+        "H.G.": "Jodeci",
+        "Milton": "Moses",
+        "Erin": "Skylur"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Hill": "Schylar",
+        "Wells": "Arden"
+    }
+}

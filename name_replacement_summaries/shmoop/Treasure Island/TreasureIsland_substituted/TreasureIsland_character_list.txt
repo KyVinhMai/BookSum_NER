@@ -1,0 +1,72 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Jim": 0,
+        "Billy": 1,
+        "Flint": 3,
+        "Long": 6,
+        "Smollett": 8,
+        "Dick": 9,
+        "Ben": 11,
+        "O'Brien": 13,
+        "Doctor": 14,
+        "John": 16,
+        "Hunter": 17,
+        "Joyce": 18,
+        "Tom": 20,
+        "Squire": 22,
+        "Bill": 23,
+        "Kidd": 24,
+        "George": 25,
+        "Benbow": 27,
+        "Blind": 28
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bones": 2,
+        "Silver": 7,
+        "Johnson": 10,
+        "Gunn": 12,
+        "Livesey": 15,
+        "Redruth": 21,
+        "Merry": 26,
+        "Pew": 29
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Jim": "Lucke",
+        "Billy": "Darious",
+        "Flint": "Shell",
+        "Long": "Jaidan",
+        "Smollett": "Eudell",
+        "Dick": "Lenyn",
+        "Ben": "Mugagga",
+        "O'Brien": "Karlin",
+        "Doctor": "Cledith",
+        "John": "Humphery",
+        "Hunter": "Marlowe",
+        "Joyce": "Nakirra",
+        "Tom": "Nizam",
+        "Squire": "Lunden",
+        "Bill": "Domanique",
+        "Kidd": "Teegan",
+        "George": "Sayf",
+        "Benbow": "Kaydyn",
+        "Blind": "Landry"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bones": "Reign",
+        "Silver": "Rhowen",
+        "Johnson": "Oussama",
+        "Gunn": "Adilee",
+        "Livesey": "Camari",
+        "Redruth": "Deundra",
+        "Merry": "Peyi",
+        "Pew": "Kodee"
+    }
+}

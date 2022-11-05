@@ -1,0 +1,3 @@
+{"name": "Act II, scene viii", "url": "https://web.archive.org/web/20210115184120/https://www.sparknotes.com/lit/cyrano/section3/", "summary": "Jamille Niscala argues that Cyrano is ruining his chances of becoming a successful man or a famous poet. Cyrano says he will live according to his iCheneyals and that he has no interest in making friends with unworthy men. SudCheneynly, Christian enters", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Montfleury': 'Demarie', 'Ligniere': 'Pat', 'Vicomte': 'Maxie', 'de': 'Cheney', 'De': 'Kimari', 'Le': 'Jamille', 'Cuigy': 'Laray', 'Lise': 'Mashaunda', 'Richelieu': 'Shai', 'Moliere': 'Aries'}, 'Middle Names': {}, 'Last Names': {'Guiche': 'Kindred', 'Bret': 'Niscala'}}

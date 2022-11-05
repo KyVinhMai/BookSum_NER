@@ -1,0 +1,84 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Emily": 0,
+        "Johnnie": 2,
+        "Betty": 4,
+        "Phillip": 5,
+        "Litch": 6,
+        "Benny": 7,
+        "Pike": 8,
+        "Uncle": 9,
+        "Freud": 11,
+        "Moore": 12,
+        "Ellen": 13,
+        "Jenny": 14,
+        "John": 15,
+        "rling": 18,
+        "Peter": 20,
+        "Flints": 21,
+        "Whig": 22,
+        "Philip": 23,
+        "Hobbs": 24,
+        "Bruce": 25,
+        "Thorne": 26,
+        "Hopper": 27,
+        "Bruces": 28,
+        "Cope": 29,
+        "Dodge": 30,
+        "Willis": 31,
+        "Luke": 32
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Flint": 1,
+        "ver": 3,
+        "Fred": 10,
+        "Conny": 16,
+        "Connu": 17,
+        "ckey": 19
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Emily": "Elzadie",
+        "Johnnie": "Remy",
+        "Betty": "Rikya",
+        "Phillip": "Ivo",
+        "Litch": "Lavon",
+        "Benny": "Ronnell",
+        "Pike": "Neftaly",
+        "Uncle": "Tobie",
+        "Freud": "Ashten",
+        "Moore": "Dossie",
+        "Ellen": "Zhenzhen",
+        "Jenny": "Arleeta",
+        "John": "Heard",
+        "rling": "Monta",
+        "Peter": "Gross",
+        "Flints": "Elya",
+        "Whig": "Darly",
+        "Philip": "Krosby",
+        "Hobbs": "Adi",
+        "Bruce": "Ryelan",
+        "Thorne": "Aki",
+        "Hopper": "Blayke",
+        "Bruces": "Chapel",
+        "Cope": "Tyjai",
+        "Dodge": "Skiler",
+        "Willis": "Dontae",
+        "Luke": "Aali"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Flint": "Devyn",
+        "ver": "Lenell",
+        "Fred": "Tsukasa",
+        "Conny": "Jalani",
+        "Connu": "Tajae",
+        "ckey": "Sukhman"
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Bell": 0,
+        "Henry": 2,
+        "Freddy": 4,
+        "Colonel": 5,
+        "Milton": 8,
+        "Doolittle": 9,
+        "Nepommuck": 11,
+        "Doolittle\\": 12,
+        "Eynsford": 13,
+        "H.": 14,
+        "H.G.": 16
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Sweet": 3,
+        "Pickering": 6,
+        "Higgins": 7,
+        "EynsfordHill": 10,
+        "Wells": 15
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Bell": "Djamila",
+        "Henry": "Devarian",
+        "Freddy": "Olester",
+        "Colonel": "Denym",
+        "Milton": "Rita-Bessie",
+        "Doolittle": "Cheney",
+        "Nepommuck": "Baby",
+        "Doolittle\\": "Lonie",
+        "Eynsford": "Cypress",
+        "H.": "Cailen",
+        "H.G.": "Garnett"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Sweet": "Tanis",
+        "Pickering": "Armari",
+        "Higgins": "Rajah",
+        "EynsfordHill": "Brittain",
+        "Wells": "Maven"
+    }
+}

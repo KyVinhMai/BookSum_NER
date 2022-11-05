@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from argparse import Namespace
-import char_dict
+import character_list_generator
 from tqdm import tqdm
 import spacy
 spacy.require_gpu()
@@ -12,15 +12,14 @@ nlp = spacy.load("en_core_web_trf", exclude = ["tagger", "parser", "lemmatizer"]
 print("INFO: SpaCy successfully initiated")
 #todo add gpu accelarator and tqdm
 
-
 """
 NOTE:
 -----------------------------------------------------------------------------------
 This script works by placing the substituted summaries within the book folder.
 
-It CANNOT work without the original texts, as SpaCy will reference the original
-placement of characters in the text in order to replace the string for generating
-substitutions or performing modifications.
+It CANNOT work without the original texts, as character_list_generator.py will 
+reference and align with the original placement of characters 
+in the text in order to replace the string for doing substitutions.
 ------------------------------------------------------------------------------------
 """
 
@@ -106,7 +105,7 @@ def parse_summaries(book: Path, sub_folder_path: Path, rand_ch_dict: Path):
         write_file_sub(filepath, summary, rand_ch_dict)
 
 def parse_corpus(corpus_path: Path) -> None:
-    "Parses through each website, and then each book folder in the BookSum Dataset"
+    "Parses through each website directory, and then in each book folder in the dataset, create the folder for subsituted books"
 
     for website in corpus_path.iterdir(): #i.e. Shmoop, Sparknotes
         for book in tqdm(list(website.iterdir()), desc = "Books list", unit = "Amount of books"): # i.e. Hamlet, Frankenstein
@@ -114,12 +113,12 @@ def parse_corpus(corpus_path: Path) -> None:
 
             sub_folder_path = create_subdirectory(book) # Create the subfolder
 
-            character_file = char_dict.Universal_Character_list(book, sub_folder_path, male_names, female_names, neutral_names) #Create the character list
+            character_file = character_list_generator.Universal_Character_list(book, sub_folder_path, male_names, female_names, neutral_names) #Create the character list
             character_file_path = character_file.generate_file()
-            with open(character_file_path, "r") as f: #todo streamline this lines of code
+            with open(character_file_path, "r") as f:
                 character_list = f.read()
 
-            _, random = character_list.split("\n\n\n") #todo tidy up this olympics shit
+            _, random = character_list.split("\n\n\n")
 
             parse_summaries(book, sub_folder_path, random)  # Write to file
 

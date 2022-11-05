@@ -1,0 +1,20 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Rossillion": 0,
+        "Widow": 1
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Rossillion": "Aeon",
+        "Widow": "Zohar"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

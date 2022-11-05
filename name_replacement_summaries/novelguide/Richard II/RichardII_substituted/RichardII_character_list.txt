@@ -1,0 +1,58 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Henry": 0,
+        "Norfolk": 2,
+        "Gloucester": 3,
+        "Scroope": 4,
+        "Bushy": 5,
+        "Greene": 6,
+        "York": 7,
+        "Percy": 8,
+        "Bolingbroke\\": 9,
+        "Exton": 12,
+        "Holinshed": 13,
+        "John": 14,
+        "Ross": 15,
+        "Willoughby": 16,
+        "Worcester": 17,
+        "Berkeley": 18,
+        "Glendor": 19
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bolingbroke": 1,
+        "IV.": 10,
+        "IV": 11
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Henry": "Ayin",
+        "Norfolk": "Aeon",
+        "Gloucester": "Kary",
+        "Scroope": "Donyel",
+        "Bushy": "Dilyn",
+        "Greene": "Sopheap",
+        "York": "Lemark",
+        "Percy": "Nishchay",
+        "Bolingbroke\\": "Stephane",
+        "Exton": "Mayan",
+        "Holinshed": "Chai",
+        "John": "Haim",
+        "Ross": "Mirsab",
+        "Willoughby": "Rael",
+        "Worcester": "Mikah",
+        "Berkeley": "Jermany",
+        "Glendor": "Scotland"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bolingbroke": "Waverly",
+        "IV.": "Audi",
+        "IV": "Callahan"
+    }
+}

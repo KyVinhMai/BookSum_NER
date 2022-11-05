@@ -1,0 +1,34 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Sibyl": 2,
+        "Wilde": 3,
+        "Fermor": 4,
+        "Lord": 5,
+        "Victor": 7,
+        "Monmouth": 8
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Wotton": 1,
+        "Henry": 6
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Sibyl": "Anatolia",
+        "Wilde": "Artie",
+        "Fermor": "Gillie",
+        "Lord": "Ellery",
+        "Victor": "Tahaj",
+        "Monmouth": "Kairee"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Wotton": "Le",
+        "Henry": "Sage"
+    }
+}

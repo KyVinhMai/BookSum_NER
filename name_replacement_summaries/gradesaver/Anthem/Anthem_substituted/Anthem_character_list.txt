@@ -1,0 +1,32 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Nietzsche": 0,
+        "John": 1,
+        "Eve": 3,
+        "Councils": 4,
+        "Liberty": 5,
+        "53000": 6
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Locke": 2
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Nietzsche": "Larkin",
+        "John": "Un-Named",
+        "Eve": "Tarunnam",
+        "Councils": "Kamdyn",
+        "Liberty": "Marhaba",
+        "53000": "Jaki"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Locke": "Eh"
+    }
+}

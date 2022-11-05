@@ -1,0 +1,42 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Thorpes": 0,
+        "Tilneys": 1,
+        "Henry": 2,
+        "John": 4,
+        "Frederick": 7,
+        "something": 8,
+        "Woodston": 9,
+        "George": 10,
+        "Udolpho": 11,
+        "Pump": 12
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Tilney": 3,
+        "Thorpe": 6
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Thorpes": "Jaidan",
+        "Tilneys": "Lenzie",
+        "Henry": "Kaan",
+        "John": "Lotus",
+        "Frederick": "Fathi",
+        "something": "Aalijah",
+        "Woodston": "Khanh",
+        "George": "Rahmel",
+        "Udolpho": "Sage",
+        "Pump": "Ocie"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Tilney": "Shawndell",
+        "Thorpe": "Monti"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Hester": 0,
+        "Roger": 2,
+        "John": 5,
+        "Devil": 8,
+        "Wilson": 9,
+        "Mistress": 10,
+        "Winthrop": 12
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Prynne": 1,
+        "Chillingworth": 3,
+        "Pue": 6,
+        "Hibbins": 11
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Hester": "Symphanie",
+        "Roger": "Chalino",
+        "John": "Lixandro",
+        "Devil": "Jammie",
+        "Wilson": "Christensen",
+        "Mistress": "Jaree",
+        "Winthrop": "Toy"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Prynne": "Yardley",
+        "Chillingworth": "Wallis",
+        "Pue": "Devyn",
+        "Hibbins": "Kele"
+    }
+}

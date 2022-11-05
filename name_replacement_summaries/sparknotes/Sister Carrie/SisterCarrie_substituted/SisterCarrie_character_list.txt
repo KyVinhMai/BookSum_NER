@@ -1,0 +1,34 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "George": 0,
+        "Dreiser": 2,
+        "Drouet": 3,
+        "Minnie": 4,
+        "Moy": 5,
+        "Wheeler": 7
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Hurstwood": 1,
+        "Jr.": 6
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "George": "Masayoshi",
+        "Dreiser": "Linn",
+        "Drouet": "Raylen",
+        "Minnie": "Karington",
+        "Moy": "Kerry",
+        "Wheeler": "Rivers"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Hurstwood": "Altair",
+        "Jr.": "Rossi"
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Dmitri": 0,
+        "Fyodor": 1,
+        "Grigory": 2,
+        "Lise": 3,
+        "Snegiryov": 4,
+        "Snegiryovs": 5,
+        "Isidore": 7,
+        "von": 8,
+        "Pyotr": 10,
+        "Vorokhov": 11,
+        "Yefim": 12,
+        "Iosif": 14,
+        "Job": 15,
+        "Obdorsk": 16,
+        "Jesus": 17,
+        "Gorstkin": 18,
+        "Ilyinskoye": 19,
+        "Mokroye": 20,
+        "Plotnikov": 22,
+        "Trifon": 24,
+        "Morozov": 26,
+        "Kirillovich": 28,
+        "Smurov": 29,
+        "Perezvon": 30,
+        "Diderot": 31,
+        "Hoff": 32,
+        "Fetyukovich": 33,
+        "Herzenstube": 35
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Sohn": 9,
+        "Polenov": 13,
+        "Perkhotin": 21,
+        "Miusov": 23,
+        "Borisich": 25,
+        "Borisivetch": 27,
+        "Borisovich": 34
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Dmitri": "Traig",
+        "Fyodor": "Guenter",
+        "Grigory": "Brinden",
+        "Lise": "Saroja",
+        "Snegiryov": "Deshay",
+        "Snegiryovs": "Lyan",
+        "Isidore": "Stevieray",
+        "von": "Rennie",
+        "Pyotr": "Kieran",
+        "Vorokhov": "Eliyah",
+        "Yefim": "Tai",
+        "Iosif": "Zayl",
+        "Job": "Ziel",
+        "Obdorsk": "Gillie",
+        "Jesus": "Jessie",
+        "Gorstkin": "Chandlar",
+        "Ilyinskoye": "Kimari",
+        "Mokroye": "Schyler",
+        "Plotnikov": "Cledith",
+        "Trifon": "Lovell",
+        "Morozov": "Verdell",
+        "Kirillovich": "Declyn",
+        "Smurov": "Kodee",
+        "Perezvon": "Devyn",
+        "Diderot": "Averey",
+        "Hoff": "Posey",
+        "Fetyukovich": "Cledith",
+        "Herzenstube": "Donne"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Sohn": "Skylan",
+        "Polenov": "Oriel",
+        "Perkhotin": "Manpreet",
+        "Miusov": "Royale",
+        "Borisich": "Taite",
+        "Borisivetch": "Brookes",
+        "Borisovich": "Deavion"
+    }
+}

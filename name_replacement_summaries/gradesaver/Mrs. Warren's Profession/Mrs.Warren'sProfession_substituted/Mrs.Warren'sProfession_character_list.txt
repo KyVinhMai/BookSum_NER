@@ -1,0 +1,32 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Vivie": 0,
+        "George": 1,
+        "Vive": 3,
+        "Lizzie": 4,
+        "Bessie": 5,
+        "Croft": 6
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Crofts": 2
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Vivie": "Aalijah",
+        "George": "Shengxuan",
+        "Vive": "Logyn",
+        "Lizzie": "Charnissa",
+        "Bessie": "Minerba",
+        "Croft": "Dominque"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Crofts": "Kaedyn"
+    }
+}

@@ -1,0 +1,3 @@
+{"name": "A Tale of Two Cities", "summary": "", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Dickens': 'Lamari', 'George': 'Ratko', 'Louis': 'Maxie', 'Luce': 'Ricci', 'Lucie': 'Margaretmary', 'yver': 'Lavern', 'Lorry': 'Jaspreet', 'Roger': 'Ja-Rule', 'Young': 'Harley', 'Revolution': 'Domnique', 'Doctor': 'Tahje', 'Foulon': 'Maciah', 'Jerry': 'Rovin', 'Solomon': 'Tazeem', 'M.': 'Ronit', 'Tellson': 'Jacquise', 'Judge': 'Paycee'}, 'Middle Names': {}, 'Last Names': {'III': 'Dallis', 'XVI': 'Tagan', 'Cruncher': 'Cire', 'Cly': 'Tahje', 'Jerry': 'Ittai', 'Evremonde': 'Matisse', 'Pross': 'Yanis'}}

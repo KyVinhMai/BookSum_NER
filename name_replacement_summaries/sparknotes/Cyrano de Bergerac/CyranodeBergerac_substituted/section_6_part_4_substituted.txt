@@ -1,0 +1,3 @@
+{"name": "Act V, scene iv", "url": "https://web.archive.org/web/20210115184120/https://www.sparknotes.com/lit/cyrano/section7/", "summary": "After they leave, Roxane reemerges and sits down beneath an autumn tree to sew. A nun announces Cyrano's arrival", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Montfleury': 'Demarie', 'Ligniere': 'Pat', 'Vicomte': 'Maxie', 'de': 'Cheney', 'De': 'Kimari', 'Le': 'Jamille', 'Cuigy': 'Laray', 'Lise': 'Mashaunda', 'Richelieu': 'Shai', 'Moliere': 'Aries'}, 'Middle Names': {}, 'Last Names': {'Guiche': 'Kindred', 'Bret': 'Niscala'}}

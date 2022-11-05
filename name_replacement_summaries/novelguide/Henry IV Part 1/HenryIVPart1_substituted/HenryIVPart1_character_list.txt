@@ -1,0 +1,76 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Henry": 0,
+        "Owen": 2,
+        "Hotspur": 6,
+        "Worcester": 7,
+        "Vernon": 9,
+        "Blunt": 11,
+        "Bolingbroke": 12,
+        "Percys": 13,
+        "Gloucester": 14,
+        "Scroop": 15,
+        "Prince": 16,
+        "Edmund": 19,
+        "Poins": 21,
+        "Peto": 22,
+        "Mistress": 23,
+        "Quickly": 24,
+        "Bolingbroke.?Hotspur": 26,
+        "GLENDOWER": 27,
+        "HOTSPUR": 28,
+        "HotspurHotspur": 29,
+        "York": 30
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "IV": 1,
+        "Glendower": 3,
+        "Percy": 5,
+        "V": 10,
+        "John": 17,
+        ".": 18,
+        "Mortimer": 20,
+        "V.": 25
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Henry": "Dan-Roger",
+        "Owen": "Regina",
+        "Hotspur": "Keatyn",
+        "Worcester": "Avory",
+        "Vernon": "Doriano",
+        "Blunt": "Ji",
+        "Bolingbroke": "Braelin",
+        "Percys": "Jaydyn",
+        "Gloucester": "Lorren",
+        "Scroop": "Mishawn",
+        "Prince": "Matthew-Daniel",
+        "Edmund": "Lajus",
+        "Poins": "Phenix",
+        "Peto": "Deshay",
+        "Mistress": "Jammie",
+        "Quickly": "Eaden",
+        "Bolingbroke.?Hotspur": "Kymari",
+        "GLENDOWER": "Shalin",
+        "HOTSPUR": "Kendel",
+        "HotspurHotspur": "Pat",
+        "York": "Chandki"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "IV": "Brighten",
+        "Glendower": "Eneo",
+        "Percy": "Lunar",
+        "V": "Lian",
+        "John": "Abdurrehman",
+        ".": "De",
+        "Mortimer": "Bevann",
+        "V.": "Berkeley"
+    }
+}

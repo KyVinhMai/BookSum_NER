@@ -1,0 +1,80 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Mingotts": 0,
+        "Ellen": 1,
+        "Thorley": 2,
+        "Mingott": 3,
+        "Rushworth": 4,
+        "Lovell": 5,
+        "Ellen1s": 6,
+        "Leffertses": 7,
+        "Ned": 8,
+        "Duke": 10,
+        "Luydens1": 11,
+        "Gertrude1s": 12,
+        "Chiverses": 13,
+        "Olenski1s": 15,
+        "Mingott1s": 16,
+        "Scorcese": 17,
+        "Blenkers": 18,
+        "Blenkers1": 19,
+        "Blenker": 20,
+        "Blenker1s": 21,
+        "Cupid": 22,
+        "M.": 23,
+        "Olenski": 25,
+        "Lefferts": 26,
+        "Gorgon": 27,
+        "Elen": 28,
+        "Reggie": 29
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Winsett": 9,
+        "Rushmore": 14,
+        "Riviere": 24,
+        "dullest": 30
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Mingotts": "Kitt",
+        "Ellen": "Emma-Leigh",
+        "Thorley": "Elim",
+        "Mingott": "Eldean",
+        "Rushworth": "Tajae",
+        "Lovell": "Marlowe",
+        "Ellen1s": "Onnie",
+        "Leffertses": "Feliz",
+        "Ned": "Crishaun",
+        "Duke": "Palo",
+        "Luydens1": "Gal",
+        "Gertrude1s": "Hyun",
+        "Chiverses": "Elya",
+        "Olenski1s": "Rudi",
+        "Mingott1s": "Min",
+        "Scorcese": "Coren",
+        "Blenkers": "Aly",
+        "Blenkers1": "Maysen",
+        "Blenker": "Jayln",
+        "Blenker1s": "Rilley",
+        "Cupid": "Michal",
+        "M.": "Jahdai",
+        "Olenski": "Mishawn",
+        "Lefferts": "Lonie",
+        "Gorgon": "Yu",
+        "Elen": "Phillistine",
+        "Reggie": "Kanisk"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Winsett": "Michiah",
+        "Rushmore": "Staley",
+        "Riviere": "Cyncere",
+        "dullest": "Tobie"
+    }
+}

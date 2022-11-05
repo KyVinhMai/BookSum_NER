@@ -1,0 +1,50 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Sophie": 0,
+        "Deryn": 1,
+        "Otto": 2,
+        "Volger": 4,
+        "Rigby": 5,
+        "Newkirk": 6,
+        "Fitzroy": 7,
+        "Hobbes": 8,
+        "Busk": 9,
+        "Cook": 10,
+        "Hirst": 11,
+        "Huxley": 12,
+        "Winston": 13,
+        "Shmoopsters": 15
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Klopp": 3,
+        "Churchill": 14
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Sophie": "Waelynn",
+        "Deryn": "Mckynziie",
+        "Otto": "Edwidge",
+        "Volger": "Divine",
+        "Rigby": "Jalani",
+        "Newkirk": "Jasmond",
+        "Fitzroy": "Michiah",
+        "Hobbes": "Climmie",
+        "Busk": "Giavonni",
+        "Cook": "Wallis",
+        "Hirst": "Ary",
+        "Huxley": "Brenn",
+        "Winston": "Nehimiah",
+        "Shmoopsters": "Ryley"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Klopp": "Bergen",
+        "Churchill": "Zaiah"
+    }
+}

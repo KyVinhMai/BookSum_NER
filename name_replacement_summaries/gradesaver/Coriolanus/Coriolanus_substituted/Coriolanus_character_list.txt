@@ -1,0 +1,34 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Menenius": 0,
+        "Brutus": 1,
+        "Sicinius": 2,
+        "Hector": 3,
+        "Penelope": 4,
+        "Tullus": 5,
+        "Cominius": 6,
+        "Jupiter": 7,
+        "Hercules": 8
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Menenius": "Gal",
+        "Brutus": "Samm-Anthony",
+        "Sicinius": "Taje",
+        "Hector": "Travez",
+        "Penelope": "Kalysi",
+        "Tullus": "Arieon",
+        "Cominius": "Lakoda",
+        "Jupiter": "Claudie",
+        "Hercules": "Lorrin"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

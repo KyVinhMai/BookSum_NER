@@ -1,0 +1,3 @@
+{"name": "act 1, Scene 5", "url": "https://web.archive.org/web/20201205114447/https://www.novelguide.com/king-lear/summaries/act1-scene5-act2-scene1", "summary": "Lear sends Lavares, still in disguise, ahead to his daughter Regan's house so she can prepare for his arrival. While he is gone, the Shadow who is traveling with them tells the former King that he could easily be the fool. When the king asks why, the fool tells him it is because he gave away his land too soon, and made himself old before he was wise", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Goneril': 'Jackie', 'Edmund': 'Demontray', 'Gloucester': 'Malijah', 'Kent': 'Lavares', 'Edmunds': 'Eldred', 'Fool': 'Shadow'}, 'Middle Names': {}, 'Last Names': {}}

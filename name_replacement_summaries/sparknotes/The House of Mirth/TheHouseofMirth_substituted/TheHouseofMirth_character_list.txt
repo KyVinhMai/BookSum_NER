@@ -1,0 +1,80 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lily": 0,
+        "Peniston": 1,
+        "Gus": 2,
+        "Judy": 3,
+        "George": 5,
+        "Ned": 6,
+        "Selden": 8,
+        "Percy": 9,
+        "Elinor": 12,
+        "Foster": 13,
+        "Trenors": 15,
+        "Dorsets": 16,
+        "Herbert": 17,
+        "Winton": 19,
+        "Bellomont": 20,
+        "pney": 21,
+        "Hubert": 22,
+        "T.S.": 23,
+        "Bry": 24,
+        "Brys": 25,
+        "Benedick": 26,
+        "Gerty": 27,
+        "Gormers": 28,
+        "Gormer": 29,
+        "Nettie": 30
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Trenor": 4,
+        "Silverton": 7,
+        "Gryce": 10,
+        "Eliot": 11,
+        "Dorset": 14,
+        "Melson": 18
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lily": "Phebie",
+        "Peniston": "Osie",
+        "Gus": "Adisan",
+        "Judy": "Anselma",
+        "George": "Special",
+        "Ned": "Tajay",
+        "Selden": "Haedyn",
+        "Percy": "Regenald",
+        "Elinor": "Brieona",
+        "Foster": "Domonico",
+        "Trenors": "Leverne",
+        "Dorsets": "Tagan",
+        "Herbert": "Carell",
+        "Winton": "Camauri",
+        "Bellomont": "Jayel",
+        "pney": "Elisha",
+        "Hubert": "Latonia",
+        "T.S.": "Moe",
+        "Bry": "Jemiah",
+        "Brys": "Aundra",
+        "Benedick": "Danyl",
+        "Gerty": "Jonesha",
+        "Gormers": "Lorenza",
+        "Gormer": "Kairee",
+        "Nettie": "Timeko"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Trenor": "Kemani",
+        "Silverton": "Nieves",
+        "Gryce": "Nike",
+        "Eliot": "Saajid",
+        "Dorset": "Divine",
+        "Melson": "Michiah"
+    }
+}

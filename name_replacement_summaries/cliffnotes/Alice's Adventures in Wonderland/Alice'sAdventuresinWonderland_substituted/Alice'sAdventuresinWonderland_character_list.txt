@@ -1,0 +1,50 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Bill": 0,
+        "Dormouse": 1,
+        "Duchess": 2,
+        "Gryphon": 3,
+        "Freud": 4,
+        "John": 5,
+        "Henri": 7,
+        "Mouse": 9,
+        "Lory": 10,
+        "Dodo": 11,
+        "Frog": 12,
+        "Time": 13,
+        "Clubs": 14,
+        "Cook": 15
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Tenniel": 6,
+        "Bergson": 8
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Bill": "Etan",
+        "Dormouse": "Kellis",
+        "Duchess": "Lyrik",
+        "Gryphon": "Kaylon",
+        "Freud": "Wai",
+        "John": "Waaris",
+        "Henri": "Rhylan",
+        "Mouse": "Tru",
+        "Lory": "Danahe",
+        "Dodo": "Gurpreet",
+        "Frog": "Hien",
+        "Time": "Salem",
+        "Clubs": "Nike",
+        "Cook": "Han"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Tenniel": "Lorrin",
+        "Bergson": "Armani"
+    }
+}

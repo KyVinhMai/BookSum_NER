@@ -1,0 +1,56 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Cuthberts": 0,
+        "Shirley": 1,
+        "Josephine": 2,
+        "Gilbert": 3,
+        "Sherlock": 4,
+        "Lynde": 6,
+        "Bell": 7,
+        "Phillips": 8,
+        "Gil": 9,
+        "Spencer": 10,
+        "Josie": 11,
+        "Ruby": 13,
+        "Tennyson": 15,
+        "Guinevere": 16,
+        "BenHur": 17,
+        "Blewett": 18
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Holmes": 5,
+        "Pye": 12,
+        "Gillis": 14
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Cuthberts": "Kamani",
+        "Shirley": "Dana",
+        "Josephine": "Khaleesia",
+        "Gilbert": "Dashad",
+        "Sherlock": "Aijalon",
+        "Lynde": "Monti",
+        "Bell": "Kumarasinghe",
+        "Phillips": "Aziah",
+        "Gil": "Lexon",
+        "Spencer": "Devindar",
+        "Josie": "Karina",
+        "Ruby": "Sjaida",
+        "Tennyson": "Pheonix",
+        "Guinevere": "Jenina",
+        "BenHur": "Phoenix",
+        "Blewett": "Shyler"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Holmes": "March",
+        "Pye": "Mishawn",
+        "Gillis": "Matheau"
+    }
+}

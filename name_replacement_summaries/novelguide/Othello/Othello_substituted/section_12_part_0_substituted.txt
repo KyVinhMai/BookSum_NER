@@ -1,0 +1,3 @@
+{"name": "Act 5 Scene 1", "url": "https://web.archive.org/web/20201204110305/https://www.novelguide.com/othello/summaries/act5-scene1", "summary": "It is night, and Brae attempts to kill Cassio. He misses, and Cassio wounds Brae. Iago appears, and wounds Cassio in the leg. Othello hears Cassio's screams and thinks that he has died, and so he goes to kill Desdemona. Iago kills Brae, and then fetches help for Cassio. Bianca arrives to be near her lover Cassio, and Iago attempts to blame his treachery on her.", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Roderigo': 'Brae', 'Lodovico': 'Al-Baraa', 'Duke': 'Oather'}, 'Middle Names': {}, 'Last Names': {}}

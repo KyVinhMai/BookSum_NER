@@ -1,0 +1,74 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Bennet": 0,
+        "Bennets": 1,
+        "Bingley": 2,
+        "Kitty": 3,
+        "Meryton": 4,
+        "George": 5,
+        "Bennett": 7,
+        "Longbourn": 8,
+        "Phillips": 9,
+        "Collins": 10,
+        "de": 11,
+        "Philips": 13,
+        "Bingleys": 14,
+        "Hurst": 15,
+        "Denny": 16,
+        "Rosings": 17,
+        "Jenkinson": 19,
+        "Collinses": 20,
+        "Hunsford": 21,
+        "Forster": 22,
+        "Reynolds": 23,
+        "Pemberley": 24,
+        "Forsters": 25,
+        "Brighton": 26,
+        "Younge": 27
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Lewes": 6,
+        "Bourgh": 12,
+        "Bough": 18
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Bennet": "Dawens",
+        "Bennets": "Alpha",
+        "Bingley": "Zaelyn",
+        "Kitty": "Latawn",
+        "Meryton": "Ashtin",
+        "George": "Lynnette",
+        "Bennett": "Marcuz",
+        "Longbourn": "Khanh",
+        "Phillips": "Ivory",
+        "Collins": "Davonne",
+        "de": "Blaike",
+        "Philips": "Cire",
+        "Bingleys": "Ellison",
+        "Hurst": "Jodey",
+        "Denny": "Chevvy",
+        "Rosings": "Sky",
+        "Jenkinson": "Brighten",
+        "Collinses": "Deshay",
+        "Hunsford": "Jae",
+        "Forster": "Eh",
+        "Reynolds": "Almer",
+        "Pemberley": "Kamari",
+        "Forsters": "Oluwademilade",
+        "Brighton": "Samar",
+        "Younge": "Marquette"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Lewes": "Kareen",
+        "Bourgh": "Rajah",
+        "Bough": "Kayde"
+    }
+}

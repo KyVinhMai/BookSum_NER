@@ -1,0 +1,36 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Berowne": 0,
+        "Moth": 1,
+        "Dull": 2,
+        "Boyet": 3,
+        "Holofernes": 4,
+        "Princess": 5,
+        "Hercules": 6,
+        "Forester": 7,
+        "Pompey": 8,
+        "Hector": 9
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Berowne": "Yuval",
+        "Moth": "Zohar",
+        "Dull": "Gaynor",
+        "Boyet": "Shell",
+        "Holofernes": "Raeden",
+        "Princess": "Jabrina",
+        "Hercules": "Blair",
+        "Forester": "Kehinde",
+        "Pompey": "Leotha",
+        "Hector": "Delron"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

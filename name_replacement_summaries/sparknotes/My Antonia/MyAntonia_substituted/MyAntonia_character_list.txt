@@ -1,0 +1,54 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Jim": 0,
+        "Burdens": 2,
+        "Otto": 3,
+        "Peter": 5,
+        "Virgil": 6,
+        "Irene": 7,
+        "Wick": 9,
+        "Jesus": 11,
+        "Jelinek": 12,
+        "Ole": 13,
+        "Cutters": 15,
+        "Cleric": 16,
+        "Tiny": 17
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Burden": 1,
+        "Fuchs": 4,
+        "Miner\\": 8,
+        "Cutter": 10,
+        "Benson": 14
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Jim": "Shaunn",
+        "Burdens": "Kris",
+        "Otto": "Miroslav",
+        "Peter": "Vanness",
+        "Virgil": "Omen",
+        "Irene": "Cenedra",
+        "Wick": "Chayanne",
+        "Jesus": "Kelechi",
+        "Jelinek": "Riyan",
+        "Ole": "Qadree",
+        "Cutters": "Cledith",
+        "Cleric": "Sehaj",
+        "Tiny": "Teronica"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Burden": "Eh",
+        "Fuchs": "Marvis",
+        "Miner\\": "Erian",
+        "Cutter": "Rorey",
+        "Benson": "Deone"
+    }
+}

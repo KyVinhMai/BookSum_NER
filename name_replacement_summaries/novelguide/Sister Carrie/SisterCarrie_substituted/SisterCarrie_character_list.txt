@@ -1,0 +1,32 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Minnie": 0,
+        "Drouet": 1,
+        "Moy": 2,
+        "Hurstwood": 3,
+        "George": 4,
+        "Dreiser": 5,
+        "Murdock": 6,
+        "Wheeler": 7
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Minnie": "Avarnhi",
+        "Drouet": "Yuval",
+        "Moy": "Larkin",
+        "Hurstwood": "Adisa",
+        "George": "Oleksa",
+        "Dreiser": "Lennie",
+        "Murdock": "Deniz",
+        "Wheeler": "Yee"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

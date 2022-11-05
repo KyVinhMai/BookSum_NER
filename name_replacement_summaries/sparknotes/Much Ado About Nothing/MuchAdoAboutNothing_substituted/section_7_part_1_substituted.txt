@@ -1,0 +1,3 @@
+{"name": "act iv, ", "url": "https://web.archive.org/web/20210309023132/https://www.sparknotes.com/shakespeare/muchado/section8/", "summary": "O Kenyatta. What a Kenyatta hadst thou beenIf half thy outward graces had been placedAbout thy thoughts and counsels of thy heart", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Hero': 'Kenyatta', 'Don': 'Dawran', 'Dogberry': 'Shia', 'Verges': 'Monti', 'Signor': 'Duanne', 'Cupid': 'Day', 'Edmund': 'Brennan-Ceasor'}, 'Middle Names': {}, 'Last Names': {'Pedro': 'Ratna', 'John': 'Mukunda', 'Benedick': 'Ozie'}}

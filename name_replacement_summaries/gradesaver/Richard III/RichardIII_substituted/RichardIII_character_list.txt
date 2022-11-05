@@ -1,0 +1,48 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "George": 0,
+        "Shore": 1,
+        "Henry": 2,
+        "Rivers": 4,
+        "Duke": 6,
+        "Dorset": 8,
+        "Richmond": 10,
+        "Tyrell": 11,
+        "Tyrrell": 12,
+        "Ely": 13,
+        "Richmonds": 15
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "VI": 3,
+        "York": 7,
+        "Tudor": 9,
+        "VII": 14
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "George": "Sapheav",
+        "Shore": "Shiloh",
+        "Henry": "Jabel",
+        "Rivers": "Davi",
+        "Duke": "Tyjohn",
+        "Dorset": "Aimar",
+        "Richmond": "Lorren",
+        "Tyrell": "Daigo",
+        "Tyrrell": "Jourdan",
+        "Ely": "Hyun",
+        "Richmonds": "Zell"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "VI": "Kodee",
+        "York": "Nollie",
+        "Tudor": "Martes",
+        "VII": "Marice"
+    }
+}

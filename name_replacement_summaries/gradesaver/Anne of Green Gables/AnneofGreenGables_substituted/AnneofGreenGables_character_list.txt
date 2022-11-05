@@ -1,0 +1,52 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Cuthbert": 0,
+        "Spencer": 1,
+        "L.": 2,
+        "Cuthberts": 4,
+        "Peter": 5,
+        "Lynde": 6,
+        "Gilbert": 7,
+        "Shirley": 8,
+        "Josephine": 9,
+        "Josie": 10,
+        "Bell": 11,
+        "Hope": 12,
+        "Ruby": 13,
+        "Moody": 14,
+        "Billy": 15
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Montgomery": 3,
+        "Pye": 16
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Cuthbert": "Turki",
+        "Spencer": "Dannyel",
+        "L.": "Britt",
+        "Cuthberts": "Brownie",
+        "Peter": "Rangler",
+        "Lynde": "Quanta",
+        "Gilbert": "Surender",
+        "Shirley": "Emme",
+        "Josephine": "Zoah",
+        "Josie": "Kiylah",
+        "Bell": "Innie",
+        "Hope": "Tallyn",
+        "Ruby": "Catherne",
+        "Moody": "Rieley",
+        "Billy": "Rameshwar"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Montgomery": "Rahmin",
+        "Pye": "Rudell"
+    }
+}

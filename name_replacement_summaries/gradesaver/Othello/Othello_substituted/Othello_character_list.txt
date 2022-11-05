@@ -1,0 +1,28 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Roderigo": 0,
+        "Shylock": 1,
+        "Duke": 2,
+        "Polonius": 3,
+        "Feste": 4,
+        "Lodovico": 5
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Roderigo": "Miko",
+        "Shylock": "Eliyah",
+        "Duke": "Lynal",
+        "Polonius": "Eaden",
+        "Feste": "Wai",
+        "Lodovico": "Shanaz"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

@@ -1,0 +1,30 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Gloucester": 0,
+        "Edmund": 1,
+        "Goneril": 2,
+        "Kent": 3,
+        "Burgundy": 4,
+        "Fool": 5,
+        "Tom": 6
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Gloucester": "Caylor",
+        "Edmund": "Erek",
+        "Goneril": "Ermal",
+        "Kent": "Piotr",
+        "Burgundy": "Osiris",
+        "Fool": "Dannell",
+        "Tom": "Satoshi"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Sly": 0,
+        "Lord": 1,
+        "Lucentio": 2,
+        "Petruchio": 3,
+        "Hortensio": 4,
+        "Grumio": 5,
+        "Licio": 6,
+        "Gremio": 7,
+        "Vincentio": 8,
+        "Hostess": 9,
+        "Biondello": 10,
+        "Widow": 11,
+        "Curtis": 12,
+        "Peter": 13
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Sly": "Kem",
+        "Lord": "Leverne",
+        "Lucentio": "Sol",
+        "Petruchio": "Siah",
+        "Hortensio": "Justinthomas",
+        "Grumio": "Vegas",
+        "Licio": "Shrotam",
+        "Gremio": "Skyler",
+        "Vincentio": "Tonnie",
+        "Hostess": "Preet",
+        "Biondello": "Payson",
+        "Widow": "Marshell",
+        "Curtis": "Hosie",
+        "Peter": "Romeo-Vamour"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

@@ -1,0 +1,36 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Menenius": 0,
+        "Junius": 1,
+        "Messenger": 3,
+        "Sicinius": 4,
+        "Cominius": 5,
+        "Penelope": 6,
+        "Homer": 7,
+        "Corioles": 8
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Brutus": 2
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Menenius": "Maitland",
+        "Junius": "Chetan",
+        "Messenger": "Jaidin",
+        "Sicinius": "Garnett",
+        "Cominius": "Kaylor",
+        "Penelope": "Omelia",
+        "Homer": "Stasi",
+        "Corioles": "Lavern"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Brutus": "Raylen"
+    }
+}

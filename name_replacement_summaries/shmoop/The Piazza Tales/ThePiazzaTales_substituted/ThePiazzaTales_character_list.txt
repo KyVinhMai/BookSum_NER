@@ -1,0 +1,64 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Melville": 0,
+        "Don": 3,
+        "Oberlus": 5,
+        "Edmund": 6,
+        "Shmoop": 8,
+        "Felipe": 9,
+        "Truxill": 10,
+        "Spooky": 11,
+        "Shmoopers": 12,
+        "Vincent": 13,
+        "Turkey": 15,
+        "Nippers": 16,
+        "Ginger": 17,
+        "Jose": 19,
+        "Lebe": 20,
+        "Dude": 21,
+        "Cowley": 23
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Cereno": 2,
+        "Benito": 4,
+        "Spenser": 7,
+        "Price": 14,
+        "Nut": 18,
+        "1": 22
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Melville": "Lior",
+        "Don": "Jacin",
+        "Oberlus": "Deundra",
+        "Edmund": "Kanan",
+        "Shmoop": "Kamali",
+        "Felipe": "Thompson",
+        "Truxill": "Casy",
+        "Spooky": "Tommie",
+        "Shmoopers": "Hien",
+        "Vincent": "Ors",
+        "Turkey": "Rhythm",
+        "Nippers": "Nazareth",
+        "Ginger": "Aadvi",
+        "Jose": "Quigley",
+        "Lebe": "Kayler",
+        "Dude": "Kalin",
+        "Cowley": "Jemiah"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Cereno": "Nuri",
+        "Benito": "Scotti",
+        "Spenser": "Eliut",
+        "Price": "Tatsumi",
+        "Nut": "Teegan",
+        "1": "Kache"
+    }
+}

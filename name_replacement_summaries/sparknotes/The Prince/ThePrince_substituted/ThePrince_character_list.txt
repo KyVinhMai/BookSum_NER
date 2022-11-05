@@ -1,0 +1,40 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lorenzo": 0,
+        "Louis": 3,
+        "Julius": 5,
+        "Leo": 7,
+        "Septimius": 9
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Medici": 1,
+        "Medici\\is": 2,
+        "XIV": 4,
+        "II": 6,
+        "X": 8,
+        "Severus": 10
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lorenzo": "Danislav",
+        "Louis": "Bettie",
+        "Julius": "Laronte",
+        "Leo": "Victormanuel",
+        "Septimius": "Rameen"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Medici": "Tarrin",
+        "Medici\\is": "Raedyn",
+        "XIV": "Giani",
+        "II": "Caidyn",
+        "X": "Kairee",
+        "Severus": "Jody"
+    }
+}

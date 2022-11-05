@@ -1,0 +1,28 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Roderigo": 0,
+        "Lodovico": 1,
+        "Moor": 2,
+        "fitchew": 3,
+        "Gertrude": 4,
+        "Hercules": 5
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Roderigo": "Dae",
+        "Lodovico": "Amogh",
+        "Moor": "Lian",
+        "fitchew": "Campbell",
+        "Gertrude": "Rafif",
+        "Hercules": "Deone"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

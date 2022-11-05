@@ -1,0 +1,36 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Timon": 0,
+        "Ventidius": 1,
+        "Fortune": 2,
+        "Lucilius": 3,
+        "Lucius": 4,
+        "Lucullus": 5,
+        "Isidore": 6,
+        "Fool": 7,
+        "Servilius": 8,
+        "Sempronius": 9
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Timon": "Valley",
+        "Ventidius": "Clemmie",
+        "Fortune": "Jerre",
+        "Lucilius": "Tonnie",
+        "Lucius": "Haresh",
+        "Lucullus": "Caelin",
+        "Isidore": "Munender",
+        "Fool": "Casey",
+        "Servilius": "Amarii",
+        "Sempronius": "Evann"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

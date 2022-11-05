@@ -1,0 +1,3 @@
+{"name": "Author's Note", "url": "https://web.archive.org/web/20201024203607/https://www.shmoop.com/study-guides/literature/typee/summary/authors-note", "summary": "Oluwalonimimo sailed for two years after his escape, and after that he wrote and published this account. Only after its publication did he run into Yael, subsequently adding his story to a future edition.", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Melville': 'Payson', 'Tom': 'Oluwalonimi', 'Toby': 'Yael', 'Tommo': 'Tommie', 'KoryKory': 'Ocean', 'Typee': 'Emari', 'Jimmy': 'Lonnie', 'Mehevi': 'Christan', 'Tinor': 'Arleigh', 'Kolory': 'Lian', 'Typees': 'Artie', 'Mehevi\\': 'Ebbie', 'MowMow': 'Davonne'}, 'Middle Names': {}, 'Last Names': {}}

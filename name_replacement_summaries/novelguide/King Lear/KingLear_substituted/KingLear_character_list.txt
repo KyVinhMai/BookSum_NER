@@ -1,0 +1,28 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Goneril": 0,
+        "Edmund": 1,
+        "Gloucester": 2,
+        "Kent": 3,
+        "Edmunds": 4,
+        "Fool": 5
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Goneril": "Jackie",
+        "Edmund": "Demontray",
+        "Gloucester": "Malijah",
+        "Kent": "Lavares",
+        "Edmunds": "Eldred",
+        "Fool": "Shadow"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

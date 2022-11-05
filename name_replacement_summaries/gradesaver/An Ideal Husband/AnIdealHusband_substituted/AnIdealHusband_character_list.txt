@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Robert": 0,
+        "Boucher": 2,
+        "Cheveley": 4,
+        "Lording": 5,
+        "Wilde": 7,
+        "Tommy": 8,
+        "Lord": 9,
+        "Phipps": 10,
+        "Berkshire": 11,
+        "Chilterns": 12,
+        "Gertrude": 13
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Chiltern": 1,
+        "Goring": 6
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Robert": "Brishen",
+        "Boucher": "Cache",
+        "Cheveley": "Happy",
+        "Lording": "Alexy",
+        "Wilde": "Han",
+        "Tommy": "Exodus",
+        "Lord": "Rilley",
+        "Phipps": "Deshay",
+        "Berkshire": "Donyae",
+        "Chilterns": "Tenzin",
+        "Gertrude": "Ashtin"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Chiltern": "Rossi",
+        "Goring": "Mycah"
+    }
+}

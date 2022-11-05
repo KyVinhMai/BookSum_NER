@@ -1,0 +1,3 @@
+{"name": "Macbeth", "summary": "", "analysis": ""}
+
+Randomized Local characters: {'Table_Type': 'Randomized Names', 'First Names': {'Lennox': 'Harlis', 'Ross': 'Cgianluigi', 'Fife': 'Jimi', 'Sweno': 'Mc'}, 'Middle Names': {}, 'Last Names': {}}

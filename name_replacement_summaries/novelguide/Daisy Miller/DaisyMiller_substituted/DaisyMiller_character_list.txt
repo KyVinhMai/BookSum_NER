@@ -1,0 +1,28 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Winterbourne": 0,
+        "Costello": 1,
+        "Eugenio": 2,
+        "Miller": 3,
+        "Millers": 4,
+        "Vevey": 5
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Winterbourne": "Alika",
+        "Costello": "Adrean",
+        "Eugenio": "Javontay",
+        "Miller": "Sonnie",
+        "Millers": "Kimani",
+        "Vevey": "Yi"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

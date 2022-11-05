@@ -1,0 +1,38 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Gregory": 0,
+        "Benvolio": 1,
+        "Romeo": 2,
+        "Juliet": 3,
+        "Peter": 4,
+        "Mercutio": 5,
+        "Nurse": 6,
+        "Jesus": 7,
+        "Juilet": 8,
+        "Petruccio": 9,
+        "John": 10
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Gregory": "Ziv",
+        "Benvolio": "Oluwadamilola",
+        "Romeo": "Zachaeus",
+        "Juliet": "Shaughn",
+        "Peter": "Fadi",
+        "Mercutio": "Marice",
+        "Nurse": "Aijalon",
+        "Jesus": "Liron",
+        "Juilet": "Shell",
+        "Petruccio": "Jadis",
+        "John": "Christophe"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

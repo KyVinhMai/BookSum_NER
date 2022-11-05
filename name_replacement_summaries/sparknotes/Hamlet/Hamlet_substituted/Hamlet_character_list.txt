@@ -1,0 +1,40 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Gertrude": 0,
+        "Guildenstern": 1,
+        "Polonius": 2,
+        "Osric": 3,
+        "Cock": 4,
+        "Yorick": 5,
+        "Cornelius": 6,
+        "Hercules": 7,
+        "Sigmund": 8,
+        "Sophocles": 10
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Freud": 9
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Gertrude": "Pania",
+        "Guildenstern": "Alexandr",
+        "Polonius": "Akili",
+        "Osric": "Shawndell",
+        "Cock": "Zamari",
+        "Yorick": "Conney",
+        "Cornelius": "Surafi",
+        "Hercules": "Cayle",
+        "Sigmund": "Errin",
+        "Sophocles": "Harlyn"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Freud": "Kendel"
+    }
+}

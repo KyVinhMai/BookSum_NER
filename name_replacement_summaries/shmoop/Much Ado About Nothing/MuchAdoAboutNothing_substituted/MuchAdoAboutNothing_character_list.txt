@@ -1,0 +1,46 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Don": 0,
+        "Benedick": 2,
+        "Hero": 4,
+        "Dogberry": 5,
+        "Verges": 6,
+        "Sexton": 7,
+        "Cupid": 8,
+        "Deformed": 9,
+        "Troilus": 10,
+        "Eve": 11,
+        "Benedick\\": 13
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Pedro": 1,
+        "John": 3,
+        "Co.": 12
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Don": "Tip",
+        "Benedick": "Ocie",
+        "Hero": "Lemel",
+        "Dogberry": "Kimari",
+        "Verges": "Torre",
+        "Sexton": "Armani",
+        "Cupid": "Damarie",
+        "Deformed": "Nazareth",
+        "Troilus": "Donyel",
+        "Eve": "Jacoba",
+        "Benedick\\": "Deniz"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Pedro": "Blake-Stephen",
+        "John": "Jashod",
+        "Co.": "Tru"
+    }
+}

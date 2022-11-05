@@ -1,0 +1,44 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Victor": 0,
+        "Justine": 1,
+        "Henry": 2,
+        "Lord": 4,
+        "Shelleys": 6,
+        "Percy": 7,
+        "Felix": 9,
+        "Monster": 10,
+        "Kirwin": 11,
+        "M.": 12
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Byron": 5,
+        "Shelley": 8,
+        "Krempe": 13
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Victor": "Hellen",
+        "Justine": "Ailison",
+        "Henry": "Rhoda",
+        "Lord": "Tanis",
+        "Shelleys": "Altair",
+        "Percy": "Jelani",
+        "Felix": "Gudalupe",
+        "Monster": "Caylor",
+        "Kirwin": "Dominque",
+        "M.": "Ova"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Byron": "Maico",
+        "Shelley": "Steele",
+        "Krempe": "Jonel"
+    }
+}

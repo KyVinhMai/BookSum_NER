@@ -1,0 +1,72 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Huck": 0,
+        "Tom": 1,
+        "Huckleberry": 3,
+        "Widow": 4,
+        "Jim": 5,
+        "Irony": 6,
+        "Solomon": 7,
+        "Shepherdson": 8,
+        "Shepherdsons": 9,
+        "Buck": 10,
+        "Emmeline": 11,
+        "Bob": 12,
+        "Louis": 13,
+        "Duke": 14,
+        "Ben": 15,
+        "Juliet": 16,
+        "Boggs": 17,
+        "Sherburn": 18,
+        "Peter": 19,
+        "Robinson": 21,
+        "Levi": 22,
+        "Phelps": 24,
+        "Sid": 25,
+        "Polly": 26
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Finn": 2,
+        "Wilks": 20,
+        "Bell": 23
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Huck": "Happy",
+        "Tom": "Jacare",
+        "Huckleberry": "Rorey",
+        "Widow": "Jari",
+        "Jim": "Daesyn",
+        "Irony": "Ozie",
+        "Solomon": "Nyran",
+        "Shepherdson": "Inioluwa",
+        "Shepherdsons": "Wen",
+        "Buck": "Pranit",
+        "Emmeline": "Adelline",
+        "Bob": "Semaje",
+        "Louis": "Melaku",
+        "Duke": "Dionysi",
+        "Ben": "Khac",
+        "Juliet": "Varian",
+        "Boggs": "Wen",
+        "Sherburn": "Han",
+        "Peter": "Narell",
+        "Robinson": "Jolly",
+        "Levi": "Josaiah",
+        "Phelps": "Domnique",
+        "Sid": "Gal",
+        "Polly": "Valasta"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Finn": "Sirajuddin",
+        "Wilks": "Rilley",
+        "Bell": "Jazhari"
+    }
+}

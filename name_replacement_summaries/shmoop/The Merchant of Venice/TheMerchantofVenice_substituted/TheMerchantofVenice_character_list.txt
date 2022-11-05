@@ -1,0 +1,50 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Shylock": 0,
+        "Lorenzo": 1,
+        "Cupid": 2,
+        "Hercules": 3,
+        "Troy": 4,
+        "Fortune": 5,
+        "Duke": 6,
+        "Troilus": 7,
+        "Thisby": 8,
+        "Dido": 9,
+        "Petruchio": 10,
+        "Monsieur": 11,
+        "Bodin": 13,
+        "Gobbo": 14,
+        "Romeo": 15
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bon": 12
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Shylock": "Avon",
+        "Lorenzo": "Uitualagi",
+        "Cupid": "Koree",
+        "Hercules": "Kylin",
+        "Troy": "Nizear",
+        "Fortune": "Da",
+        "Duke": "Alekz",
+        "Troilus": "Le",
+        "Thisby": "Kelin",
+        "Dido": "Aliese",
+        "Petruchio": "Leotha",
+        "Monsieur": "Akili",
+        "Bodin": "Eri",
+        "Gobbo": "Harpreet",
+        "Romeo": "Chuol"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Bon": "Torre"
+    }
+}

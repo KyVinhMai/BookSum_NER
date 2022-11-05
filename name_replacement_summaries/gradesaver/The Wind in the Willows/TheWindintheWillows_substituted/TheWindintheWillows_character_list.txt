@@ -1,0 +1,34 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Mole": 0,
+        "Otter": 1,
+        "Moles": 2,
+        "Portly": 3,
+        "Lord": 4,
+        "Homer": 6,
+        "Odysseus": 7
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Tennyson": 5
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Mole": "Kallan",
+        "Otter": "Johany",
+        "Moles": "Alija",
+        "Portly": "Kendall",
+        "Lord": "Moe",
+        "Homer": "Joushua",
+        "Odysseus": "Marrion"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Tennyson": "Braelin"
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Juliet": 1,
+        "Duke": 2,
+        "Pompey": 3,
+        "Messenger": 4,
+        "Peter": 6,
+        "Lucio": 7,
+        "Lodowick": 8,
+        "Mistress": 9,
+        "Provost": 11,
+        "Henry": 13,
+        "Elbow": 15,
+        "Froth": 16,
+        "Keepdown": 17
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Overdone": 10,
+        "Vincentio": 12,
+        "VIII": 14
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Juliet": "Awour",
+        "Duke": "Jshawn",
+        "Pompey": "Kitt",
+        "Messenger": "Lauris",
+        "Peter": "Iyad",
+        "Lucio": "Vasa",
+        "Lodowick": "Shamari",
+        "Mistress": "Talyn",
+        "Provost": "Nemiah",
+        "Henry": "Orval",
+        "Elbow": "Teegan",
+        "Froth": "Kenyatte",
+        "Keepdown": "Aeon"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Overdone": "Germany",
+        "Vincentio": "Tian",
+        "VIII": "Lajuan"
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Henry": 0,
+        "Bill": 1,
+        "London": 2,
+        "Buck": 3,
+        "Poe": 4,
+        "OneEye": 5,
+        "One": 6,
+        "Kiche": 8,
+        "LipLip": 9,
+        "Kicke": 10,
+        "Weeden": 11,
+        "Weedon": 13,
+        "Smith": 14,
+        "Collie": 15,
+        "Dick": 16
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Eye": 7,
+        "Scott": 12
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Henry": "Kahlid",
+        "Bill": "Sovanaroth",
+        "London": "Callaway",
+        "Buck": "Kenna",
+        "Poe": "Sagan",
+        "OneEye": "Shiloh",
+        "One": "Raylnn",
+        "Kiche": "Tyjai",
+        "LipLip": "Jazz",
+        "Kicke": "Amil",
+        "Weeden": "Teigan",
+        "Weedon": "Gentry",
+        "Smith": "Austyn",
+        "Collie": "Ellery",
+        "Dick": "Kshawn"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Eye": "Kelin",
+        "Scott": "Tevon"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Princess": 0,
+        "Berowne": 1,
+        "Boyet": 2
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Princess": "Bellani",
+        "Berowne": "Valen",
+        "Boyet": "Callaway"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

@@ -1,0 +1,60 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Oliver": 0,
+        "Duke": 1,
+        "Robin": 2,
+        "Philip": 7,
+        "Eve": 9,
+        "Rose": 10,
+        "Jove": 11,
+        "Touchstone": 13,
+        "Corin": 14,
+        "Troy": 15,
+        "Silvius": 16,
+        "Phoebe": 17,
+        "Dukes": 18,
+        "Puck": 19,
+        "Hero": 20,
+        "Hymen": 21
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Hood": 3,
+        "Senior": 5,
+        "Hoods": 6,
+        "Sidney": 8,
+        "Frederick": 12
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Oliver": "Amyr",
+        "Duke": "Cason",
+        "Robin": "Oakley",
+        "Philip": "Aashik",
+        "Eve": "Elzie",
+        "Rose": "Vaune",
+        "Jove": "Kamarii",
+        "Touchstone": "Ary",
+        "Corin": "Ronen",
+        "Troy": "Jahdari",
+        "Silvius": "Amarri",
+        "Phoebe": "Jiali",
+        "Dukes": "Altair",
+        "Puck": "Campbell",
+        "Hero": "Ihron",
+        "Hymen": "Amrit"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Hood": "Drue",
+        "Senior": "Elis",
+        "Hoods": "Reese",
+        "Sidney": "Shey",
+        "Frederick": "Jourdon"
+    }
+}

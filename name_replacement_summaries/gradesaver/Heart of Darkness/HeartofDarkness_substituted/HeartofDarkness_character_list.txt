@@ -1,0 +1,22 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Fresleven": 0,
+        "Kurtz": 1,
+        "\\Kurtz": 2
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Fresleven": "Jahdai",
+        "Kurtz": "Oddie",
+        "\\Kurtz": "Makana"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

@@ -1,0 +1,42 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Egeon": 0,
+        "S.": 1,
+        "E.": 3,
+        "Pinch": 4,
+        "Co.": 5,
+        "Duke": 7,
+        "Corinth": 9,
+        "Ephesus": 10,
+        "Luce": 11,
+        "Porpentine": 12
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Dromio": 2,
+        "Solinus": 8
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Egeon": "Jimi",
+        "S.": "Gean",
+        "E.": "Rorey",
+        "Pinch": "Chancey",
+        "Co.": "Jaydn",
+        "Duke": "Mohar",
+        "Corinth": "Keylen",
+        "Ephesus": "Chai",
+        "Luce": "Chancey",
+        "Porpentine": "Waverly"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Dromio": "Schylar",
+        "Solinus": "Jaziah"
+    }
+}

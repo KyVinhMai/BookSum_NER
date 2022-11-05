@@ -1,0 +1,48 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "phen": 0,
+        "Brit": 1,
+        "Snobby": 2,
+        "Rummy": 4,
+        "Bill": 6,
+        "Jenny": 7,
+        "Dolly": 9,
+        "Peter": 10,
+        "Todger": 12,
+        "Bodger": 13,
+        "Bilton": 14
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Price": 3,
+        "Mitchens": 5,
+        "Hill": 8,
+        "Shirley": 11
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "phen": "Earlie",
+        "Brit": "Britney-Jane",
+        "Snobby": "Maysen",
+        "Rummy": "Larin",
+        "Bill": "Letcher",
+        "Jenny": "Dao",
+        "Dolly": "Jazabell",
+        "Peter": "Amauri",
+        "Todger": "Finley",
+        "Bodger": "Tanay",
+        "Bilton": "Chayanne"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Price": "Arshaun",
+        "Mitchens": "Aldean",
+        "Hill": "Asheton",
+        "Shirley": "Lakena"
+    }
+}

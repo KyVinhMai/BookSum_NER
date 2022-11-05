@@ -1,0 +1,54 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Dmitri": 0,
+        "Fyodor": 1,
+        "Dostoevsky": 2,
+        "Jesus": 3,
+        "Grigory": 4,
+        "Perhotin": 5,
+        "Smurov": 6,
+        "Lise": 7,
+        "Fetyukovitch": 8,
+        "Snegiryov": 9,
+        "Herzenstube": 10,
+        "Kirillovitch": 11,
+        "Miusov": 12,
+        "Schiller": 13,
+        "Sodom": 14,
+        "Ceres": 15,
+        "young": 16,
+        "Euclid": 17,
+        "Job": 18
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Dmitri": "Imron",
+        "Fyodor": "Mark",
+        "Dostoevsky": "Lakoda",
+        "Jesus": "Romey",
+        "Grigory": "Uyless",
+        "Perhotin": "Rowan",
+        "Smurov": "Audi",
+        "Lise": "Lieuteisha",
+        "Fetyukovitch": "Jolly",
+        "Snegiryov": "Kamarri",
+        "Herzenstube": "Taygen",
+        "Kirillovitch": "Karlin",
+        "Miusov": "Blaike",
+        "Schiller": "Kendall",
+        "Sodom": "Yuri",
+        "Ceres": "Chandlar",
+        "young": "Linnell",
+        "Euclid": "Taite",
+        "Job": "Ancil"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

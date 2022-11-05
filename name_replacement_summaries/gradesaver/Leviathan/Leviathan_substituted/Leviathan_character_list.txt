@@ -1,0 +1,38 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Hobbes": 0,
+        "Blits": 1,
+        "Locke": 2,
+        "Hobbbes": 3,
+        "Hobees": 4,
+        "Orbell": 5,
+        "Eve": 6,
+        "Edwin": 7,
+        "Milner": 9
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Curley": 8
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Hobbes": "Codie",
+        "Blits": "Aris",
+        "Locke": "Phoenix",
+        "Hobbbes": "Arlyn",
+        "Hobees": "Mc",
+        "Orbell": "Bay",
+        "Eve": "Raquelle",
+        "Edwin": "Carlysle",
+        "Milner": "Freddi"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Curley": "Emanuelle"
+    }
+}

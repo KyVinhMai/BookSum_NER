@@ -1,0 +1,48 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Touchett": 0,
+        "Touchetts": 1,
+        "Goodwood": 2,
+        "Merle": 3,
+        "Gilbert": 4,
+        "Rosier": 6,
+        "Gemini": 7,
+        "Osmonds": 8,
+        "Edith": 9,
+        "Edmund": 10,
+        "Lockleigh": 11,
+        "Molyneux": 12,
+        "Pensil": 13,
+        "Lily": 14
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Osmond": 5
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Touchett": "Amaree",
+        "Touchetts": "Raylen",
+        "Goodwood": "Miko",
+        "Merle": "Jaryn",
+        "Gilbert": "Huburt",
+        "Rosier": "Currie",
+        "Gemini": "Brennyn",
+        "Osmonds": "Tonnie",
+        "Edith": "Ra",
+        "Edmund": "Deavan",
+        "Lockleigh": "Clemence",
+        "Molyneux": "Lamari",
+        "Pensil": "Jeris",
+        "Lily": "Kamlesh"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Osmond": "Merrit"
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Hester": 0,
+        "Roger": 2,
+        "John": 4,
+        "Emerson": 6,
+        "Pue": 7,
+        "Peter": 9,
+        "Eve": 13,
+        "Hibbins": 14,
+        "Holinshed": 16,
+        "Coke": 17,
+        "Noye": 18,
+        "Finch": 19,
+        "Herod": 20,
+        "Gobelin": 21,
+        "Overbury": 22
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Prynne": 1,
+        "Chillingworth": 3,
+        "Wilson": 5,
+        "Winthrop": 10,
+        "Eliot": 12,
+        "Chillingworth.": 15
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Hester": "Moryah",
+        "Roger": "Jaevin",
+        "John": "Nacier",
+        "Emerson": "Leeham",
+        "Pue": "Shaya",
+        "Peter": "Dunstan",
+        "Eve": "Velvie",
+        "Hibbins": "Shiloh",
+        "Holinshed": "Yuval",
+        "Coke": "Skylan",
+        "Noye": "Vail",
+        "Finch": "An",
+        "Herod": "Chong",
+        "Gobelin": "Amarri",
+        "Overbury": "Kemoni"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Prynne": "Finley",
+        "Chillingworth": "Jodey",
+        "Wilson": "Tobby-Aaron",
+        "Winthrop": "Shai",
+        "Eliot": "Jittender",
+        "Chillingworth.": "Jamile"
+    }
+}

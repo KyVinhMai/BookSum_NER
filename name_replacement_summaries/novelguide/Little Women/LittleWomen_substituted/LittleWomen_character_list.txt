@@ -1,0 +1,56 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Meg": 0,
+        "Jo": 1,
+        "Beth": 2,
+        "John": 3,
+        "Scott": 4,
+        "Demi": 5,
+        "Teddy": 6,
+        "Dodo": 7,
+        "Fessor": 8,
+        "Jenny": 9,
+        "Belle": 11,
+        "Fred": 13,
+        "Hummels": 14,
+        "Ester": 15,
+        "Estelle": 16,
+        "Midsummer": 18,
+        "Chester": 19
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Snow": 10,
+        "Brooke": 17
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Meg": "Krisia",
+        "Jo": "Shiva",
+        "Beth": "Suranie",
+        "John": "Jacobia",
+        "Scott": "Bianca",
+        "Demi": "Loraysha-Jaine",
+        "Teddy": "Roscoe",
+        "Dodo": "Kallan",
+        "Fessor": "Kailen",
+        "Jenny": "Decota",
+        "Belle": "Sandral",
+        "Fred": "Corderra",
+        "Hummels": "Samar",
+        "Ester": "Umme",
+        "Estelle": "Yarifalanthi",
+        "Midsummer": "Laren",
+        "Chester": "Ronda"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Snow": "Sloan",
+        "Brooke": "Kortni"
+    }
+}

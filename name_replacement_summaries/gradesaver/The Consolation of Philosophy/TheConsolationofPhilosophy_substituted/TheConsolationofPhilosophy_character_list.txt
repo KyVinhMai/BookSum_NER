@@ -1,0 +1,26 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Boethius": 0,
+        "Poetry": 1,
+        "Muses": 2,
+        "Philosophy": 3,
+        "Jesus": 4
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Boethius": "Jerris",
+        "Poetry": "Santana",
+        "Muses": "Riley",
+        "Philosophy": "Kaisyn",
+        "Jesus": "Jamoni"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}

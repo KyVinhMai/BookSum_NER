@@ -1,0 +1,58 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Touchett": 0,
+        "Merle": 1,
+        "Gilbert": 2,
+        "Gemini": 4,
+        "Touchetts": 5,
+        "Molyneux": 6,
+        "Pensil": 7,
+        "Goodwood": 8,
+        "Schubert": 9,
+        "Hope": 10,
+        "Luce": 11,
+        "Osmonds": 12,
+        "Edmund": 13,
+        "Lily": 14,
+        "Mooch": 15,
+        "Florence": 16,
+        "Rosier": 17,
+        "Ned": 18,
+        "Edith": 19
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Osmond": 3
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Touchett": "Aundra",
+        "Merle": "Jaydence",
+        "Gilbert": "Bacilio",
+        "Gemini": "Trayce",
+        "Touchetts": "Talin",
+        "Molyneux": "Chi",
+        "Pensil": "Kamari",
+        "Goodwood": "Clair",
+        "Schubert": "Kitt",
+        "Hope": "Kyahlin",
+        "Luce": "Baylin",
+        "Osmonds": "Ozie",
+        "Edmund": "Ozu",
+        "Lily": "Chantis",
+        "Mooch": "Britten",
+        "Florence": "Ailyne",
+        "Rosier": "Jimi",
+        "Ned": "Leef",
+        "Edith": "Estelle"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Osmond": "Amandeep"
+    }
+}

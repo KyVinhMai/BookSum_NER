@@ -1,0 +1,48 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Lodovico": 0,
+        "John": 1,
+        "Monticelso": 3,
+        "Julio": 4,
+        "Conjurer": 5,
+        "Register": 6,
+        "Justice": 7,
+        "Monticelsco": 8,
+        "Hortensio": 9,
+        "Moor": 10,
+        "Fernese": 11,
+        "Pedro": 12,
+        "Furies": 13,
+        "Herod": 14
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Webster": 2
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Lodovico": "Emanuelle",
+        "John": "Geordi",
+        "Monticelso": "Charly",
+        "Julio": "Rimino",
+        "Conjurer": "Kaylor",
+        "Register": "Merrit",
+        "Justice": "Leverne",
+        "Monticelsco": "Audi",
+        "Hortensio": "Jamaree",
+        "Moor": "Ronne",
+        "Fernese": "Jolly",
+        "Pedro": "Deloris",
+        "Furies": "Shiva",
+        "Herod": "Dann"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Webster": "Rayo"
+    }
+}

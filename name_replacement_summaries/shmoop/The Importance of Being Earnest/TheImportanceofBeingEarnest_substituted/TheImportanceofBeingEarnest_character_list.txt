@@ -1,0 +1,46 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Wilde": 0,
+        "Ernest": 1,
+        "Cecily": 3,
+        "Bunbury": 4,
+        "Gwendolen": 5,
+        "Prism": 6,
+        "Moncrieff": 7,
+        "\\Moncrieff\\": 8,
+        "Gwen": 9,
+        "Bunburyist": 10,
+        "Cici": 11,
+        "Cecily\\": 12
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Worthing": 2,
+        "John": 13
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Wilde": "Olamide",
+        "Ernest": "Ceion",
+        "Cecily": "Rosland",
+        "Bunbury": "Carel",
+        "Gwendolen": "Amanda-Lea",
+        "Prism": "Callahan",
+        "Moncrieff": "Teigan",
+        "\\Moncrieff\\": "Lexington",
+        "Gwen": "Symeko",
+        "Bunburyist": "Atley",
+        "Cici": "Marice",
+        "Cecily\\": "Ryen"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Worthing": "Merlyn",
+        "John": "Tayvion"
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Pyncheons": 1,
+        "Clifford": 2,
+        "Phoebe": 4,
+        "John": 5,
+        "George": 7,
+        "Scipio": 9,
+        "Ned": 10,
+        "Gubbins": 13,
+        "Dixey": 14,
+        "\\Clifford": 15,
+        "Jim": 16,
+        "Uncle": 18
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Pyncheon": 3,
+        "Swinnerton": 6,
+        "III": 8,
+        "Higgins": 11,
+        "Crow": 17,
+        "Venner": 19
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Pyncheons": "Kallan",
+        "Clifford": "Orral",
+        "Phoebe": "Emeli",
+        "John": "Isaha",
+        "George": "Leora",
+        "Scipio": "Oddie",
+        "Ned": "Viridiana",
+        "Gubbins": "Kaisyn",
+        "Dixey": "Samar",
+        "\\Clifford": "Ramey",
+        "Jim": "Sylus",
+        "Uncle": "Keymani"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Pyncheon": "Maika",
+        "Swinnerton": "Jaidan",
+        "III": "Shey",
+        "Higgins": "Wallis",
+        "Crow": "Rajah",
+        "Venner": "Ajai"
+    }
+}

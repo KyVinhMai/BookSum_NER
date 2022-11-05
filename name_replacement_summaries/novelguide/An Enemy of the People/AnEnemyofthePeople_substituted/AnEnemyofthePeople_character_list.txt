@@ -1,0 +1,38 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Billing": 0,
+        "Peter": 1,
+        "Evenson": 2,
+        "Morten": 3,
+        "Vik": 5,
+        "Horster": 6,
+        "Busk": 7,
+        "Rorlund": 8,
+        "Eilif": 9
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Kiil": 4
+    }
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Billing": "Jackie",
+        "Peter": "Nature",
+        "Evenson": "Teran",
+        "Morten": "Maxmillian",
+        "Vik": "Kmari",
+        "Horster": "Kamori",
+        "Busk": "Kerry",
+        "Rorlund": "Ashtan",
+        "Eilif": "Ransen"
+    },
+    "Middle Names": {},
+    "Last Names": {
+        "Kiil": "Evian"
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "Table_Type": "Universal Character Names",
+    "First Names": {
+        "Pompey": 0,
+        "Lepidus": 1,
+        "Philo": 2,
+        "Lucius": 3,
+        "Julius": 4,
+        "Ledipus": 5,
+        "Ventidius": 6,
+        "Eros": 7,
+        "Isis": 8,
+        "young": 9,
+        "Brutus": 10,
+        "Fortune": 11,
+        "Diomedes": 12,
+        "Proculeius": 13,
+        "Seleucus": 14
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
+
+
+{
+    "Table_Type": "Randomized Names",
+    "First Names": {
+        "Pompey": "Ja",
+        "Lepidus": "Wen",
+        "Philo": "Paiden",
+        "Lucius": "Ranjeet",
+        "Julius": "Wwlliam",
+        "Ledipus": "Hadyn",
+        "Ventidius": "Maysen",
+        "Eros": "O'Reilly",
+        "Isis": "Sakiko",
+        "young": "Makana",
+        "Brutus": "Azerelle",
+        "Fortune": "Haedyn",
+        "Diomedes": "Toryn",
+        "Proculeius": "Truth",
+        "Seleucus": "Ramey"
+    },
+    "Middle Names": {},
+    "Last Names": {}
+}
