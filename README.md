@@ -49,13 +49,12 @@ Corpus Directory
 
 ------------------------------------------------------------------------------------
 
-The file input is json or text and will output the same filetype as the input type.
 ```angular2html
 python entity_replacement.py [--all or --book or --file] [input_file_path]
 ```
  # Input File Format
 
-The Character list must be in a JSON file format.
+The file input is json or text and will output the same filetype as the input type.
 
 Uses gendered names from https://archive.ics.uci.edu/ml/datasets/Gender+by+Name
 Uses Unisex names from https://fivethirtyeight.datasettes.com/fivethirtyeight/unisex-names~2Funisex_names_table
