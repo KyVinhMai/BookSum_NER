@@ -1,9 +1,9 @@
-# BookSum_NER
+# Narrative Understanding Dataset
 Authors: Arseny Moskvichev, Ky-Vinh Mai
 
 ## Introduction
 
-**Paper_Name** is a  command-line tool for 
+The Narrative Understanding is a  command-line tool for 
 generative entity name substitution script made for the **Paper_Name**
 
 Paper link:
