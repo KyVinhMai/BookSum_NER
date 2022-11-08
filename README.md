@@ -18,12 +18,40 @@ Paper link:
 
 NOTE: This script works by placing the substituted summaries within the book folder.
 
-It CANNOT work without the original texts, as SpaCy will reference the original
+It can NOT work without the original texts, as SpaCy will reference the original
 placement of characters in the text in order to replace the string for generating
 substitutions or performing modifications.
-------------------------------------------------------------------------------------
+
+Original Directory
 ```angular2html
-python entity_replacement.py -r [input_file_path]  [input_type]
+Corpus Directory
+    |
+    |__ Websites
+            |__Books
+                |__Summaries
+```
+
+Directory after the script is applied
+```angular2html
+Corpus Directory
+    |
+    |__ Website folder
+            |__Book folder
+                |__Summaries files
+                |
+                |__Subsituted folder
+                          |
+                          |__ Character List
+                          |
+                          |__ Substituted Files
+   
+```
+
+------------------------------------------------------------------------------------
+
+The file input is json or text and will output the same filetype as the input type.
+```angular2html
+python entity_replacement.py [--all or --book or --file] [input_file_path]
 ```
  # Input File Format
 

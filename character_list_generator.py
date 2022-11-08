@@ -14,7 +14,7 @@ class Universal_Character_list():
         self.sf_path = sub_folder_path
         self.male_names, self.female_names = m_names, f_name
         self.neutral_names = uni_name
-        self.re_pattern = "St.|\'s|\\+|,|-|\""
+        self.re_pattern = "Cpt.|St.|\'s|\\+|,|-|\""
         self.name_exceptions = [] #todo put this into a function
         with open("name_exceptions.txt", "r") as f:
             for line in f:
@@ -36,15 +36,22 @@ class Universal_Character_list():
     def split_name(self, name:str, num: int) -> int:
         "Splits the name into single words"
         def check_if_name_in_dict(single_name) -> bool:
-            #Combines all the dictionaries
-            all_name_dicts = self.persons["First Names"] | self.persons["Middle Names"] | self.persons["Last Names"]
+            all_name_dicts = self.persons["First Names"] | self.persons["Middle Names"] | self.persons["Last Names"] #Combines all the dictionaries
             if single_name in all_name_dicts:
                 return False
 
             return True
-
-        name = re.sub(self.re_pattern, "", name) # todo WHY IS THIS CAUSING A EMPTY CHARACTER TO APPEAR
+        # todo WHY IS THIS CAUSING A EMPTY CHARACTER TO APPEAR
+        name = re.sub(self.re_pattern, "", name) #Removes any tiles from the name, like St. , Cpt. , etc.
         name_tokens = name.split(" ")
+
+        if "the" in name_tokens: #Checks for Alexander the Great, Ivan the Terrible, etc.
+            if name_tokens[0] not in self.persons["First Names"]:
+                self.persons["First Names"][name_tokens[0]] = num
+                num += 1
+
+            return num
+
         if len(name_tokens)  > 1:
 
             if name_tokens[0] not in self.persons["First Names"]:
@@ -78,7 +85,7 @@ class Universal_Character_list():
 
         return num
 
-    def name_check(self, name: str) -> bool: # todo fix up boy
+    def name_check(self, name: str) -> bool:
         """
         Passes the name through the exceptions list. Intended to exclude names
         like The Queen of Scots, or God, or even determiners.
@@ -98,12 +105,13 @@ class Universal_Character_list():
 
     def append_universal_character_list(self) -> None:
         num = 0
-        file_list = list((entry for entry in self.book.iterdir() if entry.is_file() and entry.match('*.txt')))
+        file_list = (entry for entry in self.book.iterdir() if entry.is_file() and entry.match('*.txt'))
 
         print(self.book.name, "\n=======================================")
         for summary in file_list:
             raw_file = open(summary, "r")
             doc = nlp(raw_file.read()) #todo only use nlp.pipleline
+            raw_file.close()
             print(summary.name)
 
             for word in doc.ents:
@@ -111,9 +119,7 @@ class Universal_Character_list():
                     increment = self.split_name(word.text, num)
                     num = increment
 
-            raw_file.close()
-
-        self.remove_empty_character()
+        self.remove_empty_character() #Sanitation
 
     def assign_label(self, name) -> str or int:
         "Here we randomly assign the labels to each character for the randomized list"

@@ -82,9 +82,9 @@ def create_subdirectory(book : Path) -> Path:
 
 
 def write_file_sub(filepath: Path, summary: Path, rand_ch_dict) -> None:
-    with filepath.open("w", encoding = "utf-8") as f:
+    with filepath.open("w", encoding = "utf-16") as f:
         """
-       Read the json_object, but create an entirely new file with labeled data
+       Read the json_object, but create an entirely new file with labeled character
        using create_text_file()
        """
         json_file = open(summary, "r")
@@ -93,9 +93,10 @@ def write_file_sub(filepath: Path, summary: Path, rand_ch_dict) -> None:
         json_file.close()
 
 
+
 def parse_summaries(book: Path, sub_folder_path: Path, rand_ch_dict: Path):
     "For each summary create the file path for it"
-    file_list = list((entry for entry in book.iterdir() if entry.is_file() and entry.match('*.txt')))
+    file_list = (entry for entry in book.iterdir() if entry.is_file() and entry.match('*.txt'))
 
     for summary in tqdm(file_list, desc = "List of Summaries", unit = "sections"):
         print(summary.name)
@@ -168,12 +169,11 @@ if __name__ == '__main__':
         help = "Will replace characters within the book. Assumes there already is a character list" ) #error handling for books
 
     option.add_argument(
-        "--file",
+        "--single",
         type=str,
         nargs = "+",
         default=None,
-        help="Assumes you want a single file that will be modified. CANNOT generate it's own character list")
-
+        help= "Assumes you want a single file that will be modified. CANNOT generate it's own character list")
     #add random seed
     #Perhaps just create a random character list?
 
