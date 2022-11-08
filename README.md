@@ -3,8 +3,8 @@ Authors: Arseny Moskvichev, Ky-Vinh Mai
 
 ## Introduction
 
-The Narrative Understanding is a  command-line tool for 
-generative entity name substitution script made for the **Paper_Name**
+The Narrative Understanding Dataset Script is a  command-line tool for 
+generative entity name substitution script made for the Narrative Understanding Dataset
 
 Paper link:
 
