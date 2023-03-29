@@ -4,22 +4,23 @@ from pathlib import Path
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from argparse import Namespace
-import character_list_generator
+import char_dict
 from tqdm import tqdm
 import spacy
-spacy.require_gpu()
+spacy.prefer_gpu()
 nlp = spacy.load("en_core_web_trf", exclude = ["tagger", "parser", "lemmatizer"])
 print("INFO: SpaCy successfully initiated")
 #todo add gpu accelarator and tqdm
+
 
 """
 NOTE:
 -----------------------------------------------------------------------------------
 This script works by placing the substituted summaries within the book folder.
 
-It CANNOT work without the original texts, as character_list_generator.py will 
-reference and align with the original placement of characters 
-in the text in order to replace the string for doing substitutions.
+It CANNOT work without the original texts, as SpaCy will reference the original
+placement of characters in the text in order to replace the string for generating
+substitutions or performing modifications.
 ------------------------------------------------------------------------------------
 """
 
@@ -59,7 +60,7 @@ class Label_entities():
     def replace_names(self) -> None:
         for name_list in [self.first_names, self.middle_names, self.last_names]:
             for person in name_list:
-                self.text = self.text.replace(person, name_list[person])
+                self.text = self.text.replace(person, name_list[person])#todo map
 
     def randomized_character_section(self):
         "Randomized Character Section at the bottom"
@@ -71,7 +72,7 @@ class Label_entities():
 
         return self.text
 
-#Create a separate file directory
+#Creates a separate file directory
 def create_subdirectory(book : Path) -> Path:
     "Creates a new subfolder to store a file of all the subsituted names"
 
@@ -82,9 +83,9 @@ def create_subdirectory(book : Path) -> Path:
 
 
 def write_file_sub(filepath: Path, summary: Path, rand_ch_dict) -> None:
-    with filepath.open("w", encoding = "utf-16") as f:
+    with filepath.open("w", encoding = "utf-8") as f:
         """
-       Read the json_object, but create an entirely new file with labeled character
+       Read the json_object, but create an entirely new file with labeled data
        using create_text_file()
        """
         json_file = open(summary, "r")
@@ -93,20 +94,19 @@ def write_file_sub(filepath: Path, summary: Path, rand_ch_dict) -> None:
         json_file.close()
 
 
-
 def parse_summaries(book: Path, sub_folder_path: Path, rand_ch_dict: Path):
     "For each summary create the file path for it"
-    file_list = (entry for entry in book.iterdir() if entry.is_file() and entry.match('*.txt'))
+    file_list = list((entry for entry in book.iterdir() if entry.is_file() and entry.match('*.txt')))
 
     for summary in tqdm(file_list, desc = "List of Summaries", unit = "sections"):
-        print(summary.name)
         file_name = str(summary.stem) + "_substituted.txt"
         filepath = sub_folder_path / file_name
+        print("")
 
         write_file_sub(filepath, summary, rand_ch_dict)
 
 def parse_corpus(corpus_path: Path) -> None:
-    "Parses through each website directory, and then in each book folder in the dataset, create the folder for subsituted books"
+    "Parses through each website, and then each book folder in the BookSum Dataset"
 
     for website in corpus_path.iterdir(): #i.e. Shmoop, Sparknotes
         for book in tqdm(list(website.iterdir()), desc = "Books list", unit = "Amount of books"): # i.e. Hamlet, Frankenstein
@@ -114,12 +114,12 @@ def parse_corpus(corpus_path: Path) -> None:
 
             sub_folder_path = create_subdirectory(book) # Create the subfolder
 
-            character_file = character_list_generator.Universal_Character_list(book, sub_folder_path, male_names, female_names, neutral_names) #Create the character list
+            character_file = char_dict.Universal_Character_list(book, sub_folder_path, male_names, female_names, neutral_names) #Create the character list
             character_file_path = character_file.generate_file()
-            with open(character_file_path, "r") as f:
+            with open(character_file_path, "r") as f: #todo streamline this lines of code
                 character_list = f.read()
 
-            _, random = character_list.split("\n\n\n")
+            _, random = character_list.split("\n\n\n") #todo tidy up this olympics shit
 
             parse_summaries(book, sub_folder_path, random)  # Write to file
 
@@ -127,7 +127,13 @@ def parse_corpus(corpus_path: Path) -> None:
 def modify_book(book_path: Path) -> None:
     sub_folder_path = book_path / f"{book_path.name.replace(' ', '')}_substituted"
     character_file_path = sub_folder_path /  f"{book_path.name.replace(' ', '')}_character_list.txt"
-    parse_summaries(book_path, sub_folder_path, character_file_path)  # Write to file
+
+    with open(character_file_path, "r") as f:  # todo streamline this lines of code
+        character_list = f.read()
+
+    _, random = character_list.split("\n\n\n")  # todo tidy up this olympics shit
+
+    parse_summaries(book_path, sub_folder_path, random)  # Write to file
 
 
 def modify_file(file_path: Path) -> None:
@@ -169,11 +175,12 @@ if __name__ == '__main__':
         help = "Will replace characters within the book. Assumes there already is a character list" ) #error handling for books
 
     option.add_argument(
-        "--single",
+        "--file",
         type=str,
         nargs = "+",
         default=None,
-        help= "Assumes you want a single file that will be modified. CANNOT generate it's own character list")
+        help="Assumes you want a single file that will be modified. CANNOT generate it's own character list")
+
     #add random seed
     #Perhaps just create a random character list?
 

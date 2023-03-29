@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 import secrets
 import gender_guesser.detector as gender
-spacy.require_gpu()
+spacy.prefer_gpu()
 nlp = spacy.load("en_core_web_trf", exclude = ["tagger", "parser", "lemmatizer"]) #Understand pipelines To make this faster
 #Generate different seed
 
@@ -14,7 +14,7 @@ class Universal_Character_list():
         self.sf_path = sub_folder_path
         self.male_names, self.female_names = m_names, f_name
         self.neutral_names = uni_name
-        self.re_pattern = "Cpt.|St.|\'s|\\+|,|-|\""
+        self.repattern = "St.|\'s|\\+|,|-|\""
         self.name_exceptions = [] #todo put this into a function
         with open("name_exceptions.txt", "r") as f:
             for line in f:
@@ -33,26 +33,20 @@ class Universal_Character_list():
             "Last Names": dict()
         }
 
-    def split_name(self, name:str, num: int) -> int:
-        "Splits the name into single words"
-        def check_if_name_in_dict(single_name) -> bool:
-            all_name_dicts = self.persons["First Names"] | self.persons["Middle Names"] | self.persons["Last Names"] #Combines all the dictionaries
-            if single_name in all_name_dicts:
-                return False
+    def is_name_in_dict(self, name_dict: str, single_name) -> bool:
+        """
+        name_dict: either persons or rand_persons
 
-            return True
-        # todo WHY IS THIS CAUSING A EMPTY CHARACTER TO APPEAR
-        name = re.sub(self.re_pattern, "", name) #Removes any tiles from the name, like St. , Cpt. , etc.
-        name_tokens = name.split(" ")
+        Combines all the dictionaries in one single dictionary.
+        """
+        all_name_dicts = eval("self.{d}['First Names'] | self.{d}['Middle Names'] | self.{d}['Last Names']".format(d = name_dict))
+        if single_name in all_name_dicts:
+            return False
 
-        if "the" in name_tokens: #Checks for Alexander the Great, Ivan the Terrible, etc.
-            if name_tokens[0] not in self.persons["First Names"]:
-                self.persons["First Names"][name_tokens[0]] = num
-                num += 1
+        return True
 
-            return num
-
-        if len(name_tokens)  > 1:
+    def insert_names_into_dict(self,name, name_tokens: list[str], num:int) -> int:
+        if len(name_tokens) > 1:
 
             if name_tokens[0] not in self.persons["First Names"]:
                 self.persons["First Names"][name_tokens[0]] = num
@@ -63,8 +57,7 @@ class Universal_Character_list():
                 if name_tokens[-1] in self.persons["First Names"]:
                     self.persons["First Names"].pop(name_tokens[-1])
                     # Checks that there are no duplicates in the first name.
-                    # There's an issues where the stories introduces a character with their last name first.
-                    # Which screws up the script
+                    # There are issues where the stories introduce a character with their last name first.
 
                 self.persons["Last Names"][name_tokens[-1]] = num
                 num += 1
@@ -79,16 +72,35 @@ class Universal_Character_list():
 
         # Check the first name of a full name, i.e. Martha of Martha Stewart
         else:
-            if check_if_name_in_dict(name):
+            if self.is_name_in_dict("persons", name):
                 self.persons["First Names"][name] = num
                 num += 1
 
         return num
 
-    def name_check(self, name: str) -> bool:
+    def split_name(self, name:str, num: int) -> int:
+        """
+        Splits the name into single words
+
+        If the placement of the name, whether it may be a first name or last name, is unknown
+        the name will always then be placed in the first name list.
+
+        This is so that whenever a full name appears, we can use the last name to check
+        if it is in the first name list, which will then be removed.
+        """
+
+        name = re.sub(self.repattern, "", name) # todo WHY IS THIS CAUSING A EMPTY CHARACTER TO APPEAR
+        name_tokens = name.split(" ")
+
+        self.insert_names_into_dict(name, name_tokens, num)
+
+        return num
+
+    def exceptions_check(self, name: str) -> bool: #todo recheck since we added more named exceptions
         """
         Passes the name through the exceptions list. Intended to exclude names
-        like The Queen of Scots, or God, or even determiners.
+        like The Queen of Scots, or God, or even determiners (spacy has an
+        issue with removing determiners).
         """
         for word in self.name_exceptions:
             if word in name.lower():
@@ -96,7 +108,7 @@ class Universal_Character_list():
 
         return True
 
-    def remove_empty_character(self):
+    def remove_empty_character(self): #todo See if you can fix this
         for name_dict in ["First Names", "Middle Names", "Last Names"]:
             for name in self.persons[name_dict].keys():
                 if name == "":
@@ -105,21 +117,22 @@ class Universal_Character_list():
 
     def append_universal_character_list(self) -> None:
         num = 0
-        file_list = (entry for entry in self.book.iterdir() if entry.is_file() and entry.match('*.txt'))
+        file_list = list((entry for entry in self.book.iterdir() if entry.is_file() and entry.match('*.txt')))
 
         print(self.book.name, "\n=======================================")
         for summary in file_list:
             raw_file = open(summary, "r")
             doc = nlp(raw_file.read()) #todo only use nlp.pipleline
-            raw_file.close()
             print(summary.name)
 
             for word in doc.ents:
-                if word.label_ == "PERSON" and self.name_check(word.text):
+                if word.label_ == "PERSON" and self.exceptions_check(word.text):
                     increment = self.split_name(word.text, num)
                     num = increment
 
-        self.remove_empty_character() #Sanitation
+            raw_file.close()
+
+        self.remove_empty_character()
 
     def assign_label(self, name) -> str or int:
         "Here we randomly assign the labels to each character for the randomized list"
@@ -133,11 +146,53 @@ class Universal_Character_list():
 
         return random_label
 
+    def query_all_rand_dict(self, name:str) -> str:
+        """
+        A helper function to retrieve the value from the names dictionary as
+        the dictionary will be continously updated.
+        """
+        all_dict = self.rand_persons['First Names'] | self.rand_persons['Middle Names'] | self.rand_persons['Last Names']
+        return all_dict[name]
+
+
     def randomize_names(self) -> None:
-        "Finds each name in the character_list and assigns a random label"
+        """
+        For each name in the character_list, we assign a random label
+
+        Note:
+        This changes however with names with line breaks in them, as the script
+        requires each name to be unique. We have to deal with 3 different instances
+        of the same entity.
+
+        Ex. "Jimmy\nOlyphant", "Jimmy", "Olyphant"
+
+        When coming across a line break name, we check if the associated names
+        already have random labels assigned. Otherwise, assign them there and
+        delete them from the copy (so that we no longer have to process it)
+        """
         for name_dict in ["First Names", "Middle Names", "Last Names"]: #For each name list, we substitute each name with a random one
             for name in self.persons[name_dict].keys():
-                self.rand_persons[name_dict][name] = self.assign_label(name)
+
+                if "\n" in name: #name with line break exception
+                    name_segments = name.split("\n")
+                    for n in name_segments:
+
+                        if self.exceptions_check(n):
+
+                            if self.is_name_in_dict("rand_persons", n):
+                                name_segments[n] = self.query_all_rand_dict(n)
+
+                            else:
+                                new_name = self.assign_label(n) #create new name
+                                self.rand_persons[name_dict][n] = new_name #register
+                                name_segments[n] = new_name
+
+                    new_name = "".join(name_segments)
+                    self.rand_persons[name_dict][name] = new_name
+
+                else:
+                    if self.rand_persons[name_dict][name] == "":
+                        self.rand_persons[name_dict][name] = self.assign_label(name)
 
     def generate_file(self) -> Path:
         self.append_universal_character_list()
@@ -145,12 +200,12 @@ class Universal_Character_list():
 
         ch_file_path = self.sf_path / f"{self.book.name.replace(' ', '')}_character_list.txt"
 
-        with ch_file_path.open("w", encoding = "utf-8") as f:
-            f.write(json.dumps(self.persons, indent = 4, sort_keys = False))
+        with ch_file_path.open("w", encoding="utf-8") as f:
+            f.write(json.dumps(self.persons, indent=4, sort_keys=False))
             f.write("\n\n\n")
-            f.write(json.dumps(self.rand_persons, indent = 4, sort_keys = False))
+            f.write(json.dumps(self.rand_persons, indent=4, sort_keys=False))
 
-        print(f"Created Character list! - {self.book.name}")
+        print("Created Character list!")
         return ch_file_path
 
     def debug(self):
@@ -161,8 +216,13 @@ class Universal_Character_list():
         print(self. neutral_names)
 
 if __name__ == "__main__":
-    book_test = Path('D:\\Users\kyvin.DESKTOP-ERBCV8T\PycharmProjects\Research-projects\\book_dataset\\booksum\scripts\\finished_summaries\\bookwolf\A Tale of Two Cities')
-    sub_test = Path("D:\\Users\kyvin.DESKTOP-ERBCV8T\PycharmProjects\Research-projects\\book_dataset\\booksum\scripts\\finished_summaries\\bookwolf\A Tale of Two Cities\ATaleofTwoCities_substituted")
+    # book_test = Path('D:\\Users\kyvin.DESKTOP-ERBCV8T\PycharmProjects\Research-projects\\book_dataset\\booksum\scripts\\finished_summaries\\bookwolf\A Tale of Two Cities')
+    # sub_test = Path("D:\\Users\kyvin.DESKTOP-ERBCV8T\PycharmProjects\Research-projects\\book_dataset\\booksum\scripts\\finished_summaries\\bookwolf\A Tale of Two Cities\ATaleofTwoCities_substituted")
+    book_test = Path(
+        'C:\\Users\\kyvin\\Research_Projects\\test_full_book')
+    sub_test = Path(
+        "C:\\Users\\kyvin\\Research_Projects\\test_full_book\\My_First_Years_substituted")
+
 
     def read_gender_list(gender_file) -> tuple[list,list]:
         male_names = []
@@ -189,3 +249,4 @@ if __name__ == "__main__":
 
     c_file = Universal_Character_list(book_test, sub_test, male_names, female_names, neutral_names)
     c_file.generate_file()
+
