@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from argparse import Namespace
-import character_list_generator
+import character_list_generator as clg
 from tqdm import tqdm
 import spacy
 spacy.prefer_gpu()
@@ -114,7 +114,7 @@ def parse_corpus(corpus_path: Path) -> None:
 
             sub_folder_path = create_subdirectory(book) # Create the subfolder
 
-            character_file = char_dict.Universal_Character_list(book, sub_folder_path, male_names, female_names, neutral_names) #Create the character list
+            character_file = clg.Universal_Character_list(book, sub_folder_path, male_names, female_names, neutral_names) #Create the character list
             character_file_path = character_file.generate_file()
             with open(character_file_path, "r") as f: #todo streamline this lines of code
                 character_list = f.read()

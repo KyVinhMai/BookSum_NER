@@ -39,13 +39,14 @@ class Universal_Character_list():
 
         Combines all the dictionaries in one single dictionary.
         """
+        assert name_dict in ["rand_persons", "persons"], "Name_dict parameter not correct"
         all_name_dicts = eval("self.{d}['First Names'] | self.{d}['Middle Names'] | self.{d}['Last Names']".format(d = name_dict))
         if single_name in all_name_dicts:
             return False
 
         return True
 
-    def insert_names_into_dict(self,name, name_tokens: list[str], num:int) -> int:
+    def insert_names_into_dict(self, name, name_tokens: list[str], num:int) -> int:
         """
          If the placement of the name, whether it may be a first name or last name, is unknown
         the name will always then be placed in the first name list.
@@ -90,6 +91,8 @@ class Universal_Character_list():
         name = re.sub(self.repattern, "", name) # todo WHY IS THIS CAUSING A EMPTY CHARACTER TO APPEAR
         name_tokens = name.split(" ")
 
+        return name_tokens
+
     def exceptions_check(self, name: str) -> bool: #todo recheck since we added more named exceptions
         """
         Passes the name through the exceptions list. Intended to exclude names
@@ -122,6 +125,7 @@ class Universal_Character_list():
             for word in doc.ents:
                 if word.label_ == "PERSON" and self.exceptions_check(word.text):
                     name_tokens = self.split_name(word.text)
+                    increment = self.insert_names_into_dict(word.text, name_tokens, num)
                     num = increment
 
             raw_file.close()
@@ -169,7 +173,6 @@ class Universal_Character_list():
 
                 if "\n" in name: #name with line break exception
                     name_segments = [word for word in name.split("\n") if word]
-                    print("segmented", name_segments, [name])
                     for n in name_segments:
 
                         if self.exceptions_check(n):
@@ -184,7 +187,7 @@ class Universal_Character_list():
                                 index = name_segments.index(n)
                                 name_segments[index] = new_name
 
-                    name_segments.insert(1, "\n")
+                    name_segments.insert(1, "\n")#reinsert the line break
                     new_name = "".join(name_segments)
                     self.rand_persons[name_dict][name] = new_name
 
