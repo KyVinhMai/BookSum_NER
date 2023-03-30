@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from argparse import Namespace
-import char_dict
+import character_list_generator
 from tqdm import tqdm
 import spacy
 spacy.prefer_gpu()

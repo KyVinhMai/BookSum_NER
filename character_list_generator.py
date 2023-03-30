@@ -33,7 +33,7 @@ class Universal_Character_list():
             "Last Names": dict()
         }
 
-    def is_name_in_dict(self, name_dict: str, single_name) -> bool:
+    def is_name_in_dict(self, name_dict: str, single_name: str) -> bool:
         """
         name_dict: either persons or rand_persons
 
@@ -46,6 +46,13 @@ class Universal_Character_list():
         return True
 
     def insert_names_into_dict(self,name, name_tokens: list[str], num:int) -> int:
+        """
+         If the placement of the name, whether it may be a first name or last name, is unknown
+        the name will always then be placed in the first name list.
+
+        This is so that whenever a full name appears, we can use the last name to check
+        if it is in the first name list, which will then be removed.
+        """
         if len(name_tokens) > 1:
 
             if name_tokens[0] not in self.persons["First Names"]:
@@ -78,23 +85,10 @@ class Universal_Character_list():
 
         return num
 
-    def split_name(self, name:str, num: int) -> int:
-        """
-        Splits the name into single words
-
-        If the placement of the name, whether it may be a first name or last name, is unknown
-        the name will always then be placed in the first name list.
-
-        This is so that whenever a full name appears, we can use the last name to check
-        if it is in the first name list, which will then be removed.
-        """
-
+    def split_name(self, name:str) -> list[str]:
+        "Splits the name into single tokens"
         name = re.sub(self.repattern, "", name) # todo WHY IS THIS CAUSING A EMPTY CHARACTER TO APPEAR
         name_tokens = name.split(" ")
-
-        self.insert_names_into_dict(name, name_tokens, num)
-
-        return num
 
     def exceptions_check(self, name: str) -> bool: #todo recheck since we added more named exceptions
         """
@@ -103,7 +97,7 @@ class Universal_Character_list():
         issue with removing determiners).
         """
         for word in self.name_exceptions:
-            if word in name.lower():
+            if word in name:
                 return False
 
         return True
@@ -127,7 +121,7 @@ class Universal_Character_list():
 
             for word in doc.ents:
                 if word.label_ == "PERSON" and self.exceptions_check(word.text):
-                    increment = self.split_name(word.text, num)
+                    name_tokens = self.split_name(word.text)
                     num = increment
 
             raw_file.close()
@@ -149,7 +143,7 @@ class Universal_Character_list():
     def query_all_rand_dict(self, name:str) -> str:
         """
         A helper function to retrieve the value from the names dictionary as
-        the dictionary will be continously updated.
+        the dictionary will be continuously updated.
         """
         all_dict = self.rand_persons['First Names'] | self.rand_persons['Middle Names'] | self.rand_persons['Last Names']
         return all_dict[name]
@@ -160,38 +154,42 @@ class Universal_Character_list():
         For each name in the character_list, we assign a random label
 
         Note:
-        This changes however with names with line breaks in them, as the script
+        We have to deal with names which have line breaks in them, as the script
         requires each name to be unique. We have to deal with 3 different instances
         of the same entity.
 
         Ex. "Jimmy\nOlyphant", "Jimmy", "Olyphant"
 
         When coming across a line break name, we check if the associated names
-        already have random labels assigned. Otherwise, assign them there and
-        delete them from the copy (so that we no longer have to process it)
+        already have random labels assigned. Otherwise, create the random label and
+        assign them there (so that we no longer have to process it)
         """
         for name_dict in ["First Names", "Middle Names", "Last Names"]: #For each name list, we substitute each name with a random one
             for name in self.persons[name_dict].keys():
 
                 if "\n" in name: #name with line break exception
-                    name_segments = name.split("\n")
+                    name_segments = [word for word in name.split("\n") if word]
+                    print("segmented", name_segments, [name])
                     for n in name_segments:
 
                         if self.exceptions_check(n):
 
-                            if self.is_name_in_dict("rand_persons", n):
-                                name_segments[n] = self.query_all_rand_dict(n)
+                            if not self.is_name_in_dict("rand_persons", n): #todo fix semantics of the bool for this
+                                index = name_segments.index(n)
+                                name_segments[index] = self.query_all_rand_dict(n)
 
                             else:
                                 new_name = self.assign_label(n) #create new name
                                 self.rand_persons[name_dict][n] = new_name #register
-                                name_segments[n] = new_name
+                                index = name_segments.index(n)
+                                name_segments[index] = new_name
 
+                    name_segments.insert(1, "\n")
                     new_name = "".join(name_segments)
                     self.rand_persons[name_dict][name] = new_name
 
                 else:
-                    if self.rand_persons[name_dict][name] == "":
+                    if name not in self.rand_persons[name_dict] and self.exceptions_check(name):
                         self.rand_persons[name_dict][name] = self.assign_label(name)
 
     def generate_file(self) -> Path:
@@ -219,9 +217,9 @@ if __name__ == "__main__":
     # book_test = Path('D:\\Users\kyvin.DESKTOP-ERBCV8T\PycharmProjects\Research-projects\\book_dataset\\booksum\scripts\\finished_summaries\\bookwolf\A Tale of Two Cities')
     # sub_test = Path("D:\\Users\kyvin.DESKTOP-ERBCV8T\PycharmProjects\Research-projects\\book_dataset\\booksum\scripts\\finished_summaries\\bookwolf\A Tale of Two Cities\ATaleofTwoCities_substituted")
     book_test = Path(
-        'C:\\Users\\kyvin\\Research_Projects\\test_full_book')
+        'D:\\Research_internships\\ArsenyProjects\\neurlips\\test_full_book')
     sub_test = Path(
-        "C:\\Users\\kyvin\\Research_Projects\\test_full_book\\My_First_Years_substituted")
+        "D:\\Research_internships\\ArsenyProjects\\neurlips\\test_full_book\\My_First_Years_substituted")
 
 
     def read_gender_list(gender_file) -> tuple[list,list]:
