@@ -6,12 +6,8 @@ if TYPE_CHECKING:
     from argparse import Namespace
 import character_list_generator as clg
 from tqdm import tqdm
-import spacy
-spacy.prefer_gpu()
-nlp = spacy.load("en_core_web_trf", exclude = ["tagger", "parser", "lemmatizer"])
-print("INFO: SpaCy successfully initiated")
-#todo add gpu accelarator and tqdm
 
+#todo add gpu accelarator and tqdm
 
 """
 NOTE:
