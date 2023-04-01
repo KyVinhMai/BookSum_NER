@@ -14,18 +14,17 @@ class Universal_Character_list():
         self.sf_path = sub_folder_path
         self.male_names, self.female_names = m_names, f_name
         self.neutral_names = uni_name
-        self.repattern = "St.|\'s|\\+|,|-|\""
-        self.name_exceptions = [] #todo put this into a function
+        self.re_pattern = "St.|\'s|\\+|,|-|\""
+        self.name_exceptions = []
         with open("name_exceptions.txt", "r") as f:
             for line in f:
                 self.name_exceptions.append(line.rstrip())
 
-        self.persons = {
-            "Table_Type": "Universal Character Names",
-            "First Names": dict(),
-            "Middle Names": dict(),
-            "Last Names": dict()
+        self.character_counts = {
+            "Table_Type": "Character Counts",
+            "Characters": dict(),
         }
+
         self.rand_persons = {
             "Table_Type": "Randomized Names",
             "First Names": dict(),
@@ -33,20 +32,19 @@ class Universal_Character_list():
             "Last Names": dict()
         }
 
-    def is_name_in_dict(self, name_dict: str, single_name: str) -> bool:
+    def is_name_in_dict(self, single_name: str) -> bool:
         """
         name_dict: either persons or rand_persons
 
         Combines all the dictionaries in one single dictionary.
         """
-        assert name_dict in ["rand_persons", "persons"], "Name_dict parameter not correct"
-        all_name_dicts = eval("self.{d}['First Names'] | self.{d}['Middle Names'] | self.{d}['Last Names']".format(d = name_dict))
+        all_name_dicts = self.rand_persons['First Names'] | self.rand_persons['Middle Names'] | self.rand_persons['Last Names']
         if single_name in all_name_dicts:
             return False
 
         return True
 
-    def insert_names_into_dict(self, name, name_tokens: list[str], num:int) -> int:
+    def insert_names_into_dict(self, name, name_tokens: list[str]) -> None:
         """
          If the placement of the name, whether it may be a first name or last name, is unknown
         the name will always then be placed in the first name list.
@@ -56,42 +54,42 @@ class Universal_Character_list():
         """
         if len(name_tokens) > 1:
 
-            if name_tokens[0] not in self.persons["First Names"]:
-                self.persons["First Names"][name_tokens[0]] = num
-                num += 1
+            if name_tokens[0] not in self.rand_persons["First Names"]:
+                self.rand_persons["First Names"][name_tokens[0]] = None
 
-            if name_tokens[-1] not in self.persons["Last Names"]:
+            if name_tokens[-1] not in self.rand_persons["Last Names"]:
 
-                if name_tokens[-1] in self.persons["First Names"]:
-                    self.persons["First Names"].pop(name_tokens[-1])
+                if name_tokens[-1] in self.rand_persons["First Names"]:
+                    self.rand_persons["First Names"].pop(name_tokens[-1])
                     # Checks that there are no duplicates in the first name.
                     # There are issues where the stories introduce a character with their last name first.
 
-                self.persons["Last Names"][name_tokens[-1]] = num
-                num += 1
+                self.rand_persons["Last Names"][name_tokens[-1]] = None
 
         elif len(name_tokens) > 2:
             middle_names = name_tokens[1:-1]
 
             for middle in middle_names:
-                if name not in self.persons["Middle Names"][middle]:
-                    num += 1
-                    self.persons["Middle Names"][middle] = num
+                if name not in self.rand_persons["Middle Names"][middle]:
+                    self.rand_persons["Middle Names"][middle] = None
 
         # Check the first name of a full name, i.e. Martha of Martha Stewart
         else:
-            if self.is_name_in_dict("persons", name):
-                self.persons["First Names"][name] = num
-                num += 1
-
-        return num
+            if self.is_name_in_dict(name):
+                self.rand_persons["First Names"][name] = None
 
     def split_name(self, name:str) -> list[str]:
         "Splits the name into single tokens"
-        name = re.sub(self.repattern, "", name) # todo WHY IS THIS CAUSING A EMPTY CHARACTER TO APPEAR
-        name_tokens = name.split(" ")
+        name = re.sub(self.re_pattern, "", name) #todo Strangely causes an empty character to appear
+        name_tokens = [token for token in name.split(" ") if token]
 
         return name_tokens
+
+    def count_character(self, name):
+        if name in self.character_counts["Characters"]:
+            self.character_counts["Characters"]["name"] += 1
+        else:
+            self.character_counts["Characters"]["name"] = 1
 
     def exceptions_check(self, name: str) -> bool: #todo recheck since we added more named exceptions
         """
@@ -105,15 +103,14 @@ class Universal_Character_list():
 
         return True
 
-    def remove_empty_character(self): #todo See if you can fix this
-        for name_dict in ["First Names", "Middle Names", "Last Names"]:
-            for name in self.persons[name_dict].keys():
-                if name == "":
-                    self.persons[name_dict].pop("")
-                    break
+    # def remove_empty_character(self):
+    #     for name_dict in ["First Names", "Middle Names", "Last Names"]:
+    #         for name in self.persons[name_dict].keys():
+    #             if name == "":
+    #                 self.persons[name_dict].pop("")
+    #                 break
 
-    def append_universal_character_list(self) -> None:
-        num = 0
+    def append_character_list(self) -> None:
         file_list = list((entry for entry in self.book.iterdir() if entry.is_file() and entry.match('*.txt')))
 
         print(self.book.name, "\n=======================================")
@@ -124,13 +121,15 @@ class Universal_Character_list():
 
             for word in doc.ents:
                 if word.label_ == "PERSON" and self.exceptions_check(word.text):
+                    #insert into character_counts
+                    self.count_character(word.text)
+
+                    #insert into randomized name dictionary
                     name_tokens = self.split_name(word.text)
-                    increment = self.insert_names_into_dict(word.text, name_tokens, num)
-                    num = increment
+                    self.insert_names_into_dict(word.text, name_tokens)
 
             raw_file.close()
-
-        self.remove_empty_character()
+        # self.remove_empty_character()
 
     def assign_label(self, name) -> str or int:
         "Here we randomly assign the labels to each character for the randomized list"
@@ -169,7 +168,7 @@ class Universal_Character_list():
         assign them there (so that we no longer have to process it)
         """
         for name_dict in ["First Names", "Middle Names", "Last Names"]: #For each name list, we substitute each name with a random one
-            for name in self.persons[name_dict].keys():
+            for name in self.rand_persons[name_dict].keys():
 
                 if "\n" in name: #name with line break exception
                     name_segments = [word for word in name.split("\n") if word]
@@ -177,7 +176,7 @@ class Universal_Character_list():
 
                         if self.exceptions_check(n):
 
-                            if not self.is_name_in_dict("rand_persons", n): #todo fix semantics of the bool for this
+                            if not self.is_name_in_dict(n): #todo if name has label | fix semantics of the truth value for this
                                 index = name_segments.index(n)
                                 name_segments[index] = self.query_all_rand_dict(n)
 
@@ -192,17 +191,17 @@ class Universal_Character_list():
                     self.rand_persons[name_dict][name] = new_name
 
                 else:
-                    if name not in self.rand_persons[name_dict] and self.exceptions_check(name):
+                    if self.rand_person[name_dict][name] == None and self.exceptions_check(name):
                         self.rand_persons[name_dict][name] = self.assign_label(name)
 
     def generate_file(self) -> Path:
-        self.append_universal_character_list()
+        self.append_character_list()
         self.randomize_names()
 
         ch_file_path = self.sf_path / f"{self.book.name.replace(' ', '')}_character_list.txt"
 
         with ch_file_path.open("w", encoding="utf-8") as f:
-            f.write(json.dumps(self.persons, indent=4, sort_keys=False))
+            f.write(json.dumps(self.character_counts, indent=4, sort_keys=False))
             f.write("\n\n\n")
             f.write(json.dumps(self.rand_persons, indent=4, sort_keys=False))
 

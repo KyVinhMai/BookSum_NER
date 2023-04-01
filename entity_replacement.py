@@ -6,19 +6,16 @@ if TYPE_CHECKING:
     from argparse import Namespace
 import character_list_generator as clg
 from tqdm import tqdm
-import spacy
-spacy.prefer_gpu()
-nlp = spacy.load("en_core_web_trf", exclude = ["tagger", "parser", "lemmatizer"])
-print("INFO: SpaCy successfully initiated")
 #todo add gpu accelarator and tqdm
-
 
 """
 NOTE:
 -----------------------------------------------------------------------------------
 This script works by placing the substituted summaries within the book folder.
 
-It CANNOT work without the original texts, as SpaCy will reference the original
+We extract the character list from the original text
+
+It CANNOT work without the original texts, as this script will reference the original
 placement of characters in the text in order to replace the string for generating
 substitutions or performing modifications.
 ------------------------------------------------------------------------------------
@@ -47,11 +44,9 @@ def read_unisex_names(uni_file) -> list:
 male_names, female_names = read_gender_list("name_gender_dataset.csv")
 neutral_names = read_unisex_names("unisex-names~2Funisex_names_table.csv")
 
-
 class Label_entities():
     def __init__(self, text: str, rand_ch_dict:str):
         self.text = text
-        self.doc = nlp(self.text)
         self.rand_ch = eval(rand_ch_dict)
         self.first_names = self.rand_ch["First Names"]
         self.middle_names = self.rand_ch["Middle Names"]
