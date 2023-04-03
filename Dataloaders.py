@@ -51,11 +51,22 @@ class BookProcessor():
             self.book_chunk_summaries.append(SummarizeChunk(current_chunk))
             self.current_chunk_index += 1
 
+    def create_recognition_questions(self):
+        ''' Creates recognition questions:
+         One from immediate past
+         One from the same book segment (quarter)
+         Two from previous segments
+         Each question has the associated memory length variable, indicating how many chunks ago
+         the event that is being tested was introduced in the book.'''
+
+        num_chunks_to_process = len(self.book_chunks) if self.live_mode else 10
+
+
 if __name__ == "__main__":
     with open("Data/RawBooks/Example.txt", "r") as f:
         b = f.read()
 
-    book_processor = BookProcessor(b)
+    book_processor = BookProcessor(b, live_mode=False)
     book_processor.create_chunk_summaries()
 
 

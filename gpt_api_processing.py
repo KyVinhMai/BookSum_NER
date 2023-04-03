@@ -64,6 +64,36 @@ def SummarizeChunk(chunk):
 
   return answer
 
+def CreateFalseSummary(chunk):
+  response = openai.ChatCompletion.create(
+    model="gpt-3.5-turbo",
+    messages=[
+      {"role": "system", "content": "You are a helpful assistant that changes book snippet summaries. Begin your answer with a {} tag.".format(BEGIN_ANSWER_TAG)},
+      {"role": "user", "content": 'Take the summary below and rephrase it in such a way that the described events are no longer the same, even though the setting remains the same. Keep your summary to the same length. Start your answer with a "### BEGIN ANSWER ###" tag. \nInital summary: \n"{}"'.format(chunk)} # Add "in under 500 words?
+    ]
+  )
+
+  response_content = response["choices"][0]["message"]["content"]
+
+  if BEGIN_ANSWER_TAG not in response_content:
+    raise ValueError("GPT response does not have a {} tag".format(BEGIN_ANSWER_TAG))
+
+  resp_parts = response_content.split(BEGIN_ANSWER_TAG)
+
+  if len(resp_parts) != 2:
+    raise ValueError("GPT gave multiple {} tags".format(BEGIN_ANSWER_TAG))
+
+  answer = resp_parts[-1]
+
+  answer = answer.strip("### END ANSWER ###") ### GPT 3 sometimes randomly appends this, for whatever reason.
+
+  if not answer.strip():
+    raise ValueError("GPT gave an empty response")
+  
+  return answer.strip()
+
+
+
 def DescribeChunkRoleFreeform(book_summary, scene_summary):
   response = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
