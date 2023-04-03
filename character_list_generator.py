@@ -33,49 +33,44 @@ class Universal_Character_list():
         }
 
     def is_name_in_dict(self, single_name: str) -> bool:
-        """
-        name_dict: either persons or rand_persons
-
-        Combines all the dictionaries in one single dictionary.
-        """
+        "Combines all the dictionaries in one single dictionary."
         all_name_dicts = self.rand_persons['First Names'] | self.rand_persons['Middle Names'] | self.rand_persons['Last Names']
         if single_name in all_name_dicts:
-            return False
+            return True
 
-        return True
+        return False
 
     def insert_names_into_dict(self, name, name_tokens: list[str]) -> None:
         """
-         If the placement of the name, whether it may be a first name or last name, is unknown
+         If the name type is unknown (whether it may be a first name or last name),
         the name will always then be placed in the first name list.
 
         This is so that whenever a full name appears, we can use the last name to check
         if it is in the first name list, which will then be removed.
         """
-        if len(name_tokens) > 1:
+        if len(name_tokens) == 2:
 
             if name_tokens[0] not in self.rand_persons["First Names"]:
                 self.rand_persons["First Names"][name_tokens[0]] = None
 
             if name_tokens[-1] not in self.rand_persons["Last Names"]:
 
+                "Checks that there are no duplicates in the first name"
+                "Ex: a character is introduced with their last name first"
                 if name_tokens[-1] in self.rand_persons["First Names"]:
                     self.rand_persons["First Names"].pop(name_tokens[-1])
-                    # Checks that there are no duplicates in the first name.
-                    # There are issues where the stories introduce a character with their last name first.
 
                 self.rand_persons["Last Names"][name_tokens[-1]] = None
 
         elif len(name_tokens) > 2:
             middle_names = name_tokens[1:-1]
-
             for middle in middle_names:
-                if name not in self.rand_persons["Middle Names"][middle]:
+                if name not in self.rand_persons["Middle Names"] and self.exceptions_check(name):
                     self.rand_persons["Middle Names"][middle] = None
 
         # Check the first name of a full name, i.e. Martha of Martha Stewart
         else:
-            if self.is_name_in_dict(name):
+            if not self.is_name_in_dict(name):
                 self.rand_persons["First Names"][name] = None
 
     def split_name(self, name:str) -> list[str]:
@@ -85,11 +80,14 @@ class Universal_Character_list():
 
         return name_tokens
 
-    def count_character(self, name):
-        if name in self.character_counts["Characters"]:
-            self.character_counts["Characters"]["name"] += 1
+    def count_character(self, name) -> None:
+        if "\n" in name:
+            name = "".join([n for n in name.split("\n") if n])
+        for character in self.character_counts["Characters"].keys():
+            if name in character:
+                self.character_counts["Characters"][character] += 1
         else:
-            self.character_counts["Characters"]["name"] = 1
+            self.character_counts["Characters"][name] = 1
 
     def exceptions_check(self, name: str) -> bool: #todo recheck since we added more named exceptions
         """
@@ -102,13 +100,6 @@ class Universal_Character_list():
                 return False
 
         return True
-
-    # def remove_empty_character(self):
-    #     for name_dict in ["First Names", "Middle Names", "Last Names"]:
-    #         for name in self.persons[name_dict].keys():
-    #             if name == "":
-    #                 self.persons[name_dict].pop("")
-    #                 break
 
     def append_character_list(self) -> None:
         file_list = list((entry for entry in self.book.iterdir() if entry.is_file() and entry.match('*.txt')))
@@ -129,7 +120,6 @@ class Universal_Character_list():
                     self.insert_names_into_dict(word.text, name_tokens)
 
             raw_file.close()
-        # self.remove_empty_character()
 
     def assign_label(self, name) -> str or int:
         "Here we randomly assign the labels to each character for the randomized list"
@@ -151,10 +141,18 @@ class Universal_Character_list():
         all_dict = self.rand_persons['First Names'] | self.rand_persons['Middle Names'] | self.rand_persons['Last Names']
         return all_dict[name]
 
+    def label_exists(self, name: str) -> bool:
+        "Checks if label exists"
+        all_name_dicts = self.rand_persons['First Names'] | self.rand_persons['Middle Names'] | self.rand_persons['Last Names']
+        if all_name_dicts[name]:
+            return True
+
+        return False
+
 
     def randomize_names(self) -> None:
         """
-        For each name in the character_list, we assign a random label
+        For each name in the value-less randomized name, we assign a random label
 
         Note:
         We have to deal with names which have line breaks in them, as the script
@@ -168,7 +166,7 @@ class Universal_Character_list():
         assign them there (so that we no longer have to process it)
         """
         for name_dict in ["First Names", "Middle Names", "Last Names"]: #For each name list, we substitute each name with a random one
-            for name in self.rand_persons[name_dict].keys():
+            for name in self.rand_persons[name_dict].copy():
 
                 if "\n" in name: #name with line break exception
                     name_segments = [word for word in name.split("\n") if word]
@@ -176,7 +174,7 @@ class Universal_Character_list():
 
                         if self.exceptions_check(n):
 
-                            if not self.is_name_in_dict(n): #todo if name has label | fix semantics of the truth value for this
+                            if self.label_exists(n): #todo if name has label | fix semantics of the truth value for this
                                 index = name_segments.index(n)
                                 name_segments[index] = self.query_all_rand_dict(n)
 
@@ -184,14 +182,14 @@ class Universal_Character_list():
                                 new_name = self.assign_label(n) #create new name
                                 self.rand_persons[name_dict][n] = new_name #register
                                 index = name_segments.index(n)
-                                name_segments[index] = new_name
+                                name_segments[index] = new_name #replace
 
                     name_segments.insert(1, "\n")#reinsert the line break
                     new_name = "".join(name_segments)
                     self.rand_persons[name_dict][name] = new_name
 
                 else:
-                    if self.rand_person[name_dict][name] == None and self.exceptions_check(name):
+                    if self.rand_persons[name_dict][name] is None and self.exceptions_check(name):
                         self.rand_persons[name_dict][name] = self.assign_label(name)
 
     def generate_file(self) -> Path:
@@ -219,9 +217,9 @@ if __name__ == "__main__":
     # book_test = Path('D:\\Users\kyvin.DESKTOP-ERBCV8T\PycharmProjects\Research-projects\\book_dataset\\booksum\scripts\\finished_summaries\\bookwolf\A Tale of Two Cities')
     # sub_test = Path("D:\\Users\kyvin.DESKTOP-ERBCV8T\PycharmProjects\Research-projects\\book_dataset\\booksum\scripts\\finished_summaries\\bookwolf\A Tale of Two Cities\ATaleofTwoCities_substituted")
     book_test = Path(
-        'D:\\Research_internships\\ArsenyProjects\\neurlips\\test_full_book')
+        'D:\\Research_Projects\\ArsenyProjects\\test_full_book')
     sub_test = Path(
-        "D:\\Research_internships\\ArsenyProjects\\neurlips\\test_full_book\\My_First_Years_substituted")
+        "D:\\Research_Projects\\ArsenyProjects\\test_full_book\\My_First_Years_book_substituted")
 
 
     def read_gender_list(gender_file) -> tuple[list,list]:

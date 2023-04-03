@@ -7,6 +7,8 @@ a
 and
 king
 queen
+Queen
+King
 Mr
 Mrs
 Miss
@@ -110,6 +112,8 @@ The Rt Hon Lord
 The Rt Hon Sir
 The Rt Hon Visc
 Viscount
+of
+OF
 II
 III
 IV
@@ -131,3 +135,13 @@ von
 du
 de
 Monsieur
+UN
+U.N.
+U.S. (all country names/abbreviations?)
+Robin Hood (often used as a description of how somebody acts rather than the actual character)
+Uncle Sam
+C.I.A.
+CIA
+F.B.I
+FBI
+us
