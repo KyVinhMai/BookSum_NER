@@ -16,7 +16,7 @@ class Universal_Character_list():
         self.neutral_names = uni_name
         self.re_pattern = "St.|\'s|\\+|,|-|\""
         self.name_exceptions = []
-        with open("name_exceptions.txt", "r") as f:
+        with open("NameDatasets/name_exceptions.txt", "r") as f:
             for line in f:
                 self.name_exceptions.append(line.rstrip())
 
@@ -83,6 +83,7 @@ class Universal_Character_list():
     def count_character(self, name) -> None:
         if "\n" in name:
             name = "".join([n for n in name.split("\n") if n])
+            
         for character in self.character_counts["Characters"].keys():
             if name in character:
                 self.character_counts["Characters"][character] += 1
@@ -242,8 +243,8 @@ if __name__ == "__main__":
 
         return uni_names
 
-    male_names, female_names = read_gender_list("name_gender_dataset.csv")
-    neutral_names = read_unisex_names("unisex-names~2Funisex_names_table.csv")
+    male_names, female_names = read_gender_list("NameDatasets/name_gender_dataset.csv")
+    neutral_names = read_unisex_names("NameDatasets/unisex-names~2Funisex_names_table.csv")
 
     c_file = Universal_Character_list(book_test, sub_test, male_names, female_names, neutral_names)
     c_file.generate_file()

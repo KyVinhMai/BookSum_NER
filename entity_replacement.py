@@ -17,10 +17,17 @@ It CANNOT work without the original texts, as SpaCy will reference the original
 placement of characters in the text in order to replace the string for generating
 substitutions or performing modifications.
 ------------------------------------------------------------------------------------
+
+ASSUMPTIONS:
+The script expects the text data to be from Project Gutenberg. 
+This is based off of a tremendous amount of things
+> Name exceptions like Queen (the band) are not expected to be apart of the 
+text, as they are not relevant. So ignoring queen sound be okay.
+
 """
 
-male_names, female_names = read_gender_list("name_gender_dataset.csv")
-neutral_names = read_unisex_names("unisex-names~2Funisex_names_table.csv")
+male_names, female_names = read_gender_list("NameDatasets/name_gender_dataset.csv")
+neutral_names = read_unisex_names("NameDatasets/unisex-names~2Funisex_names_table.csv")
 
 class Label_entities():
     def __init__(self, text: str, rand_ch_dict:str):

@@ -145,3 +145,5 @@ CIA
 F.B.I
 FBI
 us
+English
+english
