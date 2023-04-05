@@ -6,8 +6,7 @@ if TYPE_CHECKING:
     from argparse import Namespace
 import character_list_generator as clg
 from tqdm import tqdm
-
-#todo add gpu accelarator and tqdm
+from utils.read_name_files import read_gender_list, read_unisex_names
 
 """
 NOTE:
@@ -18,36 +17,21 @@ It CANNOT work without the original texts, as SpaCy will reference the original
 placement of characters in the text in order to replace the string for generating
 substitutions or performing modifications.
 ------------------------------------------------------------------------------------
+
+ASSUMPTIONS:
+The script expects the text data to be from Project Gutenberg. 
+This is based off of a tremendous amount of things
+> Name exceptions like Queen (the band) are not expected to be apart of the 
+text, as they are not relevant. So ignoring queen sound be okay.
+
 """
 
-def read_gender_list(gender_file) -> tuple[list,list]:
-    male_names = []
-    female_names = []
-    with open(gender_file, "r")  as f:
-        for line in f:
-            if line.rstrip("\n").split(",")[1] == "M": #Checks if the name is male
-                male_names.append(line.rstrip("\n").split(",")[0])
-            else:
-                female_names.append(line.rstrip("\n").split(",")[0])
-
-    return male_names, female_names
-
-def read_unisex_names(uni_file) -> list:
-    uni_names = []
-    with open(uni_file, "r")  as f:
-        for line in f:
-            uni_names.append(line.rstrip("\n").split(",")[2])
-
-    return uni_names
-
-male_names, female_names = read_gender_list("name_gender_dataset.csv")
-neutral_names = read_unisex_names("unisex-names~2Funisex_names_table.csv")
-
+male_names, female_names = read_gender_list("NameDatasets/name_gender_dataset.csv")
+neutral_names = read_unisex_names("NameDatasets/unisex-names~2Funisex_names_table.csv")
 
 class Label_entities():
     def __init__(self, text: str, rand_ch_dict:str):
         self.text = text
-        self.doc = nlp(self.text)
         self.rand_ch = eval(rand_ch_dict)
         self.first_names = self.rand_ch["First Names"]
         self.middle_names = self.rand_ch["Middle Names"]
@@ -73,7 +57,7 @@ def create_subdirectory(book : Path) -> Path:
     "Creates a new subfolder to store a file of all the subsituted names"
 
     sub_folder_path = book / f"{book.name.replace(' ', '')}_substituted"
-    sub_folder_path.mkdir(parents = True, exist_ok= True) #Creates the subdirectory
+    sub_folder_path.mkdir(parents=True, exist_ok=True) #Creates the subdirectory
 
     return sub_folder_path
 
@@ -94,7 +78,7 @@ def parse_summaries(book: Path, sub_folder_path: Path, rand_ch_dict: Path):
     "For each summary create the file path for it"
     file_list = list((entry for entry in book.iterdir() if entry.is_file() and entry.match('*.txt')))
 
-    for summary in tqdm(file_list, desc = "List of Summaries", unit = "sections"):
+    for summary in tqdm(file_list, desc="List of Summaries", unit="sections"):
         file_name = str(summary.stem) + "_substituted.txt"
         filepath = sub_folder_path / file_name
         print("")
@@ -112,10 +96,10 @@ def parse_corpus(corpus_path: Path) -> None:
 
             character_file = clg.Universal_Character_list(book, sub_folder_path, male_names, female_names, neutral_names) #Create the character list
             character_file_path = character_file.generate_file()
-            with open(character_file_path, "r") as f: #todo streamline this lines of code
+            with open(character_file_path, "r") as f:
                 character_list = f.read()
 
-            _, random = character_list.split("\n\n\n") #todo tidy up this olympics shit
+            _, random = character_list.split("\n\n\n")
 
             parse_summaries(book, sub_folder_path, random)  # Write to file
 
@@ -124,10 +108,10 @@ def modify_book(book_path: Path) -> None:
     sub_folder_path = book_path / f"{book_path.name.replace(' ', '')}_substituted"
     character_file_path = sub_folder_path /  f"{book_path.name.replace(' ', '')}_character_list.txt"
 
-    with open(character_file_path, "r") as f:  # todo streamline this lines of code
+    with open(character_file_path, "r") as f:
         character_list = f.read()
 
-    _, random = character_list.split("\n\n\n")  # todo tidy up this olympics shit
+    _, random = character_list.split("\n\n\n")
 
     parse_summaries(book_path, sub_folder_path, random)  # Write to file
 
@@ -138,7 +122,6 @@ def modify_file(file_path: Path) -> None:
     character_file_path = sub_folder_path /  f"{book_path.name.replace(' ', '')}_character_list.txt"
 
     write_file_sub(file_path, sub_folder_path, character_file_path)
-
 
 def main(options: Namespace) -> None:
 
