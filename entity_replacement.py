@@ -37,12 +37,12 @@ class Label_entities():
         self.first_n = self.rand_ch["First Names"]
         self.middle_n = self.rand_ch["Middle Names"]
         self.last_n = self.rand_ch["Last Names"]
-        self.all_names = self.first_n + self.middle_n + self.last_n
+        self.all_names = self.first_n | self.middle_n | self.last_n
 
     def replace_names(self) -> None:
-        for name, rand_name in self.all_names:
-            pattern = f"(){name}(\W)"
-            self.text = re.sub(pattern, f"\\1{rand_name}\\1", self.text)
+        for name, rand_name in self.all_names.items():
+            pattern = f"( ){re.escape(name)}(\W)"
+            self.text = re.sub(pattern, f"\\1{rand_name}\\2", self.text)
 
     def randomized_character_section(self):
         "Randomized Character Section at the bottom"
