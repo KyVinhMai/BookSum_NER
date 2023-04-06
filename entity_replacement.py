@@ -1,6 +1,7 @@
 from __future__ import annotations
 import argparse
 from pathlib import Path
+import re
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from argparse import Namespace
@@ -33,14 +34,15 @@ class Label_entities():
     def __init__(self, text: str, rand_ch_dict:str):
         self.text = text
         self.rand_ch = eval(rand_ch_dict)
-        self.first_names = self.rand_ch["First Names"]
-        self.middle_names = self.rand_ch["Middle Names"]
-        self.last_names = self.rand_ch["Last Names"]
+        self.first_n = self.rand_ch["First Names"]
+        self.middle_n = self.rand_ch["Middle Names"]
+        self.last_n = self.rand_ch["Last Names"]
+        self.all_names = self.first_n + self.middle_n + self.last_n
 
     def replace_names(self) -> None:
-        for name_list in [self.first_names, self.middle_names, self.last_names]:
-            for person in name_list:
-                self.text = self.text.replace(person, name_list[person])#todo map
+        for name, rand_name in self.all_names:
+            pattern = f"(){name}(\W)"
+            self.text = re.sub(pattern, f"\\1{rand_name}\\1", self.text)
 
     def randomized_character_section(self):
         "Randomized Character Section at the bottom"
