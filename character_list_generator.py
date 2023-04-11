@@ -14,11 +14,15 @@ class Universal_Character_list():
         self.sf_path = sub_folder_path
         self.male_names, self.female_names = m_names, f_name
         self.neutral_names = uni_name
-        self.re_pattern = "St.|\'s|\\+|,|-|\""
+        self.re_pattern = "St.|\'s|\\+|,|\""
         self.name_exceptions = []
         with open("NameDatasets/name_exceptions.txt", "r") as f:
             for line in f:
                 self.name_exceptions.append(line.rstrip())
+        self.celebrities = []
+        with open("NameDatasets/historical_figures", "r") as f:
+            for line in f:
+                self.celebrities.append(line.rstrip())
 
         self.character_counts = {
             "Table_Type": "Character Counts",
@@ -34,7 +38,7 @@ class Universal_Character_list():
 
     def is_name_in_dict(self, single_name: str) -> bool:
         "Combines all the dictionaries in one single dictionary."
-        all_name_dicts = self.rand_persons['First Names'] | self.rand_persons['Middle Names'] | self.rand_persons['Last Names']
+        all_name_dicts = self.return_all_dict()
         if single_name in all_name_dicts:
             return True
 
@@ -73,22 +77,35 @@ class Universal_Character_list():
             if not self.is_name_in_dict(name):
                 self.rand_persons["First Names"][name] = None
 
-    def split_name(self, name:str) -> list[str]:
-        "Splits the name into single tokens"
-        name = re.sub(self.re_pattern, "", name) #todo Strangely causes an empty character to appear
-        name_tokens = [token for token in name.split(" ") if token]
-
+    def tokenize_name(self, name:str) -> list[str]:
+        "Splits the name into single tokens and processes them"
+        print(name.__repr__(), end= ", ")
+        name = re.sub(self.re_pattern, "", name)
+        name = re.sub('\n', ' ', name)
+        name_tokens = [token for token in name.split(" ") if token and self.exceptions_check(token)]
+        print(name_tokens)
         return name_tokens
 
     def count_character(self, name) -> None:
+        """
+        We want both the non-line break character name and the normal
+        character name to have the same number of counts
+        """
+        old_name = None
         if "\n" in name:
+            old_name = name
             name = "".join([n for n in name.split("\n") if n])
-            
+
+        if old_name:
+            if old_name not in self.return_all_dict():
+                self.character_counts["Characters"][old_name] = 0
+        else:
+            if name not in self.return_all_dict():
+                self.character_counts["Characters"][name] = 0
+
         for character in self.character_counts["Characters"].keys():
             if name in character:
                 self.character_counts["Characters"][character] += 1
-        else:
-            self.character_counts["Characters"][name] = 1
 
     def exceptions_check(self, name: str) -> bool: #todo recheck since we added more named exceptions
         """
@@ -97,7 +114,7 @@ class Universal_Character_list():
         issue with removing determiners).
         """
         for word in self.name_exceptions:
-            if word in name:
+            if word == name:
                 return False
 
         return True
@@ -112,13 +129,15 @@ class Universal_Character_list():
             print(summary.name)
 
             for word in doc.ents:
-                if word.label_ == "PERSON" and self.exceptions_check(word.text):
+                if word.label_ == "PERSON":
+                    name_tokens = self.tokenize_name(word.text)
+                    processed_name = " ".join(name_tokens)
+
                     #insert into character_counts
-                    self.count_character(word.text)
+                    self.count_character(processed_name)
 
                     #insert into randomized name dictionary
-                    name_tokens = self.split_name(word.text)
-                    self.insert_names_into_dict(word.text, name_tokens)
+                    self.insert_names_into_dict(processed_name, name_tokens)
 
             raw_file.close()
 
@@ -134,68 +153,40 @@ class Universal_Character_list():
 
         return random_label
 
-    def query_all_rand_dict(self, name:str) -> str:
-        """
-        A helper function to retrieve the value from the names dictionary as
-        the dictionary will be continuously updated.
-        """
-        all_dict = self.rand_persons['First Names'] | self.rand_persons['Middle Names'] | self.rand_persons['Last Names']
-        return all_dict[name]
+    def return_all_dict(self) -> dict:
+        return self.rand_persons['First Names'] | self.rand_persons['Middle Names'] | self.rand_persons['Last Names']
 
-    def label_exists(self, name: str) -> bool:
-        "Checks if label exists"
-        all_name_dicts = self.rand_persons['First Names'] | self.rand_persons['Middle Names'] | self.rand_persons['Last Names']
-        if all_name_dicts[name]:
-            return True
+    def clean(self, name: str) -> str:
+        nlp = spacy.load("en_core_web_sm")
+        index = name.find("\n")
+        temp = [n for n in name.split("\n") if self.exceptions_check(n)]
+        print(temp)
+        # checks if last word is a verb
+        last_word = nlp(temp[-1])[0]
+        if last_word.pos_ == "VERB" and last_word.is_lower:
+            temp = temp[0:-1]
 
-        return False
-
+        temp = list("".join(temp))  # reinsert newline
+        temp.insert(index, "\n")
+        return "".join(temp)
 
     def randomize_names(self) -> None:
         """
         For each name in the value-less randomized name, we assign a random label
-
-        Note:
-        We have to deal with names which have line breaks in them, as the script
-        requires each name to be unique. We have to deal with 3 different instances
-        of the same entity.
-
-        Ex. "Jimmy\nOlyphant", "Jimmy", "Olyphant"
-
-        When coming across a line break name, we check if the associated names
-        already have random labels assigned. Otherwise, create the random label and
-        assign them there (so that we no longer have to process it)
         """
         for name_dict in ["First Names", "Middle Names", "Last Names"]: #For each name list, we substitute each name with a random one
-            for name in self.rand_persons[name_dict].copy():
+            for name in self.rand_persons[name_dict]:
+                self.rand_persons[name_dict][name] = self.assign_label(name)
 
-                if "\n" in name: #name with line break exception
-                    name_segments = [word for word in name.split("\n") if word]
-                    for n in name_segments:
+    # def remove_figures(self):
+    #     all_names = self.return_all_dict()
+    #     for name in all_names.keys():
+    #         if name in celebrities and self.character_counts[name] < 3:
 
-                        if self.exceptions_check(n):
-
-                            if self.label_exists(n): #todo if name has label | fix semantics of the truth value for this
-                                index = name_segments.index(n)
-                                name_segments[index] = self.query_all_rand_dict(n)
-
-                            else:
-                                new_name = self.assign_label(n) #create new name
-                                self.rand_persons[name_dict][n] = new_name #register
-                                index = name_segments.index(n)
-                                name_segments[index] = new_name #replace
-
-                    name_segments.insert(1, "\n")#reinsert the line break
-                    new_name = "".join(name_segments)
-                    self.rand_persons[name_dict][name] = new_name
-
-                else:
-                    if self.rand_persons[name_dict][name] is None and self.exceptions_check(name):
-                        self.rand_persons[name_dict][name] = self.assign_label(name)
-
-    def generate_file(self) -> Path:
+    def generate_file(self): #-> Path:
         self.append_character_list()
         self.randomize_names()
+        # self.remove_figures()
 
         ch_file_path = self.sf_path / f"{self.book.name.replace(' ', '')}_character_list.txt"
 
@@ -218,9 +209,9 @@ if __name__ == "__main__":
     # book_test = Path('D:\\Users\kyvin.DESKTOP-ERBCV8T\PycharmProjects\Research-projects\\book_dataset\\booksum\scripts\\finished_summaries\\bookwolf\A Tale of Two Cities')
     # sub_test = Path("D:\\Users\kyvin.DESKTOP-ERBCV8T\PycharmProjects\Research-projects\\book_dataset\\booksum\scripts\\finished_summaries\\bookwolf\A Tale of Two Cities\ATaleofTwoCities_substituted")
     book_test = Path(
-        'D:\\Research_Projects\\ArsenyProjects\\test_full_book')
+        'C:\\Users\\kyvin\\PycharmProjects\\Narrative-Understanding-Dataset\\test_full_book')
     sub_test = Path(
-        "D:\\Research_Projects\\ArsenyProjects\\test_full_book\\My_First_Years_book_substituted")
+        "C:\\Users\\kyvin\\PycharmProjects\\Narrative-Understanding-Dataset\\test_full_book\\test_full_book_substituted")
 
 
     def read_gender_list(gender_file) -> tuple[list,list]:
