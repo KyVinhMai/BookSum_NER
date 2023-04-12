@@ -3,7 +3,7 @@ hug
 christ
 beg
 the
-a
+The
 and
 king
 queen
@@ -63,7 +63,6 @@ Col
 Lt
 Lt Col
 Lt Cpl
-M
 Madam
 Madame
 Major
@@ -114,6 +113,7 @@ The Rt Hon Visc
 Viscount
 of
 OF
+I
 II
 III
 IV
@@ -147,3 +147,6 @@ FBI
 us
 English
 english
+le
+Le
+Great
