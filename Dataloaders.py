@@ -1,4 +1,5 @@
 #import entity_replacement
+import settings
 from utils.BookProcessing import chunk_book, rechunk_book
 from gpt_api_processing import SummarizeChunk, SummarizeChunkRetry, CreateFalseSummary
 import json
@@ -13,7 +14,6 @@ class BookProcessor():
         self.questions_per_chunk = 8
         self.original_book_text = 8
 
-        #self.NE_sub_dict = entity_replacement.create_ne_sub_dict(original_book_text)
         self.NE_sub_dict = None
 
         self.max_chunk_length = chunk_length
@@ -24,9 +24,7 @@ class BookProcessor():
         self.book_chunk_summaries = []
         self.false_book_chunk_summaries = []
 
-        self.book_summary_so_far = None
-
-        self.failed_summaries = {} # Dict index: comment for failed summaries
+        self.failed_summaries = {} # Dict index: comment for failed summaries/failed fake summaries
 
         # The chunks are slightly overlapped when summaries are created since we don't know exactly where different scenes end and other scenes begin.
         self.overlap_symbols = overlap_symbols
@@ -44,7 +42,7 @@ class BookProcessor():
 
     def create_chunk_summaries(self):
 
-        num_chunks_to_process = len(self.book_chunks) if self.live_mode else 10
+        num_chunks_to_process = len(self.book_chunks) if self.live_mode else settings.debug_num_chunks
 
         for current_chunk_index in range(num_chunks_to_process):
 
@@ -153,8 +151,25 @@ class BookProcessor():
         if not self.book_chunk_summaries:
             raise ValueError("Book chunk summaries and false book chunk summaries must be created before generating questions.")
 
-        num_chunks_to_process = len(self.book_chunks) if self.live_mode else 10
+        num_chunks_to_process = len(self.book_chunks) if self.live_mode else settings.debug_num_chunks
         raise NotImplementedError() # Finish
+
+    @staticmethod
+    def init_from_summaries(filepath):
+
+        rowids, chunks, ochunks, sums, fakesums, status, comment = LoadSummaries(filepath)
+
+        # Dropping the first line since it's the column name
+        rowids, chunks, ochunks, sums, fakesums, status, comment = [el[1:] for el in (rowids, chunks, ochunks, sums, fakesums, status, comment)]
+
+        b = BookProcessor(" ".join(chunks))
+        b.overlapped_book_chunks = ochunks
+        b.book_chunk_summaries = [s if s else None for s in sums]
+        b.false_book_chunk_summaries = [[None if not s else s for s in fs] for fs in fakesums]
+
+        b.failed_summaries = {i: c for i, (s, c) in enumerate(zip(status, comment)) if s != "OK"}
+
+        return b
 
 def LoadSummaries(filepath):
 
@@ -173,21 +188,22 @@ def LoadSummaries(filepath):
 
 
 
-
-
 if __name__ == "__main__":
     with open("Data/RawBooks/ScifiExampleRaw.txt", "r") as f:
         b = f.read()
 
+    if True:
 
-    book_processor = BookProcessor(b, live_mode=False)
-    book_processor.create_chunk_summaries()
-    book_processor.create_false_book_chunk_summaries()
+        book_processor = BookProcessor(b, live_mode=False)
+        book_processor.create_chunk_summaries()
+        book_processor.create_false_book_chunk_summaries()
 
-    book_processor.save_summary_data("./Data/TrueAndFalseSummaryData/ScifiExampleProcessed.tagseparated")
+        book_processor.save_summary_data("./Data/TrueAndFalseSummaryData/ScifiExample25chunks.tagseparated")
 
-    rowids, chunks, ochunks, sums, fakesums_unrolled, status, comment = LoadSummaries("./Data/TrueAndFalseSummaryData/ScifiExampleProcessed.tagseparated")
-    res = LoadSummaries("./Data/TrueAndFalseSummaryData/ScifiExampleProcessed.tagseparated")
+        b2 = BookProcessor.init_from_summaries("./Data/TrueAndFalseSummaryData/ScifiExample25chunks.tagseparated")
+        #rowids, chunks, ochunks, sums, fakesums_unrolled, status, comment = LoadSummaries("./Data/TrueAndFalseSummaryData/ScifiExampleProcessed.tagseparated")
+        #res = LoadSummaries("./Data/TrueAndFalseSummaryData/ScifiExampleProcessed.tagseparated")
+
 
 
 
