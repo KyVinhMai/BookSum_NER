@@ -45,7 +45,7 @@ def SummarizeChunk(chunk):
     model="gpt-3.5-turbo",
     messages=[
       {"role": "system", "content": "You are a helpful assistant that summarizes book snippets. Begin your answer with a {} tag.".format(BEGIN_ANSWER_TAG)},
-      {"role": "user", "content": 'Summarize the following book excerpt: "{}"'.format(chunk)} # Add "in under 500 words?
+      {"role": "user", "content": 'Summarize the following book excerpt: "{}". Start your answer with a "{}" tag.'.format(chunk, BEGIN_ANSWER_TAG)} # Add "in under 500 words?
     ]
   )
 
@@ -122,7 +122,7 @@ def CreateFalseSummary(chunk):
     model="gpt-3.5-turbo",
     messages=[
       {"role": "system", "content": "You are a helpful assistant that changes book snippet summaries. Begin your answer with a {} tag.".format(BEGIN_ANSWER_TAG)},
-      {"role": "user", "content": 'Take the summary below and rephrase it in such a way that the described events are no longer the same, even though the setting remains the same. Keep your summary to the same length. Start your answer with a "### BEGIN ANSWER ###" tag. \nInital summary: \n"{}"'.format(chunk)} # Add "in under 500 words?
+      {"role": "user", "content": 'Take the summary below and rephrase it in such a way that the described events are no longer the same, even though the setting remains the same. Keep your summary to the same length. Start your answer with a "{}" tag. \nInital summary: \n"{}"'.format(BEGIN_ANSWER_TAG, chunk)} # Add "in under 500 words?
     ]
   )
 
