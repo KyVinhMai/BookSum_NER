@@ -27,8 +27,8 @@ text, as they are not relevant. So ignoring queen sound be okay.
 
 """
 
-male_names, female_names = read_gender_list("NameDatasets/name_gender_dataset.csv")
-neutral_names = read_unisex_names("NameDatasets/unisex-names~2Funisex_names_table.csv")
+male_names, female_names = read_gender_list()
+neutral_names = read_unisex_names()
 
 class Label_entities():
     def __init__(self, text: str, rand_ch_dict:str):

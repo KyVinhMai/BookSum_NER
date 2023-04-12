@@ -6,23 +6,19 @@ import secrets
 import gender_guesser.detector as gender
 spacy.prefer_gpu()
 nlp = spacy.load("en_core_web_trf", exclude = ["tagger", "parser", "lemmatizer"]) #Understand pipelines To make this faster
+pipe = spacy.load("en_core_web_sm")
 #Generate different seed
 
 class Universal_Character_list():
-    def __init__(self, book: Path, sub_folder_path: Path, m_names: list, f_name: list, uni_name: list):
+    def __init__(self, book: Path, sf_path: Path, m_names: list, f_name: list,
+                 uni_name: list, n_exceptions, h_figures):
         self.book = book
-        self.sf_path = sub_folder_path
+        self.sf_path = sf_path
         self.male_names, self.female_names = m_names, f_name
         self.neutral_names = uni_name
-        self.re_pattern = "St.|\'s|\\+|,|\""
-        self.name_exceptions = []
-        with open("NameDatasets/name_exceptions.txt", "r") as f:
-            for line in f:
-                self.name_exceptions.append(line.rstrip())
-        self.celebrities = []
-        with open("NameDatasets/historical_figures", "r") as f:
-            for line in f:
-                self.celebrities.append(line.rstrip())
+        self.re_pattern = "St\.|\'s|\\+|,|\""
+        self.name_exceptions = n_exceptions
+        self.celebrities = h_figures
 
         self.character_counts = {
             "Table_Type": "Character Counts",
@@ -36,13 +32,9 @@ class Universal_Character_list():
             "Last Names": dict()
         }
 
-    def is_name_in_dict(self, single_name: str) -> bool:
-        "Combines all the dictionaries in one single dictionary."
-        all_name_dicts = self.return_all_dict()
-        if single_name in all_name_dicts:
-            return True
-
-        return False
+    def all_dict(self) -> dict:
+        "Combines all the dictionary names together"
+        return self.rand_persons['First Names'] | self.rand_persons['Middle Names'] | self.rand_persons['Last Names']
 
     def insert_names_into_dict(self, name, name_tokens: list[str]) -> None:
         """
@@ -74,8 +66,17 @@ class Universal_Character_list():
 
         # Check the first name of a full name, i.e. Martha of Martha Stewart
         else:
-            if not self.is_name_in_dict(name):
+            if name not in self.all_dict():
                 self.rand_persons["First Names"][name] = None
+
+    def rm_verb(self, name_tokens: list[str]) -> list[str]:
+        "Line breaks cause verbs to be appended to names... Wilton\ngo"
+        # checks if last word is a verb
+        last_word = pipe(name_tokens[-1])[0]
+        if last_word.pos_ != "NOUN" and last_word.is_lower:
+            name_tokens = name_tokens[0:-1]
+
+        return name_tokens
 
     def tokenize_name(self, name:str) -> list[str]:
         "Splits the name into single tokens and processes them"
@@ -83,7 +84,6 @@ class Universal_Character_list():
         name = re.sub(self.re_pattern, "", name)
         name = re.sub('\n', ' ', name)
         name_tokens = [token for token in name.split(" ") if token and self.exceptions_check(token)]
-        print(name_tokens)
         return name_tokens
 
     def count_character(self, name) -> None:
@@ -91,21 +91,11 @@ class Universal_Character_list():
         We want both the non-line break character name and the normal
         character name to have the same number of counts
         """
-        old_name = None
-        if "\n" in name:
-            old_name = name
-            name = "".join([n for n in name.split("\n") if n])
-
-        if old_name:
-            if old_name not in self.return_all_dict():
-                self.character_counts["Characters"][old_name] = 0
-        else:
-            if name not in self.return_all_dict():
-                self.character_counts["Characters"][name] = 0
-
         for character in self.character_counts["Characters"].keys():
             if name in character:
                 self.character_counts["Characters"][character] += 1
+        else:
+            self.character_counts["Characters"][name] = 1
 
     def exceptions_check(self, name: str) -> bool: #todo recheck since we added more named exceptions
         """
@@ -131,6 +121,11 @@ class Universal_Character_list():
             for word in doc.ents:
                 if word.label_ == "PERSON":
                     name_tokens = self.tokenize_name(word.text)
+                    if name_tokens == []:
+                        continue
+                    name_tokens = self.rm_verb(name_tokens)
+                    print(name_tokens)
+
                     processed_name = " ".join(name_tokens)
 
                     #insert into character_counts
@@ -152,23 +147,6 @@ class Universal_Character_list():
             random_label = secrets.choice(self.neutral_names)
 
         return random_label
-
-    def return_all_dict(self) -> dict:
-        return self.rand_persons['First Names'] | self.rand_persons['Middle Names'] | self.rand_persons['Last Names']
-
-    def clean(self, name: str) -> str:
-        nlp = spacy.load("en_core_web_sm")
-        index = name.find("\n")
-        temp = [n for n in name.split("\n") if self.exceptions_check(n)]
-        print(temp)
-        # checks if last word is a verb
-        last_word = nlp(temp[-1])[0]
-        if last_word.pos_ == "VERB" and last_word.is_lower:
-            temp = temp[0:-1]
-
-        temp = list("".join(temp))  # reinsert newline
-        temp.insert(index, "\n")
-        return "".join(temp)
 
     def randomize_names(self) -> None:
         """
@@ -199,11 +177,7 @@ class Universal_Character_list():
         return ch_file_path
 
     def debug(self):
-        print(self. male_names)
-        print()
-        print(self. female_names)
-        print()
-        print(self. neutral_names)
+        print(self.tokenize_name("Strauss"))
 
 if __name__ == "__main__":
     # book_test = Path('D:\\Users\kyvin.DESKTOP-ERBCV8T\PycharmProjects\Research-projects\\book_dataset\\booksum\scripts\\finished_summaries\\bookwolf\A Tale of Two Cities')
@@ -213,30 +187,15 @@ if __name__ == "__main__":
     sub_test = Path(
         "C:\\Users\\kyvin\\PycharmProjects\\Narrative-Understanding-Dataset\\test_full_book\\test_full_book_substituted")
 
+    from utils.read_name_files import read_gender_list, read_unisex_names, read_exceptions, read_figures
+    male_names, female_names = read_gender_list()
+    neutral_names = read_unisex_names()
+    h_figures = read_figures()
+    name_exceptions = read_exceptions()
 
-    def read_gender_list(gender_file) -> tuple[list,list]:
-        male_names = []
-        female_names = []
-        with open(gender_file, "r")  as f:
-            for line in f:
-                if line.rstrip("\n").split(",")[1] == "M": #Checks if hte name is male
-                    male_names.append(line.rstrip("\n").split(",")[0])
-                else:
-                    female_names.append(line.rstrip("\n").split(",")[0])
-
-        return male_names, female_names
-
-    def read_unisex_names(uni_file) -> list:
-        uni_names = []
-        with open(uni_file, "r")  as f:
-            for line in f:
-                uni_names.append(line.rstrip("\n").split(",")[2])
-
-        return uni_names
-
-    male_names, female_names = read_gender_list("NameDatasets/name_gender_dataset.csv")
-    neutral_names = read_unisex_names("NameDatasets/unisex-names~2Funisex_names_table.csv")
-
-    c_file = Universal_Character_list(book_test, sub_test, male_names, female_names, neutral_names)
+    c_file = Universal_Character_list(book_test, sub_test, male_names, female_names,
+                                      neutral_names,
+                                      name_exceptions,
+                                      h_figures)
     c_file.generate_file()
 
