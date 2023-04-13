@@ -41,7 +41,7 @@ class Label_entities():
 
     def replace_names(self) -> None:
         for name, rand_name in self.all_names.items():
-            pattern = f"( ){re.escape(name)}(\W)"
+            pattern = f"( |\n|\"){re.escape(name)}(\n|\W)"
             self.text = re.sub(pattern, f"\\1{rand_name}\\2", self.text)
 
     def randomized_character_section(self):
