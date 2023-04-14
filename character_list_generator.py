@@ -1,5 +1,6 @@
 import spacy
 import json
+import logging
 import re
 from pathlib import Path
 import secrets
@@ -8,6 +9,13 @@ spacy.prefer_gpu()
 nlp = spacy.load("en_core_web_trf", exclude = ["tagger", "parser", "lemmatizer"]) #Understand pipelines To make this faster
 pipe = spacy.load("en_core_web_sm")
 #Generate different seed
+
+"Logging Configuration"
+logging.basicConfig(
+    level=logging.INFO,
+    filename= "characters.log",
+    filemode= "w"
+)
 
 class Universal_Character_list():
     def __init__(self, book: Path, sf_path: Path, m_names: list, f_name: list,
@@ -80,7 +88,7 @@ class Universal_Character_list():
 
     def tokenize_name(self, name:str) -> list[str]:
         "Splits the name into single tokens and processes them"
-        print(name.__repr__(), end= ", ")
+        logging.info(f"{name.__repr__()}")
         name = re.sub(self.re_pattern, "", name)
         name = re.sub('\n', ' ', name)
         name_tokens = [token for token in name.split(" ") if token and self.exceptions_check(token)]
@@ -120,17 +128,19 @@ class Universal_Character_list():
 
             for word in doc.ents:
                 if word.label_ == "PERSON":
-                    name_tokens = self.tokenize_name(word.text)
-                    if name_tokens == []:
+                    try:
+                        name_tokens = self.tokenize_name(word.text)
+                        name_tokens = self.rm_verb(name_tokens)
+                    except IndexError:
                         continue
-                    name_tokens = self.rm_verb(name_tokens)
-                    print(name_tokens)
+                    finally:
+                        if name_tokens == []:
+                            continue
 
+                    logging.info(f"{name_tokens}")
                     processed_name = " ".join(name_tokens)
-
                     #insert into character_counts
                     self.count_character(processed_name)
-
                     #insert into randomized name dictionary
                     self.insert_names_into_dict(processed_name, name_tokens)
 
@@ -177,15 +187,13 @@ class Universal_Character_list():
         return ch_file_path
 
     def debug(self):
-        print(self.tokenize_name("Strauss"))
+        print(self.rm_verb(["Edward"]))
 
 if __name__ == "__main__":
-    # book_test = Path('D:\\Users\kyvin.DESKTOP-ERBCV8T\PycharmProjects\Research-projects\\book_dataset\\booksum\scripts\\finished_summaries\\bookwolf\A Tale of Two Cities')
-    # sub_test = Path("D:\\Users\kyvin.DESKTOP-ERBCV8T\PycharmProjects\Research-projects\\book_dataset\\booksum\scripts\\finished_summaries\\bookwolf\A Tale of Two Cities\ATaleofTwoCities_substituted")
     book_test = Path(
-        'C:\\Users\\kyvin\\PycharmProjects\\Narrative-Understanding-Dataset\\test_full_book')
+        'D:\\Research_Projects\\ArsenyProjects\\neurlips\\test_full_book')
     sub_test = Path(
-        "C:\\Users\\kyvin\\PycharmProjects\\Narrative-Understanding-Dataset\\test_full_book\\test_full_book_substituted")
+        "D:\\Research_Projects\\ArsenyProjects\\neurlips\\test_full_book\\test_full_book_substituted")
 
     from utils.read_name_files import read_gender_list, read_unisex_names, read_exceptions, read_figures
     male_names, female_names = read_gender_list()
