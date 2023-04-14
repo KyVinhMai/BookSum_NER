@@ -9,6 +9,10 @@ import character_list_generator as clg
 from tqdm import tqdm
 from utils.read_name_files import read_gender_list, read_unisex_names
 
+from collections import defaultdict
+
+import numpy as np
+
 """
 NOTE:
 -----------------------------------------------------------------------------------
@@ -53,6 +57,67 @@ class Label_entities():
         self.randomized_character_section()
 
         return self.text
+
+    @staticmethod
+    def create_nonrandom_character_insertion_dict(source_book_dict: dict, target_book_dict: str):
+
+        '''Makes a dictionary that maps actual character names from the target book to random actual character names in the source book'''
+
+        insertion_dict = {"First Names": {}, "Middle Names": {}, "Last Names": {}}
+
+        candidates = defaultdict(lambda: list())
+
+
+        for nametype in ["First Names", "Middle Names", "Last Names"]:
+
+            for true_char_name, (rand_char_name, gender) in source_book_dict[nametype].items():
+
+                candidates[(nametype, gender)].append(true_char_name)
+
+
+        cand_names_no_gender = {}
+        for nametype in ["First Names", "Middle Names", "Last Names"]:
+            cand_names_no_gender[nametype] = candidates[(nametype, "male")] | candidates[(nametype, "female")] | candidates[(nametype, "neutral")]
+
+        all_cand_names = cand_names_no_gender["First Names"] | cand_names_no_gender["Middle Names"] | cand_names_no_gender["Last Names"]
+
+        if not all_cand_names:
+            print("WARNING: SOURCE BOOK HAS NO CHARACTERS! Leaving the dictionary unchanged")
+            return target_book_dict
+
+        for nametype in ["First Names", "Middle Names", "Last Names"]:
+
+            for true_char_name, (rand_char_name, gender) in target_book_dict[nametype].items():
+
+                if candidates[(nametype, gender)]:
+                    replacement = np.random.choice(candidates[(nametype, gender)])
+                    insertion_dict[nametype][true_char_name] = replacement, gender
+                elif cand_names_no_gender[nametype]:
+                    replacement = np.random.choice(cand_names_no_gender[nametype])
+                    insertion_dict[nametype][true_char_name] = replacement, "unknown"
+                else:
+                    replacement = np.random.choice(list(all_cand_names.values()))
+                    insertion_dict[nametype][true_char_name] = replacement, "unknown"
+
+        return insertion_dict
+
+    def sub_nonrandom_characters(self, other_book_rand_ch:dict, text:str):
+
+        insertion_dict = EntityReplacer.create_nonrandom_character_insertion_dict(self.rand_ch, other_book_rand_ch)
+        all_ins = insertion_dict["First Names"] | insertion_dict["Middle Names"] | insertion_dict["Last Names"]
+
+        for name, rand_name in all_ins.items():
+            pattern = f"( |\n|\"){re.escape(name)}(\n|\W)"
+            text = re.sub(pattern, f"\\1{rand_name}\\2", text)
+
+        return text
+
+
+
+
+
+
+
 
 #Creates a separate file directory
 def create_subdirectory(book : Path) -> Path:
