@@ -146,17 +146,20 @@ class Universal_Character_list():
 
             raw_file.close()
 
-    def assign_label(self, name) -> str or int:
+    def assign_label(self, name) -> tuple[str, str]:
         "Here we randomly assign the labels to each character for the randomized list"
         d = gender.Detector()
         if d.get_gender(name) == "male":
+            gen = "male"
             random_label = secrets.choice(self.male_names)
         elif d.get_gender(name) == "female":
+            gen = "female"
             random_label = secrets.choice(self.female_names)
         else:
+            gen = "neutral"
             random_label = secrets.choice(self.neutral_names)
 
-        return random_label
+        return random_label, gen
 
     def randomize_names(self) -> None:
         """
