@@ -30,7 +30,7 @@ text, as they are not relevant. So ignoring queen sound be okay.
 male_names, female_names = read_gender_list()
 neutral_names = read_unisex_names()
 
-class Label_entities():
+class EntityReplacer():
     def __init__(self, text: str, rand_ch_dict:dict):
         self.text = text
         self.rand_ch = rand_ch_dict
@@ -40,9 +40,12 @@ class Label_entities():
         self.all_names = self.first_n | self.middle_n | self.last_n
 
     def replace_names(self) -> None:
-        for name, rand_name in self.all_names.items():
+        """
+        rand_name[0] will be the name, rand_name[1] is the gender
+        """
+        for name, rand_label in self.all_names.items():
             pattern = f"( |\n|\"){re.escape(name)}(\n|\W)"
-            self.text = re.sub(pattern, f"\\1{rand_name}\\2", self.text)
+            self.text = re.sub(pattern, f"\\1{rand_label[0]}\\2", self.text)
 
     def randomized_character_section(self):
         "Randomized Character Section at the bottom"
@@ -71,7 +74,7 @@ def write_file_sub(filepath: Path, summary: Path, rand_ch_dict) -> None:
        using create_text_file()
        """
         json_file = open(summary, "r")
-        sub_file = Label_entities(json_file.read(), eval(rand_ch_dict))
+        sub_file = EntityReplacer(json_file.read(), eval(rand_ch_dict))
         f.write(sub_file.create_text_file())
         json_file.close()
 
