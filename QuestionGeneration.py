@@ -32,6 +32,8 @@ class RecognitionQuestion:
     def question_string(self):
         return "".join(["Which of the following scenes was in the book?\n"] + [str(i + 1) + ") " + self.all_options[i] + "\n" for i in range(self.n_options)])
 
+    def answer(self):
+        return str(self.true_ans_position + 1)
     def detailed_question_string(self):
 
         description = "A {} decoy type recognition question:\n".format(self.question_type)
@@ -162,7 +164,7 @@ class RecognitionQuestionGenerator:
         return RecognitionQuestion(true_ans, decoys, decoy_types, when_asked=self.read_progress, retention_delay=self.read_progress-true_idx)
 
     def generate_other_book_question(self):
-        raise NotImplementedError
+
 
     def generate_questions(self):
 
@@ -171,8 +173,12 @@ class RecognitionQuestionGenerator:
 
 
 if __name__ == "__main__":
+
+    # Individual book processors - okay for false summary and lookahead question types, not ok for summaries from other books
+
     b = dl.BookProcessor.init_from_summaries("./Data/TrueAndFalseSummaryData/ScifiExample25chunks.tagseparated")
     question_generator = RecognitionQuestionGenerator(b)
     question_generator.generate_questions()
 
     print(question_generator.questions[0])
+

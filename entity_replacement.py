@@ -31,9 +31,9 @@ male_names, female_names = read_gender_list()
 neutral_names = read_unisex_names()
 
 class Label_entities():
-    def __init__(self, text: str, rand_ch_dict:str):
+    def __init__(self, text: str, rand_ch_dict:dict):
         self.text = text
-        self.rand_ch = eval(rand_ch_dict)
+        self.rand_ch = rand_ch_dict
         self.first_n = self.rand_ch["First Names"]
         self.middle_n = self.rand_ch["Middle Names"]
         self.last_n = self.rand_ch["Last Names"]
@@ -71,7 +71,7 @@ def write_file_sub(filepath: Path, summary: Path, rand_ch_dict) -> None:
        using create_text_file()
        """
         json_file = open(summary, "r")
-        sub_file = Label_entities(json_file.read(), rand_ch_dict)
+        sub_file = Label_entities(json_file.read(), eval(rand_ch_dict))
         f.write(sub_file.create_text_file())
         json_file.close()
 
