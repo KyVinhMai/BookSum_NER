@@ -75,7 +75,7 @@ class RecognitionQuestion:
 
 class RecognitionQuestionGenerator:
 
-    def __init__(self, book_processor, parallel_books=None):
+    def __init__(self, book_processor, parallel_books=None, ent_rep_dict=None):
         '''Takes a book processor (already with true and fake summaries generated. Generates questions based on that.'''
         self.book_processor = book_processor
         self.parallel_books = parallel_books ### A list of book processor objects, to draw decoy answers from. Only relevant for the "other book" type of recognition decoys.
@@ -89,7 +89,7 @@ class RecognitionQuestionGenerator:
         self.false_summaries_filtered = [[s for s in fs if s] for fs in self.book_processor.false_book_chunk_summaries]
         self.false_summary_chunk_weights = np.array([len(el) for el in self.false_summaries_filtered])
 
-
+        self.ent_rep_dict = ent_rep_dict
 
     def advance(self):
 
@@ -163,8 +163,22 @@ class RecognitionQuestionGenerator:
 
         return RecognitionQuestion(true_ans, decoys, decoy_types, when_asked=self.read_progress, retention_delay=self.read_progress-true_idx)
 
+    def get_random_summary(self):
+        true_idx = np.random.randint(self.read_progress + 1)
+        true_ans = self.book_processor.book_chunk_summaries[true_idx]
     def generate_other_book_question(self):
 
+        true_idx = np.random.randint(self.read_progress + 1)
+        true_ans = self.book_processor.book_chunk_summaries[true_idx]
+
+        decoy_books = np.random.choice(np.arange(len(self.parallel_books)), size=settings.number_of_decoy_options, replace=False)
+        decoys = [el.get_random_summary() for el in decoy_books]
+
+        raise NotImplementedError
+        decoys = [ d, b zip(decoys, decoy_books)]
+
+        decoy_types = ["Otherbook" for _ in range(settings.number_of_decoy_options)]
+        return RecognitionQuestion(true_ans, decoys, decoy_types, when_asked=self.read_progress, retention_delay=self.read_progress-true_idx)
 
     def generate_questions(self):
 
