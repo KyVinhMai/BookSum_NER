@@ -6,8 +6,7 @@ from pathlib import Path
 import secrets
 import gender_guesser.detector as gender
 spacy.prefer_gpu()
-nlp = spacy.load("en_core_web_trf", exclude = ["tagger", "parser", "lemmatizer"]) #Understand pipelines To make this faster
-pipe = spacy.load("en_core_web_sm")
+nlp = spacy.load("en_core_web_trf", exclude = ["attribute_ruler", "lemmatizer"]) #Understand pipelines To make this faster
 #Generate different seed
 
 "Logging Configuration"
@@ -80,9 +79,10 @@ class Universal_Character_list():
     def rm_verb(self, name_tokens: list[str]) -> list[str]:
         "Line breaks cause verbs to be appended to names... Wilton\ngo"
         # checks if last word is a verb
-        last_word = pipe(name_tokens[-1])[0]
-        if last_word.pos_ != "NOUN" and last_word.is_lower:
-            name_tokens = name_tokens[0:-1]
+        with nlp.select_pipes(disable=["ner", "parser"]):
+            last_word = nlp(name_tokens[-1])[0]
+            if last_word.pos_ != "NOUN" and last_word.is_lower:
+                name_tokens = name_tokens[0:-1]
 
         return name_tokens
 
@@ -94,16 +94,16 @@ class Universal_Character_list():
         name_tokens = [token for token in name.split(" ") if token and self.exceptions_check(token)]
         return name_tokens
 
-    def count_character(self, name) -> None:
+    def count_character(self, name_tokens:[str]) -> None:
         """
         We want both the non-line break character name and the normal
         character name to have the same number of counts
         """
-        for character in self.character_counts["Characters"].keys():
-            if name in character:
-                self.character_counts["Characters"][character] += 1
-        else:
-            self.character_counts["Characters"][name] = 1
+        for name in name_tokens:
+            try:
+                self.character_counts["Characters"][name] += 1
+            except KeyError:
+                self.character_counts["Characters"][name] = 1
 
     def exceptions_check(self, name: str) -> bool: #todo recheck since we added more named exceptions
         """
@@ -123,7 +123,7 @@ class Universal_Character_list():
         print(self.book.name, "\n=======================================")
         for summary in file_list:
             raw_file = open(summary, "r")
-            doc = nlp(raw_file.read()) #todo only use nlp.pipleline
+            doc = nlp(raw_file.read())
             print(summary.name)
 
             for word in doc.ents:
@@ -132,6 +132,7 @@ class Universal_Character_list():
                         name_tokens = self.tokenize_name(word.text)
                         name_tokens = self.rm_verb(name_tokens)
                     except IndexError:
+                        "rm_verb tried to index into an empty list"
                         continue
                     finally:
                         if name_tokens == []:
@@ -140,7 +141,7 @@ class Universal_Character_list():
                     logging.info(f"{name_tokens}")
                     processed_name = " ".join(name_tokens)
                     #insert into character_counts
-                    self.count_character(processed_name)
+                    self.count_character(name_tokens)
                     #insert into randomized name dictionary
                     self.insert_names_into_dict(processed_name, name_tokens)
 
