@@ -6,6 +6,7 @@
 from __future__ import unicode_literals
 import os
 import io
+import re
 
 def clean_read(path):
     """
@@ -22,11 +23,24 @@ def clean_read(path):
     with io.open(path) as f:
         text = f.read()
 
+    author, title = get_metadata(text)
     clean = strip_headers(text)
+    clean = crop_to_intro(author, title, clean)
 
     return clean
 
 ############
+
+def crop_to_intro(author:str, title:str, clean:str) -> str:
+    "Author, title"
+    pattern1 = f"{re.escape(author)}|{author.upper()}"
+    text = re.sub(pattern1, "", clean)
+
+    pattern2 = f"{re.escape(title)}|{title.upper()}"
+    clean = re.sub(pattern2, "", text)
+
+    return clean
+
 
 TEXT_START_MARKERS = frozenset((
     "*END*THE SMALL PRINT",
@@ -218,11 +232,10 @@ def strip_headers(text):
 
     return sep.join(out)
 
-
 def clean_text(text):
     return " ".join(text.split())
 
 
 if __name__ == "__main__":
-    clean_read("C:\\Users\\kyvin\\Research_Projects\\clean_test\\10001.txt")
+    print(clean_read("D:\\Research_Projects\\ArsenyProjects\\project_gutenberg\\books\\10100-8.txt"))
 
