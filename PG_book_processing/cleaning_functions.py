@@ -25,13 +25,13 @@ def clean_read(path):
 
     author, title = get_metadata(text)
     clean = strip_headers(text)
-    clean = crop_to_intro(author, title, clean)
+    clean = rm_title_author(author, title, clean)
 
     return clean
 
 ############
 
-def crop_to_intro(author:str, title:str, clean:str) -> str:
+def rm_title_author(author:str, title:str, clean:str) -> str:
     "Author, title"
     pattern1 = f"{re.escape(author)}|{author.upper()}"
     text = re.sub(pattern1, "", clean)
@@ -174,6 +174,7 @@ def get_metadata(text):
         else:
             break
 
+    print(author, title.split(" "))
     return author, title
 
 def strip_headers(text):
@@ -237,5 +238,5 @@ def clean_text(text):
 
 
 if __name__ == "__main__":
-    print(clean_read("D:\\Research_Projects\\ArsenyProjects\\project_gutenberg\\books\\10100-8.txt"))
+    print(clean_read("D:\\Research_Projects\\ArsenyProjects\\project_gutenberg\\books\\10016-8.txt"))
 
