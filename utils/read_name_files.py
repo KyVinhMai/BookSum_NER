@@ -1,3 +1,4 @@
+
 def read_gender_list() -> tuple[list,list]:
     male_names = []
     female_names = []
@@ -33,3 +34,14 @@ def read_figures() -> list:
             celebrities.append(line.rstrip())
 
     return celebrities
+
+def read_character_list(character_file_path) -> list[str, str]:
+    """
+    The character list is split by 3 line breaks
+    :param character_file_path: Path directory
+    :return: Character Counts, Character randomized names
+    """
+    with open(character_file_path, "r") as f:
+        character_list = f.read()
+
+    return character_list.split("\n\n\n")

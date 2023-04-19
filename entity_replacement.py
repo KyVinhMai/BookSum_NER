@@ -7,7 +7,7 @@ if TYPE_CHECKING:
     from argparse import Namespace
 import character_list_generator as clg
 from tqdm import tqdm
-from utils.read_name_files import read_gender_list, read_unisex_names
+import utils.read_name_files as rn
 
 from collections import defaultdict
 
@@ -31,8 +31,8 @@ text, as they are not relevant. So ignoring queen sound be okay.
 
 """
 
-male_names, female_names = read_gender_list()
-neutral_names = read_unisex_names()
+male_names, female_names = rn.read_gender_list()
+neutral_names = rn.read_unisex_names()
 
 class EntityReplacer():
     def __init__(self, text: str, rand_ch_dict:dict):
@@ -119,13 +119,6 @@ class EntityReplacer():
 
         return text
 
-
-
-
-
-
-
-
 #Creates a separate file directory
 def create_subdirectory(book : Path) -> Path:
     "Creates a new subfolder to store a file of all the subsituted names"
@@ -170,10 +163,7 @@ def parse_corpus(corpus_path: Path) -> None:
 
             character_file = clg.Universal_Character_list(book, sub_folder_path, male_names, female_names, neutral_names) #Create the character list
             character_file_path = character_file.generate_file()
-            with open(character_file_path, "r") as f:
-                character_list = f.read()
-
-            _, random = character_list.split("\n\n\n")
+            _, random = rn.read_character_list(character_file_path)
 
             parse_summaries(book, sub_folder_path, random)  # Write to file
 
@@ -181,11 +171,7 @@ def parse_corpus(corpus_path: Path) -> None:
 def modify_book(book_path: Path) -> None:
     sub_folder_path = book_path / f"{book_path.name.replace(' ', '')}_substituted"
     character_file_path = sub_folder_path /  f"{book_path.name.replace(' ', '')}_character_list.txt"
-
-    with open(character_file_path, "r") as f:
-        character_list = f.read()
-
-    _, random = character_list.split("\n\n\n")
+    _, random = rn.read_character_list(character_file_path)
 
     parse_summaries(book_path, sub_folder_path, random)  # Write to file
 
