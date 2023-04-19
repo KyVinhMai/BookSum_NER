@@ -8,7 +8,7 @@ from settings import column_separator, fake_summary_separator, line_separator
 
 class BookProcessor():
 
-    def __init__(self, original_book_text, scene_recognition_questions_per_chunk=4, chunk_length=3000, overlap_symbols=300, live_mode=False):
+    def __init__(self, original_book_text, chunk_length=3000, overlap_symbols=300, live_mode=False):
         '''This class takes a raw book data, processes it and creates questions. It is used to add new books to the dataset. Use ProcessedBookLoader to load data and associated questions for a book that was already processed.'''
 
         self.questions_per_chunk = 8

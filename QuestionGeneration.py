@@ -9,6 +9,8 @@ np.random.seed(42)
 
 from collections import Counter
 
+from entity_replacement import EntityReplacer
+
 class RecognitionQuestion:
 
     def __init__(self, correct_answer, decoys, decoy_types, when_asked, retention_delay):
@@ -90,6 +92,7 @@ class RecognitionQuestionGenerator:
         self.false_summary_chunk_weights = np.array([len(el) for el in self.false_summaries_filtered])
 
         self.ent_rep_dict = ent_rep_dict
+        # Create self.entity replacer?
 
     def advance(self):
 
@@ -174,10 +177,11 @@ class RecognitionQuestionGenerator:
         decoy_books = np.random.choice(np.arange(len(self.parallel_books)), size=settings.number_of_decoy_options, replace=False)
         decoys = [el.get_random_summary() for el in decoy_books]
 
-        raise NotImplementedError
-        decoys = [ d, b zip(decoys, decoy_books)]
+        ### Substitute entities from this book into entities from another.
+        decoys = [EntityReplacer.sub_nonrandom_characters(self.ent_rep_dict, b.ent_rep_dict, text=d) for d, b in zip(decoys, decoy_books)]
 
         decoy_types = ["Otherbook" for _ in range(settings.number_of_decoy_options)]
+
         return RecognitionQuestion(true_ans, decoys, decoy_types, when_asked=self.read_progress, retention_delay=self.read_progress-true_idx)
 
     def generate_questions(self):

@@ -104,9 +104,13 @@ class EntityReplacer():
 
         return insertion_dict
 
-    def sub_nonrandom_characters(self, other_book_rand_ch:dict, text:str):
+    @staticmethod
+    def sub_nonrandom_characters(source_book_rand_ch:dict, other_book_rand_ch:dict, text:str):
 
-        insertion_dict = EntityReplacer.create_nonrandom_character_insertion_dict(self.rand_ch, other_book_rand_ch)
+        '''Takes a snippet from another book and its associated random character sub dict. Substitutes original characters from this
+        book (the book associated with this EntityReplacer) object instead of original characters in the provided snippet.'''
+
+        insertion_dict = EntityReplacer.create_nonrandom_character_insertion_dict(source_book_rand_ch, other_book_rand_ch)
         all_ins = insertion_dict["First Names"] | insertion_dict["Middle Names"] | insertion_dict["Last Names"]
 
         for name, rand_name in all_ins.items():

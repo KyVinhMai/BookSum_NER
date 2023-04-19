@@ -5,9 +5,7 @@ import re
 from pathlib import Path
 import secrets
 import gender_guesser.detector as gender
-spacy.prefer_gpu()
-nlp = spacy.load("en_core_web_trf", exclude = ["tagger", "parser", "lemmatizer"]) #Understand pipelines To make this faster
-pipe = spacy.load("en_core_web_sm")
+
 #Generate different seed
 
 "Logging Configuration"
@@ -193,6 +191,12 @@ class Universal_Character_list():
         print(self.rm_verb(["Edward"]))
 
 if __name__ == "__main__":
+
+    spacy.prefer_gpu()
+    nlp = spacy.load("en_core_web_trf",
+                     exclude=["tagger", "parser", "lemmatizer"])  # Understand pipelines To make this faster
+    pipe = spacy.load("en_core_web_sm")
+
     book_test = Path(
         'D:\\Research_Projects\\ArsenyProjects\\neurlips\\test_full_book')
     sub_test = Path(
