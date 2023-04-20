@@ -1,5 +1,7 @@
 import random
 
+import warnings
+
 import Dataloaders as dl
 import settings
 
@@ -71,7 +73,8 @@ class RecognitionQuestion:
         return self.detailed_question_string()
 
     def IsComplete(self):
-
+        '''Since some summaries or false summaries might have been None (GPT failed to generate them),
+        we need to filter out questions that got affected by that'''
         if self.correct_answer is None or any([el is None for el in self.decoys]):
             return False
         else:
@@ -90,11 +93,21 @@ class RecognitionQuestionGenerator:
         self.book_length = len(self.book_processor.book_chunk_summaries)
 
         # By default, false summaries may have None values where false summary generation failed
-        self.false_summaries_filtered = [[s for s in fs if s] for fs in self.book_processor.false_book_chunk_summaries]
+        self.false_summaries_filtered = [[s for s in fs if s] for fs in self.book_processor.false_book_chunk_summaries] # Remove all None summaries
         self.false_summary_chunk_weights = np.array([len(el) for el in self.false_summaries_filtered])
+
+        if np.sum(self.false_summary_chunk_weights) <= 0.5:
+            raise ValueError("No false summaries available for this book.")
+        if np.sum(self.false_summary_chunk_weights) <= 10.5:
+            warnings.warn("Few false summaries available for the current book.")
 
         self.ent_rep_dict = ent_rep_dict
         # Create self.entity replacer?
+
+        # self.suspicious_true_summary_idx = set()
+        # for idx, warning in self.book_processor.failed_summaries.items():
+        #     if warning != "Failed to create any fake summaries.":
+        #         self.suspicious_true_summary_idx.add(idx)
 
     def advance(self):
 
@@ -124,13 +137,18 @@ class RecognitionQuestionGenerator:
             return None # Can not generate lookahead questions too close to the end of the book
         else:
 
-            decoy_ids = np.random.choice(np.arange(self.read_progress + 1, self.book_length), settings.number_of_decoy_options, replace=False)
-            true_idx = np.random.randint(self.read_progress + 1)
+            decoy_id_candidates = np.arange(self.read_progress + 1, self.book_length)
+            #decoy_id_candidates = [i for i in decoy_id_candidates if i not in self.suspicious_true_summary_idx] # Can be used for more strict filtering
+            decoy_ids = np.random.choice(decoy_id_candidates, settings.number_of_decoy_options, replace=False)
+
+            true_ans, true_idx = self.get_random_summary(self.read_progress + 1)
+
+            true_ans = self.book_processor.book_chunk_summaries[true_idx]
 
             decoys = [self.book_processor.book_chunk_summaries[id] for id in decoy_ids]
             decoy_types = ["Lookahead" for _ in decoy_ids]
 
-            true_ans = self.book_processor.book_chunk_summaries[true_idx]
+
 
             return RecognitionQuestion(correct_answer=true_ans, decoys=decoys, decoy_types=decoy_types,
                                        when_asked=self.read_progress, retention_delay=self.read_progress-true_idx)
@@ -163,13 +181,24 @@ class RecognitionQuestionGenerator:
             np.random.shuffle(decoys) # Otherwise decoys from the same chunk would be close
             decoy_types = ["Change" for _ in range(settings.number_of_decoy_options)]
 
-            true_idx = np.random.randint(self.read_progress + 1)
-            true_ans = self.book_processor.book_chunk_summaries[true_idx]
+            true_ans, true_idx = self.get_random_summary(self.read_progress + 1)
 
         return RecognitionQuestion(true_ans, decoys, decoy_types, when_asked=self.read_progress, retention_delay=self.read_progress-true_idx)
 
-    def get_random_summary(self):
-        true_idx = np.random.randint(self.read_progress + 1)
+    def get_random_summary(self, sample_up_to=None):
+
+        if sample_up_to is None:
+            sample_up_to = self.book_length
+
+        #candidates = [i for i in range(sample_up_to) if i not in self.suspicious_true_summary_idx]
+        #if not candidates:
+        #    raise ValueError("No good chunk summaries to sample from")
+        # Handled through "is complete" in the question class
+        candidates = np.arange(sample_up_to)
+
+
+
+        true_idx = np.random.choice(candidates) #np.random.randint(self.read_progress + 1)
         # Just add "filter" here?
         true_ans = self.book_processor.book_chunk_summaries[true_idx]
         return true_ans, true_idx
