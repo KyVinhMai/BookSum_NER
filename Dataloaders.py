@@ -11,8 +11,7 @@ class BookProcessor():
     def __init__(self, original_book_text, chunk_length=3000, overlap_symbols=300, live_mode=False):
         '''This class takes a raw book data, processes it and creates questions. It is used to add new books to the dataset. Use ProcessedBookLoader to load data and associated questions for a book that was already processed.'''
 
-        self.questions_per_chunk = 8
-        self.original_book_text = 8
+        self.original_book_text = original_book_text
 
         self.NE_sub_dict = None
 

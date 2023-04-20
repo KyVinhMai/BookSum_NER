@@ -11,6 +11,8 @@ from collections import Counter
 
 from entity_replacement import EntityReplacer
 
+import character_list_generator as clg
+
 class RecognitionQuestion:
 
     def __init__(self, correct_answer, decoys, decoy_types, when_asked, retention_delay):
@@ -168,14 +170,17 @@ class RecognitionQuestionGenerator:
 
     def get_random_summary(self):
         true_idx = np.random.randint(self.read_progress + 1)
+        # Just add "filter" here?
         true_ans = self.book_processor.book_chunk_summaries[true_idx]
+        return true_ans, true_idx
     def generate_other_book_question(self):
 
         true_idx = np.random.randint(self.read_progress + 1)
-        true_ans = self.book_processor.book_chunk_summaries[true_idx]
+        true_ans = self.book_processor.book_chunk_summaries[true_idx] # Use get random summary here
 
         decoy_books = np.random.choice(np.arange(len(self.parallel_books)), size=settings.number_of_decoy_options, replace=False)
-        decoys = [el.get_random_summary() for el in decoy_books]
+        decoy_books = [self.parallel_books[i] for i in decoy_books]
+        decoys = [el.get_random_summary()[0] for el in decoy_books]
 
         ### Substitute entities from this book into entities from another.
         decoys = [EntityReplacer.sub_nonrandom_characters(self.ent_rep_dict, b.ent_rep_dict, text=d) for d, b in zip(decoys, decoy_books)]
@@ -183,6 +188,10 @@ class RecognitionQuestionGenerator:
         decoy_types = ["Otherbook" for _ in range(settings.number_of_decoy_options)]
 
         return RecognitionQuestion(true_ans, decoys, decoy_types, when_asked=self.read_progress, retention_delay=self.read_progress-true_idx)
+
+    def set_parallel_books(self, pb):
+        '''Each PB is also a question generator'''
+        self.parallel_books = pb
 
     def generate_questions(self):
 
@@ -195,8 +204,17 @@ if __name__ == "__main__":
     # Individual book processors - okay for false summary and lookahead question types, not ok for summaries from other books
 
     b = dl.BookProcessor.init_from_summaries("./Data/TrueAndFalseSummaryData/ScifiExample25chunks.tagseparated")
-    question_generator = RecognitionQuestionGenerator(b)
+    _, ent_rep_dict = clg.get_counts_and_subs(b.original_book_text)
+
+    question_generator = RecognitionQuestionGenerator(b, ent_rep_dict=ent_rep_dict)
+
+
+    tmp_other_books = [question_generator, question_generator, question_generator, question_generator, question_generator]
+    question_generator.set_parallel_books(tmp_other_books)
+
     question_generator.generate_questions()
 
     print(question_generator.questions[0])
+
+
 

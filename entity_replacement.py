@@ -80,9 +80,9 @@ class EntityReplacer():
 
         cand_names_no_gender = {}
         for nametype in ["First Names", "Middle Names", "Last Names"]:
-            cand_names_no_gender[nametype] = candidates[(nametype, "male")] | candidates[(nametype, "female")] | candidates[(nametype, "neutral")]
+            cand_names_no_gender[nametype] = candidates[(nametype, "male")] + candidates[(nametype, "female")] + candidates[(nametype, "neutral")]
 
-        all_cand_names = cand_names_no_gender["First Names"] | cand_names_no_gender["Middle Names"] | cand_names_no_gender["Last Names"]
+        all_cand_names = cand_names_no_gender["First Names"] + cand_names_no_gender["Middle Names"] + cand_names_no_gender["Last Names"]
 
         if not all_cand_names:
             print("WARNING: SOURCE BOOK HAS NO CHARACTERS! Leaving the dictionary unchanged")
@@ -113,7 +113,9 @@ class EntityReplacer():
         insertion_dict = EntityReplacer.create_nonrandom_character_insertion_dict(source_book_rand_ch, other_book_rand_ch)
         all_ins = insertion_dict["First Names"] | insertion_dict["Middle Names"] | insertion_dict["Last Names"]
 
-        for name, rand_name in all_ins.items():
+        for name, (rand_name, gender) in all_ins.items():
+            print(name, rand_name, gender)
+            print(text)
             pattern = f"( |\n|\"){re.escape(name)}(\n|\W)"
             text = re.sub(pattern, f"\\1{rand_name}\\2", text)
 
