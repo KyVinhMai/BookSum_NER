@@ -70,9 +70,6 @@ class Universal_Character_list():
         This is so that whenever a full name appears, we can use the last name to check
         if it is in the first name list, which will then be removed.
         """
-        name = name.lower()
-        name_tokens = [t.lower() for t in name_tokens]
-
         if len(name_tokens) == 2:
 
             if name_tokens[0] not in self.rand_persons["First Names"]:
@@ -249,10 +246,7 @@ class CharacterProcessor():
         This is so that whenever a full name appears, we can use the last name to check
         if it is in the first name list, which will then be removed.
         """
-
-        name = name.lower()
-        name_tokens = [t.lower() for t in name_tokens]
-
+        #todo have a lowercase version
         if len(name_tokens) == 2:
 
             if name_tokens[0] not in self.rand_persons["First Names"]:

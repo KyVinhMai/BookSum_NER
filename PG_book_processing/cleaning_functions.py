@@ -8,31 +8,38 @@ import os
 import io
 import re
 
-def clean_read(path):
+def clean_read(path: str) -> tuple[str,str,str]:
     """
     Remove headers from raw txt file.
     Parameters
     ----------
-    path : string
-        Path to the PG****_raw.txt file
+    path : string - Path to the PG****_raw.txt file
+    return: Author name, title, and cleaned book text
     """
 
     import os
     print(os.path.dirname(os.path.realpath(__file__)))
 
-    with io.open(path) as f:
+    with io.open(path, encoding="latin-1") as f:
         text = f.read()
 
     author, title = get_metadata(text)
     clean = strip_headers(text)
     clean = rm_title_author(author, title, clean)
 
-    return clean
+    return author, title, clean
 
 ############
 
 def rm_title_author(author:str, title:str, clean:str) -> str:
     "Author, title"
+    def create_pattern():
+        title_words = [(word, word.upper()) for word in title.split(" ")]
+        author_words = [(word, word.upper()) for word in author.split(" ")]
+        title_pattern = [f"{pair[0]}|{pair[1]}(\s*|\n*)" for pair in title_words]
+
+
+
     pattern1 = f"{re.escape(author)}|{author.upper()}"
     text = re.sub(pattern1, "", clean)
 
@@ -174,7 +181,7 @@ def get_metadata(text):
         else:
             break
 
-    print(author, title.split(" "))
+    print(author, title)
     return author, title
 
 def strip_headers(text):
@@ -238,5 +245,5 @@ def clean_text(text):
 
 
 if __name__ == "__main__":
-    print(clean_read("D:\\Research_Projects\\ArsenyProjects\\project_gutenberg\\books\\10016-8.txt"))
+    print(clean_read("C:\\Users\\kyvin\\Research_Projects\\project_gutenberg\\books\\10003.txt"))
 

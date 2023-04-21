@@ -2,27 +2,31 @@ from pathlib import Path
 from cleaning_functions import clean_read
 from csv import writer
 import os
-
+import shutil
 
 book_list = set()
-def collect_book_paths(folder_path: Path) -> iter:
-    book_iter = (entry for entry in folder_path.iterdir() if entry.is_file() and entry.match('*.txt'))
+
+def collect_book_paths(folder_path: str) -> iter:
+    path = Path(folder_path)
+    book_iter = (entry for entry in path.iterdir() if entry.is_file() and entry.match('*.txt'))
     return book_iter
 
-def rename():
-    "renames the file and removes the title and author from book"
-    pass
-
-def clean_books(book_paths: iter):
-    for book_p in book_paths:
-        clean_read(book_p)
-    # rename()
-    pass
+def clean_books(copied_book_paths: iter):
+    """
+    copied_book_paths: NEEDS to be the copied books path and not the
+    original book paths
+    """
+    for book_p in copied_book_paths:
+        auth, title, cleaned_data = clean_read(str(book_p))
+        ID = book_p.stem
+        book_list.add((auth, title, ID))
+        with open(book_p, "w", encoding="latin-1") as file:
+            file.write(cleaned_data)
 
 def check_word_count(book_path: Path) -> bool:
     "Ensures the books are above the 50,000 word limit"
     num_of_words = 0
-    with open(book_path, "r") as file:
+    with open(book_path, "r", encoding="latin-1") as file:
         data = file.read()
         lines = data.split()
 
@@ -39,31 +43,29 @@ def check_word_count(book_path: Path) -> bool:
 
     return True if 50_000 > num_of_words else False
 
-def move_books_and_clean(book_paths: iter):
+def copy_books(file, destination: str):
     "Moves the books into the subdirectories"
-    clean_books(book_paths)
-
-    pass
-
-def create_subdirectories(parent_directory: Path, book_paths: iter):
-    "Create book folder and the subsitition folder within it"
-    for book_p in book_paths:
-        book_folder_path = parent_directory / f"{book_p.name.replace(' ', '')}"
-        sub_folder_path = book_folder_path / f"{book_p.name.replace(' ', '')}_substituted"
-        book_folder_path.mkdir(parents=True, exist_ok=True)
-        sub_folder_path.mkdir(parents=True, exist_ok=True)  # Creates the subdirectory
-
+    shutil.copy2(file, destination)
 
 def write_book_list(path: str):
-    with open(os.path.join(path,'book_list.csv'), 'w', encoding='UTF16') as f:
+    """
+    Writes reference book list with File ID, Book Title, and Author Name
+    """
+    with open(os.path.join(path,'book_list.csv'), 'w', encoding='utf8') as f:
         csv_writer = writer(f)
+        csv_writer.writerow(["ID, Book Title, Author Name"])
         for line in book_list:
             csv_writer.writerow([line])
 
-def main(directory: str):
+def main(original:str, destination: str):
+    book_iter = collect_book_paths(original)
+    for book in book_iter:
+        if check_word_count(book):
+            copy_books(book, destination)
 
-    write_book_list(directory)
-
+    copied_bk_iter = collect_book_paths(destination)
+    clean_books(copied_bk_iter)
+    write_book_list(destination)
 
 if __name__ == "__main__":
-    pass
+    main("C:\\Users\\kyvin\\Research_Projects\\project_gutenberg\\books", "C:\\Users\\kyvin\\Research_Projects\\project_gutenberg\\cleaned_books")
