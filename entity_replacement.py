@@ -52,8 +52,8 @@ class EntityReplacer():
             pattern = f"( |\n|\"){re.escape(name)}(\n|\W)"
             self.text = re.sub(pattern, f"\\1{rand_label[0]}\\2", self.text)
 
-            pattern = f"( |\n|\"){re.escape(name).lower()}(\n|\W)"
-            self.text = re.sub(pattern, f"\\1{rand_label[0].lower()}\\2", self.text)
+            #pattern = f"( |\n|\"){re.escape(name).lower()}(\n|\W)"
+           #self.text = re.sub(pattern, f"\\1{rand_label[0].lower()}\\2", self.text)
 
     def randomized_character_section(self):
         "Randomized Character Section at the bottom"

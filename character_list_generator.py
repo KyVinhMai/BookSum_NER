@@ -6,6 +6,8 @@ from pathlib import Path
 import secrets
 import gender_guesser.detector as gender
 
+from collections import defaultdict
+
 #Generate different seed
 
 spacy.prefer_gpu()
@@ -181,6 +183,30 @@ class Universal_Character_list():
 
         return random_label, gen
 
+    def make_case_consistent(self):
+        new_dict = {"Table_Type": "Randomized Names",
+            "First Names": dict(),
+            "Middle Names": dict(),
+            "Last Names": dict()
+        }
+
+        all_name_variants = self.all_dict()
+
+        final_choice = {} # Maps lowercase names to substitutions (consistently)
+
+        for name, substitution in all_name_variants.items():
+
+            if name.lower() not in final_choice:
+                final_choice[name.lower()] = substitution
+
+        nametypes = ["First Names", "Middle Names", "Last Names"]
+        for nametype in nametypes:
+            for name in self.rand_persons[nametype]:
+                new_dict[nametype][name] = final_choice[name.lower()]
+
+        self.rand_persons = new_dict
+
+
     def randomize_names(self) -> None:
         """
         For each name in the value-less randomized name, we assign a random label
@@ -189,6 +215,7 @@ class Universal_Character_list():
             for name in self.rand_persons[name_dict]:
                 self.rand_persons[name_dict][name] = self.assign_label(name)
 
+        self.make_case_consistent()
     # def remove_figures(self):
     #     all_names = self.return_all_dict()
     #     for name in all_names.keys():
@@ -233,6 +260,34 @@ class CharacterProcessor():
             "Middle Names": dict(),
             "Last Names": dict()
         }
+
+
+    def make_case_consistent(self):
+        new_dict = {"Table_Type": "Randomized Names",
+            "First Names": dict(),
+            "Middle Names": dict(),
+            "Last Names": dict()
+        }
+
+        all_name_variants = self.all_dict()
+
+        final_choice = {} # Maps lowercase names to substitutions (consistently)
+
+        for name, substitution in all_name_variants.items():
+
+            if name.lower() not in final_choice:
+                final_choice[name.lower()] = substitution
+
+        nametypes = ["First Names", "Middle Names", "Last Names"]
+        for nametype in nametypes:
+            for name in self.rand_persons[nametype]:
+                new_dict[nametype][name] = final_choice[name.lower()]
+
+        self.rand_persons = new_dict
+
+
+
+
 
     def all_dict(self) -> dict:
         "Combines all the dictionary names together"
@@ -359,6 +414,7 @@ class CharacterProcessor():
             for name in self.rand_persons[name_dict]:
                 self.rand_persons[name_dict][name] = self.assign_label(name)
 
+        self.make_case_consistent()
     # def remove_figures(self):
     #     all_names = self.return_all_dict()
     #     for name in all_names.keys():
