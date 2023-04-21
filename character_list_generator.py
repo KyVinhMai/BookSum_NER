@@ -70,6 +70,9 @@ class Universal_Character_list():
         This is so that whenever a full name appears, we can use the last name to check
         if it is in the first name list, which will then be removed.
         """
+        name = name.lower()
+        name_tokens = [t.lower() for t in name_tokens]
+
         if len(name_tokens) == 2:
 
             if name_tokens[0] not in self.rand_persons["First Names"]:
@@ -87,7 +90,7 @@ class Universal_Character_list():
         elif len(name_tokens) > 2:
             middle_names = name_tokens[1:-1]
             for middle in middle_names:
-                if name not in self.rand_persons["Middle Names"] and self.exceptions_check(name):
+                if name not in self.rand_persons["Middle Names"]:
                     self.rand_persons["Middle Names"][middle] = None
 
         # Check the first name of a full name, i.e. Martha of Martha Stewart
@@ -246,6 +249,10 @@ class CharacterProcessor():
         This is so that whenever a full name appears, we can use the last name to check
         if it is in the first name list, which will then be removed.
         """
+
+        name = name.lower()
+        name_tokens = [t.lower() for t in name_tokens]
+
         if len(name_tokens) == 2:
 
             if name_tokens[0] not in self.rand_persons["First Names"]:
@@ -263,7 +270,7 @@ class CharacterProcessor():
         elif len(name_tokens) > 2:
             middle_names = name_tokens[1:-1]
             for middle in middle_names:
-                if name not in self.rand_persons["Middle Names"] and self.exceptions_check(name):
+                if name not in self.rand_persons["Middle Names"]:
                     self.rand_persons["Middle Names"][middle] = None
 
         # Check the first name of a full name, i.e. Martha of Martha Stewart
@@ -391,4 +398,9 @@ if __name__ == "__main__":
 
     test_str = "This is a test string with fake characters Becky and John."
     ch_counts, rand_ch = get_counts_and_subs(book=test_str)
+
+    with open("Data/RawBooks/ScifiExampleRaw.txt", "r") as f:
+        booktext = f.read()
+
+    char_replacement = get_counts_and_subs(book=booktext)
 
