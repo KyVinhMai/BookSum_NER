@@ -8,7 +8,7 @@ import os
 import io
 import re
 
-def clean_read(path: str) -> tuple[str,str,str]:
+def clean_read(path: str): #-> tuple[str,str,str]:
     """
     Remove headers from raw txt file.
     Parameters
@@ -31,20 +31,26 @@ def clean_read(path: str) -> tuple[str,str,str]:
 
 ############
 
+def create_pattern(title: str, author: str):
+    """
+    Attempt at a regular expression
+    (HAPPINESS|(h|H)appiness)(\s+|\n+)(AND|(a|A)nd)(\s+|\n+)(MARRIAGE|(m|M)arriage)(\s+|\n+)(By|BY|by)(\s{1,3}|\n{1,3})(ELIZABETH|Elizabeth) (TOWNE|Towne)
+    """
+    title_words = [(word.upper(), word) for word in title.split(" ")]
+    author_words = [(word.upper(), word) for word in author.split(" ")]
+    title_pattern = "".join([f"({pair[0]}|({pair[1][0].lower()}|{pair[1][0].upper()}){pair[1][1:]})(\s+|\n+)" for pair in title_words])
+    author_pattern = " ".join([f"({pair[0]}|({pair[1][0].lower()}|{pair[1][0].upper()}){pair[1][1:]})" for pair in author_words])
+    pattern = title_pattern + "(By|BY|by)(\s{1,3}|\n{1,3})" + author_pattern
+
+    return pattern
+
 def rm_title_author(author:str, title:str, clean:str) -> str:
     "Author, title"
-    def create_pattern():
-        title_words = [(word, word.upper()) for word in title.split(" ")]
-        author_words = [(word, word.upper()) for word in author.split(" ")]
-        title_pattern = [f"{pair[0]}|{pair[1]}(\s*|\n*)" for pair in title_words]
-
-
-
-    pattern1 = f"{re.escape(author)}|{author.upper()}"
-    text = re.sub(pattern1, "", clean)
-
-    pattern2 = f"{re.escape(title)}|{title.upper()}"
-    clean = re.sub(pattern2, "", text)
+    try:
+        pattern1 = create_pattern(title, author)
+        clean = re.sub(pattern1, "", clean)
+    except Exception as e:
+        pass
 
     return clean
 
@@ -181,7 +187,6 @@ def get_metadata(text):
         else:
             break
 
-    print(author, title)
     return author, title
 
 def strip_headers(text):
@@ -245,5 +250,5 @@ def clean_text(text):
 
 
 if __name__ == "__main__":
-    print(clean_read("C:\\Users\\kyvin\\Research_Projects\\project_gutenberg\\books\\10003.txt"))
+    print(clean_read("D:\\Research_Projects\\ArsenyProjects\\books\\3200.txt"))
 
