@@ -11,4 +11,7 @@ lookahead_questions_per_step = 1
 scene_negation_questions_per_step = 1
 other_book_questions_per_step = 1
 
+false_summaries_for_chunk_0 = 5
+
+
 number_of_decoy_options = 4

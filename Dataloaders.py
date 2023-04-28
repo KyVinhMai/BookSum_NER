@@ -1,4 +1,7 @@
 #import entity_replacement
+import openai
+import time
+
 import settings
 from utils.BookProcessing import chunk_book, rechunk_book
 from gpt_api_processing import SummarizeChunk, SummarizeChunkRetry, CreateFalseSummary
@@ -78,11 +81,14 @@ class BookProcessor():
                         else:
                             print("Successfully re-summarized the chunk using a more forceful request.")
                         break
-
+                    except openai.error.RateLimitError:
+                        print("Openai rate limit error. Sleeping for 5 seconds.")
+                        time.sleep(5)
                     except ValueError as e:
                         print(e)
                         print("Retrying to summarize chunk")
                         failures += 1
+
 
                 if failures == 3:
                     self.book_chunk_summaries.append(None)
@@ -95,18 +101,33 @@ class BookProcessor():
             raise ValueError("Book chunk summaries must be created before generating questions.")
 
         for i, summary in enumerate(self.book_chunk_summaries):
+
+            if (i + 1) % 10 == 0:
+                print("Created false summaries for {} chunks".format(i))
+
             if summary is None:
                 self.false_book_chunk_summaries.append(None)
             else:
                 self.false_book_chunk_summaries.append(list())
 
-                num_false_summaries = max(1, 9 - i) # The first ones need more false summaries as they will be used more often.
+                num_false_summaries = max(1, settings.false_summaries_for_chunk_0 - i) # The first ones need more false summaries as they will be used more often.
 
-                for _ in range(num_false_summaries):
+                k = 0
+                waited = 0
+                skipped = 0
+
+                while k < num_false_summaries and waited < 30 and skipped < 3:
+
                     try:
                         self.false_book_chunk_summaries[-1].append(CreateFalseSummary(summary))
+                        k += 1
+                    except openai.error.RateLimitError:
+                        print("Openai rate limit error. Sleeping for 5 seconds.")
+                        time.sleep(5)
+                        waited += 1
                     except ValueError as e:
                         print("Failed to create a false summary {}".format(e))
+                        skipped += 1
 
                 if not self.false_book_chunk_summaries[-1]:
                     self.false_book_chunk_summaries[-1] = None
@@ -133,7 +154,7 @@ class BookProcessor():
                     if self.failed_summaries[i] == "Complete failure.":
                         f.write(column_separator.join([str(i), chunk, ochunk, "", "", "Fail", self.failed_summaries[i]]))
                     else:
-                        f.write(column_separator.join([str(i), chunk, ochunk, sum, fake_summary_separator.join([str(fs) for fs in fakesums if fs]), "Warning", self.failed_summaries[i]]))
+                        f.write(column_separator.join([str(i), chunk, ochunk, sum, fake_summary_separator.join([str(fs) for fs in fakesums if fs]) if fakesums else "", "Warning", self.failed_summaries[i]]))
                 else:
                     f.write(column_separator.join([str(i), chunk, ochunk, sum, fake_summary_separator.join([str(fs) for fs in fakesums if fs]), "OK", ""]))
 
@@ -191,7 +212,7 @@ if __name__ == "__main__":
     with open("Data/RawBooks/ScifiExampleRaw.txt", "r") as f:
         b = f.read()
 
-    if True:
+    if False:
 
         book_processor = BookProcessor(b, live_mode=False)
         book_processor.create_chunk_summaries()
@@ -200,11 +221,30 @@ if __name__ == "__main__":
         book_processor.save_summary_data("./Data/TrueAndFalseSummaryData/ScifiExample25chunks.tagseparated")
 
         b2 = BookProcessor.init_from_summaries("./Data/TrueAndFalseSummaryData/ScifiExample25chunks.tagseparated")
+
         #rowids, chunks, ochunks, sums, fakesums_unrolled, status, comment = LoadSummaries("./Data/TrueAndFalseSummaryData/ScifiExampleProcessed.tagseparated")
         #res = LoadSummaries("./Data/TrueAndFalseSummaryData/ScifiExampleProcessed.tagseparated")
 
 
+    t0 = time.time()
 
+    if True:
+        with open("Data/hand_annotated2/297.txt", "r") as f:
+            b = f.read()
+
+        book_processor = BookProcessor(b, live_mode=True)
+        book_processor.create_chunk_summaries()
+
+        print("Created chunk summaries")
+        book_processor.create_false_book_chunk_summaries()
+
+        book_processor.save_summary_data("./Data/TrueAndFalseSummaryData/297_v2.tagseparated")
+
+        b2 = BookProcessor.init_from_summaries("./Data/TrueAndFalseSummaryData/297_v2.tagseparated")
+
+    t1 = time.time()
+
+    print("Processed one book in {} seconds".format(t1-t0))
 
     #
     # with open("Data/AnalysisExamples/DeadStarRover10sums.txt", "w") as f:
