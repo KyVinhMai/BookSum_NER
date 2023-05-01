@@ -5,14 +5,13 @@ import time
 
 ### !!! IMPORTANT !!! ###
 # Change this to the appropriate folder. Make sure not to double-process the same books #
-book_folder_to_process = "HandAnnotatedFirst250"
+book_folder_to_process = "DoubleChecked"
 # Change this to the appropriate folder. Make sure not to double-process the same books #
 
 if __name__ == "__main__":
 
     bookpath = os.path.join("Data", book_folder_to_process)
     books_to_process = [f for f in os.listdir(bookpath) if os.path.isfile(os.path.join(bookpath, f))]
-
 
     sumpath = os.path.join("Data", "TrueAndFalseSummaryData")
     processed_books = [f for f in os.listdir(sumpath) if os.path.isfile(os.path.join(sumpath, f))]
@@ -46,9 +45,9 @@ if __name__ == "__main__":
             print("Created false chunk summaries in {} minutes".format((t2 - t1) / 60))
 
             bname_tag = bname.strip("txt") + "tagseparated"
-            sumpath = os.path.join(sumpath, bname_tag)
+            sumpath_tmp = os.path.join(sumpath, bname_tag)
 
-            book_processor.save_summary_data(sumpath)
+            book_processor.save_summary_data(sumpath_tmp)
 
         except Exception as e:
             print("Failed to process book {}".format(bname))
