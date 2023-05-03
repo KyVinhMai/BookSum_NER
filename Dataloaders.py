@@ -68,7 +68,9 @@ class BookProcessor():
                 print("Retrying to force re-summarize chunk")
 
                 failures = 0
-                while failures < 3:
+
+                maxfail = 5
+                while failures < maxfail:
 
                     try:
                         summary, warning = SummarizeChunkRetry(current_chunk)
@@ -81,16 +83,22 @@ class BookProcessor():
                         else:
                             print("Successfully re-summarized the chunk using a more forceful request.")
                         break
-                    except (openai.error.APIError, openai.error.Timeout, openai.error.APIConnectionError, openai.error.InvalidRequestError, openai.error.AuthenticationError, openai.error.PermissionError, openai.error.RateLimitError, openai.error.ServiceUnavailableError) as e:
+                    except (openai.error.APIError, openai.error.Timeout, openai.error.APIConnectionError, openai.error.InvalidRequestError, openai.error.RateLimitError, openai.error.ServiceUnavailableError) as e:
                         print("Openai rate limit error {}. Sleeping for 5 seconds.".format(e))
                         time.sleep(5)
                     except ValueError as e:
                         print(e)
                         print("Retrying to summarize chunk")
                         failures += 1
+                    except Exception as e:
+                        if "That model is currently overloaded with other requests. You can retry your request, or contact us through our help center at" in str(e):
+                            print("Openai weird overloaded exception {}. Sleeping for 10 seconds.".format(e))
+                            time.sleep(10)
+                        else:
+                            raise e
 
 
-                if failures == 3:
+                if failures == maxfail:
                     self.book_chunk_summaries.append(None)
                     self.overlapped_book_chunks.append(current_chunk)
                     self.failed_summaries[(len(self.book_chunk_summaries) - 1)] = "Complete failure."
@@ -121,13 +129,21 @@ class BookProcessor():
                     try:
                         self.false_book_chunk_summaries[-1].append(CreateFalseSummary(summary))
                         k += 1
-                    except (openai.error.APIError, openai.error.Timeout, openai.error.APIConnectionError, openai.error.InvalidRequestError, openai.error.AuthenticationError, openai.error.PermissionError, openai.error.RateLimitError, openai.error.ServiceUnavailableError) as e:
+                    except (openai.error.APIError, openai.error.Timeout, openai.error.APIConnectionError, openai.error.InvalidRequestError, openai.error.RateLimitError, openai.error.ServiceUnavailableError) as e:
                         print("Openai rate limit error {}. Sleeping for 5 seconds.".format(e))
                         time.sleep(5)
                         waited += 1
                     except ValueError as e:
                         print("Failed to create a false summary {}".format(e))
                         skipped += 1
+
+                    except Exception as e:
+                        if "That model is currently overloaded with other requests. You can retry your request, or contact us through our help center at" in str(e):
+                            print("Openai weird overloaded exception {}. Sleeping for 10 seconds.".format(e))
+                            time.sleep(10)
+                            waited += 1
+                        else:
+                            raise e
 
                 if not self.false_book_chunk_summaries[-1]:
                     self.false_book_chunk_summaries[-1] = None
