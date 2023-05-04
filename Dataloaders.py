@@ -91,8 +91,8 @@ class BookProcessor():
                         print("Retrying to summarize chunk")
                         failures += 1
                     except Exception as e:
-                        if "That model is currently overloaded with other requests. You can retry your request, or contact us through our help center at" in str(e):
-                            print("Openai weird overloaded exception {}. Sleeping for 10 seconds.".format(e))
+                        if "That model is currently overloaded with other requests. You can retry your request, or contact us through our help center at" in str(e) or "Bad gateway" in str(e):
+                            print("Openai weird overloaded exception {}, {}. Sleeping for 10 seconds.".format(e, type(e).__name__))
                             time.sleep(10)
                         else:
                             raise e
@@ -138,8 +138,8 @@ class BookProcessor():
                         skipped += 1
 
                     except Exception as e:
-                        if "That model is currently overloaded with other requests. You can retry your request, or contact us through our help center at" in str(e):
-                            print("Openai weird overloaded exception {}. Sleeping for 10 seconds.".format(e))
+                        if "That model is currently overloaded with other requests. You can retry your request, or contact us through our help center at" in str(e) or "Bad gateway" in str(e):
+                            print("Openai weird overloaded exception {}, {}. Sleeping for 10 seconds.".format(e, type(e).__name__))
                             time.sleep(10)
                             waited += 1
                         else:

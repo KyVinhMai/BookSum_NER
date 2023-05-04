@@ -51,6 +51,7 @@ if __name__ == "__main__":
 
         except Exception as e:
             print("Failed to process book {}".format(bname))
-            print(e)
+
+            print("Exception of type: {}, {}".format(type(e).__name__, e))
 
         #b2 = BookProcessor.init_from_summaries("./Data/TrueAndFalseSummaryData/297_v2.tagseparated")
