@@ -31,12 +31,11 @@ class RecognitionQuestion:
 
         self.question_type = "mixed" if self.is_mixed else self.decoy_types[0]
 
-        self.n_options = len(self.decoys) + 1
-        self.true_ans_position = np.random.randint(self.n_options)
+        self.n_options = len(self.decoys) + 1 # Handle carefully if no true answer is present
+        self.true_ans_position = np.random.randint(self.n_options) # Set to self.n_options if No true answer is present
 
-        self.all_options = decoys.copy()
-        self.all_options.insert(self.true_ans_position, correct_answer)
-
+        self.all_options = decoys.copy() # + "None of the above."
+        self.all_options.insert(self.true_ans_position, correct_answer) ## Add conditional on the true ans not being none + ALWAYS add the "None of the above" option & set true ans id to it accordingly
     def question_string(self):
         return "".join(["Which of the following scenes was in the book?\n"] + [str(i + 1) + ") " + self.all_options[i] + "\n" for i in range(self.n_options)])
 
@@ -156,6 +155,10 @@ class RecognitionQuestionGenerator:
                                        when_asked=self.read_progress, retention_delay=self.read_progress-true_idx)
 
     def generate_scene_negation_question(self):
+
+        # Choosing "no answer" as the correct choice proportionally to the number of options (decoys + true ans + "none of the above")
+        # no_true_ans = int(np.random.random() < 1 / (settings.number_of_decoy_options + 2))
+        # n_decoys = settings.number_of_decoy_options + 1 if no_true_ans else settings.number_of_decoy_options
 
         available_fake_weights = self.false_summary_chunk_weights[:self.read_progress + 1].copy()
 
