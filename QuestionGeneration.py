@@ -2,6 +2,8 @@ import random
 
 import warnings
 
+import os
+
 import Dataloaders as dl
 import settings
 
@@ -228,23 +230,46 @@ class RecognitionQuestionGenerator:
             self.advance()
 
 
+def process_folder(summary_folder, num_to_process=5):
+    sumpath = os.path.join("Data", summary_folder)
+    summaries_to_process = [os.path.join(sumpath, f) for f in os.listdir(sumpath) if os.path.isfile(os.path.join(sumpath, f))][0:num_to_process]
+
+    summaries_to_process = summaries_to_process[:num_to_process]
+
+    book_processors = [dl.BookProcessor.init_from_summaries(s) for s in summaries_to_process]
+    ent_rep_dicts = [clg.get_counts_and_subs(b.original_book_text)[1] for b in book_processors]
+
+    question_generators = [RecognitionQuestionGenerator(b, ent_rep_dict=ent_rep_dicts[i]) for i, b in enumerate(book_processors)]
+
+    for i, g in enumerate(question_generators):
+
+        g.set_parallel_books(question_generators[0:i] + question_generators[i+1:])
+
+
+    return question_generators
+
+
+
 if __name__ == "__main__":
 
     # Individual book processors - okay for false summary and lookahead question types, not ok for summaries from other books
 
-    b = dl.BookProcessor.init_from_summaries("./Data/TrueAndFalseSummaryData/ScifiExample25chunks.tagseparated")
-    _, ent_rep_dict = clg.get_counts_and_subs(b.original_book_text)
+    if False:
 
-    question_generator = RecognitionQuestionGenerator(b, ent_rep_dict=ent_rep_dict)
+        b = dl.BookProcessor.init_from_summaries("./Data/ScifiExample25chunks.tagseparated")
+        _, ent_rep_dict = clg.get_counts_and_subs(b.original_book_text)
+
+        question_generator = RecognitionQuestionGenerator(b, ent_rep_dict=ent_rep_dict)
 
 
-    tmp_other_books = [question_generator, question_generator, question_generator, question_generator, question_generator]
-    question_generator.set_parallel_books(tmp_other_books)
+        tmp_other_books = [question_generator, question_generator, question_generator, question_generator, question_generator]
+        question_generator.set_parallel_books(tmp_other_books)
 
-    question_generator.generate_questions()
+        question_generator.generate_questions()
 
-    print(question_generator.questions[0])
+        print(question_generator.questions[0])
 
-    
+    qgs = process_folder("TrueAndFalseSummaryData")
+
 
 

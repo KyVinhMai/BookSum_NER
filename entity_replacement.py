@@ -103,7 +103,7 @@ class EntityReplacer():
                     replacement = np.random.choice(cand_names_no_gender[nametype])
                     insertion_dict[nametype][true_char_name] = replacement, "unknown"
                 else:
-                    replacement = np.random.choice(list(all_cand_names.values()))
+                    replacement = np.random.choice(all_cand_names)
                     insertion_dict[nametype][true_char_name] = replacement, "unknown"
 
         return insertion_dict
@@ -118,8 +118,8 @@ class EntityReplacer():
         all_ins = insertion_dict["First Names"] | insertion_dict["Middle Names"] | insertion_dict["Last Names"]
 
         for name, (rand_name, gender) in all_ins.items():
-            print(name, rand_name, gender)
-            print(text)
+            #print(name, rand_name, gender)
+            #print(text)
             pattern = f"( |\n|\"){re.escape(name)}(\n|\W)"
             text = re.sub(pattern, f"\\1{rand_name}\\2", text)
 

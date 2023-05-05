@@ -63,8 +63,8 @@ class BookProcessor():
                 self.book_chunk_summaries.append(SummarizeChunk(current_chunk))
                 self.overlapped_book_chunks.append(current_chunk)
 
-            except ValueError as first_error:
-
+            except Exception as first_error:
+                time.sleep(5)
                 print("Retrying to force re-summarize chunk")
 
                 failures = 0
