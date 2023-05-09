@@ -18,7 +18,7 @@ def clean_read(path: str): #-> tuple[str,str,str]:
     """
 
     import os
-    print(os.path.dirname(os.path.realpath(__file__)))
+    # print(os.path.dirname(os.path.realpath(__file__)))
 
     with io.open(path, encoding="latin-1") as f:
         text = f.read()

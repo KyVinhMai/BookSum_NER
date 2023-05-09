@@ -6,12 +6,9 @@ from pathlib import Path
 import secrets
 import gender_guesser.detector as gender
 
-from collections import defaultdict
-
 #Generate different seed
 
 spacy.prefer_gpu()
-
 nlp = spacy.load("en_core_web_trf")
 
 ### The current spacy version gives errors if any of the below is included. For some reason, it does not have a "parser" component, for example.
@@ -27,8 +24,6 @@ from utils.read_name_files import read_gender_list, read_unisex_names, read_exce
 
 male_names, female_names = read_gender_list()
 neutral_names, h_figures, name_exceptions = read_unisex_names(), read_figures(), read_exceptions()
-
-
 
 "Logging Configuration"
 logging.basicConfig(
@@ -216,21 +211,34 @@ class Universal_Character_list():
                 self.rand_persons[name_dict][name] = self.assign_label(name)
 
         self.make_case_consistent()
-    # def remove_figures(self):
-    #     all_names = self.return_all_dict()
-    #     for name in all_names.keys():
-    #         if name in celebrities and self.character_counts[name] < 3:
+
+    def remove_figures(self) -> set:
+        """
+        Removes historical figures in case their names are actually relevant to
+        the information of the story.
+        """
+        removed_names = set()
+        for name in self.all_dict().keys():
+            if name in h_figures and self.character_counts[name] < 4:
+                removed_names.add(name)
+                del rand_ch[name]
+
+        return removed_names
+
 
     def generate_file(self): #-> Path:
         self.append_character_list()
         self.randomize_names()
-        # self.remove_figures()
+        removed_names = self.remove_figures()
 
         ch_file_path = self.sf_path / f"{self.book.name.replace(' ', '')}_character_list.txt"
 
         with ch_file_path.open("w", encoding="utf-8") as f:
             f.write(json.dumps(self.character_counts, indent=4, sort_keys=False))
             f.write("\n\n\n")
+            f.write(json.dumps(self.rand_persons, indent=4, sort_keys=False))
+            f.write("\n\n\n")
+            f.write("Historical names we've removed from the book")
             f.write(json.dumps(self.rand_persons, indent=4, sort_keys=False))
 
         print("Created Character list!")

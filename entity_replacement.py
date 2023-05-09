@@ -8,7 +8,6 @@ if TYPE_CHECKING:
 import character_list_generator as clg
 from tqdm import tqdm
 import utils.read_name_files as rn
-from string import capwords
 
 from collections import defaultdict
 
@@ -51,9 +50,6 @@ class EntityReplacer():
         for name, rand_label in self.all_names.items():
             pattern = f"( |\n|\"){re.escape(name)}(\n|\W)"
             self.text = re.sub(pattern, f"\\1{rand_label[0]}\\2", self.text)
-
-            #pattern = f"( |\n|\"){re.escape(name).lower()}(\n|\W)"
-           #self.text = re.sub(pattern, f"\\1{rand_label[0].lower()}\\2", self.text)
 
     def randomized_character_section(self):
         "Randomized Character Section at the bottom"

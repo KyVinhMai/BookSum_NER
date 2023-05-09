@@ -5,7 +5,7 @@ import time
 
 ### !!! IMPORTANT !!! ###
 # Change this to the appropriate folder. Make sure not to double-process the same books #
-book_folder_to_process = "DoubleChecked"
+book_folder_to_process = "handannotated4"
 # Change this to the appropriate folder. Make sure not to double-process the same books #
 
 if __name__ == "__main__":
@@ -54,4 +54,4 @@ if __name__ == "__main__":
 
             print("Exception of type: {}, {}".format(type(e).__name__, e))
 
-        #b2 = BookProcessor.init_from_summaries("./Data/TrueAndFalseSummaryData/297_v2.tagseparated")
+    #b2 = BookProcessor.init_from_summaries("./Data/TrueAndFalseSummaryData/297_v2.tagseparated")

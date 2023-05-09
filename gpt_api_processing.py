@@ -5,9 +5,9 @@ from utils.BookProcessing import rechunk_book
 
 BEGIN_ANSWER_TAG = "### BEGIN ANSWER ###"
 
-#openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
-openai.api_key_path = "../gptapikey"
+# openai.api_key_path = "../gptapikey"
 
 with open("test.txt", "r") as f:
   text = f.read()
