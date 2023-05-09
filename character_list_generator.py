@@ -229,7 +229,7 @@ class Universal_Character_list():
     def generate_file(self): #-> Path:
         self.append_character_list()
         self.randomize_names()
-        removed_names = self.remove_figures()
+        # removed_names = self.remove_figures()
 
         ch_file_path = self.sf_path / f"{self.book.name.replace(' ', '')}_character_list.txt"
 
