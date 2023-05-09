@@ -5,7 +5,7 @@ import time
 
 ### !!! IMPORTANT !!! ###
 # Change this to the appropriate folder. Make sure not to double-process the same books #
-book_folder_to_process = "DoubleChecked"
+book_folder_to_process = "DoubleChecked2"
 # Change this to the appropriate folder. Make sure not to double-process the same books #
 
 if __name__ == "__main__":

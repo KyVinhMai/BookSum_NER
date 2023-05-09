@@ -19,23 +19,37 @@ import character_list_generator as clg
 
 class RecognitionQuestion:
 
-    def __init__(self, correct_answer, decoys, decoy_types, when_asked, retention_delay):
+    def __init__(self, correct_answer, decoys, decoy_types, when_asked, retention_delay, noneabove):
 
         self.correct_answer = correct_answer
+
+        self.noneabove = noneabove
+
         self.decoys = decoys
         self.decoy_types = decoy_types
         self.when_asked = when_asked
-        self.retention_delay = retention_delay
+        self.retention_delay = retention_delay if not self.noneabove else when_asked # You need to remember the whole book read so far to select "none of the above"
 
         self.is_mixed = True if len(set(decoy_types)) > 1 else False
 
         self.question_type = "mixed" if self.is_mixed else self.decoy_types[0]
 
-        self.n_options = len(self.decoys) + 1 # Handle carefully if no true answer is present
-        self.true_ans_position = np.random.randint(self.n_options) # Set to self.n_options if No true answer is present
+        if not self.noneabove:
+            self.decoys.append(settings.noneabove_option)
+            self.decoy_types.append("Default")
 
-        self.all_options = decoys.copy() # + "None of the above."
-        self.all_options.insert(self.true_ans_position, correct_answer) ## Add conditional on the true ans not being none + ALWAYS add the "None of the above" option & set true ans id to it accordingly
+        self.n_options = len(self.decoys) + 1
+
+        self.all_options = decoys.copy()
+
+        if self.noneabove:
+            self.true_ans_position = self.n_options - 1 # The true answer is "None of the above" and it is added to the end of the array
+
+        else:
+            self.true_ans_position = np.random.randint(self.n_options - 1) # -1 Because we don't want to insert the correct answer after "None of the above"
+
+        self.all_options.insert(self.true_ans_position, correct_answer)
+
     def question_string(self):
         return "".join(["Which of the following scenes was in the book?\n"] + [str(i + 1) + ") " + self.all_options[i] + "\n" for i in range(self.n_options)])
 
@@ -76,10 +90,12 @@ class RecognitionQuestion:
     def IsComplete(self):
         '''Since some summaries or false summaries might have been None (GPT failed to generate them),
         we need to filter out questions that got affected by that'''
+
         if self.correct_answer is None or any([el is None for el in self.decoys]):
             return False
         else:
             return True
+
 
 class RecognitionQuestionGenerator:
 
@@ -134,35 +150,41 @@ class RecognitionQuestionGenerator:
         self.questions.append(current_questions)
 
     def generate_lookahead_question(self):
-        if self.read_progress > self.book_length - (settings.number_of_decoy_options + 1):
+
+        no_true_ans = np.random.random() < (1 / (settings.number_of_decoy_options + 2)) # Total number of options is + 2 because of the true ans and "None of the above"
+        n_decoys = settings.number_of_decoy_options + 1 if no_true_ans else settings.number_of_decoy_options
+
+        if self.read_progress > self.book_length - (n_decoys + 1):
             return None # Can not generate lookahead questions too close to the end of the book
         else:
 
             decoy_id_candidates = np.arange(self.read_progress + 1, self.book_length)
             #decoy_id_candidates = [i for i in decoy_id_candidates if i not in self.suspicious_true_summary_idx] # Can be used for more strict filtering
-            decoy_ids = np.random.choice(decoy_id_candidates, settings.number_of_decoy_options, replace=False)
+            decoy_ids = np.random.choice(decoy_id_candidates, n_decoys, replace=False)
 
-            true_ans, true_idx = self.get_random_summary(self.read_progress + 1)
 
-            true_ans = self.book_processor.book_chunk_summaries[true_idx]
+            if no_true_ans:
+                true_ans = settings.noneabove_option
+                retention_delay = self.read_progress
+            else:
+
+                true_ans, true_idx = self.get_random_summary(self.read_progress + 1)
+                retention_delay=self.read_progress-true_idx
 
             decoys = [self.book_processor.book_chunk_summaries[id] for id in decoy_ids]
             decoy_types = ["Lookahead" for _ in decoy_ids]
 
-
-
             return RecognitionQuestion(correct_answer=true_ans, decoys=decoys, decoy_types=decoy_types,
-                                       when_asked=self.read_progress, retention_delay=self.read_progress-true_idx)
+                                       when_asked=self.read_progress, retention_delay=retention_delay, noneabove=no_true_ans)
 
     def generate_scene_negation_question(self):
 
-        # Choosing "no answer" as the correct choice proportionally to the number of options (decoys + true ans + "none of the above")
-        # no_true_ans = int(np.random.random() < 1 / (settings.number_of_decoy_options + 2))
-        # n_decoys = settings.number_of_decoy_options + 1 if no_true_ans else settings.number_of_decoy_options
+        no_true_ans = np.random.random() < (1 / (settings.number_of_decoy_options + 2)) # Total number of options is + 2 because of the true ans and "None of the above"
+        n_decoys = settings.number_of_decoy_options + 1 if no_true_ans else settings.number_of_decoy_options
 
         available_fake_weights = self.false_summary_chunk_weights[:self.read_progress + 1].copy()
 
-        if np.sum(available_fake_weights) < settings.number_of_decoy_options:
+        if np.sum(available_fake_weights) < n_decoys:
             return None
         else:
 
@@ -170,7 +192,7 @@ class RecognitionQuestionGenerator:
 
 
             idx_to_numpicks = Counter()
-            for _ in range(settings.number_of_decoy_options):
+            for _ in range(n_decoys):
 
                 fake_weights_normalized = available_fake_weights / np.sum(available_fake_weights)
 
@@ -184,11 +206,17 @@ class RecognitionQuestionGenerator:
                 decoys.extend(decoys_from_chunk)
 
             np.random.shuffle(decoys) # Otherwise decoys from the same chunk would be close
-            decoy_types = ["Change" for _ in range(settings.number_of_decoy_options)]
+            decoy_types = ["Change" for _ in range(n_decoys)]
 
-            true_ans, true_idx = self.get_random_summary(self.read_progress + 1)
+            if no_true_ans:
+                true_ans = settings.noneabove_option
+                retention_delay = self.read_progress
 
-        return RecognitionQuestion(true_ans, decoys, decoy_types, when_asked=self.read_progress, retention_delay=self.read_progress-true_idx)
+            else:
+                true_ans, true_idx = self.get_random_summary(self.read_progress + 1)
+                retention_delay = self.read_progress - true_idx
+
+        return RecognitionQuestion(true_ans, decoys, decoy_types, when_asked=self.read_progress, retention_delay=retention_delay, noneabove=no_true_ans)
 
     def get_random_summary(self, sample_up_to=None):
 
@@ -209,19 +237,27 @@ class RecognitionQuestionGenerator:
         return true_ans, true_idx
     def generate_other_book_question(self):
 
-        true_idx = np.random.randint(self.read_progress + 1)
-        true_ans = self.book_processor.book_chunk_summaries[true_idx] # Use get random summary here
+        no_true_ans = np.random.random() < (1 / (settings.number_of_decoy_options + 2))
+        n_decoys = settings.number_of_decoy_options + 1 if no_true_ans else settings.number_of_decoy_options
 
-        decoy_books = np.random.choice(np.arange(len(self.parallel_books)), size=settings.number_of_decoy_options, replace=False)
+        if no_true_ans:
+            true_ans = settings.noneabove_option
+            retention_delay = self.read_progress
+        else:
+            true_ans, true_idx = self.get_random_summary(self.read_progress + 1)
+            retention_delay = self.read_progress - true_idx
+
+
+        decoy_books = np.random.choice(np.arange(len(self.parallel_books)), size=n_decoys, replace=False)
         decoy_books = [self.parallel_books[i] for i in decoy_books]
         decoys = [el.get_random_summary()[0] for el in decoy_books]
 
         ### Substitute entities from this book into entities from another.
         decoys = [EntityReplacer.sub_nonrandom_characters(self.ent_rep_dict, b.ent_rep_dict, text=d) for d, b in zip(decoys, decoy_books)]
 
-        decoy_types = ["Otherbook" for _ in range(settings.number_of_decoy_options)]
+        decoy_types = ["Otherbook" for _ in range(n_decoys)]
 
-        return RecognitionQuestion(true_ans, decoys, decoy_types, when_asked=self.read_progress, retention_delay=self.read_progress-true_idx)
+        return RecognitionQuestion(true_ans, decoys, decoy_types, when_asked=self.read_progress, retention_delay=retention_delay, noneabove=no_true_ans)
 
     def set_parallel_books(self, pb):
         '''Each PB is also a question generator'''
@@ -251,13 +287,16 @@ def process_folder(summary_folder, num_to_process=5):
 
     return question_generators
 
+def generate_questions(max_retention):
 
+    ### Save questions in a conveniently loadable way
+    pass
 
 if __name__ == "__main__":
 
     # Individual book processors - okay for false summary and lookahead question types, not ok for summaries from other books
 
-    if False:
+    if True:
 
         b = dl.BookProcessor.init_from_summaries("./Data/ScifiExample25chunks.tagseparated")
         _, ent_rep_dict = clg.get_counts_and_subs(b.original_book_text)
@@ -270,9 +309,9 @@ if __name__ == "__main__":
 
         question_generator.generate_questions()
 
-        print(question_generator.questions[0])
+        print(question_generator.questions[11])
 
-    qgs = process_folder("TrueAndFalseSummaryData")
+    #qgs = process_folder("TrueAndFalseSummaryData")
 
 
 

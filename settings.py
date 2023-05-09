@@ -15,3 +15,5 @@ false_summaries_for_chunk_0 = 5
 
 
 number_of_decoy_options = 4
+
+noneabove_option = "None of the above."
