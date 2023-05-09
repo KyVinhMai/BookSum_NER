@@ -56,10 +56,10 @@ def write_book_list(path: str):
         csv_writer = writer(f, lineterminator= '\n')
         csv_writer.writerow(["ID, Book Title, Author Name"])
         for line in book_list:
-            csv_writer.writerow([line])
+            csv_writer.writerow(line)
 
 def main(path:str):
-    original = path + "\\books"
+    original = path + "\\books_batch2"
     filter = path + "\\over_word_count"
     destination = path + "\\cleaned_books"
 
@@ -79,4 +79,4 @@ def main(path:str):
     write_book_list(destination)
 
 if __name__ == "__main__":
-    main("D:\\Research_Projects\\ArsenyProjects\\project_gutenberg")
+    main(r"C:\Users\kyvin\PycharmProjects\Narrative-Understanding-Dataset\PG_book_processing\books")
