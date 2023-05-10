@@ -6,6 +6,12 @@ from pathlib import Path
 import secrets
 import gender_guesser.detector as gender
 
+import settings
+
+import utils.BookProcessing as BookProc
+
+import itertools as it
+
 #Generate different seed
 
 spacy.prefer_gpu()
@@ -248,6 +254,17 @@ class Universal_Character_list():
     def debug(self):
         print(self.rm_verb(["Edward"]))
 
+def my_spacy_entities(text, maxlen=500000):
+    '''Takes a potentially very long document, splits it into manageable chunks, then processes with spacy and joins the results'''
+
+    chunks = BookProc.chunk_book(text, max_length=maxlen)
+    big_chunks = BookProc.rechunk_book(chunks, maxlen=maxlen)
+
+    docs = nlp.pipe(big_chunks)
+    ents = it.chain.from_iterable(d.ents for d in docs)
+    return ents
+
+
 class CharacterProcessor():
     def __init__(self, book: str, m_names: list, f_name: list,
                  uni_name: list, n_exceptions, h_figures):
@@ -376,7 +393,7 @@ class CharacterProcessor():
 
     def append_character_list(self) -> None:
 
-        doc = nlp(self.book)
+        #doc = nlp(self.book)
         ## Replace with "my_nlp"
         ## "my_nlp" should
         ## 1) split the document by "." or "\n", getting many small chunks. Make sure that each chunk is less than some THRESHOLD_LENGTH (e.g. 500k symbols)
@@ -384,17 +401,20 @@ class CharacterProcessor():
         ## 3) do the pipeline trick from spacy. docs = ... | If the pipeline is already optimized to do 1 and 2, we can skip that, but we should NOT process each sentence separately, I think, as it loses context info.
         ## 4) Do something like ents = it.chain.from_iterable([d.ents for d in docs]) (Basically merge all entities in the docs above into one list)
 
-        for word in doc.ents: #iterate over the new thing obtained above ("ents")
+        ents = my_spacy_entities(self.book, maxlen=settings.SPACY_MAXLEN)
+
+        #for word in doc.ents: #iterate over the new thing obtained above ("ents")
+        for word in ents:
             if word.label_ == "PERSON":
                 try:
                     name_tokens = self.tokenize_name(word.text)
                     name_tokens = self.rm_verb(name_tokens)
                 except IndexError:
-                    print("rm_verb tried to index into an empty list")
+                    #print("rm_verb tried to index into an empty list")
                     continue
                 #finally:
                 if name_tokens == []:
-                    print("Executing the finally clause")
+                    #print("Executing the finally clause")
                     continue
 
                 logging.info(f"{name_tokens}")
