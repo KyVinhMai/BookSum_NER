@@ -140,6 +140,7 @@ class Universal_Character_list():
         for summary in file_list:
             raw_file = open(summary, "r")
             doc = nlp(raw_file.read())
+
             print(summary.name)
 
             for word in doc.ents:
@@ -376,8 +377,14 @@ class CharacterProcessor():
     def append_character_list(self) -> None:
 
         doc = nlp(self.book)
+        ## Replace with "my_nlp"
+        ## "my_nlp" should
+        ## 1) split the document by "." or "\n", getting many small chunks. Make sure that each chunk is less than some THRESHOLD_LENGTH (e.g. 500k symbols)
+        ## 2) Join the chunks into bigger chunks such that each is still less than 500k, but close to. (we don't want to process one sentence at a time.
+        ## 3) do the pipeline trick from spacy. docs = ... | If the pipeline is already optimized to do 1 and 2, we can skip that, but we should NOT process each sentence separately, I think, as it loses context info.
+        ## 4) Do something like ents = it.chain.from_iterable([d.ents for d in docs]) (Basically merge all entities in the docs above into one list)
 
-        for word in doc.ents:
+        for word in doc.ents: #iterate over the new thing obtained above ("ents")
             if word.label_ == "PERSON":
                 try:
                     name_tokens = self.tokenize_name(word.text)
