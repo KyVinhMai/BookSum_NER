@@ -290,6 +290,12 @@ def process_folder(summary_folder, num_to_process=5):
 def generate_questions(max_retention):
 
     ### Save questions in a conveniently loadable way
+
+    ### Dataset format
+    ###
+    ### CHUNK, OCHUNK, QUESTIONS (WITHIN ONE COLUMN), QUESTION TYPES (WITHIN ONE COLUMN), QUESTION ANSWERS (WITHIN ONE COLUMN), MEMLOADS (WITHIN ONE COLUMN)
+    ###
+
     pass
 
 if __name__ == "__main__":

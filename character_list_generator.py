@@ -107,7 +107,7 @@ class Universal_Character_list():
         logging.info(f"{name.__repr__()}")
         name = re.sub(self.re_pattern, "", name)
         name = re.sub('\n', ' ', name)
-        name_tokens = [token for token in name.split(" ") if token and self.exceptions_check(token)]
+        name_tokens = [token for token in name.split(" ") if token and self.passes_exceptions_check(token)]
         return name_tokens
 
     def count_character(self, name_tokens:[str]) -> None:
@@ -121,7 +121,7 @@ class Universal_Character_list():
             except KeyError:
                 self.character_counts["Characters"][name] = 1
 
-    def exceptions_check(self, name: str) -> bool: #todo recheck since we added more named exceptions
+    def passes_exceptions_check(self, name: str) -> bool: #todo recheck since we added more named exceptions
         """
         Passes the name through the exceptions list. Intended to exclude names
         like The Queen of Scots, or God, or even determiners (spacy has an
@@ -148,7 +148,7 @@ class Universal_Character_list():
                         name_tokens = self.tokenize_name(word.text)
                         name_tokens = self.rm_verb(name_tokens)
                     except IndexError:
-                        "rm_verb tried to index into an empty list"
+                        print("rm_verb tried to index into an empty list")
                         continue
                     finally:
                         if name_tokens == []:
@@ -350,7 +350,7 @@ class CharacterProcessor():
         logging.info(f"{name.__repr__()}")
         name = re.sub(self.re_pattern, "", name)
         name = re.sub('\n', ' ', name)
-        name_tokens = [token for token in name.split(" ") if token and self.exceptions_check(token)]
+        name_tokens = [token for token in name.split(" ") if token and self.passes_exceptions_check(token)]
         return name_tokens
 
     def count_character(self, name_tokens:[str]) -> None:
@@ -364,17 +364,14 @@ class CharacterProcessor():
             except KeyError:
                 self.character_counts["Characters"][name] = 1
 
-    def exceptions_check(self, name: str) -> bool: #todo recheck since we added more named exceptions
+    def passes_exceptions_check(self, name: str) -> bool: #todo recheck since we added more named exceptions
         """
         Passes the name through the exceptions list. Intended to exclude names
         like The Queen of Scots, or God, or even determiners (spacy has an
         issue with removing determiners).
         """
-        for word in self.name_exceptions:
-            if word == name:
-                return False
 
-        return True
+        return name not in self.name_exceptions
 
     def append_character_list(self) -> None:
 
@@ -386,11 +383,12 @@ class CharacterProcessor():
                     name_tokens = self.tokenize_name(word.text)
                     name_tokens = self.rm_verb(name_tokens)
                 except IndexError:
-                    "rm_verb tried to index into an empty list"
+                    print("rm_verb tried to index into an empty list")
                     continue
-                finally:
-                    if name_tokens == []:
-                        continue
+                #finally:
+                if name_tokens == []:
+                    print("Executing the finally clause")
+                    continue
 
                 logging.info(f"{name_tokens}")
                 processed_name = " ".join(name_tokens)
@@ -437,7 +435,8 @@ def get_counts_and_subs(book):
     cl.append_character_list()
     cl.randomize_names()
 
-    return  cl.character_counts, cl.rand_persons,
+    return cl.character_counts, cl.rand_persons
+
 if __name__ == "__main__":
 
 

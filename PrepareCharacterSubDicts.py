@@ -34,9 +34,9 @@ if __name__ == "__main__":
 
     sums_to_process = [f for f in os.listdir(sumpath) if os.path.isfile(os.path.join(sumpath, f)) and f.strip(".tagseparated") not in done]
 
-    for i, f in enumerate(sums_to_process):
+    for k, f in enumerate(sums_to_process):
 
-        print("Beginning to process book {}/{}".format(i + 1, len(sums_to_process)))
+        print("Beginning to process book {}/{}".format(k + 1, len(sums_to_process)))
 
         sp = os.path.join(sumpath, f)
 
@@ -44,6 +44,7 @@ if __name__ == "__main__":
         ent_count, ent_rep_dict = clg.get_counts_and_subs(b.original_book_text)
 
         resname = f.strip(".tagseparated")
+
         rp = os.path.join(respath, resname)
         with open(rp + ".count", "wb") as o:
             pkl.dump(ent_count, o)
