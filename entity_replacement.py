@@ -121,6 +121,19 @@ class EntityReplacer():
 
         return text
 
+    @staticmethod
+    def sub_random_characters(source_book_rand_ch: dict, text: str):
+
+        '''Takes a snippet a book and substitutes random characters instead of the original ones.'''
+
+        all_ins = source_book_rand_ch["First Names"] | source_book_rand_ch["Middle Names"] | source_book_rand_ch["Last Names"]
+
+        for name, (rand_name, gender) in all_ins.items():
+
+            pattern = f"( |\n|\"){re.escape(name)}(\n|\W)"
+            text = re.sub(pattern, f"\\1{rand_name}\\2", text)
+
+        return text
 #Creates a separate file directory
 def create_subdirectory(book : Path) -> Path:
     "Creates a new subfolder to store a file of all the subsituted names"

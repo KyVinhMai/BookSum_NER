@@ -80,11 +80,16 @@ lr_scheduler = get_scheduler(name="linear", optimizer=optimizer, num_warmup_step
 
 from tqdm.auto import tqdm
 progress_bar = tqdm(range(num_training_steps))
-model.train()
 
 
+
+metric = evaluate.load("accuracy")
+
+accuracies = []
 
 for epoch in range(num_epochs):
+
+    model.train()
 
     for batch in train_dataloader:
 
@@ -97,19 +102,15 @@ for epoch in range(num_epochs):
         optimizer.zero_grad()
         progress_bar.update(1)
 
-metric = evaluate.load("accuracy")
+    model.eval()
+    for batch in eval_dataloader:
+        batch = {k: v.to(device) for k, v in batch.items()}
 
-model.eval()
-for batch in eval_dataloader:
+        with t.no_grad():
+            outputs = model(**batch)
 
-    batch = {k: v.to(device) for k, v in batch.items()}
+        logits = outputs.logits
+        predictions = t.argmax(logits, dim=-1)
+        metric.add_batch(predictions=predictions, references=batch["labels"])
 
-    with t.no_grad():
-
-        outputs = model(**batch)
-
-    logits = outputs.logits
-    predictions = t.argmax(logits, dim=-1)
-    metric.add_batch(predictions=predictions, references=batch["labels"])
-
-res = metric.compute()
+    accuracies.append(metric.compute())

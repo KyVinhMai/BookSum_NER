@@ -79,7 +79,7 @@ class BookProcessor():
                         self.overlapped_book_chunks.append(current_chunk)
 
                         if warning is not None:
-                            self.failed_summaries[len(self.book_chunk_summaries)-1] = warning
+                            self.failed_summaries[len(self.book_chunk_summaries) - 1] = warning
                         else:
                             print("Successfully re-summarized the chunk using a more forceful request.")
                         break
@@ -198,7 +198,10 @@ class BookProcessor():
         # Dropping the first line since it's the column name
         rowids, chunks, ochunks, sums, fakesums, status, comment = [el[1:] for el in (rowids, chunks, ochunks, sums, fakesums, status, comment)]
 
+        assert (len(chunks) == len(ochunks)), "Chunk length not the same as ochunk length"
+
         b = BookProcessor(" ".join(chunks))
+        b.book_chunks = chunks
         b.overlapped_book_chunks = ochunks
         b.book_chunk_summaries = [s if s else None for s in sums]
         b.false_book_chunk_summaries = [[None if not s else s for s in fs] for fs in fakesums]
@@ -215,8 +218,9 @@ def LoadSummaries(filepath):
         lines = raw.split(line_separator)
 
         rowids, chunks, ochunks, sums, fakesums, status, comment = zip(*[l.split(column_separator) for l in lines if l])
+        #rowids, chunks, ochunks, sums, fakesums, status, comment = zip(*[l.split(column_separator) for l in lines][:-1]) # last line is always empty
 
-
+        assert len(chunks) == len(ochunks), "Overlapped chunks differ in length from regular chunks"
 
     fakesums_unrolled = [fk.split(fake_summary_separator) for fk in fakesums]
 
@@ -244,7 +248,7 @@ if __name__ == "__main__":
 
     t0 = time.time()
 
-    if True:
+    if False:
         with open("Data/hand_annotated2/297.txt", "r") as f:
             b = f.read()
 

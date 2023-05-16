@@ -16,6 +16,9 @@ from collections import Counter
 from entity_replacement import EntityReplacer
 
 import character_list_generator as clg
+import pickle as pkl
+
+from settings import column_separator, fake_summary_separator, line_separator
 
 class RecognitionQuestion:
 
@@ -55,6 +58,7 @@ class RecognitionQuestion:
 
     def answer(self):
         return str(self.true_ans_position + 1)
+
     def detailed_question_string(self):
 
         description = "A {} decoy type recognition question:\n".format(self.question_type)
@@ -99,8 +103,10 @@ class RecognitionQuestion:
 
 class RecognitionQuestionGenerator:
 
-    def __init__(self, book_processor, parallel_books=None, ent_rep_dict=None):
+    def __init__(self, book_processor, book_filename, parallel_books=None, ent_rep_dict=None):
         '''Takes a book processor (already with true and fake summaries generated. Generates questions based on that.'''
+
+        self.book_filename = book_filename
         self.book_processor = book_processor
         self.parallel_books = parallel_books ### A list of book processor objects, to draw decoy answers from. Only relevant for the "other book" type of recognition decoys.
 
@@ -269,7 +275,9 @@ class RecognitionQuestionGenerator:
             self.advance()
 
 
-def process_folder(summary_folder, num_to_process=5):
+def process_folder(summary_folder, num_to_process=15):
+
+    raise NotImplementedError # Does not keep track of book names
     sumpath = os.path.join("Data", summary_folder)
     summaries_to_process = [os.path.join(sumpath, f) for f in os.listdir(sumpath) if os.path.isfile(os.path.join(sumpath, f))][0:num_to_process]
 
@@ -287,22 +295,96 @@ def process_folder(summary_folder, num_to_process=5):
 
     return question_generators
 
-def generate_questions(max_retention):
+def process_folder_from_prepared(summary_folder, ent_dict_folder, num_to_process=15):
+    sumpath = os.path.join("Data", summary_folder)
+    entpath = os.path.join("Data", ent_dict_folder)
 
-    ### Save questions in a conveniently loadable way
+    bookf_to_process = [f.strip(".tagseparated") for f in os.listdir(sumpath) if os.path.isfile(os.path.join(sumpath, f))]
+    bookf_to_process = bookf_to_process[:num_to_process]
 
-    ### Dataset format
-    ###
-    ### CHUNK, OCHUNK, QUESTIONS (WITHIN ONE COLUMN), QUESTION TYPES (WITHIN ONE COLUMN), QUESTION ANSWERS (WITHIN ONE COLUMN), MEMLOADS (WITHIN ONE COLUMN)
-    ###
+    summaries_to_process = [os.path.join(sumpath, f + ".tagseparated") for f in bookf_to_process]
+    ent_dicts_to_process = [os.path.join(entpath, f + ".repl") for f in bookf_to_process]
 
-    pass
+    assert all([os.path.isfile(f) for f in ent_dicts_to_process]), 'Missing a preprocessed replacement dictionary {}'.format(ent_dicts_to_process)
+
+    book_processors = [dl.BookProcessor.init_from_summaries(s) for s in summaries_to_process]
+
+    ent_rep_dicts = []
+
+    for p in ent_dicts_to_process:
+        with open(p, "rb") as f:
+            ent_rep_dicts.append(pkl.load(f))
+
+
+    question_generators = [RecognitionQuestionGenerator(b, book_filename=bookf_to_process[i], ent_rep_dict=ent_rep_dicts[i]) for i, b in enumerate(book_processors)]
+
+    for i, g in enumerate(question_generators):
+
+        g.set_parallel_books(question_generators[0:i] + question_generators[i+1:])
+
+
+    return question_generators
+
+
+def generate_questions(question_generators, saveto, subchars=True):
+
+    subc = EntityReplacer.sub_random_characters if subchars else lambda x, y: y
+
+    is_subbed = "substituted" if subchars else "raw"
+    savefolder = os.path.join("Data", saveto, is_subbed, "shortform")
+    if not os.path.exists(savefolder):
+        os.makedirs(savefolder)
+
+    for qg_num, qg in enumerate(question_generators):
+
+        if not qg.questions:
+            qg.generate_questions()
+
+        ### Save questions in a conveniently loadable way
+
+        ### Short dataset format
+        ### Filename - bookid.questshort
+        ### WHENASKED, CHUNK, OVERLAPPEDCHUNK, QUESTIONS (WITHIN ONE COLUMN), QUESTION ANSWERS (WITHIN ONE COLUMN), QUESTION TYPES (WITHIN ONE COLUMN), MEMLOADS (WITHIN ONE COLUMN)
+        ###
+
+        savepath = os.path.join("Data", saveto, is_subbed, "shortform", qg.book_filename + ".questions_shortform")
+
+        with open(savepath, "w") as f:
+
+            f.write(column_separator.join(
+                ["WHEN_ASKED", "RAW_CHUNK", "OVERLAPPED_CHUNK", "QUESTIONS", "QUESTION_ANSWERS", "QUESTION_TYPES",
+                 "MEMLOADS"]))
+            f.write(line_separator)
+
+            for chunkind, qs in enumerate(qg.questions):
+
+                chunk = subc(qg.ent_rep_dict, qg.book_processor.book_chunks[chunkind])
+                ochunk = subc(qg.ent_rep_dict, qg.book_processor.overlapped_book_chunks[chunkind])
+
+                question_texts = fake_summary_separator.join([subc(qg.ent_rep_dict, q.question_string()) for q in qs])
+                question_answers = fake_summary_separator.join([q.answer() for q in qs])
+                question_types = fake_summary_separator.join([q.question_type for q in qs])
+                memloads = fake_summary_separator.join([str(q.retention_delay) for q in qs])
+
+                f.write(column_separator.join([str(chunkind), chunk, ochunk, question_texts, question_answers, question_types, memloads]))
+
+                f.write(line_separator)
+
+
+        ### Long dataset format
+        ### Filename - bookid.questlong
+        ### WHENASKED, CHUNK, OVERLAPPEDCHUNK, QUESTION, QUESTION TYPE, QUESTION ANSWER, MEMLOAD
+        ###
+
+        print("Generated questions for {} out of {} books".format(qg_num + 1, len(qgs)))
+
+
 
 if __name__ == "__main__":
 
     # Individual book processors - okay for false summary and lookahead question types, not ok for summaries from other books
 
-    if True:
+    if False:
 
         b = dl.BookProcessor.init_from_summaries("./Data/ScifiExample25chunks.tagseparated")
         _, ent_rep_dict = clg.get_counts_and_subs(b.original_book_text)
@@ -319,5 +401,7 @@ if __name__ == "__main__":
 
     #qgs = process_folder("TrueAndFalseSummaryData")
 
-
-
+    qgs = process_folder_from_prepared("TrueAndFalseSummaryDataBackup", ent_dict_folder="CharacterSubstitution")
+    generate_questions(qgs, saveto="TmpQuestions", subchars=True)
+    print(len(qgs[5].book_processor.overlapped_book_chunks))
+    print(len(qgs[5].book_processor.book_chunks))

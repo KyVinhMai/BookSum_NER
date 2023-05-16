@@ -6,7 +6,9 @@ import time
 ### !!! IMPORTANT !!! ###
 # Change this to the appropriate folder. Make sure not to double-process the same books #
 
-book_folder_to_process = "DoubleChecked2"
+
+
+book_folder_to_process = "DoubleChecked3_unique_auth"
 
 # Change this to the appropriate folder. Make sure not to double-process the same books #
 
