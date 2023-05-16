@@ -403,5 +403,7 @@ if __name__ == "__main__":
 
     qgs = process_folder_from_prepared("TrueAndFalseSummaryDataBackup", ent_dict_folder="CharacterSubstitution")
     generate_questions(qgs, saveto="TmpQuestions", subchars=True)
+    generate_questions(qgs, saveto="TmpQuestions", subchars=False)
+
     print(len(qgs[5].book_processor.overlapped_book_chunks))
     print(len(qgs[5].book_processor.book_chunks))
