@@ -212,20 +212,25 @@ class BookProcessor():
 
 def LoadSummaries(filepath):
 
-    with open(filepath, "r") as f:
-        raw = f.read()
+    for e in ["utf-8", "utf-16", "cp1252", "latin-1"]:
 
-        lines = raw.split(line_separator)
+        try:
+            with open(filepath, "r", encoding=e) as f:
+                raw = f.read()
 
-        rowids, chunks, ochunks, sums, fakesums, status, comment = zip(*[l.split(column_separator) for l in lines if l])
-        #rowids, chunks, ochunks, sums, fakesums, status, comment = zip(*[l.split(column_separator) for l in lines][:-1]) # last line is always empty
+                lines = raw.split(line_separator)
 
-        assert len(chunks) == len(ochunks), "Overlapped chunks differ in length from regular chunks"
+                rowids, chunks, ochunks, sums, fakesums, status, comment = zip(*[l.split(column_separator) for l in lines if l])
+                #rowids, chunks, ochunks, sums, fakesums, status, comment = zip(*[l.split(column_separator) for l in lines][:-1]) # last line is always empty
 
-    fakesums_unrolled = [fk.split(fake_summary_separator) for fk in fakesums]
+                assert len(chunks) == len(ochunks), "Overlapped chunks differ in length from regular chunks"
 
-    return rowids, chunks, ochunks, sums, fakesums_unrolled, status, comment
+            fakesums_unrolled = [fk.split(fake_summary_separator) for fk in fakesums]
 
+            return rowids, chunks, ochunks, sums, fakesums_unrolled, status, comment
+
+        except (UnicodeDecodeError, UnicodeError) as exc:
+            print("Encoding issues in LoadSummaries")
 
 
 if __name__ == "__main__":
