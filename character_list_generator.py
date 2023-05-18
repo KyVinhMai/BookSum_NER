@@ -272,7 +272,7 @@ class CharacterProcessor():
         self.male_names, self.female_names = m_names, f_name
         self.neutral_names = uni_name
         self.re_pattern = "St\.|\'s|\\+|,|\""
-        self.name_exceptions = n_exceptions
+        self.name_exceptions = set(n_exceptions)
         self.celebrities = h_figures
 
         self.character_counts = {
