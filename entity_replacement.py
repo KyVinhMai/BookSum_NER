@@ -116,9 +116,17 @@ class EntityReplacer():
         for name, (rand_name, gender) in all_ins.items():
             #print(name, rand_name, gender)
             #print(text)
-            pattern = f"( |\n|\"){re.escape(name)}(\n|\W)"
-            text = re.sub(pattern, f"\\1{rand_name}\\2", text)
-
+            try:
+                pattern = f"( |\n|\"){re.escape(name)}(\n|\W)"
+                text = re.sub(pattern, f"\\1{rand_name}\\2", text)
+            except re.error as e:
+                print("Re error")
+                print("Pattern")
+                print(pattern)
+                print("Text")
+                print(text)
+                print("Name: {}, rand name {}, gender {}".format(name, rand_name, gender))
+                raise e
         return text
 
     @staticmethod
@@ -130,8 +138,8 @@ class EntityReplacer():
 
         for name, (rand_name, gender) in all_ins.items():
 
-            pattern = f"( |\n|\"){re.escape(name)}(\n|\W)"
-            text = re.sub(pattern, f"\\1{rand_name}\\2", text)
+            pattern = f"(^|\W){re.escape(name)}($|\W)"
+            text = re.sub(pattern, f"\\g<1>{rand_name}\\g<2>", text)
 
         return text
 #Creates a separate file directory

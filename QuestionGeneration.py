@@ -295,12 +295,12 @@ def process_folder(summary_folder, num_to_process=15):
 
     return question_generators
 
-def process_folder_from_prepared(summary_folder, ent_dict_folder, num_to_process=15):
+def process_folder_from_prepared(summary_folder, ent_dict_folder, num_to_process=15, start_at=0):
     sumpath = os.path.join("Data", summary_folder)
     entpath = os.path.join("Data", ent_dict_folder)
 
     bookf_to_process = [f.strip(".tagseparated") for f in os.listdir(sumpath) if os.path.isfile(os.path.join(sumpath, f))]
-    bookf_to_process = bookf_to_process[:num_to_process]
+    bookf_to_process = bookf_to_process[start_at:num_to_process]
 
     summaries_to_process = [os.path.join(sumpath, f + ".tagseparated") for f in bookf_to_process]
     ent_dicts_to_process = [os.path.join(entpath, f + ".repl") for f in bookf_to_process]
@@ -314,7 +314,6 @@ def process_folder_from_prepared(summary_folder, ent_dict_folder, num_to_process
     for p in ent_dicts_to_process:
         with open(p, "rb") as f:
             ent_rep_dicts.append(pkl.load(f))
-
 
     question_generators = [RecognitionQuestionGenerator(b, book_filename=bookf_to_process[i], ent_rep_dict=ent_rep_dicts[i]) for i, b in enumerate(book_processors)]
 
@@ -380,6 +379,8 @@ def generate_questions(question_generators, saveto, subchars=True):
 
 
 
+
+
 if __name__ == "__main__":
 
     # Individual book processors - okay for false summary and lookahead question types, not ok for summaries from other books
@@ -399,11 +400,11 @@ if __name__ == "__main__":
 
         print(question_generator.questions[11])
 
-    #qgs = process_folder("TrueAndFalseSummaryData")
+        #qgs = process_folder("TrueAndFalseSummaryData")
 
-    qgs = process_folder_from_prepared("TrueAndFalseSummaryDataBackup", ent_dict_folder="CharacterSubstitution")
+    qgs = process_folder_from_prepared("SummaryDataAllMachinesBackup", ent_dict_folder="CharacterSubstitution", num_to_process=1000, start_at=10)
     generate_questions(qgs, saveto="TmpQuestions", subchars=True)
     generate_questions(qgs, saveto="TmpQuestions", subchars=False)
 
-    print(len(qgs[5].book_processor.overlapped_book_chunks))
-    print(len(qgs[5].book_processor.book_chunks))
+    #print(len(qgs[5].book_processor.overlapped_book_chunks))
+    #print(len(qgs[5].book_processor.book_chunks))
