@@ -377,10 +377,16 @@ class CharacterProcessor():
         character name to have the same number of counts
         """
         for name in name_tokens:
-            try:
+
+            if name in self.character_counts["Characters"]:
                 self.character_counts["Characters"][name] += 1
-            except KeyError:
+            else:
                 self.character_counts["Characters"][name] = 1
+
+            # try:
+            #     self.character_counts["Characters"][name] += 1
+            # except KeyError:
+            #     self.character_counts["Characters"][name] = 1
 
     def passes_exceptions_check(self, name: str) -> bool: #todo recheck since we added more named exceptions
         """
