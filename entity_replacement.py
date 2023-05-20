@@ -117,8 +117,8 @@ class EntityReplacer():
             #print(name, rand_name, gender)
             #print(text)
             try:
-                pattern = f"( |\n|\"){re.escape(name)}(\n|\W)"
-                text = re.sub(pattern, f"\\1{rand_name}\\2", text)
+                pattern = f"(^|\W){re.escape(name)}($|\W)"
+                text = re.sub(pattern, f"\\g<1>{rand_name}\\g<2>", text)
             except re.error as e:
                 print("Re error")
                 print("Pattern")
