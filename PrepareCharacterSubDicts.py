@@ -10,8 +10,8 @@ import Dataloaders as dl
 import settings
 
 import numpy as np
-random.seed(42)
-np.random.seed(42)
+random.seed(94)
+np.random.seed(94)
 
 from collections import Counter
 
@@ -23,7 +23,7 @@ import character_list_generator as clg
 if __name__ == "__main__":
 
     results_folder = "CharacterSubstitution" # Where to save char sub dicts
-    sum_folder = "TrueAndFalseSummaryDataBackup" # Where to look for processed books
+    sum_folder = "SummaryDataAllMachinesBackup" # Where to look for processed books
 
 
     respath = os.path.join("Data", results_folder)
@@ -39,7 +39,7 @@ if __name__ == "__main__":
         print("Beginning to process book {}/{}".format(k + 1, len(sums_to_process)))
 
         sp = os.path.join(sumpath, f)
-
+        print(sp)
         b = dl.BookProcessor.init_from_summaries(sp)
         ent_count, ent_rep_dict = clg.get_counts_and_subs(b.original_book_text)
 

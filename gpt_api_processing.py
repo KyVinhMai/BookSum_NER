@@ -141,7 +141,7 @@ def CreateFalseSummary(chunk):
 
   answer = resp_parts[-1]
 
-  answer = answer.strip("### END ANSWER ###") ### GPT 3 sometimes randomly appends this, for whatever reason.
+  answer = answer.split("### END ANSWER ###")[0] ### GPT 3 sometimes randomly appends this, for whatever reason.
 
   if not answer.strip():
     raise ValueError("GPT gave an empty response")

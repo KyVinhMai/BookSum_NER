@@ -1,7 +1,7 @@
 import spacy
 import json
 import logging
-import re
+import regex as re
 from pathlib import Path
 import secrets
 import gender_guesser.detector as gender
@@ -45,7 +45,7 @@ class Universal_Character_list():
         self.sf_path = sf_path
         self.male_names, self.female_names = m_names, f_name
         self.neutral_names = uni_name
-        self.re_pattern = "St\.|\'s|\\+|,|\""
+        self.re_pattern = "St\.|\'s|\\+|,|\"|:|;|\\."
         self.name_exceptions = n_exceptions
         self.celebrities = h_figures
 
@@ -271,7 +271,7 @@ class CharacterProcessor():
         self.book = book
         self.male_names, self.female_names = m_names, f_name
         self.neutral_names = uni_name
-        self.re_pattern = "St\.|\'s|\\+|,|\""
+        self.re_pattern = "St\.|\'s|\\+|,|\"|:|;|\\."
         self.name_exceptions = set(n_exceptions)
         self.celebrities = h_figures
 
@@ -377,10 +377,16 @@ class CharacterProcessor():
         character name to have the same number of counts
         """
         for name in name_tokens:
-            try:
+
+            if name in self.character_counts["Characters"]:
                 self.character_counts["Characters"][name] += 1
-            except KeyError:
+            else:
                 self.character_counts["Characters"][name] = 1
+
+            # try:
+            #     self.character_counts["Characters"][name] += 1
+            # except KeyError:
+            #     self.character_counts["Characters"][name] = 1
 
     def passes_exceptions_check(self, name: str) -> bool: #todo recheck since we added more named exceptions
         """
@@ -390,6 +396,13 @@ class CharacterProcessor():
         """
 
         return name not in self.name_exceptions
+
+    def space_out_punctuation(self, str):
+
+        '''We are okay with \wPUNCTUATION\w, for names like Pierre-Ouguste, but --Napoleon is not okay, neither is .-Name, etc.'''
+        pattern = "(?|(?<=\W|\d|^)([:;-])(?=\w)|(?<=\w)([:;-])(?=\W|\d|$))"
+        str = re.sub(pattern, " \\g<1> ", str)
+        return str
 
     def append_character_list(self) -> None:
 
@@ -401,7 +414,7 @@ class CharacterProcessor():
         ## 3) do the pipeline trick from spacy. docs = ... | If the pipeline is already optimized to do 1 and 2, we can skip that, but we should NOT process each sentence separately, I think, as it loses context info.
         ## 4) Do something like ents = it.chain.from_iterable([d.ents for d in docs]) (Basically merge all entities in the docs above into one list)
 
-        ents = my_spacy_entities(self.book, maxlen=settings.SPACY_MAXLEN)
+        ents = my_spacy_entities(self.space_out_punctuation(self.book), maxlen=settings.SPACY_MAXLEN)
 
         #for word in doc.ents: #iterate over the new thing obtained above ("ents")
         for word in ents:
