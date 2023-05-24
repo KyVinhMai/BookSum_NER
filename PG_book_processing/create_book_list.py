@@ -35,7 +35,7 @@ def write_book_list(path: str):
     """
     Writes reference book list with File ID, Book Title, and Author Name
     """
-    with open(f"{path}\\unique_author_list.txt", "w", encoding="utf-8") as f:
+    with open(f"{path}\\author_list.txt", "w", encoding="utf-8") as f:
         f.write(json.dumps(book_table, indent=4, sort_keys=False))
 
     print("Book Table!")
