@@ -325,7 +325,7 @@ def process_folder_from_prepared(summary_folder, ent_dict_folder, num_to_process
     return question_generators
 
 
-def generate_questions(question_generators, saveto, subchars=True):
+def generate_questions(question_generators, saveto, subchars=True, rewrite=False):
 
     subc = EntityReplacer.sub_random_characters if subchars else lambda x, y: y
 
@@ -335,6 +335,11 @@ def generate_questions(question_generators, saveto, subchars=True):
         os.makedirs(savefolder)
 
     for qg_num, qg in enumerate(question_generators):
+
+        savepath = os.path.join("Data", saveto, is_subbed, "shortform", qg.book_filename + ".questions_shortform")
+
+        if os.path.exists(savepath) and not rewrite:
+            continue
 
         if not qg.questions:
             qg.generate_questions()
@@ -346,7 +351,7 @@ def generate_questions(question_generators, saveto, subchars=True):
         ### WHENASKED, CHUNK, OVERLAPPEDCHUNK, QUESTIONS (WITHIN ONE COLUMN), QUESTION ANSWERS (WITHIN ONE COLUMN), QUESTION TYPES (WITHIN ONE COLUMN), MEMLOADS (WITHIN ONE COLUMN)
         ###
 
-        savepath = os.path.join("Data", saveto, is_subbed, "shortform", qg.book_filename + ".questions_shortform")
+
 
         with open(savepath, "w") as f:
 
@@ -402,7 +407,7 @@ if __name__ == "__main__":
 
         #qgs = process_folder("TrueAndFalseSummaryData")
 
-    qgs = process_folder_from_prepared("SummaryDataAllMachinesBackup", ent_dict_folder="CharacterSubstitution", num_to_process=1000, start_at=10)
+    qgs = process_folder_from_prepared("SummaryDataAllMachinesBackup", ent_dict_folder="CharacterSubstitution", num_to_process=1000, start_at=0)
     generate_questions(qgs, saveto="TmpQuestions", subchars=True)
     generate_questions(qgs, saveto="TmpQuestions", subchars=False)
 

@@ -402,7 +402,10 @@ class CharacterProcessor():
         '''We are okay with \wPUNCTUATION\w, for names like Pierre-Ouguste, but --Napoleon is not okay, neither is .-Name, etc.'''
         pattern = "(?|(?<=\W|\d|^)([:;-])(?=\w)|(?<=\w)([:;-])(?=\W|\d|$))"
         str = re.sub(pattern, " \\g<1> ", str)
-        return str
+
+        return re.sub(r'["#$%&\'()*+/<=>@\\^_`{|}~\[\]]', " ", str)
+
+        #return str
 
     def append_character_list(self) -> None:
 

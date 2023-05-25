@@ -8,6 +8,12 @@ import csv
 
 import numpy as np
 
+import openai
+
+with open("../GPTkeys/mm_key.txt", "r") as f:
+    openai.api_key = f.read().strip()
+
+
 
 # Do ~ 1000 questions with ~10k context
 
@@ -18,13 +24,14 @@ def ask_question(client, context, questions, model="claude-instant-v1.1-100k"):
     prompt = "{} You will read a large part of a book, after which I will ask you questions about what you've read. Book part:\n{} \nQuestions:{}\nWrite only the numerical answers to the corresponding questions, separating them by commas. For example, '1,3,4'. Begin your answers with a {} tag. {}".format(
             anthropic.HUMAN_PROMPT, context, questions_str, "###BEGIN_ANSWER###", anthropic.AI_PROMPT)
 
-    return "1,2,3" # TODO - change to production later
+    #return "4,5,6" # TODO - change to production later
     #print(prompt)
     #return
     resp = client.completion(
         prompt=prompt,
         stop_sequences=[anthropic.HUMAN_PROMPT],
         model=model,
+        temperature=0,
         max_tokens_to_sample=150,
     )
 
@@ -37,6 +44,32 @@ def ask_question(client, context, questions, model="claude-instant-v1.1-100k"):
     answer_text = answer_text.split("###BEGIN_ANSWER###")[1]
     answer_text = answer_text.split("###END_ANSWER###")[0]
     return answer_text.strip()
+
+def ask_question_gpt(context, questions):
+    #return "1,2,3"
+
+    questions_str = "".join(["\nQuestion {}: {}\n".format(i + 1, q) for i, q in enumerate(questions)])
+
+    prompt = "You will read a large part of a book, after which I will ask you questions about what you've read. Book part:\n{} \nQuestions:{}\nWrite only the numerical answers to the corresponding questions, separating them by commas. For example, '1,3,4'. Begin your answers with a {} tag.".format(
+        context, questions_str, "###BEGIN_ANSWER###")
+    response = openai.ChatCompletion.create(
+        model="gpt-4",
+        temperature=0.0,
+        messages=[
+          {"role": "system", "content": "You are a helpful assistant that reads large book snippets and asnwers questions about those snippets. Begin your answer with a {} tag.".format("###BEGIN_ANSWER###")},
+          {"role": "user", "content": 'Summarize the following book excerpt: "{}". Start your answer with a "{}" tag.'.format(prompt, "###BEGIN_ANSWER###")} # Add "in under 500 words?
+        ]
+    )
+
+    response_content = response["choices"][0]["message"]["content"]
+
+    answer_text = response_content.split("###BEGIN_ANSWER###")[1]
+    answer_text = answer_text.split("###END_ANSWER###")[0]
+
+
+
+    return answer_text
+
 
 
 def get_random_questions(question_folder, whentoask=10):
@@ -83,25 +116,36 @@ if __name__ == "__main__":
     c_contextlengths = ["ContextLength"]
     c_memloads = ["RetentionDelay"]
     c_trueanswers = ["CorrectAnswer"]
-    c_modelanswers = ["ModelAnswer"]
+    c_modelantroanswers = ["AntropicAnswer"]
+    c_modelgptans = ["GPTAns"]
     c_questiontypes = ["QuestionType"]
     c_contexts = ["Contexts"]
 
 
-    for whentoask in [2, 10]:
-        for i in range(10):
-            chosen_book, context, questions_strings, answers, memloads, question_types = get_random_questions("./Data/TmpQuestions/raw/shortform", whentoask=whentoask)
-            model_ans = ask_question(client, context, questions_strings, model="claude-v1.3-100k")
 
-            #print("True answers: {}, model answers: {}".format(answers, model_ans))
+    for whentoask in [2]:#[2, 10]:
+        for i in range(1): # range(10):
+            raise ValueError
+            chosen_book, context, questions_strings, answers, memloads, question_types = get_random_questions("./Data/TmpQuestions/substituted/shortform", whentoask=whentoask)
+
+            model_ans = ask_question(client, context, questions_strings, model="claude-v1.3-100k")
+            model_gpt_ans = "NA"#ask_question_gpt(context, questions_strings)
+
+            print("True answers: {}, antropic model answers: {}, gpt model answers {}".format(answers, model_ans, model_gpt_ans))
 
             if len(model_ans.split(",")) != len(answers):
                 model_ans = ["NA" for _ in answers]
             else:
                 model_ans = [str(el).strip() for el in model_ans.split(",")]
 
+            if len(model_gpt_ans.split(",")) != len(answers):
+                model_gpt_ans = ["NA" for _ in answers]
+            else:
+                model_gpt_ans = [str(el).strip() for el in model_gpt_ans.split(",")]
+
+
             contlen = len(context.split())
-            for mans, ans, mem, qtype in zip(model_ans, answers, memloads, question_types):
+            for mans, gptans, ans, mem, qtype in zip(model_ans, model_gpt_ans, answers, memloads, question_types):
 
                 ## Same for each query
                 c_whenaskeds.append(whentoask)
@@ -113,36 +157,38 @@ if __name__ == "__main__":
                 c_memloads.append(mem)
                 c_questiontypes.append(qtype)
                 c_trueanswers.append(ans)
-                c_modelanswers.append(mans)
+                c_modelantroanswers.append(mans)
+                c_modelgptans.append(gptans)
 
+    #assert 0
 
-    with open("Results/anthropic_tests_unsubstituted.csv", "w", newline='') as csvfile:
+    with open("Results/anthropic_tests_substituted_large_long.csv", "w", newline='') as csvfile:
 
         writer = csv.writer(csvfile, delimiter=",")
-        for elts in zip(c_whenaskeds, c_qbookfile, c_contextlengths, c_memloads, c_trueanswers, c_modelanswers, c_questiontypes):
+        for elts in zip(c_whenaskeds, c_qbookfile, c_contextlengths, c_memloads, c_trueanswers, c_modelantroanswers, c_modelgptans, c_questiontypes):
 
             writer.writerow(list(elts))
 
-    with open("Results/anthropic_tests_unsubstituted_withcontext.csv", "w", newline='') as csvfile:
+    with open("Results/anthropic_tests_substituted_large_long_withcontext.csv", "w", newline='') as csvfile:
 
         writer = csv.writer(csvfile, delimiter=chr(255))
-        for elts in zip(c_whenaskeds, c_qbookfile, c_contextlengths, c_memloads, c_trueanswers, c_modelanswers, c_questiontypes, c_contexts):
+        for elts in zip(c_whenaskeds, c_qbookfile, c_contextlengths, c_memloads, c_trueanswers, c_modelantroanswers, c_modelgptans, c_questiontypes, c_contexts):
             writer.writerow(list(elts))
 
-    reconstructed_contexts = []
-    reconstucted_mans = []
-    with open("Results/anthropic_tests_unsubstituted_withcontext.csv", newline='') as csvfile:
-
-        reader = csv.reader(csvfile, delimiter=chr(255))
-        for row in reader:
-
-            reconstucted_mans.append(row[-3])
-            reconstructed_contexts.append(row[-1])
-
-    ## TODO - save one with questions as well? (For fine-tuning?)
-
-
-    print(reconstructed_contexts == c_contexts, c_modelanswers == reconstucted_mans)
+    # reconstructed_contexts = []
+    # reconstucted_mans = []
+    # with open("Results/anthropic_tests_unsubstituted_withcontext.csv", newline='') as csvfile:
+    #
+    #     reader = csv.reader(csvfile, delimiter=chr(255))
+    #     for row in reader:
+    #
+    #         reconstucted_mans.append(row[-3])
+    #         reconstructed_contexts.append(row[-1])
+    #
+    # ## TODO - save one with questions as well? (For fine-tuning?)
+    #
+    #
+    # print(reconstructed_contexts == c_contexts, c_modelgptans == reconstucted_mans)
     # reconstructed_contexts = []
     # with open("Results/anthropic_tests_unsubstituted.csv", newline='') as csvfile:
     #
