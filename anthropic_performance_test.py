@@ -125,7 +125,7 @@ if __name__ == "__main__":
 
     for whentoask in [2]:#[2, 10]:
         for i in range(1): # range(10):
-            raise ValueError
+            raise ValueError("Make sure you want to run it, it costs money.")
             chosen_book, context, questions_strings, answers, memloads, question_types = get_random_questions("./Data/TmpQuestions/substituted/shortform", whentoask=whentoask)
 
             model_ans = ask_question(client, context, questions_strings, model="claude-v1.3-100k")
