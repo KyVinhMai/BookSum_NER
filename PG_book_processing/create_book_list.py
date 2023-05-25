@@ -8,8 +8,12 @@ test_dict = {
 }
 
 def collect_book_paths(folder_path: str) -> iter:
+    def return_id(elem):
+        return int(elem.stem) if "-" not in elem.stem else int(elem.stem.split("-")[0])
+
     path = Path(folder_path)
-    book_iter = (entry for entry in path.iterdir() if entry.is_file() and entry.match('*.txt'))
+    book_iter = [entry for entry in path.iterdir() if entry.is_file() and entry.match('*.txt')]
+    book_iter = sorted(book_iter, key=return_id)
     return book_iter
 
 def record_info(book_iter: iter):
@@ -31,7 +35,7 @@ def write_book_list(path: str):
     """
     Writes reference book list with File ID, Book Title, and Author Name
     """
-    with open(f"{path}\\unique_author_list.txt", "w", encoding="utf-8") as f:
+    with open(f"{path}\\author_list.txt", "w", encoding="utf-8") as f:
         f.write(json.dumps(book_table, indent=4, sort_keys=False))
 
     print("Book Table!")
@@ -42,4 +46,4 @@ def main(folder_path:str):
     write_book_list(folder_path)
 
 if __name__ == "__main__":
-    main(r"C:\Users\kyvin\PycharmProjects\Narrative-Understanding-Dataset\PG_book_processing\processed_files\unique_authors")
+    main(r"C:\Users\kyvin\PycharmProjects\Narrative-Understanding-Dataset\PG_book_processing\processed_files2\Arseny_books3")

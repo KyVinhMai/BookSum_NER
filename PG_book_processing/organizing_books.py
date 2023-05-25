@@ -59,7 +59,7 @@ def write_book_list(path: str):
             csv_writer.writerow(line)
 
 def main(path:str):
-    original = path + "\\books_batch2"
+    original = path + "\\books_5_18"
     filter = path + "\\over_word_count"
     destination = path + "\\cleaned_books"
 
@@ -79,4 +79,4 @@ def main(path:str):
     write_book_list(destination)
 
 if __name__ == "__main__":
-    main(r"C:\Users\kyvin\PycharmProjects\Narrative-Understanding-Dataset\PG_book_processing\books")
+    main(r"C:\Users\kyvin\PycharmProjects\Narrative-Understanding-Dataset\PG_book_processing\processed_files2")
