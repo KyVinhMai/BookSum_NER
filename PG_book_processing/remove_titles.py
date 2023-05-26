@@ -10,7 +10,8 @@ def main(folder: str):
     with open(os.path.join(folder, "unique_author_list.txt")) as f:
         author_dict = eval(f.read())
 
-    title_list = [os.path.join(folder, title[0].split("||")[0], ".txt") for title in author_dict.values()]
+    title_list = [os.path.join(folder, title[0].split("||")[0] + ".txt") for title in author_dict.values()]
+    print(title_list)
     book_list = collect_book_paths(folder)
     title_list.append(os.path.join(folder, "unique_author_list.txt"))
 
@@ -23,3 +24,4 @@ def main(folder: str):
 if __name__ == "__main__":
     #input folder destination. Should have book_list.txt
     main(r"C:\Users\kyvin\PycharmProjects\Narrative-Understanding-Dataset\PG_book_processing\processed_files2\unique_authors")
+
