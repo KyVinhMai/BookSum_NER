@@ -20,5 +20,6 @@ def main(folder: str):
             os.remove(file)
     print("Done!")
 
-#input folder destination. Should have book_list.txt
-main(r"C:\Users\kyvin\PycharmProjects\Narrative-Understanding-Dataset\PG_book_processing\processed_files2\unique_authors")
+if __name__ == "__main__":
+    #input folder destination. Should have book_list.txt
+    main(r"C:\Users\kyvin\PycharmProjects\Narrative-Understanding-Dataset\PG_book_processing\processed_files2\unique_authors")
