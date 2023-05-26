@@ -7,12 +7,12 @@ def collect_book_paths(folder_path: str) -> list:
     return book_list
 
 def main(folder: str):
-    with open(folder + r"\unique_author_list.txt") as f:
+    with open(os.path.join(folder, "unique_author_list.txt")) as f:
         author_dict = eval(f.read())
 
-    title_list = [folder + "\\" + title[0].split("||")[0] + ".txt" for title in author_dict.values()]
+    title_list = [os.path.join(folder, title[0].split("||")[0], ".txt") for title in author_dict.values()]
     book_list = collect_book_paths(folder)
-    title_list.append(folder + r"\unique_author_list.txt")
+    title_list.append(os.path.join(folder, "unique_author_list.txt"))
 
     for file in book_list:
         if file not in title_list:
