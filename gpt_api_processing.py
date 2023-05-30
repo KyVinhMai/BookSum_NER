@@ -177,3 +177,36 @@ def DescribeChunkRoleFreeform(book_summary, scene_summary):
 
   return answer
 
+
+def SimplifySummary(initial_summary):
+  response = openai.ChatCompletion.create(
+    model="gpt-3.5-turbo",
+    messages=[
+      {"role": "system",
+       "content": "You are a helpful assistant that changes book snippet summaries. Begin your answer with a {} tag.".format(
+         BEGIN_ANSWER_TAG)},
+      {"role": "user",
+       "content": 'Paraphrase the summary below to have the same meaning but avoid rare words and fancy language. Begin your answer with a "{}" tag. \nInital summary: \n"{}"'.format(
+         BEGIN_ANSWER_TAG, initial_summary)}
+    ]
+  )
+
+  response_content = response["choices"][0]["message"]["content"]
+
+  if BEGIN_ANSWER_TAG not in response_content:
+    raise ValueError("GPT response does not have a {} tag".format(BEGIN_ANSWER_TAG))
+
+  resp_parts = response_content.split(BEGIN_ANSWER_TAG)
+
+  if len(resp_parts) != 2:
+    raise ValueError("GPT gave multiple {} tags".format(BEGIN_ANSWER_TAG))
+
+  answer = resp_parts[-1]
+
+  answer = answer.split("### END ANSWER ###")[0]  ### GPT 3 sometimes randomly appends this, for whatever reason.
+
+  if not answer.strip():
+    raise ValueError("GPT gave an empty response")
+
+  return answer.strip()
+

@@ -19,9 +19,9 @@ if __name__ == "__main__":
 
     sumpath = os.path.join("Data", "SumDataTestSet")
     processed_books = [f for f in os.listdir(sumpath) if os.path.isfile(os.path.join(sumpath, f))]
-    processed_books = set([n.splt(".tagseparated")[0] for n in processed_books])
+    processed_books = set([n.strip(".tagseparated") for n in processed_books])
 
-    books_to_process = [b for b in books_to_process if b.split(".txt")[0] not in processed_books]
+    books_to_process = [b for b in books_to_process if b.strip(".txt") not in processed_books]
 
     #bookpaths_to_process = [os.path.join(bookpath, b) for b in books_to_process]
 
@@ -48,7 +48,7 @@ if __name__ == "__main__":
             t2 = time.time()
             print("Created false chunk summaries in {} minutes".format((t2 - t1) / 60))
 
-            bname_tag = bname.split("txt")[0] + "tagseparated"
+            bname_tag = bname.strip("txt") + "tagseparated"
             sumpath_tmp = os.path.join(sumpath, bname_tag)
 
             book_processor.save_summary_data(sumpath_tmp)
