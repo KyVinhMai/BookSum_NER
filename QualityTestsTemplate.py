@@ -65,7 +65,7 @@ def my_tf_sum_gen(files, random_shorten=False):
             else:
                 yield {"text": "Summary 1: {} Summary 2: {}".format(fake_sum.strip(), true_sum.strip()), "label": 1}
 
-def my_tf_sum_gen_simple(files, random_shorten=False):
+def my_tf_sum_gen_simple(files, random_shorten=False, random_one_per_sum=False):
 
     for fname in files:
 
@@ -86,8 +86,17 @@ def my_tf_sum_gen_simple(files, random_shorten=False):
                 cut_back = np.random.randint(newlen // 5)
                 true_sum, fake_sum = true_sum[:newlen][cut_front:-cut_back], fake_sum[:newlen][cut_front:-cut_back]
 
-            yield {"text": "Summary: {}".format(true_sum.strip()), "label": 0}
-            yield {"text": "Summary: {}".format(fake_sum.strip()), "label": 1}
+            # if np.random.random() < 0.5:
+            #     yield {"text": "Summary: {}".format(true_sum.strip()), "label": 0}
+            # else:
+            #     yield {"text": "Summary: {}".format(fake_sum.strip()), "label": 1}
+            if np.random.random() < 0.5:
+                yield {"text": "Summary: {}".format(true_sum.strip()), "label": 0}
+                yield {"text": "Summary: {}".format(fake_sum.strip()), "label": 1}
+            else:
+                yield {"text": "Summary: {}".format(fake_sum.strip()), "label": 1}
+                yield {"text": "Summary: {}".format(true_sum.strip()), "label": 0}
+
 
 def my_tf_sum_gen_simple_sub(files):
 

@@ -1,27 +1,33 @@
 from Dataloaders import *
 
+#import Dataloaders as dl
+
 import os
 import time
+
+from gpt_api_processing import SimplifySummary
 
 ### !!! IMPORTANT !!! ###
 # Change this to the appropriate folder. Make sure not to double-process the same books #
 
 
 
-book_folder_to_process = "TestSetDoubleChecked2"
+fancy_summaries_folder_to_process = "SummariesToSimplify"
+simplified_summaries_folder_to_save = "SimplifiedSummaries"
 
 # Change this to the appropriate folder. Make sure not to double-process the same books #
 
 if __name__ == "__main__":
 
-    bookpath = os.path.join("Data", book_folder_to_process)
-    books_to_process = [f for f in os.listdir(bookpath) if os.path.isfile(os.path.join(bookpath, f))]
+    fancy_summaries_path = os.path.join("Data", fancy_summaries_folder_to_process)
+    fancy_summaries_to_process = [f for f in os.listdir(fancy_summaries_path) if os.path.isfile(os.path.join(fancy_summaries_path, f))]
 
-    sumpath = os.path.join("Data", "SumDataTestSet")
-    processed_books = [f for f in os.listdir(sumpath) if os.path.isfile(os.path.join(sumpath, f))]
-    processed_books = set([n.strip(".tagseparated") for n in processed_books])
 
-    books_to_process = [b for b in books_to_process if b.strip(".txt") not in processed_books]
+    sumpath = os.path.join("Data", simplified_summaries_folder_to_save)
+    simplified_books = [f for f in os.listdir(sumpath) if os.path.isfile(os.path.join(sumpath, f))]
+    simplified_books = set([n.split(".tagseparated_simplified")[0] for n in simplified_books])
+
+    books_to_process = [b for b in fancy_summaries_to_process if b.split(".tagseparated")[0] not in simplified_books]
 
     #bookpaths_to_process = [os.path.join(bookpath, b) for b in books_to_process]
 
@@ -31,27 +37,25 @@ if __name__ == "__main__":
 
         try:
 
-            bpath = os.path.join(bookpath, bname)
-
-            with open(bpath, "r") as f:
-                b = f.read()
+            bpath = os.path.join(fancy_summaries_path, bname)
+            b = BookProcessor.init_from_summaries(bpath)
 
             t0 = time.time()
 
-            book_processor = BookProcessor(b, live_mode=True)
-            book_processor.create_chunk_summaries()
+            for i in range(len(b.book_chunk_summaries)):
+
+                fancy_summary = b.book_chunk_summaries[i]
+                simplified_summary = SimplifySummary(fancy_summary)
+
+                b.book_chunk_summaries[i] = simplified_summary
 
             t1 = time.time()
-            print("Created chunk summaries in {} minutes".format((t1-t0)/60))
-            book_processor.create_false_book_chunk_summaries()
+            print("Simplified summaries in {} minutes.".format((t1 - t0) / 60))
 
-            t2 = time.time()
-            print("Created false chunk summaries in {} minutes".format((t2 - t1) / 60))
+            bname_simpl = bname + "_simplified"
+            sumpath_tmp = os.path.join(sumpath, bname_simpl)
 
-            bname_tag = bname.strip("txt") + "tagseparated"
-            sumpath_tmp = os.path.join(sumpath, bname_tag)
-
-            book_processor.save_summary_data(sumpath_tmp)
+            b.save_summary_data(sumpath_tmp)
 
         except Exception as e:
             print("Failed to process book {}".format(bname))

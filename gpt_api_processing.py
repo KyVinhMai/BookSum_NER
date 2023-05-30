@@ -12,9 +12,6 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 with open("../GPTkeys/ar_key.txt", "r") as f:
   openai.api_key = f.read().strip()
 
-with open("test.txt", "r") as f:
-  text = f.read()
-
 def ParaphraseChunk(chunk):
   response = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
