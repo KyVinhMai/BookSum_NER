@@ -32,7 +32,7 @@ if __name__ == "__main__":
 
     sumpath = os.path.join("Data", sum_folder)
 
-    sums_to_process = [f for f in os.listdir(sumpath) if os.path.isfile(os.path.join(sumpath, f)) and f.strip(".tagseparated") not in done]
+    sums_to_process = [f for f in os.listdir(sumpath) if os.path.isfile(os.path.join(sumpath, f)) and f.split(".tagseparated")[0] not in done]
 
     for k, f in enumerate(sums_to_process):
 
@@ -43,7 +43,7 @@ if __name__ == "__main__":
         b = dl.BookProcessor.init_from_summaries(sp)
         ent_count, ent_rep_dict = clg.get_counts_and_subs(b.original_book_text)
 
-        resname = f.strip(".tagseparated")
+        resname = f.split(".tagseparated")[0]
 
         rp = os.path.join(respath, resname)
         with open(rp + ".count", "wb") as o:
