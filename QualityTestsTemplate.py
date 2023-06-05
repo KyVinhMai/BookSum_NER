@@ -10,6 +10,8 @@ import pickle as pkl
 import numpy as np
 import evaluate
 
+import re
+
 import entity_replacement
 
 from entity_replacement import EntityReplacer
@@ -38,7 +40,7 @@ def my_gen():
 
         yield {"text": "The number is {}. Is it odd?".format(num), "label": num % 2}
 
-def my_tf_sum_gen(files, random_shorten=False):
+def my_tf_sum_gen(files, random_shorten=False, replace_beginning=False):
 
     for fname in files:
 
@@ -59,6 +61,11 @@ def my_tf_sum_gen(files, random_shorten=False):
                 cut_front = np.random.randint(newlen//5)
                 cut_back = np.random.randint(newlen//5)
                 true_sum, fake_sum = true_sum[:newlen][cut_front:-cut_back], fake_sum[:newlen][cut_front:-cut_back]
+
+            if replace_beginning:
+
+                true_sum = re.sub("The book extract ", "This book excerpt ", true_sum)
+                true_sum = re.sub("The excerpt begins ", "The excerpt starts ", true_sum)
 
             if np.random.random() < 0.5:
                 yield {"text": "Summary 1: {} Summary 2: {}".format(true_sum.strip(), fake_sum.strip()), "label": 0}
@@ -86,16 +93,19 @@ def my_tf_sum_gen_simple(files, random_shorten=False, random_one_per_sum=False):
                 cut_back = np.random.randint(newlen // 5)
                 true_sum, fake_sum = true_sum[:newlen][cut_front:-cut_back], fake_sum[:newlen][cut_front:-cut_back]
 
-            # if np.random.random() < 0.5:
-            #     yield {"text": "Summary: {}".format(true_sum.strip()), "label": 0}
-            # else:
-            #     yield {"text": "Summary: {}".format(fake_sum.strip()), "label": 1}
-            if np.random.random() < 0.5:
-                yield {"text": "Summary: {}".format(true_sum.strip()), "label": 0}
-                yield {"text": "Summary: {}".format(fake_sum.strip()), "label": 1}
+
+            if (random_one_per_sum):
+                if np.random.random() < 0.5:
+                    yield {"text": "Summary: {}".format(true_sum.strip()), "label": 0}
+                else:
+                    yield {"text": "Summary: {}".format(fake_sum.strip()), "label": 1}
             else:
-                yield {"text": "Summary: {}".format(fake_sum.strip()), "label": 1}
-                yield {"text": "Summary: {}".format(true_sum.strip()), "label": 0}
+                if np.random.random() < 0.5:
+                    yield {"text": "Summary: {}".format(true_sum.strip()), "label": 0}
+                    yield {"text": "Summary: {}".format(fake_sum.strip()), "label": 1}
+                else:
+                    yield {"text": "Summary: {}".format(fake_sum.strip()), "label": 1}
+                    yield {"text": "Summary: {}".format(true_sum.strip()), "label": 0}
 
 
 def my_tf_sum_gen_simple_sub(files):
@@ -156,6 +166,11 @@ def my_tf_sum_gen_substituted(files):
 
 
 
+path = os.path.join("Data", "TrainSimplifiedSummaries")
+root, dirs, files = next(os.walk(path))
+
+simplified_sum_files = [os.path.join(root, f) for f in files]
+
 path = os.path.join("Data", "SummaryDataAllMachinesBackupTmpForBert")
 root, dirs, files = next(os.walk(path))
 
@@ -177,8 +192,12 @@ np.random.shuffle(indices) # Have to shuffle here because of a weird batched dat
 #dataset_train = Dataset.from_generator(lambda: my_tf_sum_gen_simple_sub([all_truefalse_sum_files[ind] for ind in indices[0:700]])) # Lambda since it wants a generator function, not a generator object
 #dataset_test = Dataset.from_generator(lambda: my_tf_sum_gen_simple_sub([all_truefalse_sum_files[ind] for ind in indices[700:1000]]))
 
-dataset_train = Dataset.from_generator(lambda: my_tf_sum_gen_simple([all_truefalse_sum_files[ind] for ind in indices[0:200]], False)) # Lambda since it wants a generator function, not a generator object
-dataset_test = Dataset.from_generator(lambda: my_tf_sum_gen_simple([all_truefalse_sum_files[ind] for ind in indices[200:250]], False))
+
+dataset_train = Dataset.from_generator(lambda: my_tf_sum_gen([all_truefalse_sum_files[ind] for ind in indices[0:200]] + simplified_sum_files[0:15], False)) # Lambda since it wants a generator function, not a generator object
+dataset_test = Dataset.from_generator(lambda: my_tf_sum_gen([all_truefalse_sum_files[ind] for ind in indices[200:250]], False))
+
+#dataset_train = Dataset.from_generator(lambda: my_tf_sum_gen_simple([all_truefalse_sum_files[ind] for ind in indices[0:200]], False)) # Lambda since it wants a generator function, not a generator object
+#dataset_test = Dataset.from_generator(lambda: my_tf_sum_gen_simple([all_truefalse_sum_files[ind] for ind in indices[200:250]], False))
 
 tokenizer = AutoTokenizer.from_pretrained("bert-base-cased")
 
@@ -292,7 +311,19 @@ def my_diagnostic_dataset():
     for d in data:
         yield d
 
+def my_diagnostic_dataset_single():
+    true_sum = "The excerpt describes Adela and Arabella’s different experiences during the yachting excursions. Adela is having a great time and writes to Arabella about the fun they are having. Arabella, on the other hand, is miserable and writes to Adela about the mundane daily events at Brookfield. The Hon. Mrs. Bayruffle accompanies the ladies on the yacht and Adela admires her social skills but realizes that society is not everything. The excerpt also touches on the idea that when people experience a great fall, they rarely indulge in melancholy until they can take it as a luxury."
+    defancy_true = "The passage talks about how Adela and Arabella have different experiences while they are out on the yachting trip. Adela has a wonderful time and tells Arabella about all of the enjoyable things they are doing. Meanwhile, Arabella is unhappy and writes to Adela about the routine events happening at Brookfield. The Hon. Mrs. Bayruffle comes with them on the yacht and Adela likes how well she gets along with everyone, but she realizes that being a part of high society isn't the only important thing. The passage also touches on the idea that when people suffer a great loss, they don't usually feel sad until they have the luxury of time to reflect on it."
+    fake = "The excerpt describes two friends, Adela and Arabella, taking a walk in the countryside. Adela is awestruck by the natural beauty around them and tells Arabella about the great time they are having. Arabella, however, is unimpressed and complains to Adela about the lack of proper civilization out here. The Hon. Mrs. Bayruffle joins the ladies for the walk and Adela learns a valuable lesson about the importance of solitude. The excerpt also touches on the idea that adversity reveals the true strength of a person's character."
+    data = [{"text": "Summary: {}".format(true_sum), "label": 0},
+            {"text": "Summary: {}".format(defancy_true), "label": 0},
+            {"text": "Summary: {}".format(fake), "label": 1}]
+
+    for d in data:
+        yield d
+
 dataset_diag = Dataset.from_generator(my_diagnostic_dataset)
+#dataset_diag = Dataset.from_generator(my_diagnostic_dataset_single)
 tokenized_dataset_diag = dataset_diag.map(tokenize_function, batched=True)
 
 
@@ -313,3 +344,48 @@ for batch in diag_dataloader:
     predictions = t.argmax(logits, dim=-1)
     print(predictions)
     metric.add_batch(predictions=predictions, references=batch["labels"])
+
+
+### diagnostic on the simplified dataset
+
+
+
+path = os.path.join("Data", "TrainSimplifiedTF")
+#path = os.path.join("Data", "TrainSimplifiedSummaries")
+root, dirs, files = next(os.walk(path))
+
+simplified_sum_files = [os.path.join(root, f) for f in files]
+
+
+#dataset_diag = Dataset.from_generator(lambda: my_tf_sum_gen_simple(simplified_sum_files[-8:], random_shorten=False, random_one_per_sum=True)) # Lambda since it wants a generator function, not a generator objectmy_tf_sum_gen_simple
+dataset_diag = Dataset.from_generator(lambda: my_tf_sum_gen(simplified_sum_files)) # Lambda since it wants a generator function, not a generator objectmy_tf_sum_gen_simple
+#dataset_diag = Dataset.from_generator(lambda: my_tf_sum_gen(simplified_sum_files)) # Lambda since it wants a generator function, not a generator objectmy_tf_sum_gen_simple
+
+
+
+tokenized_dataset_diag = dataset_diag.map(tokenize_function, batched=True)
+tokenized_dataset_diag = tokenized_dataset_diag.remove_columns(["text"])
+tokenized_dataset_diag = tokenized_dataset_diag.rename_column("label", "labels")
+tokenized_dataset_diag.set_format("torch")
+
+model.eval()
+
+metric = evaluate.load("accuracy")
+
+diag_dataloader = DataLoader(tokenized_dataset_diag, batch_size=24)
+for batch in diag_dataloader:
+    batch = {k: v.to(device) for k, v in batch.items()}
+
+    with t.no_grad():
+        outputs = model(**batch)
+
+    logits = outputs.logits
+    predictions = t.argmax(logits, dim=-1)
+    #print(predictions)
+    metric.add_batch(predictions=predictions, references=batch["labels"])
+
+#accuracies.append(metric.compute())
+print("Accuracy: {}".format(metric.compute()))
+
+
+## Acc on a small simplified subset: 0.685

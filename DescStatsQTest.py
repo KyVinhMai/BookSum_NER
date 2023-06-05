@@ -164,3 +164,69 @@ for t, f in zip(true_lens, false_lens):
         true_larger.append(0)
 
 print("True is larger in {} of cases".format(np.mean(true_larger)))
+
+
+
+excerpt_begins_true = 0
+excerpt_begins_false = 0
+# excerpt, books extract
+for i, el in enumerate(all_truefalse_sums):
+    if el["label"] == 0 and "###" in el['text']:
+        excerpt_begins_true += 1
+    elif "###" in el['text']:
+        excerpt_begins_false += 1
+
+print("True sums with excerpt {}, False: {}".format(excerpt_begins_true, excerpt_begins_false))
+
+num_as = []
+num_as_false = []
+# excerpt, books extract
+for i, el in enumerate(all_truefalse_sums):
+    if el["label"] == 0:
+        num_as.append(el['text'].count("and"))
+    else:
+        num_as_false.append(el['text'].count("and"))
+
+print("Mean 'and's True {}, False: {}".format(np.mean(num_as), np.mean(num_as_false)))
+
+
+
+
+
+from collections import Counter
+c_true = Counter()
+c_false = Counter()
+
+for i, el in enumerate(all_truefalse_sums):
+    if el["label"] == 0:
+        for w in el["text"].split():
+            c_true[w] += 1
+    else:
+        for w in el["text"].split():
+            c_false[w] += 1
+
+print("True sums start with The excerpt begins {}, False: {}".format(excerpt_begins_true, excerpt_begins_false))
+
+
+diffs = {}
+for k, v in c_false.items():
+
+    if k in c_true:
+        diffs[k] = (v - c_true[k])
+    else:
+        diffs[k] = v
+
+diffs = dict(sorted(diffs.items(), key=lambda item: item[1]))
+
+
+
+diffs2 = {}
+for k, v in c_true.items():
+
+    if k in c_false:
+        diffs2[k] = (c_false[k] - v)
+    else:
+        diffs2[k] = v
+
+diffs2 = dict(sorted(diffs2.items(), key=lambda item: item[1]))
+

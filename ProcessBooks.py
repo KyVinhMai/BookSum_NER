@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
     sumpath = os.path.join("Data", "SumDataTestSet")
     processed_books = [f for f in os.listdir(sumpath) if os.path.isfile(os.path.join(sumpath, f))]
-    processed_books = set([n.splt(".tagseparated")[0] for n in processed_books])
+    processed_books = set([n.split(".tagseparated")[0] for n in processed_books])
 
     books_to_process = [b for b in books_to_process if b.split(".txt")[0] not in processed_books]
 

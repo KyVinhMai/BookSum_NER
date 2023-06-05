@@ -1,6 +1,8 @@
 import os
 import openai
 
+import time
+
 from utils.BookProcessing import rechunk_book
 
 BEGIN_ANSWER_TAG = "### BEGIN ANSWER ###"
@@ -100,20 +102,51 @@ def SummarizeSummaries(chunk_summaries, max_length=10000):
   result = []
 
   for ind, m in enumerate(meta_chunks):
+    
     if ind % 10 == 0:
       print("Processed {} meta chunks".format(ind + 1))
 
-    response = openai.ChatCompletion.create(
-      model="gpt-3.5-turbo",
-      messages=[
-        {"role": "system",
-         "content": "You are a helpful assistant that summarizes book scene summaries. Begin your answer with a {} tag.".format(
-           BEGIN_ANSWER_TAG)},
-        {"role": "user",
-         "content": 'Summarize the following book excerpt summaries into one summary: "{}". Make sure to begin your answer with a {} tag!'.format(m, BEGIN_ANSWER_TAG)}  # Add "in under 500 words?
-      ]
-    )
-    result.append(response["choices"][0]["message"]["content"])
+    for attempt in range(10):
+      try:
+        response = openai.ChatCompletion.create(
+          model="gpt-3.5-turbo",
+          messages=[
+            {"role": "system",
+             "content": "You are a helpful assistant that summarizes book scene summaries. Begin your answer with a {} tag.".format(
+               BEGIN_ANSWER_TAG)},
+            {"role": "user",
+             "content": 'Summarize the following book excerpt summaries into one summary: "{}". Make sure to begin your answer with a {} tag!'.format(m, BEGIN_ANSWER_TAG)}  # Add "in under 500 words?
+          ]
+        )
+        cur_response = response["choices"][0]["message"]["content"]
+    
+        if BEGIN_ANSWER_TAG not in cur_response:
+          raise ValueError("GPT response does not have a {} tag".format(BEGIN_ANSWER_TAG))
+    
+        cur_response = cur_response.split("### END ANSWER ###")[0]
+        cur_response = cur_response.split("### END_ANSWER ###")[0]
+        cur_response = cur_response.split("###END ANSWER###")[0]
+        cur_response = cur_response.split("###END_ANSWER###")[0]
+    
+        if not cur_response.strip():
+          raise ValueError("GPT gave an empty response")
+    
+        result.append(cur_response)
+      except (
+      openai.error.APIError, openai.error.Timeout, openai.error.APIConnectionError, openai.error.InvalidRequestError,
+      openai.error.RateLimitError, openai.error.ServiceUnavailableError) as e:
+        print("Openai rate limit error {}. Sleeping for 5 seconds.".format(e))
+        time.sleep(5)
+      except ValueError as e:
+        print(e)
+        print("Retrying to summarize chunk")
+      except Exception as e:
+        if "That model is currently overloaded with other requests. You can retry your request, or contact us through our help center at" in str(
+                e) or "Bad gateway" in str(e):
+          print("Openai weird overloaded exception {}, {}. Sleeping for 10 seconds.".format(e, type(e).__name__))
+          time.sleep(10)
+        else:
+          raise e
 
   return result
 
