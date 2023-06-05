@@ -122,7 +122,14 @@ def SummarizeSummaries(chunk_summaries, max_length=10000):
     
         if BEGIN_ANSWER_TAG not in cur_response:
           raise ValueError("GPT response does not have a {} tag".format(BEGIN_ANSWER_TAG))
-    
+
+        resp_parts = cur_response.split(BEGIN_ANSWER_TAG)
+
+        if len(resp_parts) != 2:
+          raise ValueError("GPT gave multiple {} tags".format(BEGIN_ANSWER_TAG))
+
+        cur_response = resp_parts[-1]
+
         cur_response = cur_response.split("### END ANSWER ###")[0]
         cur_response = cur_response.split("### END_ANSWER ###")[0]
         cur_response = cur_response.split("###END ANSWER###")[0]
