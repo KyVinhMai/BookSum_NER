@@ -139,6 +139,7 @@ def SummarizeSummaries(chunk_summaries, max_length=10000):
           raise ValueError("GPT gave an empty response")
     
         result.append(cur_response)
+        break
       except (
       openai.error.APIError, openai.error.Timeout, openai.error.APIConnectionError, openai.error.InvalidRequestError,
       openai.error.RateLimitError, openai.error.ServiceUnavailableError) as e:
