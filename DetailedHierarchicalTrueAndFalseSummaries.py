@@ -20,7 +20,7 @@ import pickle as pkl
 
 from settings import column_separator, fake_summary_separator, line_separator
 
-from gpt_api_processing import SummarizeSummaries
+from gpt_api_processing import SummarizeSummariesDetailedEvents
 
 def load_processors_and_dicts(summary_folder, ent_dict_folder, hierarch_sum_folder, num_to_process=15, start_at=0):
     sumpath = os.path.join("Data", summary_folder)
@@ -72,7 +72,7 @@ def get_true_hierarchical_summaries(bp):
         if len(current_meta_summaries) == 1:
             break
 
-        new_meta_summaries = SummarizeSummaries(current_meta_summaries)
+        new_meta_summaries = SummarizeSummariesDetailedEvents(current_meta_summaries)
 
         true_summaries.extend(new_meta_summaries)
         false_summaries.extend(["None" for _ in range(len(new_meta_summaries))])
@@ -100,17 +100,17 @@ def save_hierarch_summaries(savepath, true_summaries, false_summaries, levels):
 
 if __name__ == "__main__":
 
-    bookfilenames, book_processors, ent_dicts = load_processors_and_dicts("SummaryDataAllMachines", "CharacterSubstitutionBackup", "HierarchicalTrueSumOnlyTrainSet", num_to_process=1000)
+    bookfilenames, book_processors, ent_dicts = load_processors_and_dicts("SummaryDataAllMachines", "CharacterSubstitutionBackup", "DetailedHierarchicalTrueSumOnlyTrainSet", num_to_process=1000)
 
     for bfname, bp, ent_dict in zip(bookfilenames, book_processors, ent_dicts):
 
         true_summaries, false_summaries, levels = get_true_hierarchical_summaries(bp)
 
-        savepath = os.path.join("Data", "HierarchicalTrueSumOnlyTrainSet", bfname + ".tagseparated_hierarch_sum")
+        savepath = os.path.join("Data", "DetailedHierarchicalTrueSumOnlyTrainSet", bfname + ".tagseparated_hierarch_sum")
 
         save_hierarch_summaries(savepath, true_summaries, false_summaries, levels)
 
-
+        break
     # Save hierarchical chunks here
 
 
