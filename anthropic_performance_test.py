@@ -129,7 +129,7 @@ if __name__ == "__main__":
             chosen_book, context, questions_strings, answers, memloads, question_types = get_random_questions("./Data/TmpQuestions/substituted/shortform", whentoask=whentoask)
 
             model_ans = ask_question(client, context, questions_strings, model="claude-v1.3-100k")
-            model_gpt_ans = "NA"#ask_question_gpt(context, questions_strings)
+            model_gpt_ans = "NA"#ask_question_gpt(context, questions_strings) # Uncomment to use GPT as well
 
             print("True answers: {}, antropic model answers: {}, gpt model answers {}".format(answers, model_ans, model_gpt_ans))
 

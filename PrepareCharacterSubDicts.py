@@ -23,7 +23,8 @@ import character_list_generator as clg
 if __name__ == "__main__":
 
     results_folder = "CharacterSubstitution" # Where to save char sub dicts
-    sum_folder = "SummaryDataAllMachinesBackup" # Where to look for processed books
+    #sum_folder = "SummaryDataAllMachinesBackup" # Where to look for processed books
+    sum_folder = "TestSet500Backup"  # Where to look for processed books
 
 
     respath = os.path.join("Data", results_folder)
