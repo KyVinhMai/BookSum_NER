@@ -100,13 +100,15 @@ def save_hierarch_summaries(savepath, true_summaries, false_summaries, levels):
 
 if __name__ == "__main__":
 
-    bookfilenames, book_processors, ent_dicts = load_processors_and_dicts("SummaryDataAllMachines", "CharacterSubstitutionBackup", "MoreDetailedHierarchicalTrueSumOnlyTrainSet", num_to_process=1000)
-
+    
+    #bookfilenames, book_processors, ent_dicts = load_processors_and_dicts("SummaryDataAllMachines", "CharacterSubstitutionBackup", "MoreDetailedHierarchicalTrueSumOnlyTrainSet", num_to_process=1000)
+    bookfilenames, book_processors, ent_dicts = load_processors_and_dicts("TestSummaryData500", "CharacterSubstitutionBackup", "MoreDetailedHierarchicalTrueOnlyTestSet", num_to_process=1000)
     for bfname, bp, ent_dict in zip(bookfilenames, book_processors, ent_dicts):
 
         true_summaries, false_summaries, levels = get_true_hierarchical_summaries(bp)
 
-        savepath = os.path.join("Data", "MoreDetailedHierarchicalTrueSumOnlyTrainSet", bfname + ".tagseparated_hierarch_sum")
+        #savepath = os.path.join("Data", "MoreDetailedHierarchicalTrueSumOnlyTrainSet", bfname + ".tagseparated_hierarch_sum")
+        savepath = os.path.join("Data", "MoreDetailedHierarchicalTrueSumOnlyTestSet", bfname + ".tagseparated_hierarch_sum")
 
         save_hierarch_summaries(savepath, true_summaries, false_summaries, levels)
 
