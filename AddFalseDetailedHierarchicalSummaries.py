@@ -68,11 +68,11 @@ def load_hierarch_summaries(hierarch_sum_folder, ent_dict_folder, num_to_process
 
     return hsums, ent_rep_dicts, sumf_to_process
 
-def fill_false_hierarchical_summaries(hierarch_sums):
+def fill_false_hierarchical_summaries(hierarch_sums, hsum_files, saveprefix):
 
     new_hierarch_sums = []
 
-    for i, h in enumerate(hierarch_sums):
+    for i, (h, hfile) in enumerate(zip(hierarch_sums, hsum_files)):
 
         if i % 10 == 0:
             print("Processed {} out of {} summaries".format(i, len(hierarch_sums)))
@@ -116,6 +116,16 @@ def fill_false_hierarchical_summaries(hierarch_sums):
 
         new_hierarch_sums.append(HierarchicalSummaries(true_sums, new_false_sums, levels))
 
+
+        savepath = os.path.join(saveprefix, hfile)
+        with open(savepath, "w") as f:
+            f.write(column_separator.join(["TRUE_SUMMARY", "FALSE_SUMMARY", "LEVEL"]))
+            f.write(line_separator)
+
+            for true_sum, false_sum, l in zip(true_sums, new_false_sums, levels):
+                f.write(column_separator.join([true_sum, false_sum, str(l)]))
+                f.write(line_separator)
+
         #
         # true_summaries.extend(new_meta_summaries)
         # false_summaries.extend(["None" for _ in range(len(new_meta_summaries))])
@@ -143,20 +153,21 @@ def save_hierarch_summaries(savepath, true_summaries, false_summaries, levels):
 
 if __name__ == "__main__":
 
-    hsums, ent_dicts, hsum_files = load_hierarch_summaries("MoreDetailedHierarchicalTrueSumOnlyTrainSetBackupPartial", "CharacterSubstitutionBackup", num_to_process=1000, result_folder_to_ignore="MoreDetailedHierarchicalAddedFalseTrain")
+    hsums, ent_dicts, hsum_files = load_hierarch_summaries("MoreDetailedHierarchicalTrueSumOnlyTrainSetBackup", "CharacterSubstitutionBackup", num_to_process=1000, result_folder_to_ignore="MoreDetailedHierarchicalAddedFalseTrain")
 
-    hsums_with_false = fill_false_hierarchical_summaries(hsums)
+    save_prefix = os.path.join("Data", "MoreDetailedHierarchicalAddedFalseTrain")
+    hsums_with_false = fill_false_hierarchical_summaries(hsums, hsum_files, save_prefix)
 
 
     #"MoreDetailedHierarchicalTrueSumOnlyTrainSetBackupPartial"
     #"MoreDetailedHierarchicalAddedFalseTrain"
-
-    for hsum_wf, sumfilename in zip(hsums_with_false, hsum_files):
-
-        true_summaries, false_summaries, levels = hsum_wf.summaries, hsum_wf.false_summaries, hsum_wf.summary_levels
-
-        savepath = os.path.join("Data", "MoreDetailedHierarchicalAddedFalseTrain", sumfilename)
-
-        save_hierarch_summaries(savepath, true_summaries, false_summaries, levels)
+    #
+    # for hsum_wf, sumfilename in zip(hsums_with_false, hsum_files):
+    #
+    #     true_summaries, false_summaries, levels = hsum_wf.summaries, hsum_wf.false_summaries, hsum_wf.summary_levels
+    #
+    #     savepath = os.path.join("Data", "MoreDetailedHierarchicalAddedFalseTrain", sumfilename)
+    #
+    #     #save_hierarch_summaries(savepath, true_summaries, false_summaries, levels)
 
     # Save hierarchical chunks here
