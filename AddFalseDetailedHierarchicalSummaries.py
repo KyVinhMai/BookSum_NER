@@ -56,15 +56,20 @@ def load_hierarch_summaries(hierarch_sum_folder, ent_dict_folder, num_to_process
 
     hsums = []
 
-    for f in summaries_to_process:
-        with open(f, "r") as sumfile:
-            lines = sumfile.read().split(settings.line_separator)[1:] # Ignore the header column
+    for e in ["utf-8", "utf-16", "cp1252", "latin-1"]:
+        try:
+            for f in summaries_to_process:
+                with open(f, "r", encoding=e) as sumfile:
+                    lines = sumfile.read().split(settings.line_separator)[1:] # Ignore the header column
 
-            #print(len(list(zip([el.split(settings.column_separator) for el in lines if el]))))
-            #print(list(zip(*[el.split(settings.column_separator) for el in lines if el]))[0])
-            true_sums, false_sums, levels = list(zip(*[el.split(settings.column_separator) for el in lines if el]))
+                    #print(len(list(zip([el.split(settings.column_separator) for el in lines if el]))))
+                    #print(list(zip(*[el.split(settings.column_separator) for el in lines if el]))[0])
+                    true_sums, false_sums, levels = list(zip(*[el.split(settings.column_separator) for el in lines if el]))
 
-            hsums.append(HierarchicalSummaries(true_sums, false_sums, levels))
+                    hsums.append(HierarchicalSummaries(true_sums, false_sums, levels))
+            break
+        except (UnicodeError, UnicodeDecodeError):
+            print("Encoding issues")
 
     return hsums, ent_rep_dicts, sumf_to_process
 
@@ -153,9 +158,9 @@ def save_hierarch_summaries(savepath, true_summaries, false_summaries, levels):
 
 if __name__ == "__main__":
 
-    hsums, ent_dicts, hsum_files = load_hierarch_summaries("MoreDetailedHierarchicalTrueSumOnlyTrainSetBackup", "CharacterSubstitutionBackup", num_to_process=1000, result_folder_to_ignore="MoreDetailedHierarchicalAddedFalseTrain")
+    hsums, ent_dicts, hsum_files = load_hierarch_summaries("Arseny_DETAILED_TEST_HierachialTrueOnly_1", "CharacterSubstitutionBackup", num_to_process=1000, result_folder_to_ignore="DETAILED_HIERARCH_FINAL_TEST")
 
-    save_prefix = os.path.join("Data", "MoreDetailedHierarchicalAddedFalseTrain")
+    save_prefix = os.path.join("Data", "DETAILED_HIERARCH_FINAL_TEST")
     hsums_with_false = fill_false_hierarchical_summaries(hsums, hsum_files, save_prefix)
 
 
